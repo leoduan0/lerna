@@ -1,0 +1,150 @@
+---
+title: 'Dynamics'
+authors: 'Leo Duan'
+date-last-edited: '2024-05-26'
+---
+
+# Dynamics
+
+**Dynamics** is the study of forces.
+
+## Force
+
+The **force** of an object is its mass multiplied by its acceleration.
+
+<Rule
+  statement={<Math math={'F=ma'} type={'block'} />}
+  terms={[
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+    {
+      term: 'a',
+      annotation: <span>Acceleration</span>,
+    },
+  ]}
+/>
+
+The study of forces involves three key empirical laws, called the **Newton's Laws of Motion**:
+
+<Rule
+  statement={
+    <ul>
+      <li>
+        A body remains at rest, or in motion at a constant speed in a straight
+        line, unless acted upon by a force.
+      </li>
+      <li>
+        When a body is acted upon by a force, the time rate of change of its
+        momentum equals the force.
+      </li>
+      <li>
+        If two bodies exert forces on each other, these forces have the same
+        magnitude but opposite directions.
+      </li>
+    </ul>
+  }
+/>
+
+The force is also the first derivative of momentum with respect to time.
+
+<Rule
+  statement={<Math math={'F=\\frac{dp}{dt}'} type={'block'} />}
+  terms={[
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: 'p',
+      annotation: <span>Momentum</span>,
+    },
+    {
+      term: 't',
+      annotation: <span>Time</span>,
+    },
+  ]}
+/>
+
+## Spring
+
+The force from a spring is given by the **Hooke's Law**, and is proportional to the **spring constant**, which depends on the spring, of that spring and the how much the spring is compressed (the distance between end of the spring and its equilibrium position):
+
+<Rule
+  statement={<Math math={'F_{spring}=kx'} type={'block'} />}
+  terms={[
+    {
+      term: 'F_{spring}',
+      annotation: <span>Force from a spring</span>,
+    },
+    {
+      term: 'k',
+      annotation: <span>Spring constant</span>,
+    },
+    {
+      term: 'x',
+      annotation: (
+        <span>
+          Distance between end of the spring and its equilibrium position
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Friction
+
+**Friction** is the resistance to motion created when two objects have relative velocity and are in contact. There are two different types of frictions: static friction, and kinetic friction.
+
+### Static Friction
+
+**Static friction** is the friction that's present when one object is stationary with respect to another object it's in contact with.
+
+An example of static friction would be the resistive force present when you are trying to move an initially stationary box on the ground.
+
+<Rule
+  statement={<Math math={'F_s = \\mu_s F_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'F_s',
+      annotation: <span>Static friction</span>,
+    },
+    {
+      term: '\\mu_s',
+      annotation: <span>Coefficient of static friction</span>,
+    },
+    {
+      term: 'F_n',
+      annotation: <span>Normal force</span>,
+    },
+  ]}
+/>
+
+### Kinetic Friction
+
+**Kinetic friction** is the friction that's present when one object is moving with respect to another object it's in contact with.
+
+An example of kinetic friction would be the resistive force you would have to work against in order to keep that box moving.
+
+<Rule
+  statement={<Math math={'F_k = \\mu_k F_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'F_k',
+      annotation: <span>Kinetic friction</span>,
+    },
+    {
+      term: '\\mu_k',
+      annotation: <span>Coefficient of kinetic friction</span>,
+    },
+    {
+      term: 'F_n',
+      annotation: <span>Normal force</span>,
+    },
+  ]}
+/>

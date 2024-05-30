@@ -1,0 +1,183 @@
+---
+title: 'Fluids'
+authors: 'Leo Duan'
+date-last-edited: '2024-05-26'
+---
+
+# Fluids
+
+## Density
+
+<Rule
+  statement={<Math math={'\\rho = \\frac{m}{V}'} type={'block'} />}
+  terms={[
+    {
+      term: '\\rho',
+      annotation: <span>Density</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+    {
+      term: 'V',
+      annotation: <span>Volume</span>,
+    },
+  ]}
+/>
+
+## Pressure
+
+<Rule
+  statement={<Math math={'P = \\frac{F}{A}'} type={'block'} />}
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Pressure</span>,
+    },
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: 'A',
+      annotation: <span>Area</span>,
+    },
+  ]}
+/>
+<Rule
+  statement={<Math math={'P = h \\rho g'} type={'block'} />}
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Pressure</span>,
+    },
+    {
+      term: 'h',
+      annotation: <span>Vertical distance from surface</span>,
+    },
+    {
+      term: '\\rho',
+      annotation: <span>Density of fluid</span>,
+    },
+    {
+      term: 'g',
+      annotation: <span>Gravitation acceleration</span>,
+    },
+  ]}
+/>
+
+## Gauge Pressure
+
+<Rule
+  statement={<Math math={'P_{gauge} = P - P_{atmosphere}'} type={'block'} />}
+  terms={[
+    {
+      term: 'P_{gauge}',
+      annotation: <span>Gauge pressure</span>,
+    },
+    {
+      term: 'P',
+      annotation: <span>Pressure of system</span>,
+    },
+    {
+      term: 'P_{atmosphere}',
+      annotation: <span>Pressure of atmosphere</span>,
+    },
+  ]}
+/>
+
+## Buoyant Force
+
+<Rule
+  statement={
+    <Math math={'F_{buoyant} = W_{displaced} = V \\rho g'} type={'block'} />
+  }
+  terms={[
+    {
+      term: 'F_{buoyant}',
+      annotation: <span>Buoyant force</span>,
+    },
+    {
+      term: 'W_{displaced}',
+      annotation: <span>Weight of the fluid displaced by the object</span>,
+    },
+    {
+      term: 'V',
+      annotation: <span>Volume of object</span>,
+    },
+    {
+      term: '\\rho',
+      annotation: <span>Density of fluid</span>,
+    },
+    {
+      term: 'g',
+      annotation: <span>Gravitational acceleration</span>,
+    },
+  ]}
+/>
+
+## Flow Rate
+
+{' '}
+
+<Rule
+  statement={<Math math={'Q=Av'} type={'block'} />}
+  terms={[
+    {
+      term: 'Q',
+      annotation: <span>Flow rate</span>,
+    },
+    {
+      term: 'A',
+      annotation: <span>Area of cross section</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Velocity of fluid</span>,
+    },
+  ]}
+/>
+
+## Bernoulli's Equation
+
+<Rule
+  statement={
+    <Math
+      math={
+        'P_1 + \\frac{1}{2} \\rho v_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2} \\rho v_2^2 + \\rho g h_2'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\rho',
+      annotation: <span>Density</span>,
+    },
+    {
+      term: 'P_1',
+      annotation: <span>Pressure at point 1</span>,
+    },
+    {
+      term: 'v_1',
+      annotation: <span>Velocity at point 1</span>,
+    },
+    {
+      term: 'h_1',
+      annotation: <span>Height at point 1</span>,
+    },
+    {
+      term: 'P_2',
+      annotation: <span>Pressure at point 2</span>,
+    },
+    {
+      term: 'v_2',
+      annotation: <span>Velocity at point 2</span>,
+    },
+    {
+      term: 'h_2',
+      annotation: <span>Height at point 2</span>,
+    },
+  ]}
+/>

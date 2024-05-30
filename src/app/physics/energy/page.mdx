@@ -1,0 +1,173 @@
+---
+title: 'Energy'
+authors: 'Leo Duan'
+date-last-edited: '2024-05-26'
+---
+
+# Energy
+
+There are many types of **energies**, and each type of energy has its own unique definition.
+
+A single object may have multiple types of energy (_e.g._ a moving object has gravitational potential, kinetic, and thermal energy at the same time).
+
+## Kinetic Energy
+
+**Kinetic energy** refers to the energy in a moving object (_e.g._ a moving car).
+
+<Rule
+  statement={<Math math={'E_k = \\frac{1}{2}mv^2'} type={'block'} />}
+  terms={[
+    {
+      term: 'E_k',
+      annotation: <span>Kinetic energy</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Velocity</span>,
+    },
+  ]}
+/>
+
+## Potential Energy
+
+**Potential Energy** refers to any type of energy which has not been expressed.
+
+### Gravitational
+
+**Gravitational potential energy** refers to the potential for an object held some distance from some massive object to do work.
+
+<Rule
+  statement={<Math math={'E_g = mgh'} type={'block'} />}
+  terms={[
+    {
+      term: 'E_g',
+      annotation: <span>Gravitation potential energy</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass of object</span>,
+    },
+    {
+      term: 'g',
+      annotation: <span>Gravitational acceleration</span>,
+    },
+    {
+      term: 'h',
+      annotation: (
+        <span>
+          Distance between object and the source of gravitational acceleration
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Conservation of Energy
+
+Within a closed system, energy is conserved, meaning that it's never created or destroyed.
+
+<Rule
+  statement={<Math math={'E_{total~f} = E_{total~i}'} type={'block'} />}
+  terms={[
+    {
+      term: 'E_{total~f}',
+      annotation: <span>Total final energy</span>,
+    },
+    {
+      term: 'E_{total~i}',
+      annotation: <span>Total initial energy</span>,
+    },
+  ]}
+/>
+
+## Work
+
+**Work** refers to the change in energy.
+
+<Rule
+  statement={<Math math={'W = \\Delta E'} type={'block'} />}
+  terms={[
+    {
+      term: 'W',
+      annotation: <span>Work</span>,
+    },
+    {
+      term: '\\Delta E',
+      annotation: <span>Change in energy</span>,
+    },
+  ]}
+/>
+
+If a force is applied to an object at angle $$ \theta $$ from the horizontal, the work done by the entity which applied the force is given by the following expression:
+
+<Rule
+  statement={<Math math={'W = Fd\\cos(\\theta)'} type={'block'} />}
+  terms={[
+    {
+      term: 'W',
+      annotation: <span>Work</span>,
+    },
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: 'd',
+      annotation: <span>Distance travelled while the force was applying</span>,
+    },
+    {
+      term: '\\theta',
+      annotation: (
+        <span>
+          Angle between <Math math={'F'} type={'inline'} /> and the object
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Power
+
+**Power** is the rate at which work is done.
+
+<Rule
+  statement={<Math math={'P = \\frac{dW}{dt}'} type={'block'} />}
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Power</span>,
+    },
+    {
+      term: 'W',
+      annotation: <span>Work</span>,
+    },
+    {
+      term: 't',
+      annotation: <span>Time</span>,
+    },
+  ]}
+/>
+
+The power is also equal to the force multiplied by the velocity.
+
+<Rule
+  statement={<Math math={'P = Fv'} type={'block'} />}
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Power</span>,
+    },
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Velocity</span>,
+    },
+  ]}
+/>

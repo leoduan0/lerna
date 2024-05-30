@@ -1,0 +1,289 @@
+---
+title: 'Measurements'
+authors: 'Leo Duan'
+date-last-edited: '2024-05-26'
+---
+
+# Measurements
+
+**Measurements** are recorded values of a certain quatity using tools.
+
+Measurements in science are quantitative, involving numbers, and it is important to be able to express a measurement to the correct **accuracy**, how close one's measurement of a quantity is to the true value of that quantity, and **precision**, how close one's measurements of a quantity are to each other.
+
+<Term
+  term={'Accuracy'}
+  definition={
+    <p>
+      How close one's measurement of a quantity is to the true value of that
+      quantity.
+    </p>
+  }
+/>
+
+<Term
+  term={'Precision'}
+  definition={
+    <p>How close one's measurements of a quantity are to each other.</p>
+  }
+/>
+
+It's important to realize that it is impossible to gain a 100% accurate measurement of any quantity, as that would require an infinitely accurate measuring tool. Thus, every measurement has a certain amount of **uncertainty**, the range around a measured value of a quantity where its accuracy cannot be further increased.
+
+<Term
+  term={'Uncertainty'}
+  definition={
+    <p>
+      The range around a measured value of a quantity where its accuracy cannot
+      be further increased.
+    </p>
+  }
+/>
+
+## Significant Figures
+
+**Significant figures** allows the expression of the value as well as the accuracy of a numerical measurement. A figure, or a digit, in a measured is is significant if it contributes to representing the accuracy of a measured result.
+
+<Rule
+  statement={
+    <p>
+      Figures that contribute to representing the accuracy of a measured result
+      are significant.
+    </p>
+  }
+/>
+
+<Example>
+  The number $$ 345.12 $$ has 5 significant figures, as all digits inside
+  contribute to representing the accuracy of the measured result.
+</Example>
+
+<Example>
+  The number $$ 305.1 $$ has 4 significant figures, for the same reason.
+</Example>
+
+<Example>
+  The number $$ 100 $$ has only 1 significant figure. The reason for this is
+  because $$ 10 $$ does not imply that the measurement is exactly $$ 10 $$. For
+  example, if someone measures the length of an object with a ruler that has
+  centimeters as the smallest unit, and measures that object to be $$ 10 $$mm
+  long, it's possible that, because the ruler is not precise enough, the length
+  of that object is not exactly $$ 10 $$mm, thus the person is only certain that
+  $$ 1 $$ should be in the tens digit, but not certain if it is exactly $$ 10
+  $$, $$ 11 $$, or $$ 12 $$.
+  <Align type={'center'}>
+    <Figure
+      image={
+        <Image
+          source={'/physics/measurements/figure_1.svg'}
+          width={384}
+          height={64}
+          alt={''}
+        />
+      }
+      number={1}
+      text={<span>A ruler and an object that&apos;s roughly 10mm long</span>}
+    />
+  </Align>
+</Example>
+
+<Example>
+  The number $$ 00100 $$ has 1 significant figure. The two zeroes after the 1 is
+  not significant (for the same reason listed in the previous example), and the
+  two zeroes before the 1 are not significant either because they do not
+  contribute in reflecting the precision of the input.
+</Example>
+
+<Example>
+  The number $$ 100.1 $$ has 4 significant figures. Unlike the previous example,
+  the 1 in the tenths digit implies that the input is precise to the tenths
+  digit, thus the measurer is certain that it is 100.1.
+</Example>
+
+<Example>
+  The number $$ 100. $$ has 3 significant figures. A decimal place inserted
+  after the ones digit implies that the certainty of an input goes to the ones
+  digit, implying that all digits up until the decimal places are significant.
+  It is important to note that rarely are numbers written in similar style as $$
+  100. $$. In a situation like this, the number is represented using scientific
+  notation.
+</Example>
+
+Realize that numbers which are not measured have an infinite amount of significant figures, implying that they do not contribute to the certainty of the result.
+
+<Example>
+  If $$ x = 102.0 $$, $$ 2x $$ would be $$ 2 \cdot 102.0 = 204.0 $$, and we do
+  not have to round to one significant figure because the $$ 2 $$ in this case
+  is not a measurement - it has infinite precision.
+</Example>
+
+Conversion factors, like $$ \frac{3600s}{1h} $$ or $$ \frac{1km}{1000m} $$ are also _not_ measured quantities, and thus have an infinite amount of significant figures.
+
+## Scientific Notation
+
+The purpose of **scientific notations** is to denote the amount of significant figures in any situation in a concise way. It comes in the form of a number in the front, usually a decimal, with only one digit in from of the decimal, multiplied by 10 to some power.
+
+<Rule
+  statement={
+    <>
+      <p>To form a number in scientific notation:</p>
+      <ol>
+        <span>Remove all non-significant figures</span>
+        <span>Rewrite so that the first digit is in the ones place.</span>
+        <span>
+          Multiply it to a power of ten which would make it equivalent to the
+          original value.
+        </span>
+      </ol>
+    </>
+  }
+/>
+
+<Example>
+
+To represent $$ 100. $$ in scientific notation and still convey the fact that it has 3 significant digits:
+
+| Procedure             | Annotation                                                                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ 100. $$            | Remove all non-significant figures (there are none in this case).                                                                                             |
+| $$ 1.00 $$            | Move the decimal place as many times as needed until only one digit is left in the front.                                                                     |
+| $$ 1.00 \cdot 10^2 $$ | Multiply the number by a certain power of 10 in order to make it numerical equivalent to the number we started with. In this case, it's 10 to the power of 2. |
+
+Thus, $$ 1.00 \cdot 10^2 $$ is $$ 100. $$ written in scientific notation.
+
+</Example>
+
+Note that in scientific notation, **all** figures in the decimal in the front are significant.
+
+<Example>
+Given $$ 03560012.1420 $$, it can be expressed in scientific notation by following the rules.
+
+| Procedure                     | Annotation                                                                          |
+| ----------------------------- | ----------------------------------------------------------------------------------- |
+| $$ 03560012.1420 $$           |                                                                                     |
+| $$ 3560012.1420 $$            | Remove all non-significant figures.                                                 |
+| $$ 3.5600121420 $$            | Rewrite so that the first digit is in the ones place.                               |
+| $$ 3.5600121420 \cdot 10^6 $$ | Multiply it to a power of ten which would make it equivalent to the original value. |
+
+$$ 3.5600121420 \cdot 10^6 $$ is $$ 03560012.1420 $$ in scientifc notation.
+
+</Example>
+
+## Uncertainties
+
+As mentioned, it is impossible to measure something with total accuracy or certainty, thus one must be able to express the amount of **uncertainty** they might hold regarding a measurement.
+
+Given a ruler that measures to a centimeter and an object as follows, how can we express our measurement?
+
+<Align type={'center'}>
+  <Figure
+    image={
+      <Image
+        source={'/physics/measurements/figure_2.svg'}
+        width={384}
+        height={64}
+        alt={''}
+      />
+    }
+    number={2}
+    text={
+      <span>
+        A ruler and an object of which&apos;s length is pending measurement
+      </span>
+    }
+  />
+</Align>
+
+It is clear that the object is more than 2cm and less than 3cm, so if we were to measure the length of this object in centimeters, we can be certain that the ones digit is the number $$ 2 $$.
+
+Realize that because the most precise unit for this ruler is centimeters, it is thus impossible to accurately determine the precision of the next digit (the tenths digit). The convention, however, is to guess the digit after the last digit that one is certain about from measurement, and then put in an uncertainty. Note that the uncertainty is related to the smallest precision of the measurement tool, but for simplicity, we will assume that the uncertainty is half of the smallest precision of our measuring tool, or half of a centimeter.
+
+We will guess tenths digit to be $$ 5 $$, but realize that any reasonable guess (_e.g._ $$ 2 $$, $$ 3 $$, $$ 4 $$, $$ 6 $$, etc) are also valid. Then, our measurement can be expressed like this: $$ 2.5 \pm 0.5 cm $$.
+
+Uncertainties may be used in conjunction with scientific notation, like $$ 4 \cdot 10^{-13} \pm 1 \cdot 10^{-13} m $$, $$ 4 \cdot 10^5 \pm 3 \cdot 10^5 \frac{N}{m^2} $$.
+
+### Absolute Uncertainties
+
+Uncertainties that are expressed as a number (_e.g._ $$ \pm 3 $$, $$ \pm 2.1 $$, $$ \pm 3.14 $$) are called **absolute uncertainties**.
+
+### Relative Uncertainties
+
+**Relative uncertainties** denotes by how much with respect to the number is the uncertainty. The relative uncertainty can be acquired by dividing the absolute uncertainty by the number.
+
+<Example>
+  Given the measurement $$ 10.5 \pm 5.3 $$, the relative uncertainty is $$ \frac{\vphantom{}5.3}{10.5} \approx 0.50476 $$, or that the uncertainty is 50% of the number.
+</Example>
+
+## Arithmetic
+
+When performing operations on numbers, its significant figures can be calculated by following the following rules:
+
+<Rule
+  statement={
+    <ul>
+      <li>
+        When adding or subtracting, retain significance to the same number of
+        decimal places as the input with the fewest significant decimal places.
+      </li>
+      <li>
+        When multiplying or dividing, retain significance with the same number
+        of significant figures as the input with the fewest significant figures.
+      </li>
+    </ul>
+  }
+/>
+
+It is good practice to put an underline under the last significant digit while calculating, and round off only at the very end.
+
+<Example>
+Given $$ 100 + 32 $$, the $$ 100 $$ is significant to the hundreds digit, and $$ 32 $$ is significant to the ones digit. Using the rules, the significance of the result would be retained to the same number of decimal places as the input with the fewest significant decimal places, or the hundreds digit.
+
+| Procedure               | Annotation                       |
+| ----------------------- | -------------------------------- |
+| $$ 100 + 32 $$          |                                  |
+| $$ = \underline{1}32 $$ | Evaluate.                        |
+| $$ = 132 $$             | Underline the digit to round to. |
+| $$ = 100 $$             | Round.                           |
+
+</Example>
+
+<Example>
+Given $$ 100 \\times 32 $$, the $$ 100 $$has 1 significant digit, and $$ 32 $$ has two significant digits. Using the rules, the significance of the result would be retained with the same number of significant figures as the input with the fewest significant figures.
+
+| Procedure                | Annotation                       |
+| ------------------------ | -------------------------------- |
+| $$ 100 \times 32 $$      |                                  |
+| $$ = 3200 $$             | Evaluate.                        |
+| $$ = \underline{3}200 $$ | Underline the digit to round to. |
+| $$ = 3000 $$             | Round.                           |
+
+</Example>
+
+When dealing with numbers with uncertainties, the uncertainties also need to be evaluated accordingly in a process called **propagation**.
+
+<Rule
+  statement={
+    <ul>
+      <li>When adding or subtracting, add the absolute uncertainties.</li>
+      <li>When multiplying or dividing, add the relative uncertainties</li>
+      <li>
+        Any arithmetic applied to uncertainties follow the same rule of
+        significant figures.
+      </li>
+    </ul>
+  }
+/>
+
+<Example>
+Suppose that $$ x = 2.9 \pm 1.1 m $$ and $$ y = 3.1 \pm 0.9 m $$, what is $$ 2xy $$?
+
+| Procedure                                            | Annotation                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ 2(2.9 \pm 1.1 m)(3.1 \pm 0.9 m) $$                | Write the expression.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| $$ (5.8 \pm 2.2 m)(3.1 \pm 0.9 m) $$                 | Multiply the coefficient $$ 2 $$ into one of the measurements. Since multiplying by $$ 2 $$ is adding the number onto itself, the rules of addition/subtraction applies when calculating and propagating.                                                                                                                                                                                                                                                   |
+| $$ 1\underline{7}.98 \pm \underline{6}6.963\% m^2 $$ | Find the relative uncertainties of each of the measurements, then add them together, and plug back into the evaluated number. The relative uncertainty for $$ 5.8 \pm 2.2 m $$ is $$ \frac{2.2}{5.8} \approx 0.3\underline{7}931 $$ and for $$ 3.1 \pm 0.9 m $$ it's $$ \frac{0.9}{3.1} \approx 0.\underline{2}9032 $$. Added together, it is $$ \approx 0.3\underline{7}931 + 0.\underline{2}9032 = 0.\underline{6}6963 $$, or $$ \underline{6}6.963\% $$. |
+| $$ 1\underline{7}.98 \pm \underline{1}2.04 m^2 $$    | Convert the relative uncertainty back into absolute uncertainty by multiplying the relative uncertainty into the number.                                                                                                                                                                                                                                                                                                                                    |
+| $$ 18 \pm 10 m^2 $$                                  | Round.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+</Example>
+
+Note that uncertainties will always have to match the number it corresponds to in _place value_. If any arithmetic operation results in a difference in the place value between the two, round the number to the same amount of place values as the uncertainty. _e.g._ $$ 2.9 \pm 3 m $$ should become $$ 3 \pm 3 m $$.

@@ -1,0 +1,203 @@
+---
+title: 'Area'
+author: 'Leo Duan'
+last-edited-date: '2024-05-29'
+---
+
+# Area
+
+**Area** is the amount of space an object takes in 2-dimensional space.
+
+## Polygon
+
+<Rule
+  statement={
+    <Math
+      math={
+        'A_{polygon} = \\frac{n}{4}\\cot\\left(\\frac{180\\degree}{n}\\right)l^2'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'A_{polygon}',
+      annotation: (
+        <span>
+          Area of an <Math math={'n'} type={'inline'} />
+          -sided polygon
+        </span>
+      ),
+    },
+    {
+      term: 'n',
+      annotation: <span>Number of sides</span>,
+    },
+    {
+      term: 'l',
+      annotation: <span>Length of a side</span>,
+    },
+  ]}
+/>
+
+This includes triangles and squares, but since the coefficient is 1 for a square:
+
+<Rule
+  statement={<Math math={'A_{square} = l^2'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{square}',
+      annotation: <span>Area of a square</span>,
+    },
+    {
+      term: 'l',
+      annotation: <span>Length of a side</span>,
+    },
+  ]}
+/>
+
+## Triangle
+
+<Rule
+  statement={<Math math={'A_{triangle} = \\frac{bh}{2}'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{triangle}',
+      annotation: <span>Area of a triangle</span>,
+    },
+    {
+      term: 'b',
+      annotation: <span>Length of base</span>,
+    },
+    {
+      term: 'h',
+      annotation: <span>Height</span>,
+    },
+  ]}
+/>
+
+## Rectangle
+
+<Rule
+  statement={<Math math={'A_{rectangle} = wh'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{rectangle}',
+      annotation: <span>Area of a rectangle</span>,
+    },
+    {
+      term: 'w',
+      annotation: <span>Width</span>,
+    },
+    {
+      term: 'h',
+      annotation: <span>Height</span>,
+    },
+  ]}
+/>
+
+## Circle
+
+<Rule
+  statement={<Math math={'A_{circle} = \\pi r^2'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{circle}',
+      annotation: <span>Area of a circle</span>,
+    },
+    {
+      term: 'r',
+      annotation: <span>Radius</span>,
+    },
+  ]}
+/>
+
+## Trapezoid
+
+<Rule
+  statement={
+    <Math math={'A_{trapezoid} = h\\frac{b_1+b_2}{2}'} type={'block'} />
+  }
+  terms={[
+    {
+      term: 'A_{trapezoid}',
+      annotation: <span>Area of a trapezoid</span>,
+    },
+    {
+      term: 'h',
+      annotation: <span>Height</span>,
+    },
+    {
+      term: 'b_1',
+      annotation: <span>Length of base 1</span>,
+    },
+    {
+      term: 'b_2',
+      annotation: <span>Length of base 2</span>,
+    },
+  ]}
+/>
+
+## Ellipse
+
+<Rule
+  statement={<Math math={'A_{ellipse} = \\pi r_1r_2'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{ellipse}',
+      annotation: <span>Area of an ellipse</span>,
+    },
+    {
+      term: 'r_1',
+      annotation: <span>Length of axis 1</span>,
+    },
+    {
+      term: 'r_2',
+      annotation: <span>Length of axis 2</span>,
+    },
+  ]}
+/>
+
+## Parallelogram
+
+<Rule
+  statement={<Math math={'A_{parallelogram} = bh'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{parallelogram}',
+      annotation: <span>Area of a parallelogram</span>,
+    },
+    {
+      term: 'b',
+      annotation: <span>Length of base</span>,
+    },
+    {
+      term: 'h',
+      annotation: <span>Height</span>,
+    },
+  ]}
+/>
+
+## Rhombus
+
+<Rule
+  statement={<Math math={'A_{rhombus} = \\frac{d_1d_2}{2}'} type={'block'} />}
+  terms={[
+    {
+      term: 'A_{rhombus}',
+      annotation: <span>Area of a rhombus</span>,
+    },
+    {
+      term: 'd_1',
+      annotation: <span>Length of diagonal 1</span>,
+    },
+    {
+      term: 'd_2',
+      annotation: <span>Length of diagonal 2</span>,
+    },
+  ]}
+/>
+
+## Worksheet
+
+Click [here](/mathematics/geometry/area/Area.pdf) to access the worksheet.

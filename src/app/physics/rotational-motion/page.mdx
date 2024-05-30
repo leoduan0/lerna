@@ -1,0 +1,133 @@
+---
+title: 'Rotational Motion'
+authors: 'Leo Duan'
+date-last-edited: '2024-05-26'
+---
+
+# Rotational Motion
+
+**Rotational motion**, much like linear motion, is the study of the motion of rotating objects.
+
+Linear properties can be compared to its rotational counterpart and vice versa.
+
+| Linear Property | Linear Symbol                                      | Rotational Property          | Rotational Symbol                                              |
+| --------------- | -------------------------------------------------- | ---------------------------- | -------------------------------------------------------------- |
+| Mass            | <Math math={'m'} type={'inline'} />                | Inertia                      | <Math math={'I=\\int r^2 dm'} type={'inline'} />               |
+| Displacement    | <Math math={'s'} type={'inline'} />                | Angular displacement (angle) | <Math math={'\\theta'} type={'inline'} />                      |
+| Velocity        | <Math math={'v=\\frac{s}{t}'} type={'inline'} />   | Angular Velocity             | <Math math={'\\omega = \\frac{\\theta}{t}'} type={'inline'} /> |
+| Acceleration    | <Math math={'a = \\frac{v}{t}'} type={'inline'} /> | Angular Acceleration         | <Math math={'\\alpha = \\frac{\\omega}{t}'} type={'inline'} /> |
+| Force           | <Math math={'F=ma'} type={'inline'} />             | Torque                       | <Math math={'\\tau = I\\alpha'} type={'inline'} />             |
+
+## Kinematics Equations
+
+All four equations of kinematics can be used for rotational motion as well. To use them, simply substitute the linear motion properties with its rotational motion equivalents. _e.g._ $$ \omega_f^2 = \omega_i^2 + 2\alpha \theta $$ is the rotational counterpart of $$ v_f^2 = v_i^2 + 2as $$.
+
+## Relationship Between Linear Properties and Rotational Properties
+
+Rotational motion properties can be related to linear motion properties in the following fashion:
+
+<Rule
+  statement={
+    <ul>
+      <li>
+        <Math math={'s = \\theta r'} type={'inline'} />
+      </li>
+      <li>
+        <Math math={'v = \\omega r'} type={'inline'} />
+      </li>
+      <li>
+        <Math math={'a = \\alpha r'} type={'inline'} />
+      </li>
+    </ul>
+  }
+  terms={[
+    {
+      term: 's',
+      annotation: <span>Displacement</span>,
+    },
+    {
+      term: '\\theta',
+      annotation: <span>Angular displacement</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Velocity</span>,
+    },
+    {
+      term: '\\omega',
+      annotation: <span>Angular velocity</span>,
+    },
+    {
+      term: 'a',
+      annotation: <span>Acceleration</span>,
+    },
+    {
+      term: '\\alpha',
+      annotation: <span>Angular acceleration</span>,
+    },
+    {
+      term: 'r',
+      annotation: <span>Radius</span>,
+    },
+  ]}
+/>
+
+## Torque
+
+<Rule
+  statement={<Math math={'\\tau = rF\\sin(\\theta)'} type={'block'} />}
+  terms={[
+    {
+      term: '\\tau',
+      annotation: <span>Torque</span>,
+    },
+    {
+      term: 'r',
+      annotation: (
+        <span>
+          Distance between <Math math={'F'} type={'inline'} /> and the pivot
+          point of the body
+        </span>
+      ),
+    },
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: '\\theta',
+      annotation: (
+        <span>
+          Angle between <Math math={'F'} type={'inline'} /> and the body
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Centripetal Acceleration
+
+<Rule
+  statement={
+    <Math math={'a_{centripetal} = \\frac{v^{2}}{r}'} type={'block'} />
+  }
+  terms={[
+    {
+      term: 'a_{centripetal}',
+      annotation: (
+        <span>
+          Centripetal acceleration, the linear acceleration of object towards
+          the body which it orbits around
+        </span>
+      ),
+    },
+    {
+      term: 'v',
+      annotation: <span>Linear velocity of the object</span>,
+    },
+    {
+      term: 'r',
+      annotation: <span>Distance between object and the body</span>,
+    },
+  ]}
+/>

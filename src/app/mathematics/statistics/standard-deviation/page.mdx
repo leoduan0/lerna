@@ -1,0 +1,43 @@
+---
+title: 'Standard Deviation'
+author: 'Leo Duan'
+date: '2024-05-29'
+---
+
+# Standard Deviation
+
+The **standard deviation** of a set of data can roughly be described as how "spread out" the data is.
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\sigma = \\sqrt{\\frac{\\sum_{i=1}^n (x_i - \\overline{x}_{arithmetic})^2}{n}}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\sigma',
+      annotation: <span>Standard deviation of population</span>,
+    },
+    {
+      term: 'x_i',
+      annotation: (
+        <span>
+          <Math math={'i'} type={'inline'} />
+          -th value of population
+        </span>
+      ),
+    },
+    {
+      term: '\\overline{x}_{arithmetic}',
+      annotation: <span>Arithmetic mean of population</span>,
+    },
+    {
+      term: 'N',
+      annotation: <span>Population size</span>,
+    },
+  ]}
+/>

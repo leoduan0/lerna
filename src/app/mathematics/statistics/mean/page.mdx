@@ -1,0 +1,130 @@
+---
+title: 'Mean'
+author: 'Leo Duan'
+date: '2024-05-29'
+---
+
+# Mean
+
+## Arithmetic Mean
+
+<Rule
+  statement={
+    <Math
+      math={'\\overline{x}_{arithmetic} = \\frac{\\sum_{i=1}^n x_i}{n}'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\overline{x}_{arithmetic}',
+      annotation: <span>Arithmetic mean</span>,
+    },
+    {
+      term: 'x_i',
+      annotation: (
+        <span>
+          <Math math={'i'} type={'inline'} />
+          -th value of population
+        </span>
+      ),
+    },
+    {
+      term: 'n',
+      annotation: <span>Population size</span>,
+    },
+  ]}
+  annotation={
+    <span>
+      This is also known as the <strong>mean</strong> or the{' '}
+      <strong>average</strong>.
+    </span>
+  }
+/>
+
+## Geometric Mean
+
+<Rule
+  statement={
+    <Math
+      math={'\\overline{x}_{geometric} = \\sqrt[n]{\\prod_{i=1}^n x_i}'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\overline{x}_{geometric}',
+      annotation: <span>Geometric mean</span>,
+    },
+    {
+      term: 'x_i',
+      annotation: (
+        <span>
+          <Math math={'i'} type={'inline'} />
+          -th value of population
+        </span>
+      ),
+    },
+    {
+      term: 'n',
+      annotation: <span>Population size</span>,
+    },
+  ]}
+/>
+
+## Harmonic Mean
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\overline{x}_{harmonic} = \\frac{n}{\\sum_{i=1}^n \\frac{1}{x_i}}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\overline{x}_{harmonic}',
+      annotation: <span>Harmonic mean</span>,
+    },
+    {
+      term: 'x_i',
+      annotation: (
+        <span>
+          <Math math={'i'} type={'inline'} />
+          -th value of population
+        </span>
+      ),
+    },
+    {
+      term: 'n',
+      annotation: <span>Population size</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\overline{x}_{arithmetic} \\geq \\overline{x}_{geometric} \\geq \\overline{x}_{harmonic}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\overline{x}_{arithmetic}',
+      annotation: <span>Arithmetic mean</span>,
+    },
+    {
+      term: '\\overline{x}_{geometric}',
+      annotation: <span>Geometric mean</span>,
+    },
+    {
+      term: '\\overline{x}_{harmonic}',
+      annotation: <span>Harmonic mean</span>,
+    },
+  ]}
+/>

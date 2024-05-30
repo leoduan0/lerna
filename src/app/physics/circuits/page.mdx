@@ -1,0 +1,321 @@
+---
+title: 'Circuits'
+authors: 'Leo Duan'
+date-last-edited: '2024-05-26'
+---
+
+# Circuits
+
+**Circuits** involve the study of how electricity and magnetic entities behave inside an electrical circuit.
+
+## Current
+
+Given a wire, the amount of **current** flowing inside it is defined as follows:
+
+<Rule
+  statement={<Math math={'I=nAvq'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Current</span>,
+    },
+    {
+      term: 'n',
+      annotation: <span>Number of electrons per unit volume</span>,
+    },
+    {
+      term: 'A',
+      annotation: <span>Cross-sectional area of wire</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Drift velocity of electrons</span>,
+    },
+    {
+      term: 'q',
+      annotation: <span>Charge of each electron</span>,
+    },
+  ]}
+/>
+
+Current is also the change in charge over time.
+
+<Rule
+  statement={<Math math={'I=\\frac{dq}{dt}'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Current</span>,
+    },
+    {
+      term: 'q',
+      annotation: <span>Charge</span>,
+    },
+    {
+      term: 't',
+      annotation: <span>Time</span>,
+    },
+  ]}
+/>
+
+## Power
+
+The amount of **power** dissipated by a node with current $$ I $$ flowing through it and electric potential $$ V $$ around it is given by the following equation:
+
+<Rule
+  statement={<Math math={'P=IV'} type={'block'} />}
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Power</span>,
+    },
+    {
+      term: 'I',
+      annotation: <span>Current</span>,
+    },
+    {
+      term: 'V',
+      annotation: <span>Electric potential</span>,
+    },
+  ]}
+/>
+
+## Resistance
+
+The amount of **resistance** is a resistive material is given with the following equation:
+
+<Rule
+  statement={<Math math={'R=\\frac{\\rho L}{A}'} type={'block'} />}
+  terms={[
+    {
+      term: 'R',
+      annotation: <span>Resistance</span>,
+    },
+    {
+      term: '\\rho',
+      annotation: <span>Resistivity of material</span>,
+    },
+    {
+      term: 'L',
+      annotation: <span>Distance travelled by the electricity</span>,
+    },
+    {
+      term: 'A',
+      annotation: <span>Cross-sectional area of the wire</span>,
+    },
+  ]}
+/>
+
+Difference in the surrounding temperature often results in a different resistivity inside a material. Thus:
+
+<Rule
+  statement={
+    <Math math={'\\rho=\\rho_0(1+\\alpha \\Delta T)'} type={'block'} />
+  }
+  terms={[
+    {
+      term: '\\rho',
+      annotation: <span>Actual resistivity</span>,
+    },
+    {
+      term: '\\rho_0',
+      annotation: <span>Original resistivity</span>,
+    },
+    {
+      term: '\\alpha',
+      annotation: <span>Temperature coefficient of resistivity</span>,
+    },
+    {
+      term: '\\Delta T',
+      annotation: <span>Change in temperature</span>,
+    },
+  ]}
+/>
+
+## Kirchhoff's Circuit Laws
+
+<Rule
+  statement={
+    <ul>
+      <li>
+        The algebraic sum of currents in a network of conductors meeting at a
+        point is zero (the amount of current flowing into a node is equivalent
+        to the amount of current flowing out of that node).
+      </li>
+      <li>
+        The directed sum of the potential differences (voltages) around any
+        closed loop is zero (the sum of changes in the potential differences
+        (voltage) in a closed loop is 0).
+      </li>
+    </ul>
+  }
+/>
+
+For series and parallel circuits, Kirchhoff's Circuit Laws can be written in equation form as follows.
+
+## Series Circuit
+
+A **series circuit** is a circuit where the electricity has only one pathway to flow from one battery terminal to the other.
+
+<Rule
+  statement={<Math math={'V=V_1+V_2+V_3+...+V_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'V',
+      annotation: <span>Electric potential at source</span>,
+    },
+    {
+      term: 'V_1',
+      annotation: <span>Electric potential at point 1</span>,
+    },
+    {
+      term: 'V_2',
+      annotation: <span>Electric potential at point 2</span>,
+    },
+    {
+      term: 'V_3',
+      annotation: <span>Electric potential at point 3</span>,
+    },
+    {
+      term: 'V_n',
+      annotation: <span>Electric potential at point n</span>,
+    },
+  ]}
+/>
+<Rule
+  statement={<Math math={'I=I_1=I_2=I_3=...=I_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Current at source</span>,
+    },
+    {
+      term: 'I_1',
+      annotation: <span>Current at point 1</span>,
+    },
+    {
+      term: 'I_2',
+      annotation: <span>Current at point 2</span>,
+    },
+    {
+      term: 'I_3',
+      annotation: <span>Current at point 3</span>,
+    },
+    {
+      term: 'I_n',
+      annotation: <span>Current at point n</span>,
+    },
+  ]}
+/>
+<Rule
+  statement={<Math math={'R=R_1+R_2+R_3+...+R_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'R',
+      annotation: <span>Total resistance of the circuit</span>,
+    },
+    {
+      term: 'R_1',
+      annotation: <span>Resistance of resistor 1</span>,
+    },
+    {
+      term: 'R_2',
+      annotation: <span>Resistance of resistor 2</span>,
+    },
+    {
+      term: 'R_3',
+      annotation: <span>Resistance of resistor 3</span>,
+    },
+    {
+      term: 'R_n',
+      annotation: <span>Resistance of resistor n</span>,
+    },
+  ]}
+/>
+
+## Parallel Circuit
+
+A **parallel circuit** is a circuit where the electricity has more than one pathway to flow from one battery terminal to the other.
+
+<Rule
+  statement={<Math math={'V=V_1=V_2=V_3=...=V_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'V',
+      annotation: <span>Electric potential at source</span>,
+    },
+    {
+      term: 'V_1',
+      annotation: <span>Electric potential at point 1</span>,
+    },
+    {
+      term: 'V_2',
+      annotation: <span>Electric potential at point 2</span>,
+    },
+    {
+      term: 'V_3',
+      annotation: <span>Electric potential at point 3</span>,
+    },
+    {
+      term: 'V_n',
+      annotation: <span>Electric potential at point n</span>,
+    },
+  ]}
+/>
+<Rule
+  statement={<Math math={'I=I_1+I_2+I_3+...+I_n'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Current at source</span>,
+    },
+    {
+      term: 'I_1',
+      annotation: <span>Current at point 1</span>,
+    },
+    {
+      term: 'I_2',
+      annotation: <span>Current at point 2</span>,
+    },
+    {
+      term: 'I_3',
+      annotation: <span>Current at point 3</span>,
+    },
+    {
+      term: 'I_n',
+      annotation: <span>Current at point n</span>,
+    },
+  ]}
+/>
+<Rule
+  statement={
+    <Math
+      math={
+        '\\frac{1}{R}=\\frac{1}{R_1}+\\frac{1}{R_2}+\\frac{1}{R_3}+...+\\frac{1}{R_n}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'R',
+      annotation: <span>Total resistance of the circuit</span>,
+    },
+    {
+      term: 'R_1',
+      annotation: <span>Resistance of resistor 1</span>,
+    },
+    {
+      term: 'R_2',
+      annotation: <span>Resistance of resistor 2</span>,
+    },
+    {
+      term: 'R_3',
+      annotation: <span>Resistance of resistor 3</span>,
+    },
+    {
+      term: 'R_n',
+      annotation: <span>Resistance of resistor n</span>,
+    },
+  ]}
+/>

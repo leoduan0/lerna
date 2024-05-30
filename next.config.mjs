@@ -1,4 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import createMDX from '@next/mdx'
+import rehypeKatex from 'rehype-katex'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+}
+
+const withMDX = createMDX({
+  options: {
+    rehypePlugins: [rehypeKatex],
+    remarkPlugins: [remarkFrontmatter, remarkGfm, remarkMath],
+  },
+})
+
+export default withMDX(nextConfig)

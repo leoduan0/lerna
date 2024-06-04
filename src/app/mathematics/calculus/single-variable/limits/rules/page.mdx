@@ -8,39 +8,39 @@ date-last-edited: '2024-05-29'
 
 ## Constant Rule
 
-$$ \lim_{x \to c} k = k $$
+$$ \lim\_{x \to c} k = k $$
 
 ## Constant Multiple Rule
 
-$$ \lim_{x \to c} kf(x) = k\lim_{x \to c} f(x) $$
+$$ \lim*{x \to c} kf(x) = k\lim*{x \to c} f(x) $$
 
 ## Sum and Difference Rule
 
-$$ \lim_{x \to c} f(x) \pm g(x) = \lim_{x \to c} f(x) \pm \lim_{x \to c} g(x) $$
+$$ \lim*{x \to c} f(x) \pm g(x) = \lim*{x \to c} f(x) \pm \lim\_{x \to c} g(x) $$
 
 ## Product Rule
 
-$$ \lim_{x \to c} f(x)g(x) = \lim_{x \to c} f(x) \times \lim_{x \to c} g(x) $$
+$$ \lim*{x \to c} f(x)g(x) = \lim*{x \to c} f(x) \times \lim\_{x \to c} g(x) $$
 
 ## Composition Rule
 
 $$ \because g(x) \le f(x) \le h(x) $$
 
-$$ \because \lim_{x \to A} f(x) = f(A) $$
+$$ \because \lim\_{x \to A} f(x) = f(A) $$
 
-$$ \therefore \lim_{x \to c} f(g(x)) = f\left(\lim_{x \to c} g(x)\right) = f(A) $$
+$$ \therefore \lim*{x \to c} f(g(x)) = f\left(\lim*{x \to c} g(x)\right) = f(A) $$
 
 ## Squeeze Theorem
 
 $$ \because g(x) \le f(x) \le h(x) $$
 
-$$ \because \lim_{x \to k} g(x) = \lim_{x \to k} h(x) = L $$
+$$ \because \lim*{x \to k} g(x) = \lim*{x \to k} h(x) = L $$
 
-$$ \therefore \lim_{x \to k} f(x) = L $$
+$$ \therefore \lim\_{x \to k} f(x) = L $$
 
 The squeeze theorem states that the limit of some function $$ f(x) $$ at $$ k $$ is equivalent to the limit of two other functions $$ g(x) $$ and $$ h(x) $$ at $$ k $$ iff $$ g(x) \le f(x) \le h(x) $$.
 
-For example, suppose we have functions $$ f(x) = 0 $$, $$ g(x) = -x^2 $$, and $$ h(x) = x^2 $$. What is $$ \lim_{x \to 0} f(x) $$?
+For example, suppose we have functions $$ f(x) = 0 $$, $$ g(x) = -x^2 $$, and $$ h(x) = x^2 $$. What is $$ \lim\_{x \to 0} f(x) $$?
 
 The functions are graphed below, where $$ g(x) $$ is orange, $$ f(x) $$ is blue, and $$ h(x) $$ is green:
 
@@ -65,15 +65,15 @@ The functions are graphed below, where $$ g(x) $$ is orange, $$ f(x) $$ is blue,
 
 From the graph, it becomes apparent that $$ g(x) \le f(x) \le h(x) $$, so we can use the squeeze theorem to find the limit.
 
-Using limit techniques, we find that $$ \lim_{x \to 0} g(x) = \lim_{x \to 0} h(x) = 0 $$, and the squeeze theorem tells us that:
+Using limit techniques, we find that $$ \lim*{x \to 0} g(x) = \lim*{x \to 0} h(x) = 0 $$, and the squeeze theorem tells us that:
 
 $$ \because g(x) \le f(x) \le h(x) $$
 
-$$ \because \lim_{x \to 0} g(x) = \lim_{x \to 0} h(x) = 0 $$
+$$ \because \lim*{x \to 0} g(x) = \lim*{x \to 0} h(x) = 0 $$
 
-$$ \therefore \lim_{x \to 0} f(x) = 0 $$
+$$ \therefore \lim\_{x \to 0} f(x) = 0 $$
 
-And this matches what we would get for $$ \lim_{x \to 0} f(x) $$ if we just performed direct substitution.
+And this matches what we would get for $$ \lim\_{x \to 0} f(x) $$ if we just performed direct substitution.
 
 <Problem
   question={
@@ -119,9 +119,9 @@ And this matches what we would get for $$ \lim_{x \to 0} f(x) $$ if we just perf
 
 Given $$ \frac{f(x)}{g(x)} $$:
 
-- If the degree of $$ f(x) $$ is bigger than the degree of $$ g(x) $$, then $$ \lim_{x \to \pm \infty} \frac{f(x)}{g(x)} $$ is either $$ \infty $$ or $$ -\infty $$.
-- If the degree of $$ f(x) $$ is smaller than the degree of $$ g(x) $$, then $$ \lim_{x \to \pm \infty} \frac{f(x)}{g(x)} $$ is 0.
-- If the degree of $$ f(x) $$ is equivalent to the degree of $$ g(x) $$, then $$ \lim_{x \to \pm \infty} \frac{f(x)}{g(x)} $$ is $$ \lim_{x \to \pm \infty} \frac{A}{B} $$, where $$ A $$ is the coefficient of the term with the highest power in $$ f(x) $$ and $$ B $$ is the coefficient of the term with the highest power in $$ g(x) $$.
+- If the degree of $$ f(x) $$ is bigger than the degree of $$ g(x) $$, then $$ \lim\_{x \to \pm \infty} \frac{f(x)}{g(x)} $$ is either $$ \infty $$ or $$ -\infty $$.
+- If the degree of $$ f(x) $$ is smaller than the degree of $$ g(x) $$, then $$ \lim\_{x \to \pm \infty} \frac{f(x)}{g(x)} $$ is 0.
+- If the degree of $$ f(x) $$ is equivalent to the degree of $$ g(x) $$, then $$ \lim*{x \to \pm \infty} \frac{f(x)}{g(x)} $$ is $$ \lim*{x \to \pm \infty} \frac{A}{B} $$, where $$ A $$ is the coefficient of the term with the highest power in $$ f(x) $$ and $$ B $$ is the coefficient of the term with the highest power in $$ g(x) $$.
 
 ## Intermediate Value Theorem
 

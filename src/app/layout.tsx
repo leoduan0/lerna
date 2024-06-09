@@ -172,7 +172,7 @@ const pages: Page[] = [
             type: 'page',
           },
           {
-            title: 'Rotational Motion',
+            title: 'Circular Motion',
             type: 'page',
           },
           {

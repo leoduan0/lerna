@@ -1,5 +1,6 @@
 'use client'
 import useNavigationStatus from '@/hooks/useNavigationStatus'
+import { GoogleAd } from '@/components'
 import { Page } from '@/types'
 import Head from './Head'
 import Pages from './Page'
@@ -14,6 +15,7 @@ export default function Navigation(props: { pages: Page[] }) {
       >
         <Head toggleFunction={toggleNavigation} />
         <Pages pages={props.pages} />
+        <GoogleAd />
       </nav>
       <div
         onClick={toggleNavigation}

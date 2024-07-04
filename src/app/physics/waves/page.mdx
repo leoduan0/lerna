@@ -1,0 +1,485 @@
+---
+title: 'Waves'
+authors: 'Leo Duan'
+date-last-edited: '2024-07-04'
+---
+
+# Waves
+
+**Waves** are periodic oscillations within a medium.
+
+## Phase Shift
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\phi=2\\pi\\left[\\!\\!\\left[{\\frac{t-t_0}{T}}\\right]\\!\\!\\right]'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\phi',
+      annotation: <span>Phase shift (in radians)</span>,
+    },
+    {
+      term: 't',
+      annotation: <span>Time</span>,
+    },
+    {
+      term: 't_0',
+      annotation: <span>Reference time</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Period</span>,
+    },
+  ]}
+  annotation={
+    <Math math={'[\\![x]\\!] = x - \\lfloor x \\rfloor'} type={'block'} />
+  }
+/>
+
+## Velocity
+
+<Rule
+  statement={<Math math={'v = \\lambda f'} type={'block'} />}
+  terms={[
+    {
+      term: 'v',
+      annotation: <span>Velocity</span>,
+    },
+    {
+      term: '\\lambda',
+      annotation: <span>Wavelength</span>,
+    },
+    {
+      term: 'f',
+      annotation: <span>Frequency</span>,
+    },
+  ]}
+/>
+
+## Pulse
+
+**Pulses** are a single oscillation within a medium.
+
+### Velocity
+
+<Rule
+  statement={
+    <Math
+      math={'v_{pulse} = \\sqrt{\\frac{T}{\\left(\\frac{m}{L}\\right)}}'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'v_{pulse}',
+      annotation: <span>Velocity of pulse</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Tension</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+  ]}
+/>
+
+## Doppler's Effect
+
+As the source of a wave moves towards an observer, the frequency of the wave appears higher to the observer.
+
+As the source of a wave moves away an observer, the frequency of the wave appears lower to the observer.
+
+<Rule
+  statement={
+    <Math
+      math={'f_{observed} = f_{wave} \\frac{v+v_{observer}}{v+v_{source}}'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'f_{observed}',
+      annotation: <span>Frequency of wave observed by the observer</span>,
+    },
+    {
+      term: 'f_{wave}',
+      annotation: <span>Actual frequency of wave</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Velocity of wave</span>,
+    },
+    {
+      term: 'v_{observer}',
+      annotation: <span>Velocity of observer</span>,
+    },
+    {
+      term: 'v_{source}',
+      annotation: <span>Velocity of source</span>,
+    },
+  ]}
+/>
+
+## Transverse Waves
+
+A **transverse wave** is a wave where the direction of its energy transfer is perpendicular to its direction of propagation.
+
+## Longitudinal Waves
+
+A **longitudinal wave** is a wave where the direction of its energy transfer is parallel to its direction of propagation.
+
+## Intensity
+
+<Rule
+  statement={
+    <Math math={'I = \\frac{P}{4 \\pi r^2} = \\frac{P}{A}'} type={'block'} />
+  }
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Intensity</span>,
+    },
+    {
+      term: 'P',
+      annotation: <span>Power</span>,
+    },
+    {
+      term: 'r',
+      annotation: <span>Radius</span>,
+    },
+    {
+      term: 'A',
+      annotation: <span>Area</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'I \\propto A^2'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Intensity</span>,
+    },
+    {
+      term: 'A',
+      annotation: <span>Amplitude</span>,
+    },
+  ]}
+/>
+
+## Superposition
+
+A **superposition** occurs when two wave pulses overlap.
+
+<Rule
+  statement={<Math math={'y=y_1+y_2'} type={'block'} />}
+  terms={[
+    {
+      term: 'y',
+      annotation: <span>Displacement (superposition)</span>,
+    },
+    {
+      term: 'y_1',
+      annotation: <span>Displacement of point 1</span>,
+    },
+    {
+      term: 'y_2',
+      annotation: <span>Displacement of point 2</span>,
+    },
+  ]}
+  annotation={
+    <p>
+      This is also known as the <strong>principle of superposition</strong>.
+    </p>
+  }
+/>
+
+## Electromagnetic Waves
+
+An **electromagnetic wave** is a type of wave that travels through the electrical and magnetic fields.
+
+<Rule
+  statement={<Math math={'I \\propto E^2'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: <span>Intensity</span>,
+    },
+    {
+      term: 'E',
+      annotation: <span>Electric field</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'A=A_0\\cos(\\theta)'} type={'block'} />}
+  terms={[
+    {
+      term: 'A',
+      annotation: (
+        <span>
+          Amplitude of wave before passing the polarizer (initial wave)
+        </span>
+      ),
+    },
+    {
+      term: 'A_0',
+      annotation: <span>Amplitude of wave after passing the polarizer</span>,
+    },
+    {
+      term: '\\theta',
+      annotation: (
+        <span>
+          Angle between the transmission axis of the polarizer and the initial
+          wave
+        </span>
+      ),
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'I=I_0\\cos^2(\\theta)'} type={'block'} />}
+  terms={[
+    {
+      term: 'I',
+      annotation: (
+        <span>
+          Intensity of wave before passing the polarizer (initial wave)
+        </span>
+      ),
+    },
+    {
+      term: 'I_0',
+      annotation: <span>Intensity of wave after passing the polarizer</span>,
+    },
+    {
+      term: '\\theta',
+      annotation: (
+        <span>
+          Angle between the transmission axis of the polarizer and the initial
+          wave
+        </span>
+      ),
+    },
+  ]}
+  annotation={
+    <p>
+      This is also known as <strong>Malus's Law</strong>.
+    </p>
+  }
+/>
+
+## Reflection
+
+<Rule
+  statement={<Math math={'\\theta_1=\\theta_2'} type={'block'} />}
+  terms={[
+    {
+      term: '\\theta_1',
+      annotation: <span>Angle of incidence</span>,
+    },
+    {
+      term: '\\theta_2',
+      annotation: <span>Angle of reflection</span>,
+    },
+  ]}
+/>
+
+## Refraction
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\frac{\\sin(\\theta_1)}{\\sin(\\theta_2)}=\\frac{n_2}{n_1}=\\frac {v_1}{v_2}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\theta_1',
+      annotation: <span>Angle of incidence</span>,
+    },
+    {
+      term: '\\theta_2',
+      annotation: <span>Angle of refraction</span>,
+    },
+    {
+      term: 'n_1',
+      annotation: <span>Refractive index of incidence</span>,
+    },
+    {
+      term: 'n_2',
+      annotation: <span>Refractive index of refraction</span>,
+    },
+    {
+      term: 'v_1',
+      annotation: <span>Velocity of incidence</span>,
+    },
+    {
+      term: 'v_2',
+      annotation: <span>Velocity of refraction</span>,
+    },
+  ]}
+  annotation={
+    <p>
+      This is also known as <strong>Snell's Law</strong>.
+    </p>
+  }
+/>
+
+## Interference
+
+When two waves overlap, they superimpose and they interfere.
+
+<Rule
+  statement={<Math math={'\\Delta r=|d_1-d_2|'} type={'block'} />}
+  terms={[
+    {
+      term: '\\Delta r',
+      annotation: <span>Path difference</span>,
+    },
+    {
+      term: 'd_1',
+      annotation: <span>Distance between point and source 1</span>,
+    },
+    {
+      term: 'd_2',
+      annotation: <span>Distance between point and source 2</span>,
+    },
+  ]}
+/>
+
+At points where, due to the principle of superposition:
+
+- The resulting displacement is bigger than any of the source displacements, it's called **constructive interference**.
+- The resulting displacement is smaller than any of the source displacements, it's called **destructive interference**.
+
+<Rule
+  statement={<Math math={'\\Delta r=n\\lambda'} type={'block'} />}
+  terms={[
+    {
+      term: '\\Delta r',
+      annotation: <span>Path difference</span>,
+    },
+    {
+      term: '\\lambda',
+      annotation: <span>Wavelength</span>,
+    },
+    {
+      term: 'n',
+      annotation: (
+        <span>
+          If <Math math={'\\{n \\in \\Z\\}'} type={'inline'} />, then
+          constructive interference is observed at that point
+        </span>
+      ),
+    },
+  ]}
+/>
+
+<Rule
+  statement={
+    <Math
+      math={'\\Delta r=\\left(n+\\frac{1}{2}\\right)\\lambda'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\Delta r',
+      annotation: <span>Path difference</span>,
+    },
+    {
+      term: '\\lambda',
+      annotation: <span>Wavelength</span>,
+    },
+    {
+      term: 'n',
+      annotation: (
+        <span>
+          If <Math math={'\\{n \\in \\Z\\}'} type={'inline'} />, then
+          destructive interference is observed at that point
+        </span>
+      ),
+    },
+  ]}
+/>
+
+### Double-Slit Interference
+
+A demonstration of **double-slit interference** is the **double-slit experiment**. Suppose there is a screen a distance of $$ D $$ behind a wall with two slits separated by a distance of $$ d $$. When a wave of wavelength $$ \lambda $$ moves and interacts with the wall, interference occurs, leaving spots of constructive interference and destructive ones on the other side of the screen. The distance between each spot of constructive interference is called **fringe spacing**.
+
+<Rule
+  statement={<Math math={'s=\\frac{D\\lambda}{d}'} type={'block'} />}
+  terms={[
+    {
+      term: 's',
+      annotation: <span>Fringe spacing</span>,
+    },
+    {
+      term: 'D',
+      annotation: <span>Distance between the two slits and the screen</span>,
+    },
+    {
+      term: '\\lambda',
+      annotation: <span>Wavelength</span>,
+    },
+    {
+      term: 'd',
+      annotation: <span>Distance between the two slits</span>,
+    },
+  ]}
+/>
+
+## Standing Waves
+
+A **standing wave** is formed when two waves with the same wavelength, speed, and amplitude travelling in opposite directions meet. The resultant standing wave (by the principle of superposition) is characterized by the following:
+
+- It appears to be stationary in space (and only propagates in time).
+- It has a fixed wavelength.
+- There will be points where the displacement is always zero due to destructive interference. These points are called **nodes**.
+- There will be points half-way between nodes where the displacement can reach a maximum due to constructive interference. These points are called **antinodes**.
+
+<Rule
+  statement={
+    <>
+      <p>
+        A wave on a medium of length <Math math={'L'} type={'inline'} /> can
+        only be a standing wave if it satisfies the following condition:
+      </p>
+      <Math
+        math={'\\lambda = \\frac{2L}{n} \\{ n \\in \\Z \\}'}
+        type={'block'}
+      />
+    </>
+  }
+  terms={[
+    {
+      term: '\\lambda',
+      annotation: <span>Wavelength</span>,
+    },
+    {
+      term: 'L',
+      annotation: <span>Length of medium</span>,
+    },
+    {
+      term: 'n',
+      annotation: <span>Harmonic</span>,
+    },
+  ]}
+/>
+
+$$ n $$ represents the **harmonics** of a standing wave. For example, if $$ n=1 $$ for a wave, then that wave is called the first harmonic; if $$ n=3 $$ for a wave, then that wave is called the third harmonic.

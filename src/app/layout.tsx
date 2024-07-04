@@ -131,150 +131,154 @@ const pages: Page[] = [
               },
             ],
           },
-          {
-            title: 'Calculus',
-            type: 'page',
-            children: [
-              {
-                title: 'Single Variable',
-                type: 'page',
-                children: [
-                  {
-                    title: 'Limits',
-                    type: 'page',
-                    children: [
-                      {
-                        title: 'Rules',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Substitution',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Divergence',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Convergence',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Manipulation',
-                        type: 'page',
-                      },
-                    ],
-                  },
-                  {
-                    title: 'Differentiation',
-                    type: 'page',
-                    children: [
-                      {
-                        title: "L'Hopital's Rule",
-                        type: 'page',
-                      },
-                      {
-                        title: 'Implicit Differentiation',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Mean Value Theorem',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Critical Points',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Tangent Lines',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Local Extrema',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Inflection Points',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Global Extrema',
-                        type: 'page',
-                      },
-                    ],
-                  },
-                  {
-                    title: 'Integration',
-                    type: 'page',
-                    children: [
-                      {
-                        title: 'U-Substitution',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Partial Fractions',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Parts',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Definite Integration',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Riemann Sums',
-                        type: 'page',
-                      },
-                    ],
-                  },
-                ],
-              },
-              {
-                title: 'Multivariable',
-                type: 'page',
-                children: [
-                  {
-                    title: 'Limits',
-                    type: 'page',
-                  },
-                  {
-                    title: 'Partial Derivatives',
-                    type: 'page',
-                    children: [
-                      {
-                        title: 'Differentials',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Chain Rule',
-                        type: 'page',
-                      },
-                      {
-                        title: 'The Del Operator',
-                        type: 'page',
-                      },
-                      {
-                        title: 'Directional Derivatives',
-                        type: 'page',
-                      },
-                    ],
-                  },
-                  {
-                    title: 'Multiple Integrals',
-                    type: 'page',
-                    // children: [
-                    //   {
-                    //     title: 'Spherical Coordinates',
-                    //     type: 'page',
-                    //   },
-                    // ],
-                  },
-                ],
-              },
-            ],
-          },
+          // {
+          //   title: 'Calculus',
+          //   type: 'page',
+          //   children: [
+          //     {
+          //       title: 'Single Variable',
+          //       type: 'page',
+          //       children: [
+          //         {
+          //           title: 'Limits',
+          //           type: 'page',
+          //           children: [
+          //             {
+          //               title: 'Rules',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Substitution',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Divergence',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Convergence',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Manipulation',
+          //               type: 'page',
+          //             },
+          //           ],
+          //         },
+          //         {
+          //           title: 'Differentiation',
+          //           type: 'page',
+          //           children: [
+          //             {
+          //               title: "L'Hopital's Rule",
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Implicit Differentiation',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Mean Value Theorem',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Critical Points',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Tangent Lines',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Local Extrema',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Inflection Points',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Global Extrema',
+          //               type: 'page',
+          //             },
+          //           ],
+          //         },
+          //         {
+          //           title: 'Integration',
+          //           type: 'page',
+          //           children: [
+          //             {
+          //               title: 'U-Substitution',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Partial Fractions',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Parts',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Definite Integration',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Riemann Sums',
+          //               type: 'page',
+          //             },
+          //           ],
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       title: 'Multivariable',
+          //       type: 'page',
+          //       children: [
+          //         {
+          //           title: 'Limits',
+          //           type: 'page',
+          //         },
+          //         {
+          //           title: 'Partial Derivatives',
+          //           type: 'page',
+          //           children: [
+          //             {
+          //               title: 'Differentials',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Chain Rule',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'The Del Operator',
+          //               type: 'page',
+          //             },
+          //             {
+          //               title: 'Directional Derivatives',
+          //               type: 'page',
+          //             },
+          //           ],
+          //         },
+          //         {
+          //           title: 'Multiple Integrals',
+          //           type: 'page',
+          //           // children: [
+          //           //   {
+          //           //     title: 'Spherical Coordinates',
+          //           //     type: 'page',
+          //           //   },
+          //           // ],
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Imaginary Numbers',
+          //   type: 'page',
+          // },
         ],
       },
       {
@@ -317,6 +321,22 @@ const pages: Page[] = [
           },
           {
             title: 'Circular Motion',
+            type: 'page',
+          },
+          {
+            title: 'Oscillatory Motion',
+            type: 'page',
+          },
+          {
+            title: 'Waves',
+            type: 'page',
+          },
+          {
+            title: 'Gravitation',
+            type: 'page',
+          },
+          {
+            title: 'Thermodynamics',
             type: 'page',
           },
           {

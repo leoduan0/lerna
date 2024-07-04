@@ -13,8 +13,10 @@ export default function Navigation(props: { pages: Page[] }) {
       <nav
         className={`${navigationStatus ? 'translate-x-0' : '-translate-x-full'} absolute z-10 flex h-full w-2/3 flex-col rounded-r-md border-r border-neutral-300 bg-neutral-100 backdrop-blur-xl transition-transform ease-in-out md:w-1/3 lg:static lg:w-72 lg:translate-x-0 lg:rounded-none lg:bg-neutral-100 lg:backdrop-blur-none dark:border-neutral-700 dark:bg-neutral-900/50 lg:dark:bg-neutral-900`}
       >
-        <Head toggleFunction={toggleNavigation} />
-        <Pages pages={props.pages} />
+        <div className="min-h-[75%] overflow-y-auto">
+          <Head toggleFunction={toggleNavigation} />
+          <Pages pages={props.pages} />
+        </div>
         <GoogleAd />
       </nav>
       <div

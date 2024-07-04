@@ -1,0 +1,422 @@
+---
+title: 'Oscillatory Motion'
+authors: 'Leo Duan'
+date-last-edited: '2024-07-04'
+---
+
+# Thermodynamics
+
+## Laws of Thermodynamics
+
+### Zeroth Law of Thermodynamics
+
+<Rule
+  statement={
+    <p>
+      If two systems are both in thermal equilibrium with a third system, then
+      all three systems are in thermal equilibrium with each other.
+    </p>
+  }
+/>
+
+### First Law of Thermodynamics
+
+<Rule
+  statement={<Math math={'\\Delta U = Q + W'} type={'block'} />}
+  terms={[
+    {
+      term: '\\Delta U',
+      annotation: <span>Change in the internal energy of the system</span>,
+    },
+    {
+      term: 'Q',
+      annotation: <span>Heat transferred into the system</span>,
+    },
+    {
+      term: 'W',
+      annotation: <span>Work done on the system</span>,
+    },
+  ]}
+/>
+
+### Second Law of Thermodynamics
+
+<Rule
+  statement={
+    <p>
+      Heat always, spontaneously and naturally, flow from hotter objects to
+      colder ones.
+    </p>
+  }
+/>
+<Rule
+  statement={
+    <p>
+      When two objects are placed in contact with one another, the total final
+      entropy is more than or equal to the initial entropy in both objects added
+      together.
+    </p>
+  }
+/>
+
+### Third Law of Thermodynamics
+
+<Rule
+  statement={
+    <p>
+      A system's entropy approaches a constant value as its temperature
+      approaches <Math math={'0K'} type={'inline'} />.
+    </p>
+  }
+/>
+
+## Entropy
+
+**Entropy** is the how evenly distributed energy within a given system is. A system with more evenly distributed energy has higher entropy than another with less.
+
+## Ideal Gas
+
+<Rule
+  statement={
+    <>
+      <p>
+        An <strong>ideal gas</strong> is a theoretical, idealized model of a gas
+        that satisfies the following conditions:
+      </p>
+      <ul>
+        <li>
+          The particles of an ideal gas are assumed to be point-like, meaning
+          they have no volume.
+        </li>
+        <li>
+          Ideal gas particles do not interact with each other except during
+          collisions.
+        </li>
+        <li>
+          Particles in an ideal gas move randomly in straight lines until they
+          collide with each other or with the walls of the container.
+        </li>
+        <li>Particles in an ideal gas obey Newton's laws of motion.</li>
+        <li>Collisions between ideal gas particles are perfectly elastic.</li>
+      </ul>
+    </>
+  }
+/>
+
+### Thermodynamic Processes
+
+| Process    | Description          | Equation             |
+| ---------- | -------------------- | -------------------- |
+| Isothermal | Constant temperature | $$ \Delta U = 0 $$   |
+| Isobaric   | Constant pressure    | $$ W = P \Delta V $$ |
+| Isochoric  | Constant volume      | $$ W = 0 $$          |
+| Adiabatic  | No heat transfer     | $$ Q = 0 $$          |
+
+<Rule
+  statement={<Math math={'PV = NkT = nRT'} type={'block'} />}
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Absolute pressure</span>,
+    },
+    {
+      term: 'V',
+      annotation: <span>Volume</span>,
+    },
+    {
+      term: 'N',
+      annotation: <span>Number of atoms or molecules of the gas</span>,
+    },
+    {
+      term: 'k',
+      annotation: <span>Boltzmann constant</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Absolute temperature</span>,
+    },
+    {
+      term: 'n',
+      annotation: (
+        <span>
+          Number of moles of the gas, equivalent to{' '}
+          <Math math={'\\frac{N}{N_A}'} type={'inline'} />
+        </span>
+      ),
+    },
+    {
+      term: 'R',
+      annotation: <span>Gas constant</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={
+    <>
+      <Math math={'P \\propto \\frac{1}{V}'} type={'block'} />
+      <Math math={'P_1 V_1 = P_2 V_2'} type={'block'} />
+    </>
+  }
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Pressure</span>,
+    },
+    {
+      term: 'V',
+      annotation: <span>Volume</span>,
+    },
+    {
+      term: 'P_1',
+      annotation: <span>Pressure at time 1</span>,
+    },
+    {
+      term: 'V_1',
+      annotation: <span>Volume at time 1</span>,
+    },
+    {
+      term: 'P_2',
+      annotation: <span>Pressure at time 2</span>,
+    },
+    {
+      term: 'V_2',
+      annotation: <span>Volume at time 2</span>,
+    },
+  ]}
+  annotation={
+    <>
+      <p>
+        This would apply iff <Math math={'T_1 = T_2'} type={'inline'} />.
+      </p>
+      <p>
+        This is also known as <strong>Boyle's Law</strong>.
+      </p>
+    </>
+  }
+/>
+
+<Rule
+  statement={
+    <>
+      <Math math={'V \\propto T'} type={'block'} />
+      <Math math={'\\frac{V_1}{T_1} = \\frac{V_2}{T_2}'} type={'block'} />
+    </>
+  }
+  terms={[
+    {
+      term: 'V',
+      annotation: <span>Volume</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Temperature</span>,
+    },
+    {
+      term: 'V_1',
+      annotation: <span>Volume at time 1</span>,
+    },
+    {
+      term: 'T_1',
+      annotation: <span>Temperature at time 1</span>,
+    },
+    {
+      term: 'V_2',
+      annotation: <span>Volume at time 2</span>,
+    },
+    {
+      term: 'T_2',
+      annotation: <span>Temperature at time 2</span>,
+    },
+  ]}
+  annotation={
+    <>
+      <p>
+        This would apply iff <Math math={'P_1 = P_2'} type={'inline'} />.
+      </p>
+      <p>
+        This is also known as <strong>Charles's Law</strong>.
+      </p>
+    </>
+  }
+/>
+
+<Rule
+  statement={
+    <>
+      <Math math={'P \\propto T'} type={'block'} />
+      <Math math={'\\frac{P_1}{T_1} = \\frac{P_2}{T_2}'} type={'block'} />
+    </>
+  }
+  terms={[
+    {
+      term: 'P',
+      annotation: <span>Pressure</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Temperature</span>,
+    },
+    {
+      term: 'P_1',
+      annotation: <span>Pressure at time 1</span>,
+    },
+    {
+      term: 'T_1',
+      annotation: <span>Temperature at time 1</span>,
+    },
+    {
+      term: 'P_2',
+      annotation: <span>Pressure at time 2</span>,
+    },
+    {
+      term: 'T_2',
+      annotation: <span>Temperature at time 2</span>,
+    },
+  ]}
+  annotation={
+    <>
+      <p>
+        This would apply iff <Math math={'V_1 = V_2'} type={'inline'} />.
+      </p>
+      <p>
+        This is also known as <strong>Gay-Lussac's Law</strong>.
+      </p>
+    </>
+  }
+/>
+
+<Rule
+  statement={
+    <Math
+      math={
+        'v_{rms} = \\sqrt{\\frac{3RT}{m}} = \\sqrt{\\frac{\\sum_i v_i^2}{n}}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'v_{rms}',
+      annotation: (
+        <span>
+          Root-mean-square (rms) velocity of particles inside an ideal gas
+        </span>
+      ),
+    },
+    {
+      term: 'R',
+      annotation: <span>Gas constant</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Absolute temperature</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Molar mass</span>,
+    },
+    {
+      term: 'v_i',
+      annotation: (
+        <span>
+          <Math math={'i'} type={'inline'} />
+          -th particle inside an ideal gas
+        </span>
+      ),
+    },
+    {
+      term: 'n',
+      annotation: <span>Number of particles inside an ideal gas</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={
+    <Math
+      math={'E_k = \\frac{3}{2} kT = \\frac{1}{2}mv_{rms}^2'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'E_k',
+      annotation: <span>Kinetic energy of one particle in an ideal gas</span>,
+    },
+    {
+      term: 'k',
+      annotation: <span>Boltzmann constant</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Absolute temperature</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass of particle</span>,
+    },
+    {
+      term: 'v_{rms}',
+      annotation: <span>Root-mean-square velocity</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'Q = mc \\Delta T'} type={'block'} />}
+  terms={[
+    {
+      term: 'Q',
+      annotation: <span>Heat energy gained by object</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+    {
+      term: 'c',
+      annotation: <span>Specific heat capacity</span>,
+    },
+    {
+      term: '\\Delta T',
+      annotation: <span>Change in temperature</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'Q = mL'} type={'block'} />}
+  terms={[
+    {
+      term: 'Q',
+      annotation: <span>Heat energy gained by object</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+    {
+      term: 'L',
+      annotation: <span>Latent heat capacity</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'W = P \\Delta V'} type={'block'} />}
+  terms={[
+    {
+      term: 'W',
+      annotation: <span>Work</span>,
+    },
+    {
+      term: 'P',
+      annotation: <span>Pressure</span>,
+    },
+    {
+      term: '\\Delta V',
+      annotation: <span>Change in volume</span>,
+    },
+  ]}
+/>

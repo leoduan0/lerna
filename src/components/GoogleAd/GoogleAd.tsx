@@ -17,7 +17,7 @@ export default function GoogleAd(): React.ReactNode {
     }
   }, [])
   return (
-    <div>
+    <>
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5882787766829258"
@@ -32,6 +32,6 @@ export default function GoogleAd(): React.ReactNode {
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
-    </div>
+    </>
   )
 }

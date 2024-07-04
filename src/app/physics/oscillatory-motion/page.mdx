@@ -1,0 +1,167 @@
+---
+title: 'Oscillatory Motion'
+authors: 'Leo Duan'
+date-last-edited: '2024-07-04'
+---
+
+# Oscillatory Motion
+
+**Oscillatory motion** is the study of oscillating objects.
+
+## Simple Harmonic Motion
+
+**Simple harmonic motion** is a type of motion that has the following characteristics:
+
+- The motion is repetitive and periodic (repeats itself over regular intervals of time).
+- The period, amplitude, and total energy are constant.
+- The period is independent of the amplitude.
+- The **equilibrium position** is the point where the net force acting on the system is zero. It is the position where the system naturally tends to return after being displaced.
+
+## Period
+
+The **period** is the time required for one complete oscillation.
+
+<Rule
+  statement={<Math math={'T=2\\pi \\sqrt{\\frac{m}{k}}'} type={'block'} />}
+  terms={[
+    {
+      term: 'T',
+      annotation: (
+        <span>Period of a spring oscillating with an object on its end</span>
+      ),
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass of the object</span>,
+    },
+    {
+      term: 'k',
+      annotation: <span>Spring constant (dependent on the spring)</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={<Math math={'T=2\\pi \\sqrt{\\frac{L}{g}}'} type={'block'} />}
+  terms={[
+    {
+      term: 'T',
+      annotation: (
+        <span>Period of a pendulum oscillating with an object on its end</span>
+      ),
+    },
+    {
+      term: 'L',
+      annotation: (
+        <span>Distance between object and the center of the pendulum</span>
+      ),
+    },
+    {
+      term: 'g',
+      annotation: <span>Gravitational acceleration</span>,
+    },
+  ]}
+/>
+
+## Position
+
+<Rule
+  statement={
+    <Math
+      math={'x(t) = A\\cos\\left(\\frac{2\\pi t}{T}\\right)'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'x(t)',
+      annotation: (
+        <span>
+          Position of the end-point of the spring as a function of time if
+          released from positive <Math math={'A'} type={'inline'} />
+        </span>
+      ),
+    },
+    {
+      term: 'A',
+      annotation: (
+        <span>
+          Amplitude, maximum distance between the equilibrium position and the
+          end of the spring during oscillation
+        </span>
+      ),
+    },
+    {
+      term: 't',
+      annotation: <span>Time</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Period</span>,
+    },
+  ]}
+/>
+
+<Rule
+  statement={
+    <Math
+      math={'x(t) = A\\sin\\left(\\frac{2\\pi t}{T}\\right)'}
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'x(t)',
+      annotation: (
+        <span>
+          Position of the end-point of the spring as a function of time if
+          released from negative <Math math={'A'} type={'inline'} />
+        </span>
+      ),
+    },
+    {
+      term: 'A',
+      annotation: (
+        <span>
+          Amplitude, maximum distance between the equilibrium position and the
+          end of the spring during oscillation
+        </span>
+      ),
+    },
+    {
+      term: 't',
+      annotation: <span>Time</span>,
+    },
+    {
+      term: 'T',
+      annotation: <span>Period</span>,
+    },
+  ]}
+/>
+
+## Potential Energy
+
+<Rule
+  statement={
+    <Math math={'E_{potential~spring} = \\frac{1}{2}kA^{2}'} type={'block'} />
+  }
+  terms={[
+    {
+      term: 'E_{potential~spring}',
+      annotation: <span>Potential energy of a spring</span>,
+    },
+    {
+      term: 'k',
+      annotation: <span>Spring constant</span>,
+    },
+    {
+      term: 'A',
+      annotation: (
+        <span>
+          Amplitude, maximum distance between the equilibrium position and the
+          end of the spring during oscillation
+        </span>
+      ),
+    },
+  ]}
+/>

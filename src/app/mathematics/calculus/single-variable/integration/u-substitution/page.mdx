@@ -1,0 +1,22 @@
+---
+title: 'U-Substitution'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# U-Substitution
+
+Given some function $$ f(x) $$ to integrate, it's possible to perform a **u-substitution** to make integration easier.
+
+<Example>
+
+To evaluate $$ \int 2x\cos(x^2) \,dx $$, we can perform u-substitution.
+
+| Procedure                                                                       | Annotation                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ \int 2x\cos(x^2) \,dx $$                                                     |                                                                                                                                                                                                                           |
+| $$ u = x^2 $$ $$ du = 2x\,dx $$ $$ \int 2x\cos(x^2) \,dx = \int \cos(u) \,du $$ | Set a value for $$ u $$ (this value could be any value, but often only certain values will make this process easier than harder). Then, take the first derivative of $$ u $$, and substitute both back into the equation. |
+| $$ = \sin(u) + c $$                                                             | Evaluate the new integral.                                                                                                                                                                                                |
+| $$ = \sin\left(x^2\right) + c $$                                                | Replace $$ u $$ with the value it was substituting for, and we get our answer.                                                                                                                                            |
+
+</Example>

@@ -1,0 +1,82 @@
+---
+title: 'Differentiation'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Differentiation
+
+In essence, a **derivative** aims to find the exact slope of a function at a certain point. The slope equation is $$ \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} $$ can help us do that, but as long as $$ \Delta x \neq 0 $$ then the slope equation would not yield the exact slope at that point, but a rough estimate. It is obvious that we cannot directly use the slope equation with $$ \Delta x = 0 $$, but we can get infinitely close to it using limits. Thus, the definition of a derivative is as follows:
+
+<Align type={'center'}>
+  <Math
+    math={'\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}'}
+    type={'block'}
+  />
+</Align>
+
+Notice that $$ f(x+\Delta x)-f(x) $$ is, essentially, $$ \Delta y $$ with the limit taken into account.
+
+<Rule
+  statement={
+    <>
+      <Math math={'\\frac{d}{dx} x^n = nx^{n-1}'} type={'block'} />
+      <Math
+        math={'\\frac{d}{dx} f(x)g(x) = f^{\\prime}(x)g(x)+f(x)g^{\\prime}(x)'}
+        type={'block'}
+      />
+      <Math
+        math={
+          '\\frac{d}{dx} \\frac{f(x)}{g(x)} = \\frac{f^{\\prime}(x)g(x)-f(x)g^{\\prime}(x)}{g^2(x)}'
+        }
+        type={'block'}
+      />
+      <Math
+        math={'\\frac{d}{dx} f(g(x)) = f^{\\prime}(g(x))g^{\\prime}(x)'}
+        type={'inline'}
+      />
+      <Math
+        math={
+          '\\frac{d}{dx} f(x) \\pm g(x) = \\frac{d}{dx} f(x) \\pm \\frac{d}{dx} g(x)'
+        }
+        type={'block'}
+      />
+    </>
+  }
+/>
+
+## Identities
+
+- $$ \frac{d}{dx} k = 0 $$
+- $$ \frac{d}{dx} kf(x) = k\frac{d\left(f(x)\right)}{dx} $$
+- $$ \frac{d}{dx} \sin(x) = \cos(x) $$
+- $$ \frac{d}{dx} \cos(x) = -\sin(x) $$
+- $$ \frac{d}{dx} \tan(x) = \sec^2(x) $$
+- $$ \frac{d}{dx} \sec(x) = \sec(x)\tan(x) $$
+- $$ \frac{d}{dx} \csc(x) = -\csc(x)\cot(x) $$
+- $$ \frac{d}{dx} \cot(x) = -\csc^2(x) $$
+- $$ \frac{d}{dx} \sin^{-1}(x) = \frac{1}{\sqrt{1-x^2}} $$
+- $$ \frac{d}{dx} \cos^{-1}(x) = -\frac{1}{\sqrt{1-x^2}} $$
+- $$ \frac{d}{dx} \tan^{-1}(x) = \frac{1}{1+x^2} $$
+- $$ \frac{d}{dx} \csc^{-1}(x) = -\frac{1}{|x|\sqrt{x^2-1}} $$
+- $$ \frac{d}{dx} \sec^{-1}(x) = \frac{1}{|x|\sqrt{x^2-1}} $$
+- $$ \frac{d}{dx} \cot^{-1}(x) = -\frac{1}{1+x^2} $$
+- $$ \frac{d}{dx} k^x = k^x\ln(a) $$
+- $$ \frac{d}{dx} e^x = e^x $$
+- $$ \frac{d}{dx} \ln(x) = \frac{1}{x} $$
+- $$ \frac{d}{dx} \log_a (x) = \frac{1}{x\ln(a)} $$
+
+## Parametric Functions
+
+Given some parametric equations $$ x=f(t) $$ and $$ y=f(t) $$, then:
+
+<Align type={'center'}>
+  <Math
+    math={'\\frac{dy}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}'}
+    type={'block'}
+  />
+</Align>
+
+## Derivatives of Inverse Functions
+
+If the derivative of $$ f(x) $$ at $$ (a, b) $$ is $$ k $$ , then the derivative of $$ f^{-1}(x) $$ at $$ (b, a) $$ is $$ k^{-1} $$ .

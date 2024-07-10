@@ -2,7 +2,7 @@ import type { MDXComponents } from 'mdx/types'
 import NextLink from 'next/link'
 import {
   Align,
-  Example,
+  Block,
   Figure,
   Graph,
   Heading,
@@ -31,7 +31,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: (props) => <Heading level={5}>{props.children}</Heading>,
     p: (props) => <p className="text-theme text-base">{props.children}</p>,
     Align: Align,
-    Example: Example,
+    Block: Block,
     Figure: Figure,
     Graph: Graph,
     Image: Image,

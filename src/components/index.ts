@@ -1,6 +1,5 @@
 export * from './Align'
 export * from './Block'
-export * from './Example'
 export * from './Figure'
 export * from './Graph'
 export * from './GoogleAd'

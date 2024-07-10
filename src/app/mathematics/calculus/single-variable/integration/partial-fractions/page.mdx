@@ -8,7 +8,7 @@ date-last-edited: '2024-07-05'
 
 Given a function $$ f(x) $$ to integrate, if it is in a fractional form, then one may integrate it using **partial fractions**.
 
-<Example>
+<Block text={'Example'}>
 
 Given $$ \int \frac{3x+1}{x^2+2x} \,dx $$, it is tedious to evaluate the integral directly. However, using partial fractions, we can split the fraction up like so:
 
@@ -22,4 +22,4 @@ Given $$ \int \frac{3x+1}{x^2+2x} \,dx $$, it is tedious to evaluate the integra
 | $$ \frac{3x+1}{x(x+2)} = \frac{A}{x} + \frac{B}{x+2} = \frac{1}{2x} + \frac{5}{2x+4} $$ $$ \int \frac{1}{2x} + \frac{5}{2x+4} \,dx $$                                    | Substitute the letters back into the fraction, then rewrite our original integral.                                                                                           |
 | $$ \int \frac{1}{2x} + \frac{5}{2x+4} \,dx = \frac{1}{2}\ln\lvert x \rvert + \frac{5}{2}\ln\lvert 2x+4 \rvert + c $$                                                     | Then, integrate as normal, and we get our result.                                                                                                                            |
 
-</Example>
+</Block>

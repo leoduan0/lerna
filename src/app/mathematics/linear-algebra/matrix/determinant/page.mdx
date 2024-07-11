@@ -1,0 +1,47 @@
+---
+title: 'Determinant'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Determinant
+
+The determinant of a matrix is found by adding together the product of each element in the minor diagonal and all lines parallel to it, then subtracting it from the product of each element in the major diagonal and all lines parallel to it.
+
+## 2×2
+
+$$ \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} $$
+
+1. Find the product of each element in the major diagonal and all lines parallel to it: $$ \begin{bmatrix} \textcolor{#007FFF}{a_{11}} & a_{12} \\ a_{21} & \textcolor{#007FFF}{a_{22}} \end{bmatrix} \implies \textcolor{#007FFF}{a_{11}} \times \textcolor{#007FFF}{a_{22}} $$
+2. Find the product of each element in the minor diagonal and all lines parallel to it: $$ \begin{bmatrix} a_{11} & \textcolor{#FFF600}{a_{12}} \\ \textcolor{#FFF600}{a_{21}} & a_{22} \end{bmatrix}  \implies \textcolor{#FFF600}{a_{12}} \times \textcolor{#FFF600}{a_{21}} $$
+3. Subtract the latter from the former: $$ (\textcolor{#007FFF}{a_{11}} \times \textcolor{#007FFF}{a_{22}}) - (\textcolor{#FFF600}{a_{12}} \times \textcolor{#FFF600}{a_{21}}) $$
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\det{\\begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \\end{bmatrix}} = (a_{11} \\times a_{22}) - (a_{12} \\times a_{21})'
+      }
+      type={'block'}
+    />
+  }
+/>
+
+## 3×3
+
+$$ \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix} $$
+
+1. Find the product of each element in the major diagonal and all lines parallel to it: $$ \begin{bmatrix} \textcolor{#007FFF}{a_{11}} & \textcolor{#FF0000}{a_{12}} & \textcolor{#32CD32}{a_{13}} \\ \textcolor{#32CD32}{a_{21}} & \textcolor{#007FFF}{a_{22}} & \textcolor{#FF0000}{a_{23}} \\ \textcolor{#FF0000}{a_{31}} & \textcolor{#32CD32}{a_{32}} & \textcolor{#007FFF}{a_{33}} \end{bmatrix} \implies (\textcolor{#007FFF}{a_{11}} \times \textcolor{#007FFF}{a_{22}} \times \textcolor{#007FFF}{a_{33}}) + (\textcolor{#FF0000}{a_{12}} \times \textcolor{#FF0000}{a_{23}} \times \textcolor{#FF0000}{a_{31}}) + (\textcolor{#32CD32}{a_{13}} \times \textcolor{#32CD32}{a_{21}} \times \textcolor{#32CD32}{a_{32}}) $$
+2. Find the product of each element in the minor diagonal and all lines parallel to it: $$ \begin{bmatrix} \textcolor{#F28500}{a_{11}} & \textcolor{#A45EE5}{a_{12}} & \textcolor{#FFF600}{a_{13}} \\ \textcolor{#A45EE5}{a_{21}} & \textcolor{#FFF600}{a_{22}} & \textcolor{#F28500}{a_{23}} \\ \textcolor{#FFF600}{a_{31}} & \textcolor{#F28500}{a_{32}} & \textcolor{#A45EE5}{a_{33}} \end{bmatrix} \implies (\textcolor{#FFF600}{a_{13}} \times \textcolor{#FFF600}{a_{22}} \times \textcolor{#FFF600}{a_{31}}) + (\textcolor{#A45EE5}{a_{12}} \times \textcolor{#A45EE5}{a_{21}} \times \textcolor{#A45EE5}{a_{33}}) + (\textcolor{#F28500}{a_{11}} \times \textcolor{#F28500}{a_{23}} \times \textcolor{#F28500}{a_{32}}) $$
+3. Now subtract the latter from the former: $$ [(\textcolor{#007FFF}{a_{11}} \times \textcolor{#007FFF}{a_{22}} \times \textcolor{#007FFF}{a_{33}}) + (\textcolor{#FF0000}{a_{12}} \times \textcolor{#FF0000}{a_{23}} \times \textcolor{#FF0000}{a_{31}}) + (\textcolor{#32CD32}{a_{13}} \times \textcolor{#32CD32}{a_{21}} \times \textcolor{#32CD32}{a_{32}})] - [(\textcolor{#FFF600}{a_{13}} \times \textcolor{#FFF600}{a_{22}} \times \textcolor{#FFF600}{a_{31}}) + (\textcolor{#A45EE5}{a_{12}} \times \textcolor{#A45EE5}{a_{21}} \times \textcolor{#A45EE5}{a_{33}}) + (\textcolor{#F28500}{a_{11}} \times \textcolor{#F28500}{a_{23}} \times \textcolor{#F28500}{a_{32}})] $$
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\det{\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\end{bmatrix}} = [(a_{11} \\times a_{22} \\times a_{33}) + (a_{12} \\times a_{23} \\times a_{31}) + (a_{13} \\times a_{21} \\times a_{32})] - [(a_{13} \\times a_{22} \\times a_{31}) + (a_{12} \\times a_{21} \\times a_{33}) + (a_{11} \\times a_{23} \\times a_{32})]'
+      }
+      type={'block'}
+    />
+  }
+/>

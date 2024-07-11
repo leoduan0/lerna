@@ -1,0 +1,73 @@
+---
+title: 'Cross Product'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Cross Product
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\vec{a} \\times \\vec{b} = \\det{\\begin{bmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{bmatrix}} = \\lVert \\vec{a} \\rVert \\lVert \\vec{b} \\rVert \\sin(\\theta)'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\vec{a}',
+      annotation: (
+        <span>
+          A vector. Equals{' '}
+          <Math math={'\\langle a_1, a_2, a_3 \\rangle'} type={'inline'} />.
+        </span>
+      ),
+    },
+    {
+      term: '\\vec{b}',
+      annotation: (
+        <span>
+          A vector. Equals{' '}
+          <Math math={'\\langle b_1, b_2, b_3 \\rangle'} type={'inline'} />.
+        </span>
+      ),
+    },
+    {
+      term: '\\theta',
+      annotation: (
+        <span>
+          Angle between <Math math={'\\vec{a}'} type={'inline'} /> and{' '}
+          <Math math={'\\vec{b}'} type={'inline'} />
+        </span>
+      ),
+    },
+  ]}
+  annotation={
+    <ul>
+      <p>
+        If{' '}
+        <Math math={'\\vec{a} \\times \\vec{b} = \\vec{u}'} type={'inline'} />
+        , then <Math math={'\\vec{u}'} type={'inline'} /> is a vector that is
+        orthogonal to both <Math math={'\\vec{a}'} type={'inline'} /> and{' '}
+        <Math math={'\\vec{b}'} type={'inline'} />.
+      </p>
+      <p>
+        If <Math math={'\\vec{a} \\times \\vec{b} = 0'} type={'inline'} />
+        , then <Math math={'\\vec{a}'} type={'inline'} /> and{' '}
+        <Math math={'\\vec{b}'} type={'inline'} /> are parallel to each other.
+      </p>
+      <p>
+        Cross products only exist in <Math math={'\\R^3'} type={'inline'} /> and{' '}
+        <Math math={'\\R^7'} type={'inline'} />.
+      </p>
+    </ul>
+  }
+/>
+
+<Example>
+
+If $$ \vec{a} = \langle 1, 2, 3 \rangle $$ and $$ \vec{b} = \langle 4, 5, 6 \rangle $$, then $$ \vec{a} \times \vec{b} = \det{\begin{bmatrix} \vec{i} & \vec{j} & \vec{k} \\ 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}} = (12 \vec{i} + 12 \vec{j} + 5 \vec{k}) - (15 \vec{i} + 6 \vec{j} + 8 \vec{k}) = -3 \vec{i} + 6 \vec{j} - 3 \vec{k} = \langle -3, 6, -3 \rangle $$.
+
+</Example>

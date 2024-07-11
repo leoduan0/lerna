@@ -1,0 +1,65 @@
+---
+title: 'Matrix'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Matrix
+
+A <strong>matrix</strong> is a grid of numbers, and comes in the following form:
+
+$$ A = \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} & a_{15} & \cdots & a_{1n} \\ a_{21} & a_{22} & a_{23} & a_{24} & a_{25} & \cdots & a_{2n} \\ a_{31} & a_{32} & a_{33} & a_{34} & a_{35} & \cdots & a_{3n} \\ a_{41} & a_{42} & a_{43} & a_{44} & a_{45} & \cdots & a_{4n} \\ a_{51} & a_{52} & a_{53} & a_{54} & a_{55} & \cdots & a_{5n} \\ \vdots & \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & a_{m3} & a_{m4} & a_{m5} & \cdots & a_{mn} \end{bmatrix} $$
+
+Suppose a matrix $$ A $$ has $$ m $$ rows and $$ n $$, then it would be referred to as a $$ m \times n $$ matrix, represented as $$ A_{m \times n} $$.
+
+## Major and Minor Diagonal
+
+The **major diagonal** is highlighted in blue:
+
+$$ \begin{bmatrix} \textcolor{#007FFF}{a_{11}} & a_{12} & a_{13} & a_{14} & a_{15} \\ a_{21} & \textcolor{#007FFF}{a_{22}} & a_{23} & a_{24} & a_{25} \\ a_{31} & a_{32} & \textcolor{#007FFF}{a_{33}} & a_{34} & a_{35} \\ a_{41} & a_{42} & a_{43} & \textcolor{#007FFF}{a_{44}} & a_{45} \\ a_{51} & a_{52} & a_{53} & a_{54} & \textcolor{#007FFF}{a_{55}} \end{bmatrix} $$
+
+The **minor diagonal** is highlighted in yellow:
+
+$$ \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} & \textcolor{#FFF600}{a_{15}} \\ a_{21} & a_{22} & a_{23} & \textcolor{#FFF600}{a_{24}} & a_{25} \\ a_{31} & a_{32} & \textcolor{#FFF600}{a_{33}} & a_{34} & a_{35} \\ a_{41} & \textcolor{#FFF600}{a_{42}} & a_{43} & a_{44} & a_{45} \\ \textcolor{#FFF600}{a_{51}} & a_{52} & a_{53} & a_{54} & a_{55} \end{bmatrix} $$
+
+## Types
+
+### Vector
+
+For some matrix $$ A_{m \times n} $$:
+
+- If $$ m = 1 $$ or $$ n = 1 $$, $$ A $$ is called a vector
+- If $$ m = 1 $$, then $$ A $$ is called a row vector
+- If $$ n = 1 $$, then $$ A $$ is called a column vector
+
+### Square Matrix
+
+It's a square matrix if $$ m = n $$:
+
+$$ \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix} $$
+
+### Symmetric Matrix
+
+It's a symmetric matrix if $$ A = A^{T} $$ ($$ a_{m \times n} = a_{n \times m} $$):
+
+$$ \begin{bmatrix} 1 & 2 & 3 \\ 2 & 4 & 5 \\ 3 & 5 & 4 \end{bmatrix} $$
+
+### Diagonal Matrix
+
+It's a diagonal matrix if all non-major diagonal elements of it are 0:
+
+$$ \begin{bmatrix} 3 & 0 & 0 \\ 0 & 5 & 0 \\ 0 & 0 & 9 \end{bmatrix} $$
+
+### Identity Matrix
+
+It's an identity matrix if all major diagonal elements of it are 1 and all non-major diagonal elements of it are 0:
+
+$$ \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} $$
+
+Identity matrices are denoted by $$ I $$.
+
+## Rank
+
+The resulting dimensions of a transformation denoted by a matrix is the **rank** of that matrix.
+
+If the dimensions of a matrix before transformation is equivalent to the resulting dimensions after transformation, then the matrix is **full rank**.

@@ -1,0 +1,331 @@
+---
+title: Partial Derivatives
+author: Leo Duan
+date: '2024-02-29'
+---
+
+# Partial Derivatives
+
+**Partial derivatives** are very similar to derivatives in single variable calclulus, except that to find it, we will, for each variable of the function, allow it to vary while holding all other variables still by treating them as a constant.
+
+For example, for $$ f(x, y) = 2x^3y^5 $$, its partial derivatives are as follows:
+
+<Align type={'center'}>
+  <Math
+    math={
+      '\\frac{\\partial f(x, y)}{\\partial x} = {f}_{x}(x, y) = 6{x}^{2}{y}^{5}'
+    }
+    type={'block'}
+  />
+  <Math
+    math={
+      '\\frac{\\partial f(x, y)}{\\partial y} = {f}_{y}(x, y) = 10{x}^{3}{y}^{4}'
+    }
+    type={'block'}
+  />
+</Align>
+
+In the former, we wanted to find the derivative of $$ f(x, y) $$ with respect to $$ x $$, and we did so by holding the other variable $$ y $$ still by treating it as a constant.
+
+In the latter, we wanted to find the derivative of $$ f(x, y) $$ with respect to $$ y $$, and we did so by holding the other variable $$ x $$ still by treating it as a constant.
+
+Like single variable derivatives, multivariable derivatives can also have higher orders:
+
+<Align type={'center'}>
+  <Math
+    math={
+      '\\frac{\\partial}{\\partial x} \\left(\\frac{\\partial f(x, y)}{\\partial x}\\right) = \\frac{{\\partial}^2 f(x, y)}{{\\partial x}^2} = f_{xx}(x, y)'
+    }
+    type={'block'}
+  />
+  <Math
+    math={
+      '\\frac{\\partial}{\\partial y} \\left(\\frac{\\partial f(x, y)}{\\partial x}\\right) = \\frac{{\\partial}^2 f(x, y)}{\\partial y \\partial x} = {f}_{xy}(x, y)'
+    }
+    type={'block'}
+  />
+  <Math
+    math={
+      '\\frac{\\partial}{\\partial y} \\left(\\frac{\\partial f(x, y)}{\\partial y}\\right) = \\frac{{\\partial}^2 f(x, y)}{{\\partial y}^2} = f_{yy}(x, y)'
+    }
+    type={'block'}
+  />
+  <Math
+    math={
+      '\\frac{\\partial}{\\partial x} \\left(\\frac{\\partial f(x, y)}{\\partial y}\\right) = \\frac{{\\partial}^2 f(x, y)}{\\partial x \\partial y} = f_{yx}(x, y)'
+    }
+    type={'block'}
+  />
+</Align>
+
+And so on.
+
+<Problem
+  level={2}
+  question={
+    <p>
+      For <Math math={'f(x, y, z) = \\frac{x^3+y^2+z}{61}'} type={'inline'} />,
+      find <Math math={'\\frac{\\partial f}{\\partial x}'} type={'inline'} />,{' '}
+      <Math math={'\\frac{\\partial f}{\\partial y}'} type={'inline'} />, and{' '}
+      <Math math={'\\frac{\\partial f}{\\partial z}'} type={'inline'} />.
+    </p>
+  }
+  choices={[
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = \\frac{4x^4}{61}'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = \\frac{3}{61}'}
+        type={'inline'}
+      />
+      , <Math math={'\\frac{\\partial f}{\\partial z} = 1'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = \\frac{3x^3}{61}'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = \\frac{2}{61}'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = \\frac{1}{61}'} type={'inline'} />
+    </>,
+    <>
+      <Math math={'\\frac{\\partial f}{\\partial x} = 3x^4'} type={'inline'} />,{' '}
+      <Math
+        math={'\\frac{\\partial f}{\\partial y} = \\frac{2}{61}'}
+        type={'inline'}
+      />
+      , <Math math={'\\frac{\\partial f}{\\partial z} = 61'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = \\frac{3x^2}{61}'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = \\frac{2y}{61}'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = \\frac{1}{61}'} type={'inline'} />
+    </>,
+  ]}
+  correct={4}
+  solution={
+    <>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial x}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial x} = \\frac{3x^2}{61}'}
+          type={'inline'}
+        />
+        .
+      </p>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial y}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial y} = \\frac{2y}{61}'}
+          type={'inline'}
+        />
+        .
+      </p>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial z}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial z} = \\frac{1}{61}'}
+          type={'inline'}
+        />
+        .
+      </p>
+    </>
+  }
+/>
+<Problem
+  level={2}
+  question={
+    <p>
+      For <Math math={'f(x, y, z) = \\frac{e^{x^2+y}z}{2}'} type={'inline'} />,
+      find <Math math={'\\frac{\\partial f}{\\partial x}'} type={'inline'} />,{' '}
+      <Math math={'\\frac{\\partial f}{\\partial y}'} type={'inline'} />, and{' '}
+      <Math math={'\\frac{\\partial f}{\\partial z}'} type={'inline'} />.
+    </p>
+  }
+  choices={[
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = e^{x^2+y}xz'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = \\frac{e^{x^2+y}z}{2}'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = \\frac{e^{x^2+y}}{2}'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = e^{x^2+y}x'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = \\frac{e^{x^2+y}z}{2}'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = \\frac{e^{x^2+y}z}{2}'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = e^{x^2+y}'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = e^{x^2+y}z'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = \\frac{e^{x^2+y}z}{2}'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = \\frac{e^{x^2+y}}{2}'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = e^{x^2+y}xz'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = \\frac{e^{x^2+y}z}{2x}'} type={'inline'} />
+    </>,
+  ]}
+  correct={1}
+  solution={
+    <>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial x}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial x} = e^{x^2+y}xz'}
+          type={'inline'}
+        />
+        .
+      </p>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial y}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial y} = \\frac{e^{x^2+y}z}{2}'}
+          type={'inline'}
+        />
+        .
+      </p>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial z}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial z} = \\frac{e^{x^2+y}}{2}'}
+          type={'inline'}
+        />
+        .
+      </p>
+    </>
+  }
+/>
+<Problem
+  level={2}
+  question={
+    <p>
+      For{' '}
+      <Math
+        math={'f(x, y, z) = \\sin(x^2) + \\cos(y^2) + \\tan(z^2)'}
+        type={'inline'}
+      />
+      , find <Math math={'\\frac{\\partial f}{\\partial x}'} type={'inline'} />,{' '}
+      <Math math={'\\frac{\\partial f}{\\partial y}'} type={'inline'} />, and <Math
+        math={'\\frac{\\partial f}{\\partial z}'}
+        type={'inline'}
+      />.
+    </p>
+  }
+  choices={[
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = x\\cos(x^2)'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = -2y\\sin(y)'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = 2z\\sec^2(z^2)'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = 2x\\cos(x^2)'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = 2y\\sin(y)'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = 2z\\sec(z^2)'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = 2x\\cos(x^2)'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = -2y\\sin(y^2)'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = 2z\\sec^2(z^2)'} type={'inline'} />
+    </>,
+    <>
+      <Math
+        math={'\\frac{\\partial f}{\\partial x} = 2\\cos(x^2)'}
+        type={'inline'}
+      />
+      , <Math
+        math={'\\frac{\\partial f}{\\partial y} = -yx\\sin(y)'}
+        type={'inline'}
+      />, <Math math={'\\frac{\\partial f}{\\partial z} = 2z\\sec(z^2)'} type={'inline'} />
+    </>,
+  ]}
+  correct={3}
+  solution={
+    <>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial x}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial x} = 2x\\cos(x^2)'}
+          type={'inline'}
+        />
+        .
+      </p>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial y}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial y} = -2y\\sin(y^2)'}
+          type={'inline'}
+        />
+        .
+      </p>
+      <p>
+        To find{' '}
+        <Math math={'\\frac{\\partial f}{\\partial z}'} type={'inline'} />,
+        treat all other terms as a constant, thus{' '}
+        <Math
+          math={'\\frac{\\partial f}{\\partial z} = 2z\\sec^2(z^2)'}
+          type={'inline'}
+        />
+        .
+      </p>
+    </>
+  }
+/>

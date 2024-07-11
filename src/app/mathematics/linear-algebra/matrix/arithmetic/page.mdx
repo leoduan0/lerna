@@ -1,0 +1,183 @@
+---
+title: 'Arithmetic'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Arithmetic
+
+## Addition
+
+<Rule
+  statement={
+    <Math
+      math={
+        'A + B = \\begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13} \\\\ a_{21} + b_{21} & a_{22} + b_{22} & a_{23} + b_{23} \\end{bmatrix}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'A',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+    {
+      term: 'B',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} b_{11} & b_{12} & b_{13} \\\\ b_{21} & b_{22} & b_{23} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+  ]}
+  annotation={
+    <p>Two matrices can be added iff their dimensions are the same.</p>
+  }
+/>
+
+## Subtraction
+
+<Rule
+  statement={
+    <Math
+      math={
+        'A - B = \\begin{bmatrix} a_{11} - b_{11} & a_{12} - b_{12} & a_{13} - b_{13} \\\\ a_{21} - b_{21} & a_{22} - b_{22} & a_{23} - b_{23} \\end{bmatrix}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'A',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+    {
+      term: 'B',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} b_{11} & b_{12} & b_{13} \\\\ b_{21} & b_{22} & b_{23} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+  ]}
+  annotation={
+    <p>Two matrices can be subtracted iff their dimensions are the same.</p>
+  }
+/>
+
+## Multiplication
+
+### Matrix-Matrix Multiplication
+
+Two matrices can be multiplied together by multiplying each row of one matrix to each column of the other.
+
+<Rule
+  statement={
+    <Math
+      math={
+        'A_{2 \\times 3} \\times B_{3 \\times 4} = \\begin{bmatrix} a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & a_{11}b_{13}+a_{12}b_{23}+a_{13}b_{33} & a_{11}b_{14}+a_{12}b_{24}+a_{13}b_{34} \\\\ a_{21}b_{11}+a_{22}b_{21}+a_{23}b_{31} & a_{21}b_{12}+a_{22}b_{22}+a_{23}b_{32} & a_{21}b_{13}+a_{22}b_{23}+a_{23}b_{33} & a_{21}b_{14}+a_{22}b_{24}+a_{23}b_{34} \\end{bmatrix}_{2 \\times 4}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'A_{2 \\times 3}',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+    {
+      term: 'B_{3 \\times 4}',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\\\ a_{21} & a_{22} & a_{23} & a_{24} \\\\ a_{31} & a_{32} & a_{33} & a_{34} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+  ]}
+/>
+
+### Scalar-Matrix Multiplication
+
+<Rule
+  statement={
+    <Math
+      math={
+        'kA = \\begin{bmatrix} ka_{11} & ka_{12} & ka_{13} \\\\ ka_{21} & ka_{22} & ka_{23} \\\\ ka_{31} & ka_{32} & ka_{33} \\end{bmatrix}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'k',
+      annotation: <span>Any arbitrary scalar</span>,
+    },
+    {
+      term: 'A',
+      annotation: (
+        <Math
+          math={
+            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{bmatrix}'
+          }
+          type={'inline'}
+        />
+      ),
+    },
+  ]}
+/>
+
+## Division
+
+Matrices cannot be divided, but one could find a matrix's inverse and multiply it as an alternative.
+
+## Transposition
+
+A matrix can be transformed by, for all rows of the matrix, making the n-th row of the matrix become the nth column of the matrix:
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\begin{bmatrix} \\textcolor{#FF0000}{a_{11}} & \\textcolor{#FF0000}{a_{12}} & \\textcolor{#FF0000}{a_{13}} \\\\ \\textcolor{#F28500}{a_{21}} & \\textcolor{#F28500}{a_{22}} & \\textcolor{#F28500}{a_{23}} \\\\ \\textcolor{#007FFF}{a_{31}} & \\textcolor{#007FFF}{a_{32}} & \\textcolor{#007FFF}{a_{33}} \\end{bmatrix}^T = \\begin{bmatrix} \\textcolor{#FF0000}{a_{11}} & \\textcolor{#F28500}{a_{21}} & \\textcolor{#007FFF}{a_{31}} \\\\ \\textcolor{#FF0000}{a_{12}} & \\textcolor{#F28500}{a_{22}} & \\textcolor{#007FFF}{a_{32}} \\\\ \\textcolor{#FF0000}{a_{13}} & \\textcolor{#F28500}{a_{23}} & \\textcolor{#007FFF}{a_{33}} \\end{bmatrix}'
+      }
+      type={'block'}
+    />
+  }
+/>
+
+<Example>
+
+$$ {\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}}^T = \begin{bmatrix} 1 & 4 & 7 \\ 2 & 5 & 8 \\ 3 & 6 & 9 \end{bmatrix} $$
+
+</Example>

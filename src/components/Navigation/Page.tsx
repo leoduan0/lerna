@@ -45,7 +45,7 @@ function renderNavigationItems(pages: Page[], href: string): React.ReactNode {
 
 export default function Pages(props: { pages: Page[] }): React.ReactNode {
   return (
-    <ul className="w-full grow list-none space-y-0.5 p-2">
+    <ul className="list-none space-y-0.5 p-2">
       {renderNavigationItems(props.pages, '')}
     </ul>
   )

@@ -36,7 +36,7 @@ export default function NavigationSection(props: {
         </div>
       </div>
       {props.page.children && expand && (
-        <ul className="w-full list-none space-y-0.5 pl-6">
+        <ul className="list-none space-y-0.5 pl-6">
           {props.renderFunction(props.page.children, props.href)}
         </ul>
       )}

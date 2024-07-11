@@ -1,0 +1,414 @@
+---
+title: 'Vector'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Vector
+
+A **vector** can be used to represent a magnitude and a direction.
+
+## Notation
+
+A vector with $$ n $$ components is denoted by $$ \vec{a} = \langle a_1, a_2, a_3, ... , a_n \rangle $$.
+
+<Example>
+
+A 2-dimensional vector $$ \vec{a} $$ with x-component of 2 and y-component of 4 is denoted by $$ \vec{a} = \langle 2, 4 \rangle $$
+
+</Example>
+
+<Example>
+
+A 3-dimensional vector $$ \vec{b} $$ with x-component of 2, y-component of 4, and z-component of 6 is denoted by $$ \vec{b} = \langle 2, 4, 6 \rangle $$
+
+</Example>
+
+<Example>
+
+A 4-dimensional vector $$ \vec{c} $$ with x-component of 2, y-component of 4, z-component of 6, and a-component of 8 is denoted by $$ \vec{c} = \langle 2, 4, 6, 8 \rangle $$
+
+</Example>
+
+<Example>
+
+A 1-dimensional vector $$ \vec{d} $$ with x-component of 2 is denoted by $$ \vec{d} = \langle 2 \rangle $$
+
+</Example>
+
+1-dimensional vectors are not scalars
+
+## Vectors Between Points
+
+A vector from point $$ A = (x_A, y_A) $$ to point $$ B = (x_B, y_B) $$ is $$ \vec{AB} = \langle x_B-x_A, y_B-y_A \rangle $$
+
+Note that $$ \left( \vec{AB} = \langle x_B-x_A, y_B-y_A \rangle \right) \nRightarrow \left(\vec{BA} = \langle x_A-x_B, y_A-y_B \rangle \right) $$.
+
+<Example>
+
+If $$ A = (4, 3) $$ and $$ B = (17, 14) $$, then $$ \vec{AB} = \langle 17-4, 14-3 \rangle = \langle 13, 11 \rangle $$ and $$ \vec{BA} = \langle 4-17, 3-14 \rangle = \langle -13, -11 \rangle $$.
+
+</Example>
+
+<Problem
+  question={
+    <p>
+      If <Math math={'A = (78.5, 73.2)'} type={'inline'} /> and{' '}
+      <Math math={'B = (17.14, 14.17)'} type={'inline'} />, find{' '}
+      <Math math={'\\vec{AB}'} type={'inline'} /> and{' '}
+      <Math math={'\\vec{BA}'} type={'inline'} />.
+    </p>
+  }
+  choices={[
+    <span>
+      <Math
+        math={'\\vec{AB} = \\langle -61.36, -59.03 \\rangle'}
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={'\\vec{BA}  = \\langle 61.36, 59.03 \\rangle'}
+        type={'inline'}
+      />
+    </span>,
+    <span>
+      <Math
+        math={'\\vec{AB} = \\langle 61.36, 59.03 \\rangle'}
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={'\\vec{BA}  = \\langle -61.36, -59.03 \\rangle'}
+        type={'inline'}
+      />
+    </span>,
+    <span>
+      <Math
+        math={'\\vec{AB} = \\langle -61.36, 59.03 \\rangle'}
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={'\\vec{BA}  = \\langle -61.36, 59.03 \\rangle'}
+        type={'inline'}
+      />
+    </span>,
+    <span>
+      <Math
+        math={'\\vec{AB} = \\langle 61.36, -59.03 \\rangle'}
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={'\\vec{BA}  = \\langle 61.36, -59.03 \\rangle'}
+        type={'inline'}
+      />
+    </span>,
+  ]}
+  correct={1}
+  solution={
+    <>
+      <Math
+        math={
+          '\\vec{AB} = \\langle 17.14-78.5, 14.17-73.2 \\rangle = \\langle -61.36, -59.03 \\rangle'
+        }
+        type={'block'}
+      />
+      <Math
+        math={
+          '\\vec{BA}  = \\langle 78.5-17.14, 73.2-14.17 \\rangle = \\langle 61.36, 59.03 \\rangle'
+        }
+        type={'block'}
+      />
+    </>
+  }
+/>
+
+<Problem
+  question={
+    <p>
+      If point A ={' '}
+      <Math math={'(x+24, y-52, z+62, \\frac{a}{52})'} type={'inline'} /> and
+      point B ={' '}
+      <Math
+        math={'(b \\times 24, 26-23+5, d \\times 4, \\frac{a}{52})'}
+        type={'inline'}
+      />
+      , find <Math math={'\\vec{AB}'} type={'inline'} /> and{' '}
+      <Math math={'\\vec{BA}'} type={'inline'} />
+    </p>
+  }
+  choices={[
+    <span>
+      <Math
+        math={'\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62 \\rangle'}
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={'\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62 \\rangle'}
+        type={'inline'}
+      />
+    </span>,
+    <span>
+      <Math
+        math={'\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle'}
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={'\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle'}
+        type={'inline'}
+      />
+    </span>,
+    <span>
+      <Math
+        math={
+          '\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{52} \\rangle'
+        }
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={
+          '\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{52} \\rangle'
+        }
+        type={'inline'}
+      />
+    </span>,
+    <span>
+      <Math
+        math={
+          '\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{26} \\rangle'
+        }
+        type={'inline'}
+      />{' '}
+      and{' '}
+      <Math
+        math={
+          '\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{26} \\rangle'
+        }
+        type={'inline'}
+      />
+    </span>,
+  ]}
+  correct={3}
+  solution={
+    <>
+      <Math
+        math={
+          '\\vec{AB} = \\left\\langle (b \\times 24)-(x+24), (26-23+5)-(y-52), (d \\times 4)-(z+62), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle'
+        }
+        type={'block'}
+      />
+      <Math
+        math={
+          '\\vec{BA} = \\left\\langle (x+24)-(b \\times 24), (y-52)-(26-23+5), (z+62)-(d \\times 4), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle'
+        }
+        type={'block'}
+      />
+    </>
+  }
+/>
+
+<Rule
+  statement={<Math math={'\\vec{AB} = -\\vec{BA}'} type={'block'} />}
+  terms={[
+    {
+      term: '\\vec{AB}',
+      annotation: (
+        <span>
+          Vector from point <Math math={'A'} type={'inline'} /> to point{' '}
+          <Math math={'B'} type={'inline'} />
+        </span>
+      ),
+    },
+    {
+      term: '\\vec{BA}',
+      annotation: (
+        <span>
+          Vector from point <Math math={'B'} type={'inline'} /> to point{' '}
+          <Math math={'A'} type={'inline'} />
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Unit Vectors
+
+For any vector $$ \vec{a} $$, if $$ \lVert \vec{a} \rVert = 1 $$, then $$ \vec{a} $$ is a **unit vector**.
+
+<Example>
+
+If $$ \vec{a} = \langle 0, 0, 1 \rangle $$, then $$ \vec{a} $$ is a unit vector since $$ \lVert \vec{a} \rVert = \sqrt{0^2+0^2+1^2} = 1 $$.
+
+</Example>
+
+<Example>
+
+If $$ \vec{a} = \langle \sqrt{1}, 0, 2, 0 \rangle $$, then $$ \vec{a} $$ is not a unit vector since $$ \lVert \vec{a} \rVert = \sqrt{\sqrt{1}^2+0^2+2^2+0^2} = \sqrt{5} $$.
+
+</Example>
+
+<Rule
+  statement={
+    <p>
+      For any vector <Math math={'\\vec{a}'} type={'inline'} />, the unit vector
+      which has the same direction as <Math math={'\\vec{a}'} type={'inline'} />{' '}
+      is{' '}
+      <Math
+        math={'\\vec{u} = \\frac{\\vec{a}}{\\lVert \\vec{a} \\rVert}'}
+        type={'inline'}
+      />
+      .
+    </p>
+  }
+/>
+
+<Problem
+  question={
+    <p>
+      Find the unit vector which points in the same direction as{' '}
+      <Math math={'\\vec{v} = \\langle 3, 4 \\rangle'} type={'inline'} />.
+    </p>
+  }
+  choices={[
+    <Math
+      math={'\\left\\langle \\frac{1}{5}, \\frac{2}{5} \\right\\rangle'}
+      type={'inline'}
+    />,
+    <Math
+      math={'\\left\\langle \\frac{2}{5}, \\frac{3}{5} \\right\\rangle'}
+      type={'inline'}
+    />,
+    <Math
+      math={'\\left\\langle \\frac{3}{5}, \\frac{4}{5} \\right\\rangle'}
+      type={'inline'}
+    />,
+    <Math
+      math={'\\left\\langle \\frac{4}{5}, 1 \\right\\rangle'}
+      type={'inline'}
+    />,
+  ]}
+  correct={3}
+  solution={
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>Procedure</span>
+          </th>
+          <th>
+            <span>Annotation</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <Math math={'\\lVert \\vec{v} \\rVert = 5'} type={'inline'} />
+          </td>
+          <td>
+            <span>Find its magnitude</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <Math
+              math={'\\vec{u} = \\frac{\\vec{v}}{\\lVert \\vec{v} \\rVert}'}
+              type={'inline'}
+            />
+          </td>
+          <td>
+            <span>List the equation</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <Math
+              math={'\\vec{u} = \\frac{\\langle 3, 4 \\rangle}{5}'}
+              type={'inline'}
+            />
+          </td>
+          <td>
+            <span>Fill in the equation</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <Math
+              math={
+                '\\vec{u} = \\left\\langle \\frac{3}{5}, \\frac{4}{5} \\right\\rangle'
+              }
+              type={'inline'}
+            />
+          </td>
+          <td>
+            <span>Simplify</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  }
+/>
+
+<Problem
+  question={
+    <p>
+      If{' '}
+      <Math
+        math={'\\vec{a} = \\langle 1, 0, 0, 0, 0 \\rangle'}
+        type={'inline'}
+      />
+      , determine if <Math math={'\\vec{a}'} type={'inline'} /> is a unit
+      vector.
+    </p>
+  }
+  choices={[<span>Yes</span>, <span>No</span>]}
+  correct={1}
+  solution={
+    <p>
+      Since{' '}
+      <Math
+        math={
+          '\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(0)^2+(0)^2} = 1'
+        }
+        type={'inline'}
+      />
+      , <Math math={'\\vec{a}'} type={'inline'} /> is a unit vector.
+    </p>
+  }
+/>
+
+<Problem
+  question={
+    <p>
+      If{' '}
+      <Math
+        math={'\\vec{a} = \\langle 1, 0, 0, 1, 0 \\rangle'}
+        type={'inline'}
+      />
+      , determine if <Math math={'\\vec{a}'} type={'inline'} /> is a unit
+      vector.
+    </p>
+  }
+  choices={[<span>Yes</span>, <span>No</span>]}
+  correct={2}
+  solution={
+    <p>
+      Since{' '}
+      <Math
+        math={
+          '\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(1)^2+(0)^2} = \\sqrt{2}'
+        }
+        type={'inline'}
+      />
+      , <Math math={'\\vec{a}'} type={'inline'} /> is not a unit vector.
+    </p>
+  }
+/>
+
+## Zero Vectors
+
+For any vector $$ \vec{a} $$, if all the components of $$ \vec{a} $$ is 0, then $$ \vec{a} $$ is a zero vector.

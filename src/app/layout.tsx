@@ -231,48 +231,112 @@ const pages: Page[] = [
                   },
                 ],
               },
-              // {
-              //   title: 'Multivariable',
-              //   type: 'page',
-              //   children: [
-              //     {
-              //       title: 'Limits',
-              //       type: 'page',
-              //     },
-              //     {
-              //       title: 'Partial Derivatives',
-              //       type: 'page',
-              //       children: [
-              //         {
-              //           title: 'Differentials',
-              //           type: 'page',
-              //         },
-              //         {
-              //           title: 'Chain Rule',
-              //           type: 'page',
-              //         },
-              //         {
-              //           title: 'The Del Operator',
-              //           type: 'page',
-              //         },
-              //         {
-              //           title: 'Directional Derivatives',
-              //           type: 'page',
-              //         },
-              //       ],
-              //     },
-              //     {
-              //       title: 'Multiple Integrals',
-              //       type: 'page',
-              //       // children: [
-              //       //   {
-              //       //     title: 'Spherical Coordinates',
-              //       //     type: 'page',
-              //       //   },
-              //       // ],
-              //     },
-              //   ],
-              // },
+              {
+                title: 'Multivariable',
+                type: 'page',
+                children: [
+                  {
+                    title: 'Limits',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Partial Derivatives',
+                    type: 'page',
+                    children: [
+                      {
+                        title: 'Differentials',
+                        type: 'page',
+                      },
+                      {
+                        title: 'Chain Rule',
+                        type: 'page',
+                      },
+                      {
+                        title: 'The Del Operator',
+                        type: 'page',
+                      },
+                      {
+                        title: 'Directional Derivatives',
+                        type: 'page',
+                      },
+                    ],
+                  },
+                  {
+                    title: 'Multiple Integrals',
+                    type: 'page',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            title: 'Linear Algebra',
+            type: 'page',
+            children: [
+              {
+                title: 'Space',
+                type: 'page',
+              },
+              {
+                title: 'Norm',
+                type: 'page',
+              },
+              {
+                title: 'Scalar',
+                type: 'page',
+              },
+              {
+                title: 'Vector',
+                type: 'page',
+                children: [
+                  {
+                    title: 'Basis',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Arithmetic',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Dot Product',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Cross Product',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Projection',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Span',
+                    type: 'page',
+                  },
+                ],
+              },
+              {
+                title: 'Matrix',
+                type: 'page',
+                children: [
+                  {
+                    title: 'Arithmetic',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Determinant',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Inversion',
+                    type: 'page',
+                  },
+                  {
+                    title: 'Eigenvalues and Eigenvectors',
+                    type: 'page',
+                  },
+                ],
+              },
             ],
           },
           // {
@@ -370,6 +434,7 @@ export default function RootLayout({
         <div className="flex h-full w-full grow flex-col">
           <Header />
           <main className="w-full grow space-y-2 overflow-y-auto p-4 lg:px-48">
+            {/* Page horizontal overflow not reachable (see matrix determinant page) */}
             {children}
           </main>
         </div>

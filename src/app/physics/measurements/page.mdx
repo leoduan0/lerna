@@ -52,16 +52,16 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
   }
 />
 
-<Example>
+<Block text={'Example'}>
   The number $$ 345.12 $$ has 5 significant figures, as all digits inside
   contribute to representing the accuracy of the measured result.
-</Example>
+</Block>
 
-<Example>
+<Block text={'Example'}>
   The number $$ 305.1 $$ has 4 significant figures, for the same reason.
-</Example>
+</Block>
 
-<Example>
+<Block text={'Example'}>
   The number $$ 100 $$ has only 1 significant figure. The reason for this is
   because $$ 10 $$ does not imply that the measurement is exactly $$ 10 $$. For
   example, if someone measures the length of an object with a ruler that has
@@ -74,7 +74,7 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
     <Figure
       image={
         <Image
-          source={'/physics/measurements/figure_1.svg'}
+          src={'/physics/measurements/figure_1.svg'}
           width={384}
           height={64}
           alt={''}
@@ -84,37 +84,37 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
       text={<span>A ruler and an object that's roughly 10mm long</span>}
     />
   </Align>
-</Example>
+</Block>
 
-<Example>
+<Block text={'Example'}>
   The number $$ 00100 $$ has 1 significant figure. The two zeroes after the 1 is
   not significant (for the same reason listed in the previous example), and the
   two zeroes before the 1 are not significant either because they do not
   contribute in reflecting the precision of the input.
-</Example>
+</Block>
 
-<Example>
+<Block text={'Example'}>
   The number $$ 100.1 $$ has 4 significant figures. Unlike the previous example,
   the 1 in the tenths digit implies that the input is precise to the tenths
   digit, thus the measurer is certain that it is 100.1.
-</Example>
+</Block>
 
-<Example>
+<Block text={'Example'}>
   The number $$ 100. $$ has 3 significant figures. A decimal place inserted
   after the ones digit implies that the certainty of an input goes to the ones
   digit, implying that all digits up until the decimal places are significant.
   It is important to note that rarely are numbers written in similar style as $$
   100. $$. In a situation like this, the number is represented using scientific
   notation.
-</Example>
+</Block>
 
 Realize that numbers which are not measured have an infinite amount of significant figures, implying that they do not contribute to the certainty of the result.
 
-<Example>
+<Block text={'Example'}>
   If $$ x = 102.0 $$, $$ 2x $$ would be $$ 2 \cdot 102.0 = 204.0 $$, and we do
   not have to round to one significant figure because the $$ 2 $$ in this case
   is not a measurement - it has infinite precision.
-</Example>
+</Block>
 
 Conversion factors, like $$ \frac{3600s}{1h} $$ or $$ \frac{1km}{1000m} $$ are also _not_ measured quantities, and thus have an infinite amount of significant figures.
 
@@ -138,7 +138,7 @@ The purpose of **scientific notations** is to denote the amount of significant f
   }
 />
 
-<Example>
+<Block text={'Example'}>
 
 To represent $$ 100. $$ in scientific notation and still convey the fact that it has 3 significant digits:
 
@@ -150,11 +150,11 @@ To represent $$ 100. $$ in scientific notation and still convey the fact that it
 
 Thus, $$ 1.00 \cdot 10^2 $$ is $$ 100. $$ written in scientific notation.
 
-</Example>
+</Block>
 
 Note that in scientific notation, **all** figures in the decimal in the front are significant.
 
-<Example>
+<Block text={'Example'}>
 Given $$ 03560012.1420 $$, it can be expressed in scientific notation by following the rules.
 
 | Procedure                     | Annotation                                                                          |
@@ -166,7 +166,7 @@ Given $$ 03560012.1420 $$, it can be expressed in scientific notation by followi
 
 $$ 3.5600121420 \cdot 10^6 $$ is $$ 03560012.1420 $$ in scientifc notation.
 
-</Example>
+</Block>
 
 ## Uncertainties
 
@@ -178,7 +178,7 @@ Given a ruler that measures to a centimeter and an object as follows, how can we
   <Figure
     image={
       <Image
-        source={'/physics/measurements/figure_2.svg'}
+        src={'/physics/measurements/figure_2.svg'}
         width={384}
         height={64}
         alt={''}
@@ -209,9 +209,9 @@ Uncertainties that are expressed as a number (_e.g._ $$ \pm 3 $$, $$ \pm 2.1 $$,
 
 **Relative uncertainties** denotes by how much with respect to the number is the uncertainty. The relative uncertainty can be acquired by dividing the absolute uncertainty by the number.
 
-<Example>
+<Block text={'Example'}>
   Given the measurement $$ 10.5 \pm 5.3 $$, the relative uncertainty is $$ \frac{\vphantom{}5.3}{10.5} \approx 0.50476 $$, or that the uncertainty is 50% of the number.
-</Example>
+</Block>
 
 ## Arithmetic
 
@@ -234,7 +234,7 @@ When performing operations on numbers, its significant figures can be calculated
 
 It is good practice to put an underline under the last significant digit while calculating, and round off only at the very end.
 
-<Example>
+<Block text={'Example'}>
 Given $$ 100 + 32 $$, the $$ 100 $$ is significant to the hundreds digit, and $$ 32 $$ is significant to the ones digit. Using the rules, the significance of the result would be retained to the same number of decimal places as the input with the fewest significant decimal places, or the hundreds digit.
 
 | Procedure               | Annotation                       |
@@ -244,9 +244,9 @@ Given $$ 100 + 32 $$, the $$ 100 $$ is significant to the hundreds digit, and $$
 | $$ = 132 $$             | Underline the digit to round to. |
 | $$ = 100 $$             | Round.                           |
 
-</Example>
+</Block>
 
-<Example>
+<Block text={'Example'}>
 Given $$ 100 \\times 32 $$, the $$ 100 $$has 1 significant digit, and $$ 32 $$ has two significant digits. Using the rules, the significance of the result would be retained with the same number of significant figures as the input with the fewest significant figures.
 
 | Procedure                | Annotation                       |
@@ -256,7 +256,7 @@ Given $$ 100 \\times 32 $$, the $$ 100 $$has 1 significant digit, and $$ 32 $$ h
 | $$ = \underline{3}200 $$ | Underline the digit to round to. |
 | $$ = 3000 $$             | Round.                           |
 
-</Example>
+</Block>
 
 When dealing with numbers with uncertainties, the uncertainties also need to be evaluated accordingly in a process called **propagation**.
 
@@ -273,7 +273,7 @@ When dealing with numbers with uncertainties, the uncertainties also need to be 
   }
 />
 
-<Example>
+<Block text={'Example'}>
 Suppose that $$ x = 2.9 \pm 1.1 m $$ and $$ y = 3.1 \pm 0.9 m $$, what is $$ 2xy $$?
 
 | Procedure                                            | Annotation                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -284,6 +284,6 @@ Suppose that $$ x = 2.9 \pm 1.1 m $$ and $$ y = 3.1 \pm 0.9 m $$, what is $$ 2xy
 | $$ 1\underline{7}.98 \pm \underline{1}2.04 m^2 $$    | Convert the relative uncertainty back into absolute uncertainty by multiplying the relative uncertainty into the number.                                                                                                                                                                                                                                                                                                                                    |
 | $$ 18 \pm 10 m^2 $$                                  | Round.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-</Example>
+</Block>
 
 Note that uncertainties will always have to match the number it corresponds to in _place value_. If any arithmetic operation results in a difference in the place value between the two, round the number to the same amount of place values as the uncertainty. _e.g._ $$ 2.9 \pm 3 m $$ should become $$ 3 \pm 3 m $$.

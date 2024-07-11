@@ -3,8 +3,11 @@ import { useState, useEffect } from 'react'
 
 let navigationStatus = true
 
-export default function useNavigationStatus() {
-  const [localStatus, setLocalStatus] = useState(navigationStatus)
+export default function useNavigationStatus(): {
+  navigationStatus: boolean
+  toggleNavigation: () => void
+} {
+  const [localStatus, setLocalStatus] = useState<boolean>(navigationStatus)
 
   useEffect(() => {
     const updateLocalStatus = () => setLocalStatus(navigationStatus)
@@ -14,7 +17,7 @@ export default function useNavigationStatus() {
       window.removeEventListener('navigationStatusChange', updateLocalStatus)
   }, [])
 
-  const toggleNavigation = () => {
+  function toggleNavigation(): void {
     navigationStatus = !navigationStatus
     window.dispatchEvent(new Event('navigationStatusChange'))
   }

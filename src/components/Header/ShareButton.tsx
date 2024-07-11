@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 export default function ShareButton(): React.ReactNode {
   const pathname = usePathname()
 
-  async function shareLink() {
+  async function shareLink(): Promise<void> {
     const shareData = {
       url: 'https://lerna.app' + pathname,
     }
@@ -23,7 +23,7 @@ export default function ShareButton(): React.ReactNode {
 
   return (
     <button
-      onClick={shareLink}
+      onClick={() => shareLink()}
       className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 dark:hover:bg-neutral-700"
     >
       <svg

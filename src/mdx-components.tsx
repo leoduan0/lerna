@@ -2,7 +2,8 @@ import type { MDXComponents } from 'mdx/types'
 import NextLink from 'next/link'
 import {
   Align,
-  Example,
+  Block,
+  Code,
   Figure,
   Graph,
   Heading,
@@ -24,6 +25,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {props.children}
       </NextLink>
     ),
+    code: (props) => {
+      const match = /language-(\w+)/.exec(props.className || '')
+      return (
+        <Code language={match ? match[1] : ''}>
+          {String(props.children).replace(/\n$/, '')}
+        </Code>
+      )
+    },
     h1: (props) => <Heading level={1}>{props.children}</Heading>,
     h2: (props) => <Heading level={2}>{props.children}</Heading>,
     h3: (props) => <Heading level={3}>{props.children}</Heading>,
@@ -31,7 +40,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: (props) => <Heading level={5}>{props.children}</Heading>,
     p: (props) => <p className="text-theme text-base">{props.children}</p>,
     Align: Align,
-    Example: Example,
+    Block: Block,
     Figure: Figure,
     Graph: Graph,
     Image: Image,

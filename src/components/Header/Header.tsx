@@ -9,7 +9,7 @@ export default function Header(): React.ReactNode {
   function NavigationButton(): React.ReactNode {
     return (
       <button
-        onClick={toggleNavigation}
+        onClick={() => toggleNavigation()}
         className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 lg:invisible dark:hover:bg-neutral-700"
       >
         <svg

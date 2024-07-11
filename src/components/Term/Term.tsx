@@ -3,7 +3,7 @@ import { Block, Heading } from '../'
 export default function Term(props: {
   term: string
   definition: React.ReactNode
-}) {
+}): React.ReactNode {
   return (
     <Block>
       <Heading level={5}>Definition</Heading>

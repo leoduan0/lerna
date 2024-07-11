@@ -7,11 +7,19 @@ export default function ProblemsChoices(props: {
 }): React.ReactNode {
   const [selected, setSelected] = useState<number>(-1)
 
-  const handleChoiceSelection = (index: number) => {
+  function handleChoiceSelection(index: number): void {
     if (selected == index) {
       setSelected(-1)
     } else {
       setSelected(index)
+    }
+  }
+
+  function handleAnswerSubmission(): void {
+    if (selected == props.correct - 1) {
+      alert('Correct ✅')
+    } else {
+      alert('Incorrect ❌')
     }
   }
 
@@ -30,13 +38,7 @@ export default function ProblemsChoices(props: {
         ))}
       </ol>
       <button
-        onClick={() => {
-          if (selected == props.correct - 1) {
-            alert('Correct ✅')
-          } else {
-            alert('Incorrect ❌')
-          }
-        }}
+        onClick={() => handleAnswerSubmission()}
         disabled={selected == -1}
         className="rounded-md p-2 transition active:scale-95 enabled:hover:bg-neutral-200 disabled:cursor-not-allowed enabled:dark:hover:bg-neutral-700"
       >

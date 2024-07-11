@@ -14,9 +14,9 @@ export default function NavigationPage(props: {
 
   const pathname = usePathname()
 
-  const [expand, setExpand] = useState(false)
+  const [expand, setExpand] = useState<boolean>(false)
 
-  function toggleExpand() {
+  function toggleExpand(): void {
     setExpand(!expand)
   }
 
@@ -30,7 +30,7 @@ export default function NavigationPage(props: {
         } flex h-8 w-full items-center rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button
-          onClick={props.page.children && toggleExpand} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
+          onClick={() => props.page.children && toggleExpand()} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
           className={`${props.page.children ? '' : 'invisible'} flex h-full items-center justify-center rounded-l-md p-2`}
         >
           <svg
@@ -47,7 +47,7 @@ export default function NavigationPage(props: {
         <NextLink
           href={props.href}
           className={`${props.page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full grow items-center space-x-2`}
-          onClick={toggleNavigation}
+          onClick={() => toggleNavigation()}
         >
           <div className="grow-0">{props.page.icon && props.page.icon}</div>
           <div className="text-theme grow truncate pr-2">

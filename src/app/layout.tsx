@@ -327,14 +327,14 @@ const pages: Page[] = [
                     title: 'Determinant',
                     type: 'page',
                   },
-                  {
-                    title: 'Inversion',
-                    type: 'page',
-                  },
-                  {
-                    title: 'Eigenvalues and Eigenvectors',
-                    type: 'page',
-                  },
+                  // {
+                  //   title: 'Inversion',
+                  //   type: 'page',
+                  // },
+                  // {
+                  //   title: 'Eigenvalues and Eigenvectors',
+                  //   type: 'page',
+                  // },
                 ],
               },
             ],

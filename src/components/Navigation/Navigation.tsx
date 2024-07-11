@@ -5,7 +5,7 @@ import { Page } from '@/types'
 import Head from './Head'
 import Pages from './Page'
 
-export default function Navigation(props: { pages: Page[] }) {
+export default function Navigation(props: { pages: Page[] }): React.ReactNode {
   const { navigationStatus, toggleNavigation } = useNavigationStatus()
 
   return (
@@ -20,7 +20,7 @@ export default function Navigation(props: { pages: Page[] }) {
         <GoogleAd />
       </nav>
       <div
-        onClick={toggleNavigation}
+        onClick={() => toggleNavigation()}
         className={`${
           navigationStatus ? 'z-10 opacity-50 lg:hidden' : '-z-50 opacity-0'
         } absolute left-2/3 right-0 h-full bg-black transition md:left-1/3`}

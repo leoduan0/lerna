@@ -14,7 +14,7 @@ export default function Head(props: {
         /> */}
       <span className="text-theme font-bold">Lerna</span>
       <button
-        onClick={props.toggleFunction}
+        onClick={() => props.toggleFunction()}
         className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 lg:hidden dark:hover:bg-neutral-700"
       >
         <svg

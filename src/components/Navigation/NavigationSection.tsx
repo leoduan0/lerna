@@ -7,9 +7,9 @@ export default function NavigationSection(props: {
   href: string
   renderFunction: (pages: Page[], href: string) => React.ReactNode
 }): React.ReactNode {
-  const [expand, setExpand] = useState(true)
+  const [expand, setExpand] = useState<boolean>(true)
 
-  function toggleExpand() {
+  function toggleExpand(): void {
     setExpand(!expand)
   }
 
@@ -17,7 +17,7 @@ export default function NavigationSection(props: {
     <div className="w-full space-y-0.5">
       <div className="flex items-center">
         <button
-          onClick={props.page.children && toggleExpand}
+          onClick={() => props.page.children && toggleExpand}
           className={`${props.page.children ? '' : 'invisible'} flex h-full items-center justify-center rounded-l-md p-2`}
         >
           <svg

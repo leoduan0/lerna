@@ -10,9 +10,9 @@ export default function Problem(props: {
   solution?: React.ReactNode
   correct: number
 }): React.ReactNode {
-  const [expand, setExpand] = useState(false)
+  const [expand, setExpand] = useState<boolean>(false)
 
-  function toggleExpand() {
+  function toggleExpand(): void {
     setExpand(!expand)
   }
 
@@ -26,7 +26,7 @@ export default function Problem(props: {
       {props.solution && (
         <>
           <div
-            onClick={toggleExpand}
+            onClick={() => toggleExpand}
             className="flex h-8 w-full items-center space-x-2 rounded-md text-sm transition hover:cursor-pointer"
           >
             <svg

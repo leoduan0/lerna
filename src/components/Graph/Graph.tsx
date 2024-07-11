@@ -1,6 +1,7 @@
 'use client'
 import { Coordinates, LaTeX, Mafs, Plot, Point } from 'mafs'
 import 'mafs/core.css'
+import React from 'react'
 
 export default function Graph(props: {
   type: 'cartesian' | 'polar'
@@ -12,7 +13,7 @@ export default function Graph(props: {
   subdivisions: number
   annotations?: { text: string; position: [x: number, y: number] }[]
   points?: { x: number; y: number; color: string }[]
-}) {
+}): React.ReactNode {
   return (
     <Mafs viewBox={props.viewBox}>
       {props.type == 'cartesian' ? (

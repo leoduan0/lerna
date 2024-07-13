@@ -27,7 +27,7 @@ export default function NavigationPage(props: {
           (pathname == '/' && props.href == '/home') || pathname == props.href
             ? 'bg-neutral-200 dark:bg-neutral-700'
             : 'hover:bg-neutral-200 dark:hover:bg-neutral-700'
-        } flex h-8 w-full items-center rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
+        } flex h-8 w-fit min-w-full items-center rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button
           onClick={() => props.page.children && toggleExpand()} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing

@@ -4,7 +4,6 @@ import { Block, Heading } from '../'
 import ProblemChoices from './ProblemChoices'
 
 export default function Problem(props: {
-  level: 1 | 2 | 3 | 4 | 5
   question: React.ReactNode
   choices: React.ReactNode[]
   solution?: React.ReactNode

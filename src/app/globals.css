@@ -49,4 +49,8 @@
   .text-theme {
     @apply text-black dark:text-white;
   }
+
+  .navigation-SVG {
+    @apply fill-black dark:fill-white;
+  }
 }

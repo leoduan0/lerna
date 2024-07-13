@@ -5,7 +5,7 @@ export default function NavigationLink(props: { page: Page }): React.ReactNode {
   return (
     <NextLink
       href={props.page.href ? props.page.href : ''}
-      className="flex h-8 items-center space-x-2 rounded-md px-2 pl-6 text-sm transition hover:cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-700"
+      className="flex h-8 w-fit min-w-full items-center space-x-2 rounded-md px-2 pl-6 text-sm transition hover:cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-700"
       target="_blank"
       rel="noopener noreferrer"
     >

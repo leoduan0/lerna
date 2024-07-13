@@ -1,0 +1,124 @@
+---
+title: 'Function'
+author: ['Leo Duan']
+last-edited-date: '2024-05-29'
+---
+
+# Function
+
+A **function** $$ f(x) = y $$ associates certain values of $$ x $$ with a certain value of $$ y $$, where $$ x $$ is called the **input** of the function and $$ y $$ is called the **output** of the function.
+
+For a single input, there can only be one output.
+
+For a single output, there can be more than or equal to one input.
+
+<Block text={'Example'}>
+Given $$ f(x) = x^2 $$, find $$ f(-1) $$.
+
+To find $$ f(-1) $$, realize that  $$ -1 $$ is simply taken as the input for the function and thus substituting all $$ x $$ with $$ -1 $$ and evaluating would result in the answer.
+
+$$ \because f(x) = (-1)^2 = 1 $$
+$$ \therefore f(-1) = 1 $$
+
+</Block>
+
+<Block text={'Example'}>
+Given $$ f(x) = (x+1)^{2} $$, find $$ f(x-2) $$.
+
+Notice that, to solve this problem, we would have to substitute $$ x-2 $$ for every $$ x $$ inside $$ f(x) = {x+1}^{2} $$, thus:
+
+$$ \because f(x) = (x+1)^2 $$
+$$ \therefore f(x-2) = (x-1)^2 $$
+
+</Block>
+
+## Domain
+
+The **domain** of a function $$ f(x) $$ is the set of all inputs such that when passed into $$ f(x) $$ yields a defined value.
+
+<Block text={'Example'}>
+The domain of $$ f(x) = x^3+2 $$ is $$ \{ x \in \mathbb{R} \} $$ (the set of all real numbers) since for all real values as input there exist a defined value for its corresponding output.
+</Block>
+
+<Block text={'Example'}>
+The domain of $$ f(x) = \frac{\sqrt{2-x}}{x} $$ is $$ \{ x \in \R \mid x < 0 \text{ or } 0 < x \leq 2 \} $$ since taking any number outside of its domain as input to $$ f(x) $$ would either yield a non-real output or is undefined.
+</Block>
+
+## Range
+
+The **range** of a function $$ f(x) $$ is the set of all possible outputs that $$ f(x) $$ could yield.
+
+<Block text={'Example'}>
+The range of $$ f(x) = {x}^{3}+2 $$ is $$ \{ y \in \R \} $$ since $$ f(x) $$ could output any real value.
+</Block>
+
+<Block text={'Example'}>
+  The range of $$ f(x) = {x}^{2}+1 $$ is $$ (1, \infty ) $$ since $$ f(x) $$
+  could only output values more than or equal to 1.
+</Block>
+
+In range notation:
+
+- "$$ [ $$" or "$$ ] $$" means inclusive.
+- "$$ ( $$" and "$$ ) $$" means exclusive.
+- $$ \infty $$ and $$ -\infty $$ are always exclusive.
+
+## Arithmetic
+
+### Addition and Subtraction
+
+$$ f(x) \pm g(x) $$ is valid if the domains of $$ f(x) $$ and $$ g(x) $$ are the same.
+
+### Multiplication
+
+$$ f(x) \times g(x) $$ is always valid.
+
+### Division
+
+$$ \frac{f(x)}{g(x)} $$ is always valid (it remains true that having 0 as the denominator is undefined).
+
+## Composition
+
+**Composition** is combining two functions to make one function by taking one function as the input of the other.
+
+<Block text={'Example'}>
+  Suppose $$ f(x) = x^2 $$ and $$ g(x) = 2x-1 $$, then:
+  <ul>
+    <li>$$ f(g(x)) = (2x-1)^2 $$</li>
+    <li>$$ g(f(x)) = 2 x^2 - 1 $$</li>
+  </ul>
+</Block>
+
+$$ f(g(x)) $$ and $$ g(f(x)) $$ are called **composite functions**.
+
+## Odd Functions and Even Functions
+
+A function $$ f(x) $$ is **odd** if $$ f(-x) = -f(x) $$.
+
+All odd functions are symmetric about the origin.
+
+A function $$ f(x) $$ is **even** if $$ f(-x) = f(x) $$.
+
+All even functions are symmetric about the y-axis.
+
+Some functions may be neither odd or even.
+
+## Inverse Functions
+
+The inverse of some function $$ f(x) $$, denoted by $$ f^{-1}(x) $$, exists iff $$ f(x) $$ is a one-to-one function (injective).
+
+The inverse of a function can be found by:
+
+| Procedure                              | Annotation                      |
+| -------------------------------------- | ------------------------------- |
+| $$ f(x) = 2 x^2 + 3 $$                 | Original function.              |
+| $$ x = 2 y^2 + 3 $$                    | Swap the input with the output. |
+| $$ f^{-1}(x) = \sqrt{\frac{x-3}{2}} $$ | Isolate the input.              |
+
+The domain of $$ f(x) $$ is the range of $$ f^{-1}(x) $$.
+
+The range of $$ f(x) $$ is the domain of $$ f^{-1}(x) $$.
+
+## Zero(es)
+
+The **zero(es)** of some function $$ f(x) $$ is the value(s) of $$ x $$ such that $$ f(x) = 0 $$.

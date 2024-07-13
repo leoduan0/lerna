@@ -12,7 +12,6 @@ import {
   Problem,
   Rule,
   Showcase,
-  Term,
 } from '@/components'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -48,7 +47,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Problem: Problem,
     Rule: Rule,
     Showcase: Showcase,
-    Term: Term,
     ...components,
   }
 }

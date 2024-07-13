@@ -1,0 +1,25 @@
+---
+title: 'Partial Fraction'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Partial Fraction
+
+Given a function $$ f(x) $$ to integrate, if it is in a fractional form, then one may integrate it using **partial fractions**.
+
+<Block text={'Example'}>
+
+Given $$ \int \frac{3x+1}{x^2+2x} \,dx $$, it is tedious to evaluate the integral directly. However, using partial fractions, we can split the fraction up like so:
+
+| Procedure                                                                                                                                                                | Annotation                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ \int \frac{3x+1}{x^2+2x} \,dx $$                                                                                                                                      |                                                                                                                                                                              |
+| $$ \frac{3x+1}{x^2+2x} = \frac{3x+1}{x(x+2)} $$                                                                                                                          | Isolate the fraction out, then factor.                                                                                                                                       |
+| $$ \frac{3x+1}{x(x+2)} = \frac{A}{x} + \frac{B}{x+2} $$                                                                                                                  | For as many constituent factors of the denominator there exists, write each fraction as its own fraction with the numerator temporarily substituted with a letter.           |
+| $$ \because \frac{3x+1}{x(x+2)} = \frac{A}{x} + \frac{B}{x+2} $$ $$ \therefore A(x+2)+Bx = 3x+1 $$ $$ \therefore (A+B)x+2A = 3x+1 $$                                     | By fraction laws, we get the following is the numerator and must equal to the numerator from our original function. Then rewrite.                                            |
+| $$ \because (A+B)x+2A = 3x+1 $$ $$ \therefore A+B = 3 $$ $$ \therefore 2A = 1 $$ $$ \because 2A = 1 $$ $$ \therefore A = \frac{1}{2} $$ $$ \therefore B = \frac{5}{2} $$ | Notice the coefficients must match up for this equation to be true as well. Thus, we get the following two equations. Then, find the values for all the letter respectively. |
+| $$ \frac{3x+1}{x(x+2)} = \frac{A}{x} + \frac{B}{x+2} = \frac{1}{2x} + \frac{5}{2x+4} $$ $$ \int \frac{1}{2x} + \frac{5}{2x+4} \,dx $$                                    | Substitute the letters back into the fraction, then rewrite our original integral.                                                                                           |
+| $$ \int \frac{1}{2x} + \frac{5}{2x+4} \,dx = \frac{1}{2}\ln\lvert x \rvert + \frac{5}{2}\ln\lvert 2x+4 \rvert + c $$                                                     | Then, integrate as normal, and we get our result.                                                                                                                            |
+
+</Block>

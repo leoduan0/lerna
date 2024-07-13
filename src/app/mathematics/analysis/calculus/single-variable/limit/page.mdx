@@ -1,0 +1,138 @@
+---
+title: 'Limit'
+authors: ['Leo Duan']
+date-last-edited: '2024-05-29'
+---
+
+# Limit
+
+The value of a function $$ f(x) $$ when its input gets infinitely close to (but not at) a certain value $$ k $$ is called a **limit**, denoted as $$ \lim_{x \to k} f(x) $$, and that limit only exists if the left-hand limit $$ \lim_{x \to k^-} f(x) $$ (approaching $$ k $$ from the left) and the right-hand limit $$ \lim_{x \to k^+} f(x) $$ (approaching $$ k $$ from the right) also exists and equals the same value.
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\lim_{x \\to k} f(x) = \\lim_{x \\to k^+} f(x) = \\lim_{x \\to k^-} f(x)'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: '\\lim_{x \\to k} f(x)',
+      annotation: (
+        <span>
+          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
+          <Math math={'x'} type={'inline'} /> approaches{' '}
+          <Math math={'k'} type={'inline'} />
+        </span>
+      ),
+    },
+    {
+      term: '\\lim_{x \\to k^+} f(x)',
+      annotation: (
+        <span>
+          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
+          <Math math={'x'} type={'inline'} /> approaches{' '}
+          <Math math={'k'} type={'inline'} /> from the right side
+        </span>
+      ),
+    },
+    {
+      term: '\\lim_{x \\to k^-} f(x)',
+      annotation: (
+        <span>
+          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
+          <Math math={'x'} type={'inline'} /> approaches{' '}
+          <Math math={'k'} type={'inline'} /> from the left side
+        </span>
+      ),
+    },
+  ]}
+/>
+
+If $$ \lim_{x \to k} = \infty $$ or $$ \lim_{x \to k} = -\infty $$, the expression is still valid but the limit does not exist.
+
+<Block text={'Example'}>
+
+If $$ f(x) = \left|\frac{1}{x}\right| $$, then what is $$ \lim_{x \to 0} f(x) $$? The value of $$ f(x) $$ is undefined when $$ x $$ is $$ 0 $$, but realize that limits is about getting infinitely close to a certain value and approximating the value at that point, not what the value is.
+
+As we can see from the graph, as $$ x $$ approaches $$ 0 $$ from either the positive or negative side, the value of $$ y $$ increases rapidly. It would be useful to make a chart like the following to help us determine a limit:
+
+<Graph
+  type={'cartesian'}
+  viewBox={{
+    x: [-5, 5],
+    y: [-2, 10],
+  }}
+  expressions={[{ math: '(x) => Math.abs(1/x)', color: 'green' }]}
+  subdivisions={4}
+  annotations={[{ text: 'f(x)=\\left|\\frac{1}{x}\\right|', position: [9, 9] }]}
+/>
+
+<Align type={'center'}>
+
+| $$ x $$      | $$ f(x) $$  |
+| ------------ | ----------- |
+| $$ -1 $$     | $$ 1 $$     |
+| $$ -0.1 $$   | $$ 10 $$    |
+| $$ -0.01 $$  | $$ 100 $$   |
+| $$ -0.001 $$ | $$ 1000 $$  |
+| $$ 0 $$      | (undefined) |
+| $$ 0.001 $$  | $$ 1000 $$  |
+| $$ 0.01 $$   | $$ 100 $$   |
+| $$ 0.1 $$    | $$ 10 $$    |
+| $$ 1 $$      | $$ 1 $$     |
+
+</Align>
+
+A left-hand limit $$ \lim_{x \to k^-} f(x) $$ implies approaching the value $$ k $$ from the negative (the left-hand) side. In the case, we can go from some arbitrary negative number, and then approach 0. Following the table of values above, we can start from $$ -1 $$, to $$ -0.1 $$, to $$ -0.01 $$, to $$ -0.001 $$. We can see that as $$ x $$ approaches $$ 0 $$ from the left-hand side, $$ y $$ approaches $$ \infty $$, thus $$ \lim_{x \to k^-} \left|\frac{1}{x}\right| = \infty $$.
+
+A right-hand limit $$ \lim_{x \to k^+} f(x) $$ implies approaching the value $$ k $$ from the positive (the right-hand) side. In the case, we can go from some arbitrary positive number, and then approach $$ 0 $$. Following the table of values above, we can start from $$ 1 $$, to $$ 0.1 $$, to $$ 0.01 $$, to $$ 0.001 $$. We can see that as $$ x $$ approaches $$ 0 $$ from the right-hand side, $$ y $$ approaches $$ \infty $$, thus $$ \lim_{x \to k^+} \left|\frac{1}{x}\right| = \infty $$.
+
+Since both the left-hand limit $$ \lim_{x \to k^-} f(x) $$ and the right-hand limit $$ \lim_{x \to k^+} f(x) $$ are equivalent to each other, we say that the limit $$ \lim_{x \to k} f(x) $$ exists and is equal to $$ \infty $$:
+
+$$ f(x) = \left|\frac{1}{x}\right| $$
+
+$$ f(x) = \left|\frac{1}{x}\right| $$
+
+$$ \because \lim_{x \to 0^-} f(x) = \lim_{x \to 0^+} f(x) = \infty $$
+
+$$ \therefore \lim_{x \to 0} f(x) = \infty $$
+
+Note that we are not saying the limit exists. $$ \lim_{x \to 0} f(x) = \infty $$ merely describes the behavior of this function.
+
+</Block>
+
+It is also important to realize that the limit of a function at a given point is not the same as the value of the function for that given input (although in certain functions $$ \lim_{x \to k} f(x) = f(k) $$ would be true).
+
+<Rule
+  statement={
+    <Math math={'\\lim_{x \\to k} f(x) \\nRightarrow f(k)'} type={'block'} />
+  }
+  terms={[
+    {
+      term: '\\lim_{x \\to k} f(x)',
+      annotation: (
+        <span>
+          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
+          <Math math={'x'} type={'inline'} /> approaches{' '}
+          <Math math={'k'} type={'inline'} />
+        </span>
+      ),
+    },
+    {
+      term: 'f(k)',
+      annotation: (
+        <span>
+          Value of <Math math={'f(x)'} type={'inline'} /> if{' '}
+          <Math math={'x = k'} type={'inline'} />
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Continuity
+
+$$ f(x) $$ is **continuous** at $$ a $$ if $$ \lim_{x \to a} f(x) = f(a) $$.

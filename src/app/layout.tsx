@@ -51,10 +51,7 @@ const pages: Page[] = [
       {
         title: 'Algebra',
         children: [
-          {
-            title: 'Entities',
-            children: [{ title: 'Number' }, { title: 'Imaginary Numbers' }],
-          },
+          { title: 'Number', children: [{ title: 'Imaginary Number' }] },
           {
             title: 'Operation',
             children: [
@@ -74,7 +71,7 @@ const pages: Page[] = [
                 title: 'Function',
                 children: [{ title: 'Polynomial' }],
               },
-              { title: 'Morphism' },
+              // { title: 'Morphism' },
             ],
           },
           {
@@ -100,8 +97,8 @@ const pages: Page[] = [
                 children: [
                   { title: 'Arithmetic' },
                   { title: 'Determinant' },
-                  { title: 'Inversion' },
-                  { title: 'Eigenvalue and Eigenvector' },
+                  // { title: 'Inversion' },
+                  // { title: 'Eigenvalue and Eigenvector' },
                 ],
               },
             ],
@@ -184,7 +181,7 @@ const pages: Page[] = [
                     children: [
                       { title: 'Differential' },
                       { title: 'Chain Rule' },
-                      { title: 'The Del Operator' },
+                      { title: 'Del Operator' },
                       { title: 'Directional Derivative' },
                     ],
                   },

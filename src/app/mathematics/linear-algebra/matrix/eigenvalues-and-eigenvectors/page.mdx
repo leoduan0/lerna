@@ -1,0 +1,49 @@
+---
+title: 'Eigenvalue and Eigenvector'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Eigenvalue and Eigenvector
+
+Given the equation $$ M \vec{v} = \lambda \vec{v} $$, where $$ M $$ is some matrix, then $$ \lambda $$ is the **eigenvalue** and $$ \vec{v} $$ is the **eigenvector** of $$ M $$ ($$ \vec{v} $$ is always non-zero).
+
+To find the eigenvalue, the following series of manipulations would be performed:
+
+<Align type={'center'}>
+
+$$ M \vec{v} = \lambda \vec{v} $$
+
+$$ M \vec{v} = \lambda I \vec{v} $$
+
+$$ (M - \lambda I) \vec{v} = 0 $$
+
+$$ \det(M - \lambda I) = 0 $$
+
+</Align>
+
+After finding the eigenvalue, substitute it back into $$ M \vec{v} = \lambda \vec{v} $$ to find the eigenvector.
+
+<Block text={'Example'}>
+
+Given matrix $$ M = \begin{bmatrix} 1 & -2 \\ -2 & 0 \end{bmatrix} $$, find its eigenvalues and the eigenvectors.
+
+To find its eigenvalues
+
+| Procedure                                                                                                                             | Annotation                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| $$ \det\left(\begin{bmatrix} 1 & -2 \\ -2 & 0 \end{bmatrix} - \begin{bmatrix} \lambda & 0 \\ 0 & \lambda \end{bmatrix} \right) = 0 $$ | Plug matrix into the equation and combine some terms                     |
+| $$ \det\begin{bmatrix} 1 - \lambda & -2 \\ -2 & -\lambda \end{bmatrix} = 0 $$                                                         | Combine the matrices                                                     |
+| $$ \lambda^2 - \lambda - 4 = 0 $$                                                                                                     | Find the determinant                                                     |
+| $$ \lambda = \frac{1 + \sqrt{17}}{2}, \frac{1 - \sqrt{17}}{2} $$                                                                      | Solve the quadratic, and we arrive at the two eigenvalues for our matrix |
+
+// UNFINISHED
+
+To find its eigenvectors
+
+| Procedure                                                                                                                                                | Annotation                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| $$ \begin{bmatrix} 1 & -2 \\ -2 & 0 \end{bmatrix} \vec{v} = \frac{1 + \sqrt{17}}{2} \vec{v} $$                                                           | Two eigenvalues imply that there will be two eigenvectors. Substitute any of the two into the original equation |
+| $$ \begin{bmatrix} 1 & -2 \\ -2 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \frac{1 + \sqrt{17}}{2} \begin{bmatrix} x \\ y \end{bmatrix} $$ | Suppose that $$ \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix} $$                                               |
+
+</Block>

@@ -1,0 +1,53 @@
+---
+title: 'Set Theory'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-12'
+---
+
+# Set Theory
+
+## Set
+
+A set is a collection of elements.
+
+The order of constituent elements of a set does not matter (although, in an extension of sets called “multisets”, the order of constituent elements does matter).
+
+Sets can be defined using this notation:
+
+<Block text={'Example'}>
+
+A set $ A $ that contains the first five positive natural numbers is $ A=\{1, 2, 3, 4, 5\} $
+
+</Block>
+
+Some sets cannot be (practically) defined (or written down) using this notation, such as infinite sets (_e.g._ domain and range of most functions). Instead, a conditional statement is used to define such sets:
+
+<Block text={'Example'}>
+
+A set that is the range of $f(x)=x^2$ (_i.e._ $ \operatorname{rng}(f) $) is $ \{y \geq 0 | y \in \mathbb{R} \} $.
+
+</Block>
+
+## Subset
+
+$ A $ is a subset of $ B $ if all elements of $ A $ are elements of $ B $. This relationship is denoted with $ A \subseteq B $.
+
+<Block text={'Example'}>
+
+If $ A = \{2, 3, 1\} $ and $ B = \{1, 2, 3, 4, 5\}, then $ A \subseteq B $.
+
+</Block>
+
+The symbol $ \subset $ is identical to $ \subseteq $ except that $ A \subseteq A $ for any set $ A $ but $ A \not\subset A $ for all sets $ A $.
+
+## Empty Set
+
+An empty set, denoted with $ \{\} $ or $ \emptyset $, is a (the only) set whose cardinal number is 0.
+
+<Block text={'Special Properties'}>
+
+- $ \{\} \subseteq A $ for any set $ A $
+- $ \{\} \cup A = A $ for any set $ A $
+- $ \{\} \cap A = \{\} $ for any set $ A $
+
+</Block>

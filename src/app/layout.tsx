@@ -55,10 +55,10 @@ const pages: Page[] = [
           {
             title: 'Operation',
             children: [
-              { title: 'Addition' },
-              { title: 'Multiplication' },
-              { title: 'Subtraction' },
-              { title: 'Division' },
+              // { title: 'Addition' },
+              // { title: 'Multiplication' },
+              // { title: 'Subtraction' },
+              // { title: 'Division' },
               { title: 'Exponentiation' },
               { title: 'Logarithm' },
               { title: 'Factorial' },
@@ -69,7 +69,12 @@ const pages: Page[] = [
             children: [
               {
                 title: 'Function',
-                children: [{ title: 'Polynomial' }],
+                children: [
+                  {
+                    title: 'Polynomial',
+                    children: [{ title: 'Polynomial Remainder Theorem' }],
+                  },
+                ],
               },
               // { title: 'Morphism' },
             ],
@@ -93,7 +98,6 @@ const pages: Page[] = [
               },
               {
                 title: 'Matrix',
-
                 children: [
                   { title: 'Arithmetic' },
                   { title: 'Determinant' },
@@ -103,11 +107,12 @@ const pages: Page[] = [
               },
             ],
           },
+          { title: 'Cauchy Bunyakovsky Schwarz Inequality' },
+          { title: 'Sophie Germains Inequality' },
         ],
       },
       {
         title: 'Geometry',
-
         children: [
           { title: 'Object' },
           { title: 'Length' },
@@ -194,11 +199,14 @@ const pages: Page[] = [
       },
       // { title: 'Number Theory' },
       // { title: 'Discreet Mathematics' },
-      // { title: 'Set Theory' },
+      { title: 'Set Theory' },
       // { title: 'Logic' },
       {
         title: 'Statistics',
-        children: [{ title: 'Mean' }, { title: 'Standard Deviation' }],
+        children: [
+          { title: 'Mean', children: [{ title: 'Inequalities' }] },
+          { title: 'Standard Deviation' },
+        ],
       },
     ],
   },

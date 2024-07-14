@@ -1,7 +1,7 @@
 ---
 title: 'Mean'
 author: ['Leo Duan']
-date: '2024-05-29'
+date: '2024-07-12'
 ---
 
 # Mean
@@ -36,8 +36,7 @@ date: '2024-05-29'
   ]}
   annotation={
     <span>
-      This is also known as the <strong>mean</strong> or the{' '}
-      <strong>average</strong>.
+      This is also known as the <strong>average</strong>.
     </span>
   }
 />
@@ -104,27 +103,40 @@ date: '2024-05-29'
   ]}
 />
 
+## Quadratic Mean
+
 <Rule
   statement={
     <Math
       math={
-        '\\overline{x}_{arithmetic} \\geq \\overline{x}_{geometric} \\geq \\overline{x}_{harmonic}'
+        '\\overline{x}_{quadratic} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^n x_i^2}'
       }
       type={'block'}
     />
   }
   terms={[
     {
-      term: '\\overline{x}_{arithmetic}',
-      annotation: <span>Arithmetic mean</span>,
+      term: '\\overline{x}_{quadratic}',
+      annotation: <span>Quadratic mean</span>,
     },
     {
-      term: '\\overline{x}_{geometric}',
-      annotation: <span>Geometric mean</span>,
+      term: 'x_i',
+      annotation: (
+        <span>
+          <Math math={'i'} type={'inline'} />
+          -th value of population
+        </span>
+      ),
     },
     {
-      term: '\\overline{x}_{harmonic}',
-      annotation: <span>Harmonic mean</span>,
+      term: 'n',
+      annotation: <span>Population size</span>,
     },
   ]}
+  annotation={
+    <span>
+      Note that in some areas of science, the quadratic mean is also referred to
+      as the **root mean square** (rms).
+    </span>
+  }
 />

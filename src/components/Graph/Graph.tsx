@@ -1,4 +1,5 @@
 'use client'
+
 import { Coordinates, LaTeX, Mafs, Plot, Point } from 'mafs'
 import 'mafs/core.css'
 import React from 'react'

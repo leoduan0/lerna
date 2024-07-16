@@ -1,4 +1,5 @@
 'use client'
+
 import NextLink from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
@@ -21,13 +22,13 @@ export default function NavigationPage(props: {
   }
 
   return (
-    <div className="w-full space-y-0.5">
+    <>
       <div
         className={`${
           (pathname == '/' && props.href == '/home') || pathname == props.href
             ? 'bg-neutral-200 dark:bg-neutral-700'
             : 'hover:bg-neutral-200 dark:hover:bg-neutral-700'
-        } flex h-8 w-fit min-w-full items-center rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
+        } flex h-8 w-full items-center truncate rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button
           onClick={() => props.page.children && toggleExpand()} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
@@ -46,20 +47,18 @@ export default function NavigationPage(props: {
         </button>
         <NextLink
           href={props.href}
-          className={`${props.page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full grow items-center space-x-2`}
+          className={`${props.page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full w-full grow items-center space-x-2 pr-2`}
           onClick={() => toggleNavigation()}
         >
-          <div className="grow-0">{props.page.icon && props.page.icon}</div>
-          <div className="text-theme grow truncate pr-2">
-            {props.page.title}
-          </div>
+          <div>{props.page.icon && props.page.icon}</div>
+          <span className="text-theme truncate">{props.page.title}</span>
         </NextLink>
       </div>
       {props.page.children && expand && (
-        <ul className="list-none space-y-0.5 pl-6">
+        <ul className="list-none space-y-1 pl-6 lg:space-y-0.5">
           {props.renderFunction(props.page.children, props.href)}
         </ul>
       )}
-    </div>
+    </>
   )
 }

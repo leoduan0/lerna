@@ -1,0 +1,170 @@
+---
+title: 'Thermodynamics'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-15'
+---
+
+# Thermodynamics
+
+## State Functions
+
+**State functions** are values that depend on the state of the substance.
+
+## Enthalpy
+
+**Enthalpy** ($$ H $$) is a state function that measures the amount of energy in a system.
+
+The **enthalpy change** ($$ \Delta H $$) is the amount of energy gained by the system through a reaction:
+
+- $$ \Delta H > 0 $$ implies an **endothermic** reaction (gains energy).
+- $$ \Delta H < 0 $$ implies an **exothermic** reaction (loses energy).
+
+## Hess's Law
+
+// START EDITING HERE
+
+When applying make sure to take into account the number of bonds within a compound. For example, $$ 2H_2O $$ does not imply just multiplying the bond enthalpy of H-O by 2, but by 4, as 2 (from the coefficient) and 2 (from the two bonds in $$ H_2O $$) multiplied together equals 4.
+
+Standard enthalpy of formation:
+
+$$ D \to A \, \Delta H\_{da} $$
+
+$$ E \to B \, \Delta H\_{eb} $$
+
+$$ F \to C \, \Delta H\_{fc} $$
+
+Then if the reaction is $$ A+B \to C $$, then $$ \Delta H\*c = \Delta H*{fc}-(\Delta H*{da}+\Delta H\_{eb}) $$.
+
+Enthalpy is energy gained by the system after a reaction (negative enthalpy implies exothermic reaction).
+
+Hess's Law can also be applied to Gibbs Free Energy, since it is also a state function.
+
+## Lattice Enthalpy
+
+**Lattice enthalpy** is the enthalpy involved in the formation of one mole of an ionic compound from free constituent ions in its gas form.
+
+$$ Na^+_{(g)} + Cl_{(g)}^- \to NaCl\_(s) $$
+
+Since gaseous ions hold much more energy than its solid lattice counterpart, the reaction is therefore very exothermic.
+
+## Base State
+
+The **base state** of an element or a compound is the state it is naturally in.
+
+Exceptions include $$ Br_2 $$, which is liquid, and $$ I_2 $$, which is solid.
+
+## Standard Enthalpy of Combustion
+
+The **standard enthalpy of combustion** is the enthalpy involved when one mole of a substance is combusted completely under standard conditions.
+
+<Block text={'Example'}>
+
+Calculate the standard enthalpy of combustion of $$ C_3H_8O $$ (propan-2-ol) given:
+
+- $$ C+O*2 \to CO_2 \, \Delta H*{f,CO_2} = -394 kJmol^{-1} $$
+- $$ 2H*2+O_2 \to = 2H_2O \, \Delta H*{f,H_2O} = -286 kJmol^{-1} $$
+- $$ 6C+8H+O*2 \to 2C_3H_8O \, \Delta H*{f,C_3H_8O} = -318 kJmol^{-1} $$
+
+- $$ C+O*2 \to CO_2 \, \Delta H*{f,CO*2} = -394 kJmol^{-1} \\ 2H_2+O_2 \to = 2H_2O \, \Delta H*{f,H*2O} = -286 kJmol^{-1} \\ 6C+8H+O_2 \to 2C_3H_8O \, \Delta H*{f,C_3H_8O} = -318 kJmol^{-1} $$
+
+| Procedure                                                                             | Annotation                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ 2C_3H_8O+9O_2 \to 6CO_2+8H_2O $$                                                   | Given that the enthalpy of this reaction is what we need to calculate, we need to manipulate the three formation reactions given above so that they match our target equation.                                                          |
+| $$ 6C+6O\*2 \to 6CO*2 \, \Delta H*{f,CO_2} = 6 \cdot -394 = -2364 kJmol^{-1} $$       | The coefficient $$ CO_2 $$ in the target and the formation reactions are 6 and 1 respectively, so we need to multiply its formation reaction by 6 to match our target equation. The enthalpy change needs to be multipled by 6 as well. |
+| $$ 2H*2+O_2 \to = 2H_2O \, \Delta H*{f,H_2O} = 4 \cdot -286 = -1144 kJmol^{-1} $$     | The coefficient $$ CO_2 $$ in the target and the formation reactions are 8 and 2 respectively, so we need to multiply its formation reaction by 4 to match our target equation. The enthalpy change needs to be multipled by 4 as well. |
+| $$ 6C+8H+O*2 \to 2C_3H_8O \, \Delta H*{f,C_3H_8O} = 1 \cdot -318 = -318 kJmol^{-1} $$ | The coefficient $$ CO_2 $$ in the target and the formation reactions are 1 and 1 respectively, so we need to multiply its formation reaction by 1 to match our target equation. The enthalpy change needs to be multipled by 1 as well. |
+| $$ (-2358 kJmol^{-1})+(-1144 kJmol^{-1})+(318 kJmol^{-1})=-3184 kJmol^{-1} $$         | Sum the equations and the enthalpies                                                                                                                                                                                                    |
+
+// WTF
+
+</Block>
+
+## Calorimetry
+
+**Calorimetry** is the act of measuring the amount of calories within a certain substance, most likely food.
+
+To do this, a bomb calorimeter is used.
+
+1. First, ground the food into mush.
+1. In a freeze dryer, the moisture is removed.
+1. The food is made into pellets
+1. The pellets are then lowered into the bomb calorimeter.
+1. They are burned. The heat from the burning food will heat up the water. After the food has been fully burnt, the heat released will raise the temperature of the isolated water inside the calorimeter, which can be measured and then used to find out how much heat has been released.
+
+# Entropy
+
+**Entropy** is the measure of how spread out energy is.
+
+The entropy of gas > that of aqueous > that of liquid > that of solids.
+
+Any thermodynamic process will increase the entropy of the universe.
+
+When something (like water) is heated, there will be a plateau at, for example, the boiling point. This plateau implies that the water is absorbing heat but its temperature is not changing. This is because the extra heat is used to break the intermolecular bonds between the water molecules. At this stage, the water is boiling; it's called a **phase change**.
+
+When water is, for example, changing phase from liquid to solid, and the temperature vs heat absorbed graph is a plateau, both entropy and enthalpy are increasing.
+
+$$ S $$ is used for entropy. $$ \Delta S $$ is used for the change in entropy.
+
+### Standard Entropy
+
+**Standard entropies** are the entropies . They are denoted by the degree symbol $$ S\degree $$ and is the entropy of 1 mole of a substance when:
+
+- Temperature is $$ 298K $$
+- Pressure is $$ 1 atm $$
+
+More complex molecules tend to have higher entropy values (_e.g._ a longer hydrocarbon chain has more ways to distort itself).
+
+Note that standard entropy is a state function.
+
+The change in standard entropy is as follows:
+
+$$ \Delta S*{rxn}\degree \left(\sum n_p S*{products} \degree \right) - \left(\sum n*r S*{reactants} \degree \right) $$
+
+## Molecules
+
+Molecules can have rotational, vibrational, and translational movement.
+
+If $$ \Delta S\_{universe} > 0 $$, the change in entropy is positive, it is a **favored process**. They are irreversible.
+
+If $$ \Delta S\_{universe} < 0 $$, the change in entropy is negative, it is **not** a favored process.
+
+## Laws of Thermodynamics
+
+### First Law
+
+Energy cannot be created or destroyed.
+
+### Second Law
+
+Any reaction leads to an increase of entropy of the universe.
+
+### Third Law
+
+A system's entropy approaches a constant value as its temperature approaches $$ 0K $$.
+
+## Gibbs Free Energy
+
+$$ \Delta G = \Delta H - T \Delta S $$
+
+A process (at a constant temperature and pressure) is favored in the direction in which **Gibbs Free Energy** decreases.
+
+$$ \Delta G\degree = \left(\sum n*p \Delta G*{f,products} \degree \right) - \left(\sum n*r \Delta G*{f,reactants} \degree \right) $$
+
+If $$ \Delta G\degree < 0 $$ then the reaction is thermodynamically favored, and it is spontaneous.
+If $$ \Delta G\degree > 0 $$, then the reaction is non-spontaneous and won't proceed unless energy is added into the reaction.
+If $$ \Delta G\degree = 0 $$, then the reaction is at equilibrium, meaning the rate of the forward reaction is equal to the rate of the reverse reaction.
+
+| $ \Delta H $ | $ Delta S $ | Low Temperature | High Temperature |
+| ------------ | ----------- | --------------- | ---------------- |
+| $ - $        | $ + $       | Spontaneous     | Spontaneous      |
+| $ - $        | $ - $       | Spontaneous     | Non-spontaneous  |
+| $ + $        | $ - $       | Non-spontaneous | Non-spontaneous  |
+| $ + $        | $ + $       | Non-spontaneous | Spontaneous      |
+
+## Galvanic Cells
+
+**Galvanic cells** take advantage of redox reactions to create electricity from two separate nodes, the **cathode** and the **anode**. In the cathode a chemical is oxidized, which produces electronics that goes through a wire into the anode, where the chemical is reduced using the electrons from the cathode. A salt bridge is used to complete this circuit and the anions within flow into the anode and cations flow within flow into the cathode as a result of positive charges accumulating inside the anode and negative charges accumulating inside the cathode respectively.
+
+A common galvanic cell would be made of $$ CuSO_4 $$ in the cathode and $$ Zn(NO_3)\_2 $$ in the anode. $$ SO_4 $$ and $$ NO_3 $$ are common anions and they do not affect the solubility of the overall electrolyte.
+
+The more positive the (reduction or oxidation) potential of the reaction the more favorable it is. Reactions with positive potentials are also spontaneous, while those with negative potentials are non-spontaneous. Note that the (reduction or oxidation) potentials are **intensive**, meaning that the amount of substances involved does not affect the potentials (_e.g._ if a whole reaction needs to be multiplied by 2, the corresponding potential of the reaction is to be constant (not multiplied by 2)). Note that flipping the sign of an oxidation potential gives the corresponding reduction potential, and vice versa (_i.e._ given the oxidation potential is $$ E $$, then corresponding reduction potential is $$ -E $$).

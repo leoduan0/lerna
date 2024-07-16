@@ -1,0 +1,137 @@
+---
+title: 'Optics'
+authors: ['Leo Duan']
+date-last-edited: '2023-12-12'
+---
+
+# Optics
+
+**Optics** is the study of the behavior of light, especially when it is interacting with matter of differing sorts.
+
+## Reflection
+
+**Reflection** is when light bounces off a smooth surface.
+
+<Rule
+  statement={
+    <>
+      <p>
+        The angle of incidence (the angle between the incident ray and a{' '}
+        <strong>normal line</strong>, a line normal to the surface) is equal to
+        the angle of reflection.
+      </p>
+      <Math math={'\\theta_i=\\theta_r'} type={'block'} />
+    </>
+  }
+  terms={[
+    {
+      term: '\\theta_i',
+      annotation: <span>Angle of incidence</span>,
+    },
+    {
+      term: '\\theta_r',
+      annotation: <span>Angle of reflection</span>,
+    },
+  ]}
+/>
+
+## Refraction
+
+Another important phenomenon of light is **refraction**, the redirection of light when it passes through a certain medium.
+
+For example, it's commonly observed that the actual location of an object submerged within water is often deviated from the location where it appears to be. This is because the angle from the normal of the incident ray is not equal to the angle from the normal of the refracted ray.
+
+<Showcase>
+
+<Figure
+  image={
+    <Image
+      source={'/physics/optics/figure_2.svg'}
+      width={384}
+      height={384}
+      alt={''}
+    />
+  }
+  number={2}
+  text={
+    <span>
+      Refraction of light in water.{' '}
+      <Math math={'\\theta_1 \\neq \\theta_2'} type={'inline'} />.
+    </span>
+  }
+/>
+
+</Showcase>
+
+### Refractive Index
+
+The observed velocity of light is not the same in all materials.
+
+The ratio of the velocity of light in a vacuum to the velocity in a certain material is called the **refractive index** of that material.
+
+<Rule
+  statement={
+    <Math math={'n=\\frac{v_{vacuum}}{v_{material}}'} type={'block'} />
+  }
+  terms={[
+    {
+      term: 'n',
+      annotation: <span>Refractive index</span>,
+    },
+    {
+      term: 'v_{vacuum}',
+      annotation: <span>Velocity of light in vacuum</span>,
+    },
+    {
+      term: 'v_{material}',
+      annotation: <span>Velocity of light in the material</span>,
+    },
+  ]}
+/>
+
+### Snell's Law
+
+Aspects of refraction is governed by **Snell's Law**.
+
+<Rule
+  statement={
+    <Math
+      math={
+        '\\frac{n_1}{n_2}=\\frac{\\sin(\\theta_2)}{\\sin(\\theta_1)}=\\frac{v_2}{v_1}'
+      }
+      type={'block'}
+    />
+  }
+  terms={[
+    {
+      term: 'n_1',
+      annotation: <span>Refractive index of material 1</span>,
+    },
+    {
+      term: 'n_2',
+      annotation: <span>Refractive index of material 2</span>,
+    },
+    {
+      term: '\\theta_1',
+      annotation: <span>Angle to the normal in material 1</span>,
+    },
+    {
+      term: '\\theta_2',
+      annotation: <span>Angle to the normal in material 2</span>,
+    },
+    {
+      term: 'v_1',
+      annotation: <span>Velocity of light in material 1</span>,
+    },
+    {
+      term: 'n_2',
+      annotation: <span>Velocity of light in material 2</span>,
+    },
+  ]}
+/>
+
+Realize that if $$ n_1=n_2 $$, the light would simply keep going in a straight line.
+
+## Lens
+
+## Mirrors

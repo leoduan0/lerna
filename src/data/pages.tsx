@@ -191,7 +191,7 @@ const pages: Page[] = [
       },
       // { title: 'Number Theory' },
       // { title: 'Discreet Mathematics' },
-      { title: 'Set Theory' },
+      // { title: 'Set Theory' },
       // { title: 'Logic' },
       {
         title: 'Statistics',

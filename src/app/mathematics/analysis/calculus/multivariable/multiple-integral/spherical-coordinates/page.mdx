@@ -1,0 +1,42 @@
+---
+title: 'Spherical Coordinates'
+authors: ['Leo Duan']
+last-edited-date: '2024-02-28'
+---
+
+# Spherical Coordinates
+
+Multiple integrals in **spherical coordinates** requires an understanding of the diagram below.
+
+<Figure
+  image={
+    <Image
+      src={
+        '/mathematics/analysis/calculus/multivariable/multiple-integral/spherical-coordinates/figure_1.svg'
+      }
+      width={256}
+      height={256}
+      alt={''}
+    />
+  }
+  number={1}
+  text={<span>A diagram of spherical coordinates.</span>}
+/>
+
+From the diagram above, we can convert spherical coordinates to cartesian:
+
+- $$ x=\rho\sin(\phi)\cos(\theta) $$
+
+- $$ y=\rho\sin(\phi)\sin(\theta) $$
+
+- $$ z=\rho\cos(\phi) $$
+
+Now, we can apply multiple integrals to spherical coordinates just like we do to cartesian.
+
+<Block text={'Example'}>
+
+Given a sphere with radius $$ r $$, derive the formula for its volume using spherical coordinates.
+
+</Block>
+
+// DERIVE FORMULA. LEARN JACOBIAN

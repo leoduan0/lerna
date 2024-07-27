@@ -1,6 +1,6 @@
-import { Page } from '@/types'
+import { TPage } from '@/types'
 
-const pages: Page[] = [
+const pages: TPage[] = [
   {
     title: 'Home',
     icon: (
@@ -248,41 +248,41 @@ const pages: Page[] = [
       // { title: 'Optics' },
     ],
   },
-  {
-    title: 'Chemistry',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18px"
-        viewBox="0 0 512 512"
-        className="navigation-SVG"
-      >
-        <path d="M342.6 9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4L28.1 342.6C10.1 360.6 0 385 0 410.5V416c0 53 43 96 96 96h5.5c25.5 0 49.9-10.1 67.9-28.1L448 205.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-32-32-96-96-32-32zM205.3 256L352 109.3 402.7 160l-96 96H205.3z" />
-      </svg>
-    ),
-    children: [
-      { title: 'Stoichiometry' },
-      { title: 'Nomenclature' },
-      { title: 'Lewis Structure' },
-      { title: 'Equilibrium' },
-      { title: 'Oxidation and Reduction' },
-      { title: 'Thermodynamics' },
-    ],
-  },
-  {
-    title: 'Psychology',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18px"
-        viewBox="0 0 576 512"
-        className="navigation-SVG"
-      >
-        <path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1 96 192c0 53 43 96 96 96s96-43 96-96l0-120.9-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1L352 192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112l0-70.7c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 70.7c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192L32 71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
-      </svg>
-    ),
-    children: [{ title: 'Sociocultural Approach' }],
-  },
+  // {
+  //   title: 'Chemistry',
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="18px"
+  //       viewBox="0 0 512 512"
+  //       className="navigation-SVG"
+  //     >
+  //       <path d="M342.6 9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4L28.1 342.6C10.1 360.6 0 385 0 410.5V416c0 53 43 96 96 96h5.5c25.5 0 49.9-10.1 67.9-28.1L448 205.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-32-32-96-96-32-32zM205.3 256L352 109.3 402.7 160l-96 96H205.3z" />
+  //     </svg>
+  //   ),
+  //   children: [
+  //     { title: 'Stoichiometry' },
+  //     { title: 'Nomenclature' },
+  //     { title: 'Lewis Structure' },
+  //     { title: 'Equilibrium' },
+  //     { title: 'Oxidation and Reduction' },
+  //     { title: 'Thermodynamics' },
+  //   ],
+  // },
+  // {
+  //   title: 'Psychology',
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="18px"
+  //       viewBox="0 0 576 512"
+  //       className="navigation-SVG"
+  //     >
+  //       <path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1 96 192c0 53 43 96 96 96s96-43 96-96l0-120.9-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1L352 192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112l0-70.7c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 70.7c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192L32 71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+  //     </svg>
+  //   ),
+  //   children: [{ title: 'Sociocultural Approach' }],
+  // },
   // {
   //   title: 'History',
   //   icon: (

@@ -1,5 +1,5 @@
-export type Page = {
+export type TPage = {
   title: string
   icon?: React.ReactNode
-  children?: Page[]
+  children?: TPage[]
 }

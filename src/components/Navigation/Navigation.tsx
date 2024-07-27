@@ -2,11 +2,11 @@
 
 import useNavigationStatus from '@/hooks/useNavigationStatus'
 import { GoogleAd } from '@/components'
-import { Page } from '@/types'
+import { TPage } from '@/types'
 import Head from './Head'
 import Pages from './Pages'
 
-export default function Navigation(props: { pages: Page[] }): React.ReactNode {
+export default function Navigation(props: { pages: TPage[] }): React.ReactNode {
   const { navigationStatus, toggleNavigation } = useNavigationStatus()
 
   return (

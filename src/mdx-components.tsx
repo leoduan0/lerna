@@ -10,6 +10,7 @@ import {
   Image,
   Math,
   Problem,
+  CommonQuestion,
   Rule,
   Showcase,
 } from '@/components'
@@ -45,6 +46,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Image: Image,
     Math: Math,
     Problem: Problem,
+    CommonQuestion: CommonQuestion,
     Rule: Rule,
     Showcase: Showcase,
     ...components,

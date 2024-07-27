@@ -4,12 +4,12 @@ import NextLink from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import useNavigationStatus from '@/hooks/useNavigationStatus'
-import { Page } from '@/types'
+import { TPage } from '@/types'
 
 export default function NavigationPage(props: {
-  page: Page
+  page: TPage
   href: string
-  renderFunction: (pages: Page[], href: string) => React.ReactNode
+  renderFunction: (pages: TPage[], href: string) => React.ReactNode
 }): React.ReactNode {
   const { navigationStatus, toggleNavigation } = useNavigationStatus()
 

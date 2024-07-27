@@ -1,8 +1,8 @@
-import { Page } from '@/types'
+import { TPage } from '@/types'
 import { Href } from '@/utils'
 import NavigationPage from './NavigationPage'
 
-function renderNavigationItems(pages: Page[], href: string): React.ReactNode {
+function renderNavigationItems(pages: TPage[], href: string): React.ReactNode {
   return pages.map((item: Page, index) => {
     return (
       <li key={index} className="w-full space-y-1 lg:space-y-0.5">
@@ -18,7 +18,7 @@ function renderNavigationItems(pages: Page[], href: string): React.ReactNode {
   })
 }
 
-export default function Pages(props: { pages: Page[] }): React.ReactNode {
+export default function Pages(props: { pages: TPage[] }): React.ReactNode {
   return (
     <ul className="w-full list-none space-y-1 p-2 lg:space-y-0.5">
       {renderNavigationItems(props.pages, '')}

@@ -3,7 +3,7 @@ import { Href } from '@/utils'
 import NavigationPage from './NavigationPage'
 
 function renderNavigationItems(pages: TPage[], href: string): React.ReactNode {
-  return pages.map((item: Page, index) => {
+  return pages.map((item: TPage, index) => {
     return (
       <li key={index} className="w-full space-y-1 lg:space-y-0.5">
         <NavigationPage

@@ -120,15 +120,15 @@ const pages: TPage[] = [
               { title: 'Law of Cosines' },
             ],
           },
-          {
-            title: 'Coordinate System',
-            children: [
-              { title: 'Line' },
-              { title: 'Cartesian' },
-              { title: 'Polar' },
-              { title: 'Spherical' },
-            ],
-          },
+          // {
+          //   title: 'Coordinate System',
+          //   children: [
+          //     { title: 'Line' },
+          //     { title: 'Cartesian' },
+          //     { title: 'Polar' },
+          //     { title: 'Spherical' },
+          //   ],
+          // },
         ],
       },
       {
@@ -193,7 +193,7 @@ const pages: TPage[] = [
                   },
                   {
                     title: 'Multiple Integral',
-                    children: [{ title: 'Spherical Coordinate' }],
+                    // children: [{ title: 'Spherical Coordinate' }],
                   },
                 ],
               },

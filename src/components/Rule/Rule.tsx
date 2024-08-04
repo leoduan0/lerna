@@ -10,12 +10,18 @@ export default function Rule(props: {
 }): React.ReactNode {
   return (
     <Block>
-      <Heading level={4}>Rule</Heading>
-      <Heading level={5}>Statement</Heading>
+      <Heading level={4} clickable={false}>
+        Rule
+      </Heading>
+      <Heading level={5} clickable={false}>
+        Statement
+      </Heading>
       {props.statement}
       {props.terms && (
         <>
-          <Heading level={5}>Term</Heading>
+          <Heading level={5} clickable={false}>
+            Term
+          </Heading>
           {props.terms.map((term) => (
             <div key={term.term}>
               <span>
@@ -28,7 +34,9 @@ export default function Rule(props: {
       )}
       {props.annotation && (
         <>
-          <Heading level={5}>Annotation</Heading>
+          <Heading level={5} clickable={false}>
+            Annotation
+          </Heading>
           {props.annotation}
         </>
       )}

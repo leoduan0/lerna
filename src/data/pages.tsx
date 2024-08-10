@@ -99,8 +99,9 @@ const pages: TPage[] = [
               },
             ],
           },
-          { title: 'Cauchy Bunyakovsky Schwarz Inequality' },
-          { title: 'Sophie Germains Inequality' },
+          { title: 'Cauchy-Schwarz Inequality' },
+          { title: 'Sophie Germains Identity' },
+          { title: 'Difference of Two Squares' },
         ],
       },
       {

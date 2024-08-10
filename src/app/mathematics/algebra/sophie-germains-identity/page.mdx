@@ -1,0 +1,22 @@
+---
+title: 'Sophie Germain's Identity'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-12'
+---
+
+# Sophie Germain's Inequality
+
+$$ a^4+4b^4 = (a^2+2ab+2b^2)(a^2-2ab+2b^2) $$
+
+<Block text={"Derivation"}>
+
+| Procedure                                | Annotation                                                                                                |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| $$ a^4+4b^4 $$                           |                                                                                                           |
+| $$ = (a^2)^2+(2b^2)^2 $$                 | Rewrite                                                                                                   |
+| $$ = (a^2)^2+(2b^2)^2+(2ab)^2-(2ab)^2 $$ | Add and subtract $$ (2ab)^2 $$                                                                            |
+| $$ = (a^2+2b^2)^2+(2b^2)^2-(2ab)^2 $$    | $$ (a^2)^2+(2ab)^2+(2b^2)^2 = (a^2+2b^2)^2 $$                                                             |
+| $$ = (a^2+2b^2+2ab)(a^2+2b^2-2ab) $$     | Use the difference of two squares                                                                         |
+| $$ = ((a+b)^2+b^2)((a-b)^2+b^2)$$        | $$ a^2+2b^2+2ab = a^2+2ab+b^2+b^2 = (a+b)^2+b^2 $$ and $$ a^2+2b^2-2ab = a^2-2ab+b^2+b^2 = (a-b)^2+b^2 $$ |
+
+</Block>

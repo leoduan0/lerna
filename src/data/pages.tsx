@@ -102,6 +102,7 @@ const pages: TPage[] = [
           { title: 'Cauchy-Schwarz Inequality' },
           { title: 'Sophie Germains Identity' },
           { title: 'Difference of Two Squares' },
+          // { title: 'Euclidean Algorithm' },
         ],
       },
       {

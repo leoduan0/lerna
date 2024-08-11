@@ -18,9 +18,9 @@ export default function ProblemsChoices(props: {
 
   function handleAnswerSubmission(): void {
     if (selected == props.correct - 1) {
-      alert('Correct ✅')
+      alert('Correct')
     } else {
-      alert('Incorrect ❌')
+      alert('Incorrect')
     }
   }
 
@@ -30,7 +30,7 @@ export default function ProblemsChoices(props: {
         {props.choices.map((choice, index) => (
           <li key={index}>
             <button
-              className={`${selected == index ? 'bg-blue-500 dark:bg-blue-600' : 'hover:bg-neutral-300 dark:hover:bg-neutral-500'} w-full cursor-pointer rounded-lg border-2 border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
+              className={`${selected == index ? 'bg-blue-500 dark:bg-blue-600' : 'hover:bg-neutral-300 dark:hover:bg-neutral-500'} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
               onClick={() => handleChoiceSelection(index)}
             >
               <span>{choice}</span>
@@ -41,9 +41,9 @@ export default function ProblemsChoices(props: {
       <button
         onClick={() => handleAnswerSubmission()}
         disabled={selected == -1}
-        className="rounded-md p-2 transition active:scale-95 enabled:hover:bg-neutral-200 disabled:cursor-not-allowed enabled:dark:hover:bg-neutral-700"
+        className={`${selected == -1 ? '' : 'active:scale-95'} rounded-md p-2 transition enabled:hover:bg-neutral-200 disabled:cursor-not-allowed enabled:dark:hover:bg-neutral-700`}
       >
-        <span>Submit</span>
+        <span>Check</span>
       </button>
     </div>
   )

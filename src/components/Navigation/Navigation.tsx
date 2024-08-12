@@ -1,7 +1,7 @@
 'use client'
 
 import useNavigationStatus from '@/hooks/useNavigationStatus'
-import { GoogleAd } from '@/components'
+import { Ad } from '@/components'
 import { TPage } from '@/types'
 import Head from './Head'
 import Pages from './Pages'
@@ -18,7 +18,7 @@ export default function Navigation(props: { pages: TPage[] }): React.ReactNode {
         <Pages pages={props.pages} />
         <div className="max-h-44">
           {/* Fix so that it always shows at the very bottom */}
-          <GoogleAd />
+          <Ad />
         </div>
       </nav>
       <div

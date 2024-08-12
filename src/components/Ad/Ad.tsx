@@ -9,10 +9,10 @@ declare global {
   }
 }
 
-export default function GoogleAd(): React.ReactNode {
+export default function Ad(): React.ReactNode {
   useEffect(() => {
     try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      ; (window.adsbygoogle = window.adsbygoogle || []).push({})
     } catch (err) {
       console.error(err)
     }

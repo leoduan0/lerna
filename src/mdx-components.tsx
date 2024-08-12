@@ -4,6 +4,7 @@ import {
   Align,
   Block,
   Code,
+  CommonQuestion,
   Figure,
   Graph,
   Heading,
@@ -11,7 +12,6 @@ import {
   MDX,
   Math,
   Problem,
-  CommonQuestion,
   Rule,
   Showcase,
 } from '@/components'
@@ -26,6 +26,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {props.children}
       </NextLink>
     ),
+    Align: Align,
+    Block: Block,
     code: (props) => {
       const match = /language-(\w+)/.exec(props.className || '')
       return (
@@ -34,21 +36,19 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         </Code>
       )
     },
+    CommonQuestion: CommonQuestion,
+    Figure: Figure,
+    Graph: Graph,
     h1: (props) => <Heading level={1}>{props.children}</Heading>,
     h2: (props) => <Heading level={2}>{props.children}</Heading>,
     h3: (props) => <Heading level={3}>{props.children}</Heading>,
     h4: (props) => <Heading level={4}>{props.children}</Heading>,
     h5: (props) => <Heading level={5}>{props.children}</Heading>,
-    p: (props) => <p className="text-theme text-base">{props.children}</p>,
-    Align: Align,
-    Block: Block,
-    Figure: Figure,
-    Graph: Graph,
     Image: Image,
     MDX: MDX,
     Math: Math,
+    p: (props) => <p className="text-theme text-base">{props.children}</p>,
     Problem: Problem,
-    CommonQuestion: CommonQuestion,
     Rule: Rule,
     Showcase: Showcase,
     ...components,

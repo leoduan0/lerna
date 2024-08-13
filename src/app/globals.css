@@ -8,19 +8,24 @@
   table {
     @apply text-theme;
   }
+
   table {
     @apply border-separate border-spacing-0;
   }
+
   table tr th:first-child,
   table tr td:first-child {
-    @apply border-l border-black dark:border-white;
+    @apply border-l border-neutral-300 dark:border-neutral-600;
   }
+
   table tr:first-child th:first-child {
     @apply rounded-tl-lg;
   }
+
   table tr:first-child th:last-child {
     @apply rounded-tr-lg;
   }
+
   table tr:last-child td:first-child {
     @apply rounded-bl-lg;
   }
@@ -28,29 +33,36 @@
   table tr:last-child td:last-child {
     @apply rounded-br-lg;
   }
+
   td {
-    @apply border-b border-r border-black bg-neutral-200 p-1 dark:border-white dark:bg-neutral-700;
+    @apply border-b border-r border-neutral-300 bg-neutral-200 p-1 dark:border-neutral-600 dark:bg-neutral-700;
   }
+
   th {
-    @apply border-b border-r border-t border-black bg-neutral-400 p-1 first:border-l dark:border-white dark:bg-neutral-500;
+    @apply border-b border-r border-t border-neutral-300 bg-neutral-400 p-1 first:border-l dark:border-neutral-600 dark:bg-neutral-500;
   }
+
   tr {
-    @apply border-b border-r border-t border-black bg-neutral-200 p-1 dark:border-white dark:bg-neutral-700;
+    @apply border-b border-r border-t border-neutral-300 bg-neutral-200 p-1 dark:border-neutral-600 dark:bg-neutral-700;
   }
+
   ol {
     @apply text-theme list-decimal space-y-2 pl-6;
   }
+
   ul {
     @apply text-theme list-disc space-y-2 pl-6;
   }
 }
 
 @layer components {
-  .text-theme {
-    @apply text-black dark:text-white;
-  }
-
   .navigation-SVG {
     @apply fill-black dark:fill-white;
+  }
+}
+
+@layer utilities {
+  .text-theme {
+    @apply text-black dark:text-white;
   }
 }

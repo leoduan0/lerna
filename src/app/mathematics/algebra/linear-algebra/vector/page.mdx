@@ -52,163 +52,78 @@ If $$ A = (4, 3) $$ and $$ B = (17, 14) $$, then $$ \vec{AB} = \langle 17-4, 14-
 
 <Problem
   question={
-    <p>
-      If <Math math={'A = (78.5, 73.2)'} type={'inline'} /> and{' '}
-      <Math math={'B = (17.14, 14.17)'} type={'inline'} />, find{' '}
-      <Math math={'\\vec{AB}'} type={'inline'} /> and{' '}
-      <Math math={'\\vec{BA}'} type={'inline'} />.
-    </p>
+    <MDX
+      source={
+        'If $A=(78.5, 73.2)$ and $B=(17.14, 14.17)$, find $\\vec{AB}$ and $\\vec{BA}$.'
+      }
+    />
   }
   choices={[
-    <span>
-      <Math
-        math={'\\vec{AB} = \\langle -61.36, -59.03 \\rangle'}
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={'\\vec{BA}  = \\langle 61.36, 59.03 \\rangle'}
-        type={'inline'}
-      />
-    </span>,
-    <span>
-      <Math
-        math={'\\vec{AB} = \\langle 61.36, 59.03 \\rangle'}
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={'\\vec{BA}  = \\langle -61.36, -59.03 \\rangle'}
-        type={'inline'}
-      />
-    </span>,
-    <span>
-      <Math
-        math={'\\vec{AB} = \\langle -61.36, 59.03 \\rangle'}
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={'\\vec{BA}  = \\langle -61.36, 59.03 \\rangle'}
-        type={'inline'}
-      />
-    </span>,
-    <span>
-      <Math
-        math={'\\vec{AB} = \\langle 61.36, -59.03 \\rangle'}
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={'\\vec{BA}  = \\langle 61.36, -59.03 \\rangle'}
-        type={'inline'}
-      />
-    </span>,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle -61.36, -59.03 \\rangle$ and $\\vec{BA}  = \\langle 61.36, 59.03 \\rangle$'
+      }
+    />,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle 61.36, 59.03 \\rangle$ and $\\vec{BA}  = \\langle -61.36, -59.03 \\rangle$'
+      }
+    />,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle -61.36, 59.03 \\rangle$ and $\\vec{BA}  = \\langle -61.36, 59.03 \\rangle$'
+      }
+    />,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle 61.36, -59.03 \\rangle$ and $\\vec{BA}  = \\langle 61.36, -59.03 \\rangle$'
+      }
+    />,
   ]}
   correct={1}
-  solution={
-    <>
-      <Math
-        math={
-          '\\vec{AB} = \\langle 17.14-78.5, 14.17-73.2 \\rangle = \\langle -61.36, -59.03 \\rangle'
-        }
-        type={'block'}
-      />
-      <Math
-        math={
-          '\\vec{BA}  = \\langle 78.5-17.14, 73.2-14.17 \\rangle = \\langle 61.36, 59.03 \\rangle'
-        }
-        type={'block'}
-      />
-    </>
-  }
+  solution={<MDX source={`
+$\\vec{AB} = \\langle 17.14-78.5, 14.17-73.2 \\rangle = \\langle -61.36, -59.03 \\rangle$
+
+$\\vec{BA} = \\langle 78.5-17.14, 73.2-14.17 \\rangle = \\langle 61.36, 59.03 \\rangle$
+`} />}
 />
 
 <Problem
   question={
-    <p>
-      If point A ={' '}
-      <Math math={'(x+24, y-52, z+62, \\frac{a}{52})'} type={'inline'} /> and
-      point B ={' '}
-      <Math
-        math={'(b \\times 24, 26-23+5, d \\times 4, \\frac{a}{52})'}
-        type={'inline'}
-      />
-      , find <Math math={'\\vec{AB}'} type={'inline'} /> and{' '}
-      <Math math={'\\vec{BA}'} type={'inline'} />
-    </p>
+    <MDX
+      source={
+        'If point A is at $(x+24, y-52, z+62, \\frac{a}{52})$ and point B is at $(b \\times 24, 26-23+5, d \\times 4, \\frac{a}{52})$, find $\\vec{AB}$ and $\\vec{BA}$.'
+      }
+    />
   }
   choices={[
-    <span>
-      <Math
-        math={'\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62 \\rangle'}
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={'\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62 \\rangle'}
-        type={'inline'}
-      />
-    </span>,
-    <span>
-      <Math
-        math={'\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle'}
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={'\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle'}
-        type={'inline'}
-      />
-    </span>,
-    <span>
-      <Math
-        math={
-          '\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{52} \\rangle'
-        }
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={
-          '\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{52} \\rangle'
-        }
-        type={'inline'}
-      />
-    </span>,
-    <span>
-      <Math
-        math={
-          '\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{26} \\rangle'
-        }
-        type={'inline'}
-      />{' '}
-      and{' '}
-      <Math
-        math={
-          '\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{26} \\rangle'
-        }
-        type={'inline'}
-      />
-    </span>,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62 \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62 \\rangle$'
+      }
+    />,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle$'
+      }
+    />,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{52} \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{52} \\rangle$'
+      }
+    />,
+    <MDX
+      source={
+        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{26} \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{26} \\rangle$'
+      }
+    />,
   ]}
   correct={3}
-  solution={
-    <>
-      <Math
-        math={
-          '\\vec{AB} = \\left\\langle (b \\times 24)-(x+24), (26-23+5)-(y-52), (d \\times 4)-(z+62), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle'
-        }
-        type={'block'}
-      />
-      <Math
-        math={
-          '\\vec{BA} = \\left\\langle (x+24)-(b \\times 24), (y-52)-(26-23+5), (z+62)-(d \\times 4), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle'
-        }
-        type={'block'}
-      />
-    </>
-  }
+  solution={<MDX source={`
+$\\vec{AB} = \\left\\langle (b \\times 24)-(x+24), (26-23+5)-(y-52), (d \\times 4)-(z+62), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle$
+
+$\\vec{BA} = \\left\\langle (x+24)-(b \\times 24), (y-52)-(26-23+5), (z+62)-(d \\times 4), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle$
+`} />}
 />
 
 <Rule
@@ -216,21 +131,11 @@ If $$ A = (4, 3) $$ and $$ B = (17, 14) $$, then $$ \vec{AB} = \langle 17-4, 14-
   terms={[
     {
       term: '\\vec{AB}',
-      annotation: (
-        <span>
-          Vector from point <Math math={'A'} type={'inline'} /> to point{' '}
-          <Math math={'B'} type={'inline'} />
-        </span>
-      ),
+      annotation: <span>Vector from point A to point B</span>,
     },
     {
       term: '\\vec{BA}',
-      annotation: (
-        <span>
-          Vector from point <Math math={'B'} type={'inline'} /> to point{' '}
-          <Math math={'A'} type={'inline'} />
-        </span>
-      ),
+      annotation: <span>Vector from point B to point A</span>,
     },
   ]}
 />
@@ -253,25 +158,21 @@ If $$ \vec{a} = \langle \sqrt{1}, 0, 2, 0 \rangle $$, then $$ \vec{a} $$ is not 
 
 <Rule
   statement={
-    <p>
-      For any vector <Math math={'\\vec{a}'} type={'inline'} />, the unit vector
-      which has the same direction as <Math math={'\\vec{a}'} type={'inline'} />{' '}
-      is{' '}
-      <Math
-        math={'\\vec{u} = \\frac{\\vec{a}}{\\lVert \\vec{a} \\rVert}'}
-        type={'inline'}
-      />
-      .
-    </p>
+    <MDX
+      source={
+        'For any vector $\\vec{a}$, the unit vector which has the same direction as $\\vec{a}$ is $\\vec{u} = \\frac{\\vec{a}}{\\lVert \\vec{a} \\rVert}$.'
+      }
+    />
   }
 />
 
 <Problem
   question={
-    <p>
-      Find the unit vector which points in the same direction as{' '}
-      <Math math={'\\vec{v} = \\langle 3, 4 \\rangle'} type={'inline'} />.
-    </p>
+    <MDX
+      source={
+        'Find the unit vector which points in the same direction as $\\vec{v} = \\langle 3, 4 \\rangle$.'
+      }
+    />
   }
   choices={[
     <Math
@@ -293,119 +194,54 @@ If $$ \vec{a} = \langle \sqrt{1}, 0, 2, 0 \rangle $$, then $$ \vec{a} $$ is not 
   ]}
   correct={3}
   solution={
-    <table>
-      <thead>
-        <tr>
-          <th>
-            <span>Procedure</span>
-          </th>
-          <th>
-            <span>Annotation</span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <Math math={'\\lVert \\vec{v} \\rVert = 5'} type={'inline'} />
-          </td>
-          <td>
-            <span>Find its magnitude</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <Math
-              math={'\\vec{u} = \\frac{\\vec{v}}{\\lVert \\vec{v} \\rVert}'}
-              type={'inline'}
-            />
-          </td>
-          <td>
-            <span>List the equation</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <Math
-              math={'\\vec{u} = \\frac{\\langle 3, 4 \\rangle}{5}'}
-              type={'inline'}
-            />
-          </td>
-          <td>
-            <span>Fill in the equation</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <Math
-              math={
-                '\\vec{u} = \\left\\langle \\frac{3}{5}, \\frac{4}{5} \\right\\rangle'
-              }
-              type={'inline'}
-            />
-          </td>
-          <td>
-            <span>Simplify</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <MDX
+      source={`
+| Procedure                                                              | Annotation           |
+| ---------------------------------------------------------------------- | -------------------- |
+| $\\lVert \\vec{v} \\rVert = 5$                                         | Find its magnitude   |
+| $ \\vec{u} = \\frac{\\vec{v}}{\\lVert \\vec{v} \\rVert} $              | List the equation    |
+| $ \\vec{u} = \\frac{\\langle 3, 4 \\rangle}{5} $                       | Fill in the equation |
+| $\\vec{u} = \\left\\langle \\frac{3}{5}, \\frac{4}{5} \\right\\rangle$ | Simplify             |
+`}
+    />
   }
 />
 
 <Problem
   question={
-    <p>
-      If{' '}
-      <Math
-        math={'\\vec{a} = \\langle 1, 0, 0, 0, 0 \\rangle'}
-        type={'inline'}
-      />
-      , determine if <Math math={'\\vec{a}'} type={'inline'} /> is a unit
-      vector.
-    </p>
+    <MDX
+      source={
+        'If $\\vec{a} = \\langle 1, 0, 0, 0, 0 \\rangle$, determine if $\\vec{a}$ is a unit vector.'
+      }
+    />
   }
   choices={[<span>Yes</span>, <span>No</span>]}
   correct={1}
   solution={
-    <p>
-      Since{' '}
-      <Math
-        math={
-          '\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(0)^2+(0)^2} = 1'
-        }
-        type={'inline'}
-      />
-      , <Math math={'\\vec{a}'} type={'inline'} /> is a unit vector.
-    </p>
+    <MDX
+      source={
+        'Since $\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(0)^2+(0)^2} = 1$, $\\vec{a}$ is a unit vector.'
+      }
+    />
   }
 />
 
 <Problem
   question={
-    <p>
-      If{' '}
-      <Math
-        math={'\\vec{a} = \\langle 1, 0, 0, 1, 0 \\rangle'}
-        type={'inline'}
-      />
-      , determine if <Math math={'\\vec{a}'} type={'inline'} /> is a unit
-      vector.
-    </p>
+    <MDX
+      source={
+        'If $\\vec{a} = \\langle 1, 0, 0, 1, 0 \\rangle$, determine if $\\vec{a}$ is a unit vector.'
+      }
+    />
   }
   choices={[<span>Yes</span>, <span>No</span>]}
   correct={2}
   solution={
-    <p>
-      Since{' '}
-      <Math
-        math={
-          '\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(1)^2+(0)^2} = \\sqrt{2}'
-        }
-        type={'inline'}
-      />
-      , <Math math={'\\vec{a}'} type={'inline'} /> is not a unit vector.
-    </p>
+    <MDX
+      source={
+        'Since $\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(1)^2+(0)^2} = \\sqrt{2} \\neq 1$, $\\vec{a}$ is not a unit vector.'
+      }
+    />
   }
 />
 

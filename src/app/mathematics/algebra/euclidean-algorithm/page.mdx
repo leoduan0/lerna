@@ -12,30 +12,26 @@ Note that the order of the arguments does not matter _i.e._ $$ \gcd(b,a-b) = \gc
 
 <Problem
   question={
-    <>
-      <MDX
-        source={
-          'IMO 1959 Problem 1: Prove that the fraction $\\frac{21n + 4}{14n + 3}$ is irreducible for every natural number $n$.'
-        }
-      />
-    </>
+    <MDX
+      source={
+        'IMO 1959 Problem 1: Prove that the fraction $\\frac{21n + 4}{14n + 3}$ is irreducible for every natural number $n$.'
+      }
+    />
   }
   solution={
-    <>
-      <p>
-        If a fraction is irreducible, then the greatest common divisor between
-        the numerator and the denominator is $1$. Here, we use the Euclidean
-        Algorithm:
-      </p>
-      <p>// Insert table here</p>
-    </>
-  }
-/>
+    <MDX
+      source={`
+If a fraction is irreducible, then the greatest common divisor between the numerator and the denominator is $1$. Here, we use the Euclidean Algorithm:
 
-| Procedure                                                                | Annotation                                                                                                                                                |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $$ \gcd(21n+4,14n+3) = \gcd(14n+3,(21n+4)-(14n+3)) = \gcd(14n+3,7n+1) $$ | First application of the Euclidean Algorithm                                                                                                              |
-| $$ \gcd(14n+3,7n+1) = \gcd(7n+1,7n+2) $$                                 | Second application                                                                                                                                        |
-| $$ \gcd(7n+1,7n+2) = \gcd(7n+2,7n+1) $$                                  | Swap arguments                                                                                                                                            |
-| $$ \gcd(7n+2,7n+1) = \gcd(7n+1,1) $$                                     | Third application                                                                                                                                         |
-| $$ \gcd(7n+1,1) = 1 $$                                                   | Since the gcd of any number with $1$ must be $1$, we have shown that the gcd between $21n+4$ and $14n+3$ is $1$, thus the fraction is irreducible. Q.E.D. |
+| Procedure                                                                   | Annotation                                                                                                                                                |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ \\gcd(21n+4,14n+3) = \\gcd(14n+3,(21n+4)-(14n+3)) = \\gcd(14n+3,7n+1) $$ | First application of the Euclidean Algorithm                                                                                                              |
+| $$ \\gcd(14n+3,7n+1) = \\gcd(7n+1,7n+2) $$                                  | Second application                                                                                                                                        |
+| $$ \\gcd(7n+1,7n+2) = \\gcd(7n+2,7n+1) $$                                   | Swap arguments                                                                                                                                            |
+| $$ \\gcd(7n+2,7n+1) = \\gcd(7n+1,1) $$                                      | Third application                                                                                                                                         |
+| $$ \\gcd(7n+1,1) = 1 $$                                                     | Since the gcd of any number with $1$ must be $1$, we have shown that the gcd between $21n+4$ and $14n+3$ is $1$, thus the fraction is irreducible. Q.E.D. |
+
+`}
+/>
+}
+/>

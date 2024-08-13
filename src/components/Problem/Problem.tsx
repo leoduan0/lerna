@@ -8,7 +8,7 @@ export default function Problem(props: {
   question: React.ReactNode
   choices?: React.ReactNode[]
   solution?: React.ReactNode
-  correct: number
+  correct?: number
 }): React.ReactNode {
   const [expand, setExpand] = useState<boolean>(false)
 
@@ -25,12 +25,14 @@ export default function Problem(props: {
         Question
       </Heading>
       {props.question}
-      {props.choices && <>
-        <Heading level={5} clickable={false}>
-          Choices
-        </Heading>
-        <ProblemChoices choices={props.choices} correct={props.correct} /></>
-      }
+      {props.choices && props.correct && (
+        <>
+          <Heading level={5} clickable={false}>
+            Choices
+          </Heading>
+          <ProblemChoices choices={props.choices} correct={props.correct} />
+        </>
+      )}
       {props.solution && (
         <>
           <div
@@ -41,8 +43,9 @@ export default function Problem(props: {
               xmlns="http://www.w3.org/2000/svg"
               width="8px"
               viewBox="0 0 384 512"
-              className={`${expand ? 'rotate-90' : ''
-                } fill-black dark:fill-white`}
+              className={`${
+                expand ? 'rotate-90' : ''
+              } fill-black dark:fill-white`}
             >
               <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
             </svg>

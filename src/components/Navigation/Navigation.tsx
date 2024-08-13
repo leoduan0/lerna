@@ -6,7 +6,9 @@ import { TPage } from '@/types'
 import Head from './Head'
 import Pages from './Pages'
 
-export default function Navigation(props: { pages: TPage[] }): React.ReactNode {
+export default function Navigation(props: {
+  pages: Array<TPage>
+}): React.ReactNode {
   const { navigationStatus, toggleNavigation } = useNavigationStatus()
 
   return (
@@ -22,7 +24,7 @@ export default function Navigation(props: { pages: TPage[] }): React.ReactNode {
         </div>
       </nav>
       <div
-        onClick={() => toggleNavigation()}
+        onClick={(): void => toggleNavigation()}
         className={`${
           navigationStatus
             ? 'z-10 translate-x-0 opacity-50 lg:hidden'

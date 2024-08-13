@@ -11,7 +11,7 @@ export default function Item(props: { qa: TQA }): React.ReactNode {
   }
 
   return (
-    <div>
+    <>
       <button
         onClick={() => toggleExpand()}
         className="flex h-8 w-full items-center space-x-2 truncate pl-2 hover:cursor-pointer" // Truncate doesn't work properly
@@ -26,9 +26,7 @@ export default function Item(props: { qa: TQA }): React.ReactNode {
         </svg>
         {props.qa.question}
       </button>
-      <div className={`${expand ? 'px-2 pb-2' : ''}`}>
-        {expand && props.qa.answer}
-      </div>
-    </div>
+      {expand && <div className="px-2 pb-2">{props.qa.answer}</div>}
+    </>
   )
 }

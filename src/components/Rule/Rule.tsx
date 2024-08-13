@@ -22,14 +22,19 @@ export default function Rule(props: {
           <Heading level={5} clickable={false}>
             Term
           </Heading>
-          {props.terms.map((term) => (
-            <div key={term.term}>
-              <span>
-                <Math math={term.term + '='} type={'inline'} />{' '}
-                {term.annotation}
-              </span>
-            </div>
-          ))}
+          {props.terms.map(
+            (term: {
+              term: string
+              annotation: React.ReactNode
+            }): React.ReactNode => (
+              <div key={term.term}>
+                <span>
+                  <Math math={term.term + '='} type={'inline'} />{' '}
+                  {term.annotation}
+                </span>
+              </div>
+            ),
+          )}
         </>
       )}
       {props.annotation && (

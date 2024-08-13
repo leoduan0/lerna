@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 export default function ProblemsChoices(props: {
-  choices: React.ReactNode[]
+  choices: Array<React.ReactNode>
   correct: number
 }): React.ReactNode {
   const [selected, setSelected] = useState<number>(-1)
@@ -27,19 +27,21 @@ export default function ProblemsChoices(props: {
   return (
     <div className="space-y-2">
       <ol className="w-full">
-        {props.choices.map((choice, index) => (
-          <li key={index}>
-            <button
-              className={`${selected == index ? 'bg-blue-500 dark:bg-blue-600' : 'hover:bg-neutral-300 dark:hover:bg-neutral-500'} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
-              onClick={() => handleChoiceSelection(index)}
-            >
-              <span>{choice}</span>
-            </button>
-          </li>
-        ))}
+        {props.choices.map(
+          (choice: React.ReactNode, index: number): React.ReactNode => (
+            <li key={index}>
+              <button
+                className={`${selected == index ? 'bg-blue-500 dark:bg-blue-600' : 'hover:bg-neutral-300 dark:hover:bg-neutral-500'} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
+                onClick={(): void => handleChoiceSelection(index)}
+              >
+                <span>{choice}</span>
+              </button>
+            </li>
+          ),
+        )}
       </ol>
       <button
-        onClick={() => handleAnswerSubmission()}
+        onClick={(): void => handleAnswerSubmission()}
         disabled={selected == -1}
         className={`${selected == -1 ? '' : 'active:scale-95'} rounded-md p-2 transition enabled:hover:bg-neutral-200 disabled:cursor-not-allowed enabled:dark:hover:bg-neutral-700`}
       >

@@ -6,7 +6,7 @@ import ProblemChoices from './ProblemChoices'
 
 export default function Problem(props: {
   question: React.ReactNode
-  choices?: React.ReactNode[]
+  choices?: Array<React.ReactNode>
   solution?: React.ReactNode
   correct?: number
 }): React.ReactNode {
@@ -36,7 +36,7 @@ export default function Problem(props: {
       {props.solution && (
         <>
           <div
-            onClick={() => toggleExpand()}
+            onClick={(): void => toggleExpand()}
             className="flex h-8 w-full items-center space-x-2 rounded-md text-sm transition hover:cursor-pointer"
           >
             <svg

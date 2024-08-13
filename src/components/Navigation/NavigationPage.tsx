@@ -9,7 +9,7 @@ import { TPage } from '@/types'
 export default function NavigationPage(props: {
   page: TPage
   href: string
-  renderFunction: (pages: TPage[], href: string) => React.ReactNode
+  renderFunction: (pages: Array<TPage>, href: string) => React.ReactNode
 }): React.ReactNode {
   const { navigationStatus, toggleNavigation } = useNavigationStatus()
 
@@ -31,7 +31,9 @@ export default function NavigationPage(props: {
         } flex h-8 w-full items-center truncate rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button
-          onClick={() => props.page.children && toggleExpand()} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
+          onClick={(): void | undefined =>
+            props.page.children && toggleExpand()
+          } // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
           className={`${props.page.children ? '' : 'invisible'} flex h-full items-center justify-center rounded-l-md p-2`}
         >
           <svg
@@ -48,7 +50,7 @@ export default function NavigationPage(props: {
         <NextLink
           href={props.href}
           className={`${props.page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full w-full grow items-center space-x-2 pr-2`}
-          onClick={() => toggleNavigation()}
+          onClick={(): void => toggleNavigation()}
         >
           <div>{props.page.icon && props.page.icon}</div>
           <span className="text-theme truncate">{props.page.title}</span>

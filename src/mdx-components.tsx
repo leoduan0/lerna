@@ -2,6 +2,7 @@ import type { MDXComponents } from 'mdx/types'
 import NextLink from 'next/link'
 import {
   Align,
+  Audio,
   Block,
   Code,
   CommonQuestion,
@@ -11,6 +12,7 @@ import {
   Image,
   MDX,
   Math,
+  MusicScore,
   Problem,
   Rule,
   Showcase,
@@ -27,6 +29,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </NextLink>
     ),
     Align: Align,
+    Audio: Audio,
     Block: Block,
     code: (props) => {
       const match = /language-(\w+)/.exec(props.className || '')
@@ -47,6 +50,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Image: Image,
     MDX: MDX,
     Math: Math,
+    MusicScore: MusicScore,
     p: (props) => <p className="text-theme text-base">{props.children}</p>,
     Problem: Problem,
     Rule: Rule,

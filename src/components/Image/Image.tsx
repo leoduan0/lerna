@@ -1,17 +1,20 @@
 import NextImage from 'next/image'
 
-export default function Image(props: {
+interface ImageProps extends React.ComponentProps<typeof NextImage> {
   src: string
   width: number
   height: number
   alt: string
-}): React.ReactNode {
+}
+
+export default function Image({
+  src,
+  width,
+  height,
+  alt,
+  ...props
+}: ImageProps): React.ReactNode {
   return (
-    <NextImage
-      src={props.src}
-      width={props.width}
-      height={props.height}
-      alt={props.alt}
-    />
+    <NextImage src={src} width={width} height={height} alt={alt} {...props} />
   )
 }

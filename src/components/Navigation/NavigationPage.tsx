@@ -50,7 +50,7 @@ export default function NavigationPage(props: {
         <NextLink
           href={props.href}
           className={`${props.page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full w-full grow items-center space-x-2 pr-2`}
-          onClick={(): void => toggleNavigation()}
+          onClick={() => toggleNavigation()}
         >
           <div>{props.page.icon && props.page.icon}</div>
           <span className="text-theme truncate">{props.page.title}</span>

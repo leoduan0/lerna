@@ -36,7 +36,7 @@ export default function Problem(props: {
       {props.solution && (
         <>
           <div
-            onClick={(): void => toggleExpand()}
+            onClick={() => toggleExpand()}
             className="flex h-8 w-full items-center space-x-2 rounded-md text-sm transition hover:cursor-pointer"
           >
             <svg

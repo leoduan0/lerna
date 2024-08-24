@@ -32,7 +32,7 @@ export default function ProblemsChoices(props: {
             <li key={index}>
               <button
                 className={`${selected == index ? 'bg-blue-500 dark:bg-blue-600' : 'hover:bg-neutral-300 dark:hover:bg-neutral-500'} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
-                onClick={(): void => handleChoiceSelection(index)}
+                onClick={() => handleChoiceSelection(index)}
               >
                 <span>{choice}</span>
               </button>
@@ -41,7 +41,7 @@ export default function ProblemsChoices(props: {
         )}
       </ol>
       <button
-        onClick={(): void => handleAnswerSubmission()}
+        onClick={() => handleAnswerSubmission()}
         disabled={selected == -1}
         className={`${selected == -1 ? '' : 'active:scale-95'} rounded-md p-2 transition enabled:hover:bg-neutral-200 disabled:cursor-not-allowed enabled:dark:hover:bg-neutral-700`}
       >

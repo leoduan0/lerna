@@ -24,7 +24,7 @@ export default function Navigation(props: {
         </div>
       </nav>
       <div
-        onClick={(): void => toggleNavigation()}
+        onClick={() => toggleNavigation()}
         className={`${
           navigationStatus
             ? 'z-10 translate-x-0 opacity-50 lg:hidden'

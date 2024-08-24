@@ -9,6 +9,7 @@ export default function Header(): React.ReactNode {
       <HeaderButton />
       <Path />
       <div className="flex space-x-2">
+        {/* Height is not consistent */}
         <ShareButton />
         <Account />
       </div>

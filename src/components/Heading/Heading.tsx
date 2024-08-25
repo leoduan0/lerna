@@ -10,7 +10,9 @@ export default function Heading(props: {
     props.clickable == false ? (
       text
     ) : (
-      <NextLink href={`#${text}`}>{text}</NextLink>
+      <NextLink href={`#${text}`} rel="noopener noreferrer">
+        {text}
+      </NextLink>
     )
 
   const style: string =

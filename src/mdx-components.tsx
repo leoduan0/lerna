@@ -24,6 +24,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <NextLink
         className="text-blue-500 hover:underline"
         href={props.href ? props.href : ''}
+        rel="noopener noreferrer"
       >
         {props.children}
       </NextLink>

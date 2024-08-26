@@ -1,5 +1,5 @@
-import { Block } from '@/components'
 import Item from './Item'
+import { Block } from '@/components'
 
 export type TQA = {
   question: React.ReactNode

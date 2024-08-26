@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import abcjs from 'abcjs'
+import { useEffect, useRef } from 'react'
 
 export default function MusicScore(props: { musicString: string }) {
   const musicRef = useRef(null)
@@ -12,5 +12,5 @@ export default function MusicScore(props: { musicString: string }) {
     }
   }, [props.musicString])
 
-  return <div ref={musicRef} className="bg-white w-fit rounded-xl"></div> // w-fit doesn't work
+  return <div ref={musicRef} className="w-fit rounded-xl bg-white"></div> // w-fit doesn't work
 }

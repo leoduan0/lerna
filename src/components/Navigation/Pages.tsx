@@ -1,6 +1,6 @@
+import NavigationPage from './NavigationPage'
 import { TPage } from '@/types'
 import { Href } from '@/utils'
-import NavigationPage from './NavigationPage'
 
 function renderPages(pages: Array<TPage>, href: string): React.ReactNode {
   return pages.map((page: TPage, index: number): React.ReactNode => {

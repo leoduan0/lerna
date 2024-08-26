@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import { Link } from '../Link'
 
 export default function Heading(props: {
   level: 1 | 2 | 3 | 4 | 5
@@ -7,13 +7,7 @@ export default function Heading(props: {
 }): React.ReactNode {
   const text: string | undefined = props.children?.toString()
   const link: React.ReactNode =
-    props.clickable == false ? (
-      text
-    ) : (
-      <NextLink href={`#${text}`} rel="noopener noreferrer">
-        {text}
-      </NextLink>
-    )
+    props.clickable == false ? text : <Link href={`#${text}`}>{text}</Link>
 
   const style: string =
     props.clickable == false

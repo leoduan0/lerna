@@ -1,5 +1,5 @@
-import dynamic from 'next/dynamic'
 import 'katex/dist/katex.min.css'
+import dynamic from 'next/dynamic'
 
 const BlockMath = dynamic(() =>
   import('react-katex').then((mod) => mod.BlockMath),

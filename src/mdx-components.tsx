@@ -1,5 +1,3 @@
-import type { MDXComponents } from 'mdx/types'
-import NextLink from 'next/link'
 import {
   Align,
   Audio,
@@ -10,6 +8,7 @@ import {
   Graph,
   Heading,
   Image,
+  Link,
   MDX,
   Math,
   MusicScore,
@@ -17,17 +16,17 @@ import {
   Rule,
   Showcase,
 } from '@/components'
+import type { MDXComponents } from 'mdx/types'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     a: (props) => (
-      <NextLink
-        className="text-blue-500 hover:underline"
+      <Link
         href={props.href ? props.href : ''}
-        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
       >
         {props.children}
-      </NextLink>
+      </Link>
     ),
     Align: Align,
     Audio: Audio,

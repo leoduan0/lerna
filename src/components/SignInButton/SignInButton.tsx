@@ -1,8 +1,8 @@
 'use server'
 
-import { signIn } from '@/auth'
 import { Button } from '../Button'
 import { Image } from '../Image'
+import { signIn } from '@/auth'
 
 export default async function SignInButton(props: { provider?: 'GitHub' }) {
   return (

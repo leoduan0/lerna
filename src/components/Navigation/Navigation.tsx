@@ -1,10 +1,10 @@
 'use client'
 
-import useNavigationStatus from '@/hooks/useNavigationStatus'
-import { Ad } from '@/components'
-import { TPage } from '@/types'
 import Head from './Head'
 import Pages from './Pages'
+import { Ad } from '@/components'
+import useNavigationStatus from '@/hooks/useNavigationStatus'
+import { TPage } from '@/types'
 
 export default function Navigation(props: {
   pages: Array<TPage>

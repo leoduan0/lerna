@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import { TQA } from './CommonQuestion'
+import { useState } from 'react'
 
 export default function Item(props: { qa: TQA }): React.ReactNode {
   const [expand, setExpand] = useState<boolean>(false)

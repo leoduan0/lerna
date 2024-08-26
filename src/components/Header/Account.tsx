@@ -1,7 +1,7 @@
-import { auth } from '@/auth'
-import { Link } from '../Link'
 import { Image } from '../Image'
+import { Link } from '../Link'
 import { SignInButton } from '../SignInButton'
+import { auth } from '@/auth'
 
 export default async function Account() {
   const session = await auth()

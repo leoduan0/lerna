@@ -44,13 +44,10 @@
   }
 }
 
-@layer components {
+@layer utilities {
   .navigation-SVG {
     @apply fill-black dark:fill-white;
   }
-}
-
-@layer utilities {
   .text-theme {
     @apply text-black dark:text-white;
   }

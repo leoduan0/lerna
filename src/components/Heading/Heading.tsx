@@ -7,7 +7,13 @@ export default function Heading(props: {
 }): React.ReactNode {
   const text: string | undefined = props.children?.toString()
   const link: React.ReactNode =
-    props.clickable == false ? text : <Link href={`#${text}`}>{text}</Link>
+    props.clickable == false ? (
+      text
+    ) : (
+      <Link href={`#${text}`} noColor noHoverUnderline>
+        {text}
+      </Link>
+    )
 
   const style: string =
     props.clickable == false

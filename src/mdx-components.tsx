@@ -24,6 +24,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <Link
         href={props.href ? props.href : ''}
         className="text-blue-500 hover:underline"
+        newTab
       >
         {props.children}
       </Link>

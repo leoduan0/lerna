@@ -1,17 +1,17 @@
-// import NextImage from "next/image"
+import { Image } from '@/components'
 
 export default function Head(props: {
   toggleFunction: () => void
 }): React.ReactNode {
   return (
-    <div className="flex h-12 w-full items-center justify-center space-x-1 border-b border-neutral-300 dark:border-neutral-700">
-      {/* <NextImage
-          source={''}
-          height={32}
-          width={32}
-          className="rounded-lg"
-          alt=""
-        /> */}
+    <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-neutral-300 dark:border-neutral-700">
+      <Image
+        src={'/lerna-logo.png'}
+        height={32}
+        width={32}
+        className="rounded-lg"
+        alt=""
+      />
       <span className="text-theme font-bold">Lerna</span>
       <button
         onClick={() => props.toggleFunction()}

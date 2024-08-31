@@ -16,14 +16,14 @@ export default function Math(props: {
     case 'block':
       return (
         <div className="w-full overflow-x-auto">
-          <div className="w-fit text-black dark:text-white">
+          <div className="text-theme w-fit">
             <BlockMath math={props.math} />
           </div>
         </div>
       )
     case 'inline':
       return (
-        <span className="text-black dark:text-white">
+        <span className="text-theme">
           <InlineMath math={props.math} />
         </span>
       )

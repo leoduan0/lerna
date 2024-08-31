@@ -25,7 +25,7 @@ export default function Pagination(props: {
             )
           })}
         </div>
-        <div className="bg-purple-500">{props.pages[selected].content}</div>
+        <div>{props.pages[selected].content}</div>
       </div>
     </Align>
   )

@@ -1,6 +1,6 @@
-import { TPage } from '@/types'
+import TPage from '@/types/TPage'
 
-const pages: Array<TPage> = [
+const pages: TPage[] = [
   {
     title: 'Home',
     icon: (

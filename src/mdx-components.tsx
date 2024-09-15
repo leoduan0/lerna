@@ -1,22 +1,21 @@
-import {
-  Align,
-  Audio,
-  Block,
-  Code,
-  CommonQuestion,
-  Figure,
-  Graph,
-  Heading,
-  Image,
-  Link,
-  Math,
-  MDX,
-  MusicScore,
-  Pagination,
-  Problem,
-  Rule,
-  Showcase,
-} from '@/components'
+import Align from '@/components/Align'
+import Audio from '@/components/Audio'
+import Block from '@/components/Block'
+import Code from '@/components/Code'
+import CommonQuestion from '@/components/CommonQuestion'
+import Figure from '@/components/Figure'
+import Graph from '@/components/Graph'
+import Heading from '@/components/Heading'
+import Image from '@/components/Image'
+import Link from '@/components/Link'
+import MDX from '@/components/MDX'
+import Math from '@/components/Math'
+import MusicScore from '@/components/MusicScore'
+import Pagination from '@/components/Pagination'
+import Problem from '@/components/Problem'
+import Proofs from '@/components/Proofs'
+import Rule from '@/components/Rule'
+import Showcase from '@/components/Showcase'
 import type { MDXComponents } from 'mdx/types'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -56,6 +55,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     MusicScore: MusicScore,
     Pagination: Pagination,
     Problem: Problem,
+    Proofs: Proofs,
     Rule: Rule,
     Showcase: Showcase,
     ...components,

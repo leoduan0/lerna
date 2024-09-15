@@ -1,9 +1,10 @@
 import './globals.css'
-import { Header, Navigation } from '@/components'
+import Header from '@/components/Header'
+import Navigation from '@/components/Navigation'
 import pages from '@/data/pages'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
-import NextTopLoader from 'nextjs-toploader';
+import NextTopLoader from 'nextjs-toploader'
 
 export const metadata: Metadata = {
   title: 'Lerna',
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="fixed flex h-full w-full bg-white dark:bg-black">
-        <NextTopLoader color="#0da15c" showSpinner={false}/>
+        <NextTopLoader color="#0da15c" showSpinner={false} />
         {/* "fixed" makes the iOS Safari toolbar persistent */}
         <Navigation pages={pages} />
         <div className="flex h-full w-full flex-col">

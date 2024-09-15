@@ -1,6 +1,6 @@
 import { auth } from '@/auth'
-import { Image } from '@/components'
-import { SignOutButton } from '@/components'
+import Image from '@/components/Image'
+import SignOutButton from '@/components/SignOutButton'
 
 export default async function Dashboard() {
   const session = await auth()

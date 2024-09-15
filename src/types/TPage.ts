@@ -1,5 +1,7 @@
-export type TPage = {
+type TPage = {
   title: string
   icon?: React.ReactNode
-  children?: Array<TPage>
+  children?: TPage[]
 }
+
+export default TPage

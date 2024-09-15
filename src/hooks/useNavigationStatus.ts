@@ -4,10 +4,7 @@ import { useState, useEffect } from 'react'
 
 let navigationStatus = true
 
-export default function useNavigationStatus(): {
-  navigationStatus: boolean
-  toggleNavigation: () => void
-} {
+export default function useNavigationStatus() {
   const [localStatus, setLocalStatus] = useState<boolean>(navigationStatus)
 
   useEffect(() => {

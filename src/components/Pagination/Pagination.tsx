@@ -1,18 +1,21 @@
 'use client'
 
 import { Align } from '../Align'
+import { Heading } from '../Heading'
 import { useState } from 'react'
 
-export default function Pagination(props: {
+interface PaginationProps {
   pages: Array<{ name: string; content: React.ReactNode }>
-}): React.ReactNode {
+}
+
+export default function Pagination({ pages }: PaginationProps) {
   const [selected, setSelected] = useState<number>(0)
 
   return (
     <Align type={'center'}>
       <div>
         <div className="space-x-2 rounded-md dark:bg-neutral-800">
-          {props.pages.map((page, index) => {
+          {pages.map((page, index) => {
             return (
               <button
                 key={index}
@@ -25,7 +28,7 @@ export default function Pagination(props: {
             )
           })}
         </div>
-        <div>{props.pages[selected].content}</div>
+        <div>{pages[selected].content}</div>
       </div>
     </Align>
   )

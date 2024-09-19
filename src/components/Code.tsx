@@ -6,7 +6,7 @@ interface CodeProps {
   children: React.ReactNode
 }
 
-function Code({ children, language }: CodeProps): React.ReactNode {
+function Code({ children, language }: CodeProps) {
   return (
     <Prism language={language} style={vscDarkPlus} className="rounded-xl">
       {String(children).replace(/\n$/, '')}

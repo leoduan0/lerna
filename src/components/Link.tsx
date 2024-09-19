@@ -7,13 +7,7 @@ interface LinkProps extends React.ComponentProps<typeof NextLink> {
   noHoverUnderline?: boolean
 }
 
-function Link({
-  href,
-  newTab,
-  noColor,
-  noHoverUnderline,
-  ...rest
-}: LinkProps): React.ReactNode {
+function Link({ href, newTab, noColor, noHoverUnderline, ...rest }: LinkProps) {
   return (
     <NextLink
       href={href}

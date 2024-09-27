@@ -12,8 +12,9 @@ function Pagination({ pages }: PaginationProps) {
 
   return (
     <Align type="center">
-      <div>
-        <div className="space-x-2 rounded-md dark:bg-neutral-800">
+      <Align type="center">
+        <div className="space-x-2 rounded-md bg-neutral-200 dark:bg-neutral-800">
+          {/* Some backgrounds, like <Proof>, makes this background invisible */}
           {pages.map((page, index) => {
             return (
               <button
@@ -27,8 +28,8 @@ function Pagination({ pages }: PaginationProps) {
             )
           })}
         </div>
-        <div>{pages[selected].content}</div>
-      </div>
+      </Align>
+      <div>{pages[selected].content}</div>
     </Align>
   )
 }

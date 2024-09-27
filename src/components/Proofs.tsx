@@ -11,7 +11,7 @@ interface ProofsProps {
 function Proofs({ proofs }: ProofsProps) {
   return (
     <Block>
-      <Heading level={5}>Proofs</Heading>
+      <Heading level={5}>{proofs.length == 1 ? 'Proof' : 'Proofs'}</Heading>
       <Pagination pages={proofs} />
     </Block>
   )

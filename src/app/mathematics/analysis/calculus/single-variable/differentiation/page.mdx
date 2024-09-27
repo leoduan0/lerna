@@ -6,44 +6,168 @@ date-last-edited: '2024-07-05'
 
 # Differentiation
 
-In essence, a **derivative** aims to find the exact slope of a function at a certain point. The slope equation is $$ \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} $$ can help us do that, but as long as $$ \Delta x \neq 0 $$ then the slope equation would not yield the exact slope at that point, but a rough estimate. It is obvious that we cannot directly use the slope equation with $$ \Delta x = 0 $$, but we can get infinitely close to it using limits. Thus, the definition of a derivative is as follows:
+A **derivative** of a function $f(x)$ at $x=a$ is the gradient of $f(x)$ at $x=a$.
 
-<Align type="center">
+The gradient of a linear function can be found using two points, $(x_1,y_1)$ and $(x_2,y_2)$, and the equation $\nabla=\frac{y_2-y_1}{x_2-x_1}$. However, for non-linear functions, this method is no longer valid. Instead, derivatives are used to find the gradient.
+
+Note that the gradient of a non-linear function is a function itself.
+
+A derivative of a function $f(x)$ or $\frac{d}{dx}f(x)$, denoted by $f^\prime(x)$, is defined as:
+
+<Align type={'center'}>
   <Math
-    math={'\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}'}
+    math={
+      'f^\\prime(x)=\\frac{d}{dx}f(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}'
+    }
     type={'block'}
   />
 </Align>
 
-Notice that $$ f(x+\Delta x)-f(x) $$ is, essentially, $$ \Delta y $$ with the limit taken into account.
+## Rules
 
-<Rule
-  statement={
-    <>
-      <Math math={'\\frac{d}{dx} x^n = nx^{n-1}'} type={'block'} />
-      <Math
-        math={'\\frac{d}{dx} f(x)g(x) = f^{\\prime}(x)g(x)+f(x)g^{\\prime}(x)'}
-        type={'block'}
-      />
-      <Math
-        math={
-          '\\frac{d}{dx} \\frac{f(x)}{g(x)} = \\frac{f^{\\prime}(x)g(x)-f(x)g^{\\prime}(x)}{g^2(x)}'
-        }
-        type={'block'}
-      />
-      <Math
-        math={'\\frac{d}{dx} f(g(x)) = f^{\\prime}(g(x))g^{\\prime}(x)'}
-        type={'inline'}
-      />
-      <Math
-        math={
-          '\\frac{d}{dx} f(x) \\pm g(x) = \\frac{d}{dx} f(x) \\pm \\frac{d}{dx} g(x)'
-        }
-        type={'block'}
-      />
-    </>
-  }
+### Constant Rule
+
+<Align type={'center'}>
+  <Math math={'\\frac{d}{dx}c=0'} type={'block'} />
+</Align>
+
+<Proofs
+  proofs={[
+    {
+      name: 'Derivation',
+      content: (
+        <MDX
+          source="
+| Procedure                                                                | Annotation                                     |
+| ------------------------------------------------------------------------ | ---------------------------------------------- |
+| $f(x)=c$                                                             |                                                |
+| $f^\prime(x)=\lim_{\Delta x \to 0}\frac{c-c}{\Delta x}$ | Substitute into the definition of derivatives. |
+| $f^\prime(x)=0$                                                      | Simplify.                                      |
+"
+        />
+      ),
+    },
+  ]}
 />
+
+### Power Rule
+
+<Align type={'center'}>
+  <Math math={'\\frac{d}{dx}x^n=nx^{n-1}'} type={'block'} />
+</Align>
+
+### Constant Multiple Rule
+
+<Align type={'center'}>
+  <Math math={'\\frac{d}{dx}cg(x)=cg^\\prime(x)'} type={'block'} />
+</Align>
+
+<Proofs
+  proofs={[
+    {
+      name: 'Derivation',
+      content: (
+        <MDX
+          source="
+| Procedure                                                                | Annotation                                     |
+| ------------------------------------------------------------------------ | ---------------------------------------------- |
+| $f(x)=cg(x)$                                                             |                                                |
+| $f^\prime(x)=\lim_{\Delta x \to 0}\frac{cg(x+\Delta x)-cg(x)}{\Delta x}$ | Substitute into the definition of derivatives. |
+| $f^\prime(x)=c\lim_{\Delta x \to 0}\frac{g(x+\Delta x)-g(x)}{\Delta x}$  | Factor using the limit constant rule.          |
+| $f^\prime(x)=cf(x)$                                                      | Simplify.                                      |
+"
+        />
+      ),
+    },
+  ]}
+/>
+
+### Sum Rule
+
+<Align type={'center'}>
+  <Math
+    math={'\\frac{d}{dx}(g(x)+h(x))=g^\\prime(x)+h^\\prime(x)'}
+    type={'block'}
+  />
+</Align>
+
+<Proofs
+  proofs={[
+    {
+      name: 'Derivation',
+      content: (
+        <MDX
+          source="
+| Procedure                                                                                                                       | Annotation                                     |
+| ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| $f(x)=g(x)+h(x)$                                                                                                                |                                                |
+| $f^\prime(x)=\lim_{\Delta x \to 0}\frac{(g(x+\Delta x)+h(x+\Delta x))-(g(x)+h(x))}{\Delta x}$                                   | Substitute into the definition of derivatives. |
+| $f^\prime(x)=\lim_{\Delta x \to 0}\frac{g(x+\Delta x)-g(x)}{\Delta x}+\lim_{\Delta x \to 0}\frac{h(x+\Delta x)-h(x)}{\Delta x}$ | Manipulate using the limit sum rule.           |
+| $f^\prime(x)=g^\prime(x)+h^\prime(x)$                                                                                           | Simplify, and we get two derivatives.          |
+"
+        />
+      ),
+    },
+  ]}
+/>
+
+### Difference Rule
+
+<Align type={'center'}>
+  <Math
+    math={'\\frac{d}{dx}(g(x)-h(x))=g^\\prime(x)-h^\\prime(x)'}
+    type={'block'}
+  />
+</Align>
+
+<Proofs
+  proofs={[
+    {
+      name: 'Derivation',
+      content: (
+        <MDX
+          source="
+| Procedure                                                                                                                       | Annotation                                     |
+| ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| $f(x)=g(x)+h(x)$                                                                                                                |                                                |
+| $f^\prime(x)=\lim_{\Delta x \to 0}\frac{(g(x+\Delta x)-h(x+\Delta x))-(g(x)-h(x))}{\Delta x}$                                   | Substitute into the definition of derivatives. |
+| $f^\prime(x)=\lim_{\Delta x \to 0}\frac{g(x+\Delta x)-g(x)}{\Delta x}-\lim_{\Delta x \to 0}\frac{h(x+\Delta x)-h(x)}{\Delta x}$ | Manipulate using the limit difference rule.    |
+| $f^\prime(x)=g^\prime(x)-h^\prime(x)$                                                                                           | Simplify, and we get two derivatives.          |
+"
+        />
+      ),
+    },
+  ]}
+/>
+
+### Product Rule
+
+<Align type={'center'}>
+  <Math
+    math={'\\frac{d}{dx}(g(x)h(x))=g^\\prime(x)h(x)+g(x)h^\\prime(x)'}
+    type={'block'}
+  />
+</Align>
+
+### Quotient Rule
+
+<Align type={'center'}>
+  <Math
+    math={
+      '\\frac{d}{dx}\\left(\\frac{g(x)}{h(x)}\\right)=\\frac{g^\\prime(x)h(x)-g(x)h^\\prime(x)}{h^2(x)}'
+    }
+    type={'block'}
+  />
+</Align>
+
+### Chain Rule
+
+<Align type={'center'}>
+  <Math
+    math={'\\frac{d}{dx}g(h(x))=g^\\prime(h(x))h^\\prime(x)'}
+    type={'block'}
+  />
+</Align>
 
 ## Identities
 
@@ -70,7 +194,7 @@ Notice that $$ f(x+\Delta x)-f(x) $$ is, essentially, $$ \Delta y $$ with the li
 
 Given some parametric equations $$ x=f(t) $$ and $$ y=f(t) $$, then:
 
-<Align type="center">
+<Align type={'center'}>
   <Math
     math={'\\frac{dy}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}'}
     type={'block'}

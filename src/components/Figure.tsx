@@ -12,11 +12,14 @@ function Figure({ image, number, text }: FigureProps) {
     <Block>
       <Align type="center">
         {image}
-        {text && (
-          <p className="text-theme">
-            {number && <strong>Figure {number}:</strong>} {text}
-          </p>
-        )}
+        <Align type="center">
+          {(text || number) && (
+            <p className="text-theme">
+              {number && <strong>Figure {number}</strong>}
+              {text && <strong>: {text}</strong>}
+            </p>
+          )}
+        </Align>
       </Align>
     </Block>
   )

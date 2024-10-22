@@ -2,10 +2,14 @@ import 'katex/dist/katex.min.css'
 import dynamic from 'next/dynamic'
 
 const BlockMath = dynamic(() =>
-  import('react-katex').then((mod) => mod.BlockMath),
+  import('react-katex').then((mod) => ({
+    default: mod.BlockMath,
+  })),
 )
 const InlineMath = dynamic(() =>
-  import('react-katex').then((mod) => mod.InlineMath),
+  import('react-katex').then((mod) => ({
+    default: mod.InlineMath,
+  })),
 )
 
 interface MathProps {

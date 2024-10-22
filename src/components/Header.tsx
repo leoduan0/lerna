@@ -1,4 +1,3 @@
-import Account from './Account'
 import HeaderButton from './HeaderButton'
 import Path from './Path'
 import ShareButton from './ShareButton'
@@ -11,7 +10,7 @@ function Header() {
       <div className="flex space-x-2">
         {/* Height is not consistent */}
         <ShareButton />
-        <Account />
+        {/* <Account /> */}
       </div>
     </header>
   )

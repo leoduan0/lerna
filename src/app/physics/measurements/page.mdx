@@ -1,14 +1,17 @@
 ---
 title: 'Measurements'
 authors: ['Leo Duan']
-date-last-edited: '2024-05-26'
+date-last-edited: '2024-11-02'
 ---
 
 # Measurements
 
-**Measurements** are recorded values of a certain quatity using tools.
+**Measurements** are recorded values of certain quantities using tools.
 
-Measurements in science are quantitative, involving numbers, and it is important to be able to express a measurement to the correct **accuracy**, how close one's measurement of a quantity is to the true value of that quantity, and **precision**, how close one's measurements of a quantity are to each other.
+Measurements in science are often quantitative. It is important to be able to express a measurement along with the appropriate:
+
+- **Accuracy**, or how close one's measurement of a quantity is to the true value of that quantity, and
+- **Precision**, or how close one's measurements are to each other.
 
 <Block text={'Definition'}>
   **Accuracy**: how close one's measurement of a quantity is to the true value
@@ -16,19 +19,19 @@ Measurements in science are quantitative, involving numbers, and it is important
 </Block>
 
 <Block text={'Precision'}>
-  Precision: how close one's measurements of a quantity are to each other.
+  Precision: how close one's measurements are to each other.
 </Block>
 
-It's important to realize that it is impossible to gain a 100% accurate measurement of any quantity, as that would require an infinitely accurate measuring tool. Thus, every measurement has a certain amount of **uncertainty**, the range around a measured value of a quantity where its accuracy cannot be further increased.
+It's important to realize that it is impossible to gain a 100% accurate measurement of any quantity, as that would require an infinitely accurate measuring tool. Thus, every measurement has a certain amount of **uncertainty**, the range around a measured value where its accuracy cannot be further increased.
 
 <Block text={'Uncertainty'}>
-  Precision: The range around a measured value of a quantity where its accuracy
-  cannot be further increased.
+  Precision: The range around a measured value where its accuracy cannot be
+  further increased.
 </Block>
 
 ## Significant Figures
 
-**Significant figures** allows the expression of the value as well as the accuracy of a numerical measurement. A figure, or a digit, in a measured is is significant if it contributes to representing the accuracy of a measured result.
+**Significant figures** allow the expression of the value as well as the accuracy of a numerical measurement. A figure (or digit) in a measurement is significant if it contributes to representing the accuracy of a measured result.
 
 <Rule
   statement={
@@ -41,7 +44,7 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
 
 <Block text={'Example'}>
   The number $$ 345.12 $$ has 5 significant figures, as all digits inside
-  contribute to representing the accuracy of the measured result.
+  represent the accuracy of the measured result.
 </Block>
 
 <Block text={'Example'}>
@@ -77,7 +80,7 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
   The number $$ 00100 $$ has 1 significant figure. The two zeroes after the 1 is
   not significant (for the same reason listed in the previous example), and the
   two zeroes before the 1 are not significant either because they do not
-  contribute in reflecting the precision of the input.
+  contribute to reflecting the precision of the input.
 </Block>
 
 <Block text={'Example'}>
@@ -88,14 +91,14 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
 
 <Block text={'Example'}>
   The number $$ 100. $$ has 3 significant figures. A decimal place inserted
-  after the ones digit implies that the certainty of an input goes to the ones
+  after the ones digit implies that the certainty of input goes to the ones
   digit, implying that all digits up until the decimal places are significant.
-  It is important to note that rarely are numbers written in similar style as $$
-  100. $$. In a situation like this, the number is represented using scientific
-  notation.
+  It is important to note that rarely are numbers written in a similar style as
+  $$ 100. $$. In a situation like this, the number is represented using
+  scientific notation.
 </Block>
 
-Realize that numbers which are not measured have an infinite amount of significant figures, implying that they do not contribute to the certainty of the result.
+Realize that numbers that were produced without measurement have an infinite amount of significant figures, implying that they do not contribute to the certainty of the result.
 
 <Block text={'Example'}>
   If $$ x = 102.0 $$, $$ 2x $$ would be $$ 2 \cdot 102.0 = 204.0 $$, and we do
@@ -103,11 +106,11 @@ Realize that numbers which are not measured have an infinite amount of significa
   is not a measurement - it has infinite precision.
 </Block>
 
-Conversion factors, like $$ \frac{3600s}{1h} $$ or $$ \frac{1km}{1000m} $$ are also _not_ measured quantities, and thus have an infinite amount of significant figures.
+Conversion factors, like $$ \frac{3600s}{1h} $$ or $$ \frac{1km}{1000m} $$ are also _not_ measured quantities and thus have an infinite amount of significant figures.
 
 ## Scientific Notation
 
-The purpose of **scientific notations** is to denote the amount of significant figures in any situation in a concise way. It comes in the form of a number in the front, usually a decimal, with only one digit in from of the decimal, multiplied by 10 to some power.
+Often, it can be tedious to write certain numbers out, especially numbers with many trailing zeros. The purpose of the **scientific notation** is to denote such numbers concisely. It comes in the form of a number in the front, usually a decimal, with only one digit in front of the decimal, multiplied by 10 to some power.
 
 <Rule
   statement={
@@ -117,7 +120,7 @@ The purpose of **scientific notations** is to denote the amount of significant f
         <span>Remove all non-significant figures</span>
         <span>Rewrite so that the first digit is in the ones place.</span>
         <span>
-          Multiply it to a power of ten which would make it equivalent to the
+          Multiply it by a power of ten which would make it equivalent to the
           original value.
         </span>
       </ol>
@@ -129,11 +132,11 @@ The purpose of **scientific notations** is to denote the amount of significant f
 
 To represent $$ 100. $$ in scientific notation and still convey the fact that it has 3 significant digits:
 
-| Procedure             | Annotation                                                                                                                                                    |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $$ 100. $$            | Remove all non-significant figures (there are none in this case).                                                                                             |
-| $$ 1.00 $$            | Move the decimal place as many times as needed until only one digit is left in the front.                                                                     |
-| $$ 1.00 \cdot 10^2 $$ | Multiply the number by a certain power of 10 in order to make it numerical equivalent to the number we started with. In this case, it's 10 to the power of 2. |
+| Procedure             | Annotation                                                                                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| $$ 100. $$            | Remove all non-significant figures (none in this case).                                                                                                |
+| $$ 1.00 $$            | Move the decimal place as many times as needed until only one digit is left in the front.                                                              |
+| $$ 1.00 \cdot 10^2 $$ | Multiply the number by a certain power of 10 to make it numerically equivalent to the number we started with. In this case, it's 10 to the power of 2. |
 
 Thus, $$ 1.00 \cdot 10^2 $$ is $$ 100. $$ written in scientific notation.
 
@@ -159,7 +162,7 @@ $$ 3.5600121420 \cdot 10^6 $$ is $$ 03560012.1420 $$ in scientifc notation.
 
 As mentioned, it is impossible to measure something with total accuracy or certainty, thus one must be able to express the amount of **uncertainty** they might hold regarding a measurement.
 
-Given a ruler that measures to a centimeter and an object as follows, how can we express our measurement?
+Given a ruler that measures a centimeter and an object as follows, how can we express our measurement?
 
 <Align type="center">
   <Figure
@@ -172,17 +175,13 @@ Given a ruler that measures to a centimeter and an object as follows, how can we
       />
     }
     number={2}
-    text={
-      <span>
-        A ruler and an object of which's length is pending measurement
-      </span>
-    }
+    text={<span>A ruler and an object whose length isn't measured yet.</span>}
   />
 </Align>
 
-It is clear that the object is more than 2cm and less than 3cm, so if we were to measure the length of this object in centimeters, we can be certain that the ones digit is the number $$ 2 $$.
+It is clear that the object is more than 2cm and less than 3cm, so if we were to measure the length of this object in centimeters, we are certain that the ones digit is the number $$ 2 $$.
 
-Realize that because the most precise unit for this ruler is centimeters, it is thus impossible to accurately determine the precision of the next digit (the tenths digit). The convention, however, is to guess the digit after the last digit that one is certain about from measurement, and then put in an uncertainty. Note that the uncertainty is related to the smallest precision of the measurement tool, but for simplicity, we will assume that the uncertainty is half of the smallest precision of our measuring tool, or half of a centimeter.
+Realize that because the most precise unit for this ruler is centimeters, it is thus impossible to accurately determine the precision of the next digit (the tenths digit). The convention, however, is to guess the digit after the last digit that one is certain about from measurement, and then put in an uncertainty. Note that the uncertainty is related to the smallest precision of the measurement tool, but for simplicity, we will assume that the uncertainty is half of the smallest precision of our measuring tool or half of a centimeter.
 
 We will guess tenths digit to be $$ 5 $$, but realize that any reasonable guess (_e.g._ $$ 2 $$, $$ 3 $$, $$ 4 $$, $$ 6 $$, etc) are also valid. Then, our measurement can be expressed like this: $$ 2.5 \pm 0.5 cm $$.
 
@@ -194,7 +193,7 @@ Uncertainties that are expressed as a number (_e.g._ $$ \pm 3 $$, $$ \pm 2.1 $$,
 
 ### Relative Uncertainties
 
-**Relative uncertainties** denotes by how much with respect to the number is the uncertainty. The relative uncertainty can be acquired by dividing the absolute uncertainty by the number.
+**Relative uncertainties** denote the size of an uncertainty with respect to the measured value. The relative uncertainty can be acquired by dividing the absolute uncertainty by the number.
 
 <Block text={'Example'}>
   Given the measurement $$ 10.5 \pm 5.3 $$, the relative uncertainty is $$ \frac{\vphantom{}5.3}{10.5} \approx 0.50476 $$, or that the uncertainty is 50% of the number.
@@ -202,7 +201,7 @@ Uncertainties that are expressed as a number (_e.g._ $$ \pm 3 $$, $$ \pm 2.1 $$,
 
 ## Arithmetic
 
-When performing operations on numbers, its significant figures can be calculated by following the following rules:
+When performing operations on numbers, their significant figures can be calculated by following the following rules:
 
 <Rule
   statement={
@@ -253,7 +252,7 @@ When dealing with numbers with uncertainties, the uncertainties also need to be 
       <li>When adding or subtracting, add the absolute uncertainties.</li>
       <li>When multiplying or dividing, add the relative uncertainties</li>
       <li>
-        Any arithmetic applied to uncertainties follow the same rule of
+        Any arithmetic applied to uncertainties follows the same rule of
         significant figures.
       </li>
     </ul>
@@ -263,14 +262,14 @@ When dealing with numbers with uncertainties, the uncertainties also need to be 
 <Block text={'Example'}>
 Suppose that $$ x = 2.9 \pm 1.1 m $$ and $$ y = 3.1 \pm 0.9 m $$, what is $$ 2xy $$?
 
-| Procedure                                            | Annotation                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $$ 2(2.9 \pm 1.1 m)(3.1 \pm 0.9 m) $$                | Write the expression.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| $$ (5.8 \pm 2.2 m)(3.1 \pm 0.9 m) $$                 | Multiply the coefficient $$ 2 $$ into one of the measurements. Since multiplying by $$ 2 $$ is adding the number onto itself, the rules of addition/subtraction applies when calculating and propagating.                                                                                                                                                                                                                                                   |
-| $$ 1\underline{7}.98 \pm \underline{6}6.963\% m^2 $$ | Find the relative uncertainties of each of the measurements, then add them together, and plug back into the evaluated number. The relative uncertainty for $$ 5.8 \pm 2.2 m $$ is $$ \frac{2.2}{5.8} \approx 0.3\underline{7}931 $$ and for $$ 3.1 \pm 0.9 m $$ it's $$ \frac{0.9}{3.1} \approx 0.\underline{2}9032 $$. Added together, it is $$ \approx 0.3\underline{7}931 + 0.\underline{2}9032 = 0.\underline{6}6963 $$, or $$ \underline{6}6.963\% $$. |
-| $$ 1\underline{7}.98 \pm \underline{1}2.04 m^2 $$    | Convert the relative uncertainty back into absolute uncertainty by multiplying the relative uncertainty into the number.                                                                                                                                                                                                                                                                                                                                    |
-| $$ 18 \pm 10 m^2 $$                                  | Round.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Procedure                                            | Annotation                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $$ 2(2.9 \pm 1.1 m)(3.1 \pm 0.9 m) $$                | Write the expression.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| $$ (5.8 \pm 2.2 m)(3.1 \pm 0.9 m) $$                 | Multiply the coefficient $$ 2 $$ into one of the measurements. Since multiplying by $$ 2 $$ is adding the number onto itself, the rules of addition/subtraction apply when calculating and propagating.                                                                                                                                                                                                                                                          |
+| $$ 1\underline{7}.98 \pm \underline{6}6.963\% m^2 $$ | Find the relative uncertainties of each of the measurements, then add them together, and plug them back into the evaluated number. The relative uncertainty for $$ 5.8 \pm 2.2 m $$ is $$ \frac{2.2}{5.8} \approx 0.3\underline{7}931 $$ and for $$ 3.1 \pm 0.9 m $$ it's $$ \frac{0.9}{3.1} \approx 0.\underline{2}9032 $$. Added together, it is $$ \approx 0.3\underline{7}931 + 0.\underline{2}9032 = 0.\underline{6}6963 $$, or $$ \underline{6}6.963\% $$. |
+| $$ 1\underline{7}.98 \pm \underline{1}2.04 m^2 $$    | Convert the relative uncertainty back into absolute uncertainty by multiplying the relative uncertainty by the number.                                                                                                                                                                                                                                                                                                                                           |
+| $$ 18 \pm 10 m^2 $$                                  | Round.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 </Block>
 
-Note that uncertainties will always have to match the number it corresponds to in _place value_. If any arithmetic operation results in a difference in the place value between the two, round the number to the same amount of place values as the uncertainty. _e.g._ $$ 2.9 \pm 3 m $$ should become $$ 3 \pm 3 m $$.
+Note that uncertainties will always have to match the corresponding value in place value. If any arithmetic operation results in a difference in the place value between the two, round the number to the same amount of place values as the uncertainty. _e.g._ $$ 2.9 \pm 3 m $$ should become $$ 3 \pm 3 m $$.

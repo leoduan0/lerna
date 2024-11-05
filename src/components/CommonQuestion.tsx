@@ -1,5 +1,6 @@
 import Block from './Block'
 import Item from './Item'
+import { Accordion, AccordionItem } from '@nextui-org/react'
 
 export type TQA = {
   question: React.ReactNode
@@ -13,15 +14,17 @@ interface CommonQuestionProps {
 function CommonQuestion({ qas }: CommonQuestionProps) {
   return (
     <Block text={qas.length == 1 ? 'Common Question' : 'Common Questions'}>
-      <div className="divide-y divide-neutral-300 dark:divide-neutral-600">
-        {qas.map((qa, index) => {
+      <Accordion>
+        {qas.map((qa) => {
           return (
-            <div key={index}>
-              <Item qa={qa} /> {/* Cursor not pointer when hovering */}
-            </div>
+            <AccordionItem title={qa.question}>
+              {' '}
+              {/* Add keys */}
+              {qa.answer}
+            </AccordionItem>
           )
         })}
-      </div>
+      </Accordion>
     </Block>
   )
 }

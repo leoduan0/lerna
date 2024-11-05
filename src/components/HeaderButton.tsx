@@ -8,7 +8,7 @@ function HeaderButton() {
   return (
     <button
       onClick={toggleNavigation}
-      className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 lg:invisible dark:hover:bg-neutral-700"
+      className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 dark:hover:bg-neutral-700 lg:invisible"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

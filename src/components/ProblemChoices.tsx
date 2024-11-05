@@ -1,5 +1,12 @@
 'use client'
 
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  Button,
+  useDisclosure,
+} from '@nextui-org/react'
 import { useState } from 'react'
 
 interface ProblemsChoicesProps {
@@ -9,20 +16,13 @@ interface ProblemsChoicesProps {
 
 function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
   const [selected, setSelected] = useState<number>(-1)
+  const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   function handleChoiceSelection(index: number) {
     if (selected == index) {
       setSelected(-1)
     } else {
       setSelected(index)
-    }
-  }
-
-  function handleAnswerSubmission() {
-    if (selected == correct - 1) {
-      alert('Correct')
-    } else {
-      alert('Incorrect')
     }
   }
 
@@ -40,13 +40,28 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
           </li>
         ))}
       </ol>
-      <button
-        onClick={() => handleAnswerSubmission()}
-        disabled={selected == -1}
-        className={`${selected == -1 ? '' : 'active:scale-95'} rounded-md p-2 transition enabled:hover:bg-neutral-200 disabled:cursor-not-allowed enabled:dark:hover:bg-neutral-700`}
-      >
-        <span>Check</span>
-      </button>
+      <Button isDisabled={selected == -1} onPress={onOpen}>
+        Check
+      </Button>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => {
+            if (selected == correct - 1) {
+              return (
+                <ModalHeader className="flex flex-col gap-1">
+                  ✅ Correct
+                </ModalHeader>
+              )
+            } else {
+              return (
+                <ModalHeader className="flex flex-col gap-1">
+                  ❌ Incorrect
+                </ModalHeader>
+              )
+            }
+          }}
+        </ModalContent>
+      </Modal>
     </div>
   )
 }

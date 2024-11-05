@@ -17,7 +17,7 @@ function Head({ toggleFunction }: HeadProps) {
       <span className="text-theme font-bold">Lerna</span>
       <button
         onClick={() => toggleFunction()}
-        className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 lg:hidden dark:hover:bg-neutral-700"
+        className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 dark:hover:bg-neutral-700 lg:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

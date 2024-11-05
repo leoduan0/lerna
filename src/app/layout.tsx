@@ -1,4 +1,5 @@
 import './globals.css'
+import { Providers } from './providers'
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import pages from '@/data/pages'
@@ -26,7 +27,7 @@ export default function RootLayout({
           <Header />
           <main className="space-y-2 overflow-y-auto p-4 lg:px-48">
             {/* Page horizontal overflow not reachable (see matrix determinant page) */}
-            {children}
+            <Providers>{children}</Providers>
           </main>
         </div>
         <Analytics />

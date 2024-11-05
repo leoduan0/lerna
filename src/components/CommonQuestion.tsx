@@ -1,5 +1,4 @@
 import Block from './Block'
-import Item from './Item'
 import { Accordion, AccordionItem } from '@nextui-org/react'
 
 export type TQA = {
@@ -15,10 +14,9 @@ function CommonQuestion({ qas }: CommonQuestionProps) {
   return (
     <Block text={qas.length == 1 ? 'Common Question' : 'Common Questions'}>
       <Accordion>
-        {qas.map((qa) => {
+        {qas.map((qa, index) => {
           return (
-            <AccordionItem title={qa.question}>
-              {' '}
+            <AccordionItem key={index} title={qa.question}>
               {/* Add keys */}
               {qa.answer}
             </AccordionItem>

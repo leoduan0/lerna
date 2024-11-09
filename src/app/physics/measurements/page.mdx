@@ -13,18 +13,18 @@ Measurements in science are often quantitative. It is important to be able to ex
 - **Accuracy**, or how close one's measurement of a quantity is to the true value of that quantity, and
 - **Precision**, or how close one's measurements are to each other.
 
-<Block text={'Definition'}>
+<Block text="Definition">
   **Accuracy**: how close one's measurement of a quantity is to the true value
   of that quantity.
 </Block>
 
-<Block text={'Precision'}>
+<Block text="Precision">
   Precision: how close one's measurements are to each other.
 </Block>
 
 It's important to realize that it is impossible to gain a 100% accurate measurement of any quantity, as that would require an infinitely accurate measuring tool. Thus, every measurement has a certain amount of **uncertainty**, the range around a measured value where its accuracy cannot be further increased.
 
-<Block text={'Uncertainty'}>
+<Block text="Uncertainty">
   Precision: The range around a measured value where its accuracy cannot be
   further increased.
 </Block>
@@ -42,16 +42,16 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
   }
 />
 
-<Block text={'Example'}>
+<Block text="Example">
   The number $$ 345.12 $$ has 5 significant figures, as all digits inside
   represent the accuracy of the measured result.
 </Block>
 
-<Block text={'Example'}>
+<Block text="Example">
   The number $$ 305.1 $$ has 4 significant figures, for the same reason.
 </Block>
 
-<Block text={'Example'}>
+<Block text="Example">
   The number $$ 100 $$ has only 1 significant figure. The reason for this is
   because $$ 10 $$ does not imply that the measurement is exactly $$ 10 $$. For
   example, if someone measures the length of an object with a ruler that has
@@ -64,10 +64,10 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
     <Figure
       image={
         <Image
-          src={'/physics/measurements/figure_1.svg'}
+          src="/physics/measurements/figure_1.svg"
           width={384}
           height={64}
-          alt={''}
+          alt=""
         />
       }
       number={1}
@@ -76,20 +76,20 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
   </Align>
 </Block>
 
-<Block text={'Example'}>
+<Block text="Example">
   The number $$ 00100 $$ has 1 significant figure. The two zeroes after the 1 is
   not significant (for the same reason listed in the previous example), and the
   two zeroes before the 1 are not significant either because they do not
   contribute to reflecting the precision of the input.
 </Block>
 
-<Block text={'Example'}>
+<Block text="Example">
   The number $$ 100.1 $$ has 4 significant figures. Unlike the previous example,
   the 1 in the tenths digit implies that the input is precise to the tenths
   digit, thus the measurer is certain that it is 100.1.
 </Block>
 
-<Block text={'Example'}>
+<Block text="Example">
   The number $$ 100. $$ has 3 significant figures. A decimal place inserted
   after the ones digit implies that the certainty of input goes to the ones
   digit, implying that all digits up until the decimal places are significant.
@@ -100,7 +100,7 @@ It's important to realize that it is impossible to gain a 100% accurate measurem
 
 Realize that numbers that were produced without measurement have an infinite amount of significant figures, implying that they do not contribute to the certainty of the result.
 
-<Block text={'Example'}>
+<Block text="Example">
   If $$ x = 102.0 $$, $$ 2x $$ would be $$ 2 \cdot 102.0 = 204.0 $$, and we do
   not have to round to one significant figure because the $$ 2 $$ in this case
   is not a measurement - it has infinite precision.
@@ -128,7 +128,7 @@ Often, it can be tedious to write certain numbers out, especially numbers with m
   }
 />
 
-<Block text={'Example'}>
+<Block text="Example">
 
 To represent $$ 100. $$ in scientific notation and still convey the fact that it has 3 significant digits:
 
@@ -144,7 +144,7 @@ Thus, $$ 1.00 \cdot 10^2 $$ is $$ 100. $$ written in scientific notation.
 
 Note that in scientific notation, **all** figures in the decimal in the front are significant.
 
-<Block text={'Example'}>
+<Block text="Example">
 Given $$ 03560012.1420 $$, it can be expressed in scientific notation by following the rules.
 
 | Procedure                     | Annotation                                                                          |
@@ -168,10 +168,10 @@ Given a ruler that measures a centimeter and an object as follows, how can we ex
   <Figure
     image={
       <Image
-        src={'/physics/measurements/figure_2.svg'}
+        src="/physics/measurements/figure_2.svg"
         width={384}
         height={64}
-        alt={''}
+        alt=""
       />
     }
     number={2}
@@ -195,7 +195,7 @@ Uncertainties that are expressed as a number (_e.g._ $$ \pm 3 $$, $$ \pm 2.1 $$,
 
 **Relative uncertainties** denote the size of an uncertainty with respect to the measured value. The relative uncertainty can be acquired by dividing the absolute uncertainty by the number.
 
-<Block text={'Example'}>
+<Block text="Example">
   Given the measurement $$ 10.5 \pm 5.3 $$, the relative uncertainty is $$ \frac{\vphantom{}5.3}{10.5} \approx 0.50476 $$, or that the uncertainty is 50% of the number.
 </Block>
 
@@ -220,7 +220,7 @@ When performing operations on numbers, their significant figures can be calculat
 
 It is good practice to put an underline under the last significant digit while calculating, and round off only at the very end.
 
-<Block text={'Example'}>
+<Block text="Example">
 Given $$ 100 + 32 $$, the $$ 100 $$ is significant to the hundreds digit, and $$ 32 $$ is significant to the ones digit. Using the rules, the significance of the result would be retained to the same number of decimal places as the input with the fewest significant decimal places, or the hundreds digit.
 
 | Procedure               | Annotation                       |
@@ -232,7 +232,7 @@ Given $$ 100 + 32 $$, the $$ 100 $$ is significant to the hundreds digit, and $$
 
 </Block>
 
-<Block text={'Example'}>
+<Block text="Example">
 Given $$ 100 \\times 32 $$, the $$ 100 $$has 1 significant digit, and $$ 32 $$ has two significant digits. Using the rules, the significance of the result would be retained with the same number of significant figures as the input with the fewest significant figures.
 
 | Procedure                | Annotation                       |
@@ -259,7 +259,7 @@ When dealing with numbers with uncertainties, the uncertainties also need to be 
   }
 />
 
-<Block text={'Example'}>
+<Block text="Example">
 Suppose that $$ x = 2.9 \pm 1.1 m $$ and $$ y = 3.1 \pm 0.9 m $$, what is $$ 2xy $$?
 
 | Procedure                                            | Annotation                                                                                                                                                                                                                                                                                                                                                                                                                                                       |

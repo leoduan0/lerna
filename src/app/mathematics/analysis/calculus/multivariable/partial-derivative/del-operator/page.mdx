@@ -12,7 +12,7 @@ last-edited-date: '2024-02-29'
       math={
         '\\nabla = \\vec{x}\\frac{\\partial}{\\partial x} + \\vec{y}\\frac{\\partial}{\\partial y} + \\vec{z}\\frac{\\partial}{\\partial z}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -37,7 +37,7 @@ Given a function $$ f $$, its $$ gradient $$ is:
       math={
         '\\operatorname{grad}(f) = \\nabla f = \\vec{x}\\frac{\\partial f}{\\partial x} + \\vec{y}\\frac{\\partial f}{\\partial y} + \\vec{z}\\frac{\\partial f}{\\partial z}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -45,7 +45,7 @@ Given a function $$ f $$, its $$ gradient $$ is:
       term: '\\operatorname{grad}(f)',
       annotation: (
         <span>
-          <strong>Gradient</strong> of <Math math={'f'} type={'inline'} />
+          <strong>Gradient</strong> of <Math math="f" type="inline" />
         </span>
       ),
     },
@@ -62,7 +62,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its $$ divergence 
       math={
         '\\operatorname{div}(\\vec{v}) = \\nabla \\cdot \\vec{v} = \\vec{x}\\frac{\\partial v_1}{\\partial x} + \\vec{y}\\frac{\\partial v_2}{\\partial y} + \\vec{z}\\frac{\\partial v_3}{\\partial z}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -70,7 +70,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its $$ divergence 
       term: '\\operatorname{div}(\\vec{v})',
       annotation: (
         <span>
-          Divergence of <Math math={'\\vec{v}'} type={'inline'} />
+          Divergence of <Math math="\\vec{v}" type="inline" />
         </span>
       ),
     },
@@ -87,7 +87,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **curl** is:
       math={
         '\\operatorname{curl}(\\vec{v}) = \\nabla \\times \\vec{v} = \\det{\\begin{bmatrix} \\vec{x} & \\vec{y} & \\vec{z} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ v_1 & v_2 & v_3 \\end{bmatrix}}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -95,7 +95,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **curl** is:
       term: '\\operatorname{curl}(\\vec{v})',
       annotation: (
         <span>
-          Curl of <Math math={'\\vec{v}'} type={'inline'} />
+          Curl of <Math math="\\vec{v}" type="inline" />
         </span>
       ),
     },
@@ -112,7 +112,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
       math={
         '\\operatorname{div}(\\operatorname{grad}(\\vec{v})) = \\nabla \\cdot \\nabla \\vec{v} = \\nabla^2 \\vec{v} = \\vec{x}\\frac{\\partial^2 v_1}{{\\partial x}^2} + \\vec{y}\\frac{\\partial^2 v_2}{{\\partial y}^2} + \\vec{z}\\frac{\\partial^2 v_3}{{\\partial z}^2}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -120,7 +120,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
       term: '\\operatorname{div}(\\operatorname{grad}(\\vec{v}))',
       annotation: (
         <span>
-          Laplacian of <Math math={'\\vec{v}'} type={'inline'} />
+          Laplacian of <Math math="\\vec{v}" type="inline" />
         </span>
       ),
     },
@@ -130,8 +130,8 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 <Rule
   statement={
     <Math
-      math={'\\operatorname{div}(\\operatorname{curl}(\\vec{v})) = 0'}
-      type={'block'}
+      math="\\operatorname{div}(\\operatorname{curl}(\\vec{v})) = 0"
+      type="block"
     />
   }
   terms={[
@@ -139,7 +139,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
       term: '\\operatorname{div}(\\operatorname{curl}(\\vec{v}))',
       annotation: (
         <span>
-          Divergence of the curl of <Math math={'\\vec{v}'} type={'inline'} />
+          Divergence of the curl of <Math math="\\vec{v}" type="inline" />
         </span>
       ),
     },
@@ -149,8 +149,8 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 <Rule
   statement={
     <Math
-      math={'\\operatorname{curl}(\\operatorname{grad}(\\vec{v})) = 0'}
-      type={'block'}
+      math="\\operatorname{curl}(\\operatorname{grad}(\\vec{v})) = 0"
+      type="block"
     />
   }
   terms={[
@@ -158,7 +158,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
       term: '\\operatorname{curl}(\\operatorname{grad}(\\vec{v}))',
       annotation: (
         <span>
-          Curl of the gradient of <Math math={'\\vec{v}'} type={'inline'} />
+          Curl of the gradient of <Math math="\\vec{v}" type="inline" />
         </span>
       ),
     },

@@ -14,7 +14,7 @@ date-last-edited: '2024-07-05'
       math={
         'A + B = \\begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13} \\\\ a_{21} + b_{21} & a_{22} + b_{22} & a_{23} + b_{23} \\end{bmatrix}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -25,7 +25,7 @@ date-last-edited: '2024-07-05'
           math={
             '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
           }
-          type={'inline'}
+          type="inline"
         />
       ),
     },
@@ -36,7 +36,7 @@ date-last-edited: '2024-07-05'
           math={
             '\\begin{bmatrix} b_{11} & b_{12} & b_{13} \\\\ b_{21} & b_{22} & b_{23} \\end{bmatrix}'
           }
-          type={'inline'}
+          type="inline"
         />
       ),
     },
@@ -54,7 +54,7 @@ date-last-edited: '2024-07-05'
       math={
         'A - B = \\begin{bmatrix} a_{11} - b_{11} & a_{12} - b_{12} & a_{13} - b_{13} \\\\ a_{21} - b_{21} & a_{22} - b_{22} & a_{23} - b_{23} \\end{bmatrix}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -65,7 +65,7 @@ date-last-edited: '2024-07-05'
           math={
             '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
           }
-          type={'inline'}
+          type="inline"
         />
       ),
     },
@@ -76,7 +76,7 @@ date-last-edited: '2024-07-05'
           math={
             '\\begin{bmatrix} b_{11} & b_{12} & b_{13} \\\\ b_{21} & b_{22} & b_{23} \\end{bmatrix}'
           }
-          type={'inline'}
+          type="inline"
         />
       ),
     },
@@ -96,7 +96,7 @@ date-last-edited: '2024-07-05'
       math={
         'kA = \\begin{bmatrix} ka_{11} & ka_{12} & ka_{13} \\\\ ka_{21} & ka_{22} & ka_{23} \\\\ ka_{31} & ka_{32} & ka_{33} \\end{bmatrix}'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -111,7 +111,7 @@ date-last-edited: '2024-07-05'
           math={
             '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{bmatrix}'
           }
-          type={'inline'}
+          type="inline"
         />
       ),
     },
@@ -131,7 +131,7 @@ To multiply matrices:
 1. Repeat step 2 until all the rows of the first matrix have been processed.
 1. Then, repeat steps 2 to 3 for the next column of the second matrix until all columns of the second matrix have been processed.
 
-<Block text={'Example'}>
+<Block text="Example">
 
 $$ \begin{bmatrix} a_{1,1} & a_{1,2} & a_{1,3} \\ a_{2,1} & a_{2,2} & a_{2,3} \end{bmatrix} \times \begin{bmatrix} b_{1,1} & b_{1,2} & b_{1,3} \\ b_{2,1} & b_{2,2} & b_{2,3} \\ b_{3,1} & b_{3,2} & b_{3,3} \end{bmatrix} = \begin{bmatrix} a_{1,1}b_{1,1}+a_{1,2}b_{2,1}+a_{1,3}b_{3,1} & a_{1,1}b_{1,2}+a_{1,2}b_{2,2}+a_{1,3}b_{3,2} & a_{1,1}b_{1,3}+a_{1,2}b_{2,3}+a_{1,3}b_{3,3} \\ a_{2,1}b_{1,1}+a_{2,2}b_{2,1}+a_{2,3}b_{3,1} & a_{2,1}b_{1,2}+a_{2,2}b_{2,2}+a_{2,3}b_{3,2} & a_{2,1}b_{1,3}+a_{2,2}b_{2,3}+a_{2,3}b_{3,3} \end{bmatrix} $$
 
@@ -153,12 +153,12 @@ A matrix can be transformed by, for all rows of the matrix, making the n-th row 
       math={
         '\\begin{bmatrix} \\textcolor{#FF0000}{a_{11}} & \\textcolor{#FF0000}{a_{12}} & \\textcolor{#FF0000}{a_{13}} \\\\ \\textcolor{#F28500}{a_{21}} & \\textcolor{#F28500}{a_{22}} & \\textcolor{#F28500}{a_{23}} \\\\ \\textcolor{#007FFF}{a_{31}} & \\textcolor{#007FFF}{a_{32}} & \\textcolor{#007FFF}{a_{33}} \\end{bmatrix}^T = \\begin{bmatrix} \\textcolor{#FF0000}{a_{11}} & \\textcolor{#F28500}{a_{21}} & \\textcolor{#007FFF}{a_{31}} \\\\ \\textcolor{#FF0000}{a_{12}} & \\textcolor{#F28500}{a_{22}} & \\textcolor{#007FFF}{a_{32}} \\\\ \\textcolor{#FF0000}{a_{13}} & \\textcolor{#F28500}{a_{23}} & \\textcolor{#007FFF}{a_{33}} \\end{bmatrix}'
       }
-      type={'block'}
+      type="block"
     />
   }
 />
 
-<Block text={'Example'}>
+<Block text="Example">
 
 $$ {\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}}^T = \begin{bmatrix} 1 & 4 & 7 \\ 2 & 5 & 8 \\ 3 & 6 & 9 \end{bmatrix} $$
 

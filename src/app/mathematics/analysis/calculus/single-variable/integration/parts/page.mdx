@@ -10,13 +10,13 @@ date-last-edited: '2024-07-05'
 
 <Rule
   statement={
-    <Math math={'\\int u \\,dv = uv - \\int v \\,du'} type={'block'} />
+    <Math math="\\int u \\,dv = uv - \\int v \\,du" type="block" />
   }
 />
 
 Thus, given a function $$ f(x) $$, one can integrate by splitting it into $$ u(x) $$ and $$ v(x) $$.
 
-<Block text={'Example'}>
+<Block text="Example">
 
 To evaluate $$ \int x \sin(x) \,dx $$, let us set $$ u(x) = x $$ and $$ \,dv = \sin(x) \,dx $$. Then, according to the rule, $$ \int x \sin(x) \,dx = \int u \,dv = uv - \int v \,du = -x\cos(x) - \int -\cos(x) \,dx $$. Then, integrate, and we get that it equals to $$ \sin(x)-x\cos(x)+c $$.
 

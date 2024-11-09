@@ -1,6 +1,3 @@
-pnpm-lock.yaml
-
-# Pages
 src/app/chemistry/thermodynamics/page.mdx
 src/app/mathematics/algebra/cauchy-schwarz-inequality/page.mdx
 src/app/mathematics/algebra/linear-algebra/matrix/arithmetic/page.mdx

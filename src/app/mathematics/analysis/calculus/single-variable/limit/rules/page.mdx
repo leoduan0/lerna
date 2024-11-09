@@ -45,7 +45,7 @@ For example, suppose we have functions $$ f(x) = 0 $$, $$ g(x) = -x^2 $$, and $$
 The functions are graphed below, where $$ g(x) $$ is orange, $$ f(x) $$ is blue, and $$ h(x) $$ is green:
 
 <Graph
-  type={'cartesian'}
+  type="cartesian"
   viewBox={{
     x: [-5, 5],
     y: [-5, 5],
@@ -80,36 +80,36 @@ And this matches what we would get for $$ \lim_{x \to 0} f(x) $$ if we just perf
     <p>
       What is{' '}
       <Math
-        math={'\\lim_{x \\to \\infty} \\frac{\\sin(x)}{x}'}
-        type={'inline'}
+        math="\\lim_{x \\to \\infty} \\frac{\\sin(x)}{x}"
+        type="inline"
       />
     </p>
   }
   choices={[
-    <Math math={'0'} type={'inline'} />,
-    <Math math={'1'} type={'inline'} />,
-    <Math math={'-\\infty'} type={'inline'} />,
-    <Math math={'\\infty'} type={'inline'} />,
+    <Math math="0" type="inline" />,
+    <Math math="1" type="inline" />,
+    <Math math="-\\infty" type="inline" />,
+    <Math math="\\infty" type="inline" />,
   ]}
   correct={1}
   solution={
     <>
       <p>
-        Since <Math math={'-1 \\leq \\sin(x) \\leq 1'} type={'inline'} />, then{' '}
+        Since <Math math="-1 \\leq \\sin(x) \\leq 1" type="inline" />, then{' '}
         <Math
-          math={'-\\frac{1}{x} \\leq \\frac{\\sin(x)}{x} \\leq \\frac{1}{x}'}
-          type={'inline'}
+          math="-\\frac{1}{x} \\leq \\frac{\\sin(x)}{x} \\leq \\frac{1}{x}"
+          type="inline"
         />
         .
       </p>
       <p>
-        And since <Math math={'-\\frac{1}{x}'} type={'inline'} /> and{' '}
-        <Math math={'\\frac{1}{x}'} type={'inline'} /> both approach 0 as x
+        And since <Math math="-\\frac{1}{x}" type="inline" /> and{' '}
+        <Math math="\\frac{1}{x}" type="inline" /> both approach 0 as x
         approaches infinity, from the squeeze theorem we can infer that:
       </p>
       <Math
-        math={'\\lim_{x \\to \\infty} \\frac{\\sin(x)}{x} = 0'}
-        type={'block'}
+        math="\\lim_{x \\to \\infty} \\frac{\\sin(x)}{x} = 0"
+        type="block"
       />
     </>
   }
@@ -130,7 +130,7 @@ The **intermediate value theorem** states that for some function $$ f(x) $$ whic
 For example, take the function $$ f(x) = \left(\frac{x}{2}\right)^2 $$:
 
 <Graph
-  type={'cartesian'}
+  type="cartesian"
   viewBox={{
     x: [-5, 5],
     y: [-5, 5],
@@ -145,7 +145,7 @@ For example, take the function $$ f(x) = \left(\frac{x}{2}\right)^2 $$:
 The intermediate value theorem states that for all possible values in $$ [f(a), f(b)] $$ there must be at least one value of x in the interval $$ [a, b] $$ which if it is taken as input of the function its output would be f(x):
 
 <Graph
-  type={'cartesian'}
+  type="cartesian"
   viewBox={{
     x: [-5, 5],
     y: [-5, 5],

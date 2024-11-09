@@ -8,7 +8,7 @@ function Head({ toggleFunction }: HeadProps) {
   return (
     <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-neutral-300 dark:border-neutral-700">
       <Image
-        src={'/lerna.png'}
+        src="/lerna.png"
         height={32}
         width={32}
         className="rounded-lg"

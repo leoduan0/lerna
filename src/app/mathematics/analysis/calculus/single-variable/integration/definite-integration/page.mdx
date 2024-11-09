@@ -16,7 +16,7 @@ The fundamental theorem of calculus is as follows:
 
 <Rule
   statement={
-    <Math math={'\\int_a^b f(x) \\,dx = F(b) - F(a)'} type={'block'} />
+    <Math math="\\int_a^b f(x) \\,dx = F(b) - F(a)" type="block" />
   }
   terms={[
     {
@@ -31,8 +31,8 @@ The fundamental theorem of calculus is as follows:
       term: 'F(b)',
       annotation: (
         <span>
-          <Math math={'f(x)'} type={'inline'} /> integrated at{' '}
-          <Math math={'b'} type={'inline'} />.
+          <Math math="f(x)" type="inline" /> integrated at{' '}
+          <Math math="b" type="inline" />.
         </span>
       ),
     },
@@ -40,15 +40,15 @@ The fundamental theorem of calculus is as follows:
       term: 'F(a)',
       annotation: (
         <span>
-          <Math math={'f(x)'} type={'inline'} /> integrated at{' '}
-          <Math math={'a'} type={'inline'} />.
+          <Math math="f(x)" type="inline" /> integrated at{' '}
+          <Math math="a" type="inline" />.
         </span>
       ),
     },
   ]}
 />
 
-<Block text={'Example'}>
+<Block text="Example">
 
 | Procedure                                                                          | Annotation                                                                                                                         |
 | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ Given a function $$ f(x) = \int_{a(x)}^{b(x)} g(x) \,dx $$, its derivative is gi
       math={
         'f^{\\prime}(x) = \\frac{d}{dx} \\int_{a(x)}^{b(x)} g(x) \\,dx = g(b(x)) \\cdot b^{\\prime}(x) - g(a(x)) \\cdot a^{\\prime}(x)'
       }
-      type={'block'}
+      type="block"
     />
   }
 />

@@ -14,7 +14,7 @@ The value of a function $$ f(x) $$ when its input gets infinitely close to (but 
       math={
         '\\lim_{x \\to k} f(x) = \\lim_{x \\to k^+} f(x) = \\lim_{x \\to k^-} f(x)'
       }
-      type={'block'}
+      type="block"
     />
   }
   terms={[
@@ -22,9 +22,9 @@ The value of a function $$ f(x) $$ when its input gets infinitely close to (but 
       term: '\\lim_{x \\to k} f(x)',
       annotation: (
         <span>
-          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
-          <Math math={'x'} type={'inline'} /> approaches{' '}
-          <Math math={'k'} type={'inline'} />
+          Limit of <Math math="f(x)" type="inline" /> as{' '}
+          <Math math="x" type="inline" /> approaches{' '}
+          <Math math="k" type="inline" />
         </span>
       ),
     },
@@ -32,9 +32,9 @@ The value of a function $$ f(x) $$ when its input gets infinitely close to (but 
       term: '\\lim_{x \\to k^+} f(x)',
       annotation: (
         <span>
-          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
-          <Math math={'x'} type={'inline'} /> approaches{' '}
-          <Math math={'k'} type={'inline'} /> from the right side
+          Limit of <Math math="f(x)" type="inline" /> as{' '}
+          <Math math="x" type="inline" /> approaches{' '}
+          <Math math="k" type="inline" /> from the right side
         </span>
       ),
     },
@@ -42,9 +42,9 @@ The value of a function $$ f(x) $$ when its input gets infinitely close to (but 
       term: '\\lim_{x \\to k^-} f(x)',
       annotation: (
         <span>
-          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
-          <Math math={'x'} type={'inline'} /> approaches{' '}
-          <Math math={'k'} type={'inline'} /> from the left side
+          Limit of <Math math="f(x)" type="inline" /> as{' '}
+          <Math math="x" type="inline" /> approaches{' '}
+          <Math math="k" type="inline" /> from the left side
         </span>
       ),
     },
@@ -53,14 +53,14 @@ The value of a function $$ f(x) $$ when its input gets infinitely close to (but 
 
 If $$ \lim_{x \to k} = \infty $$ or $$ \lim_{x \to k} = -\infty $$, the expression is still valid but the limit does not exist.
 
-<Block text={'Example'}>
+<Block text="Example">
 
 If $$ f(x) = \left|\frac{1}{x}\right| $$, then what is $$ \lim_{x \to 0} f(x) $$? The value of $$ f(x) $$ is undefined when $$ x $$ is $$ 0 $$, but realize that limits is about getting infinitely close to a certain value and approximating the value at that point, not what the value is.
 
 As we can see from the graph, as $$ x $$ approaches $$ 0 $$ from either the positive or negative side, the value of $$ y $$ increases rapidly. It would be useful to make a chart like the following to help us determine a limit:
 
 <Graph
-  type={'cartesian'}
+  type="cartesian"
   viewBox={{
     x: [-5, 5],
     y: [-2, 10],
@@ -108,16 +108,16 @@ It is also important to realize that the limit of a function at a given point is
 
 <Rule
   statement={
-    <Math math={'\\lim_{x \\to k} f(x) \\nRightarrow f(k)'} type={'block'} />
+    <Math math="\\lim_{x \\to k} f(x) \\nRightarrow f(k)" type="block" />
   }
   terms={[
     {
       term: '\\lim_{x \\to k} f(x)',
       annotation: (
         <span>
-          Limit of <Math math={'f(x)'} type={'inline'} /> as{' '}
-          <Math math={'x'} type={'inline'} /> approaches{' '}
-          <Math math={'k'} type={'inline'} />
+          Limit of <Math math="f(x)" type="inline" /> as{' '}
+          <Math math="x" type="inline" /> approaches{' '}
+          <Math math="k" type="inline" />
         </span>
       ),
     },
@@ -125,8 +125,8 @@ It is also important to realize that the limit of a function at a given point is
       term: 'f(k)',
       annotation: (
         <span>
-          Value of <Math math={'f(x)'} type={'inline'} /> if{' '}
-          <Math math={'x = k'} type={'inline'} />
+          Value of <Math math="f(x)" type="inline" /> if{' '}
+          <Math math="x = k" type="inline" />
         </span>
       ),
     },

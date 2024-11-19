@@ -16,6 +16,7 @@ import Problem from '@/components/Problem'
 import Proofs from '@/components/Proofs'
 import Rule from '@/components/Rule'
 import Showcase from '@/components/Showcase'
+import UnderConstruction from '@/components/UnderConstruction'
 import type { MDXComponents } from 'mdx/types'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -58,6 +59,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Proofs: Proofs,
     Rule: Rule,
     Showcase: Showcase,
+    UnderConstruction: UnderConstruction,
     ...components,
   }
 }

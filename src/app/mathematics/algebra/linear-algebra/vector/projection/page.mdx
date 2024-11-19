@@ -9,28 +9,26 @@ date-last-edited: '2024-07-05'
 <Rule
   statement={
     <Math
-      math={
-        '\\operatorname{proj}_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{{\\lVert \\vec{b} \\rVert}^2}\\vec{b}'
-      }
+      math="\operatorname{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{{\lVert \vec{b} \rVert}^2}\vec{b}"
       type="block"
     />
   }
   terms={[
     {
-      term: '\\operatorname{proj}_{\\vec{b}}\\vec{a}',
+      term: "\\operatorname{proj}_{\\vec{b}}\\vec{a}",
       annotation: (
         <span>
-          Projection of <Math math="\\vec{a}" type="inline" /> on{' '}
-          <Math math="\\vec{b}" type="inline" />
+          Projection of <Math math="\vec{a}" type="inline" /> on{" "}
+          <Math math="\vec{b}" type="inline" />
         </span>
       ),
     },
     {
-      term: '\\vec{a}',
+      term: "\\vec{a}",
       annotation: <span>A vector</span>,
     },
     {
-      term: '\\vec{b}',
+      term: "\\vec{b}",
       annotation: <span>A vector</span>,
     },
   ]}

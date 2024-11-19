@@ -68,11 +68,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its $$ divergence 
   terms={[
     {
       term: '\\operatorname{div}(\\vec{v})',
-      annotation: (
-        <span>
-          Divergence of <Math math="\\vec{v}" type="inline" />
-        </span>
-      ),
+      annotation: <MDX source="Divergence of $\vec{v}$" />,
     },
   ]}
 />
@@ -93,11 +89,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **curl** is:
   terms={[
     {
       term: '\\operatorname{curl}(\\vec{v})',
-      annotation: (
-        <span>
-          Curl of <Math math="\\vec{v}" type="inline" />
-        </span>
-      ),
+      annotation: <MDX source="Curl of $\vec{v}$" />,
     },
   ]}
 />
@@ -118,11 +110,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
   terms={[
     {
       term: '\\operatorname{div}(\\operatorname{grad}(\\vec{v}))',
-      annotation: (
-        <span>
-          Laplacian of <Math math="\\vec{v}" type="inline" />
-        </span>
-      ),
+      annotation: <MDX source="Laplacian of $\vec{v}$" />,
     },
   ]}
 />
@@ -130,18 +118,14 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 <Rule
   statement={
     <Math
-      math="\\operatorname{div}(\\operatorname{curl}(\\vec{v})) = 0"
+      math="\operatorname{div}(\operatorname{curl}(\vec{v})) = 0"
       type="block"
     />
   }
   terms={[
     {
       term: '\\operatorname{div}(\\operatorname{curl}(\\vec{v}))',
-      annotation: (
-        <span>
-          Divergence of the curl of <Math math="\\vec{v}" type="inline" />
-        </span>
-      ),
+      annotation: <MDX source="Divergence of the curl of $\vec{v}$" />,
     },
   ]}
 />
@@ -149,18 +133,14 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 <Rule
   statement={
     <Math
-      math="\\operatorname{curl}(\\operatorname{grad}(\\vec{v})) = 0"
+      math="\operatorname{curl}(\operatorname{grad}(\vec{v})) = 0"
       type="block"
     />
   }
   terms={[
     {
       term: '\\operatorname{curl}(\\operatorname{grad}(\\vec{v}))',
-      annotation: (
-        <span>
-          Curl of the gradient of <Math math="\\vec{v}" type="inline" />
-        </span>
-      ),
+      annotation: <MDX source="Curl of the gradient of $\vec{v}$" />,
     },
   ]}
 />

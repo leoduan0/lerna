@@ -52,82 +52,44 @@ If $$ A = (4, 3) $$ and $$ B = (17, 14) $$, then $$ \vec{AB} = \langle 17-4, 14-
 
 <Problem
   question={
-    <MDX
-      source={
-        'If $A=(78.5, 73.2)$ and $B=(17.14, 14.17)$, find $\\vec{AB}$ and $\\vec{BA}$.'
-      }
-    />
+    <MDX source="If $A=(78.5, 73.2)$ and $B=(17.14, 14.17)$, find $\vec{AB}$ and $\vec{BA}$." />
   }
   choices={[
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle -61.36, -59.03 \\rangle$ and $\\vec{BA}  = \\langle 61.36, 59.03 \\rangle$'
-      }
-    />,
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle 61.36, 59.03 \\rangle$ and $\\vec{BA}  = \\langle -61.36, -59.03 \\rangle$'
-      }
-    />,
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle -61.36, 59.03 \\rangle$ and $\\vec{BA}  = \\langle -61.36, 59.03 \\rangle$'
-      }
-    />,
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle 61.36, -59.03 \\rangle$ and $\\vec{BA}  = \\langle 61.36, -59.03 \\rangle$'
-      }
-    />,
+    <MDX source="$\vec{AB} = \langle -61.36, -59.03 \rangle$ and $\vec{BA}  = \langle 61.36, 59.03 \rangle$" />,
+    <MDX source="$\vec{AB} = \langle 61.36, 59.03 \rangle$ and $\vec{BA}  = \langle -61.36, -59.03 \rangle$" />,
+    <MDX source="$\vec{AB} = \langle -61.36, 59.03 \rangle$ and $\vec{BA}  = \langle -61.36, 59.03 \rangle$" />,
+    <MDX source="$\vec{AB} = \langle 61.36, -59.03 \rangle$ and $\vec{BA}  = \langle 61.36, -59.03 \rangle$" />,
   ]}
   correct={1}
-  solution={<MDX source={`
-$\\vec{AB} = \\langle 17.14-78.5, 14.17-73.2 \\rangle = \\langle -61.36, -59.03 \\rangle$
-
-$\\vec{BA} = \\langle 78.5-17.14, 73.2-14.17 \\rangle = \\langle 61.36, 59.03 \\rangle$
-`} />}
+  solution={
+    <>
+      <MDX source="$\vec{AB} = \langle 17.14-78.5, 14.17-73.2 \rangle = \langle -61.36, -59.03 \rangle$" />
+      <MDX source="$\vec{BA} = \langle 78.5-17.14, 73.2-14.17 \rangle = \langle 61.36, 59.03 \rangle$" />
+    </>
+  }
 />
 
 <Problem
   question={
-    <MDX
-      source={
-        'If point A is at $(x+24, y-52, z+62, \\frac{a}{52})$ and point B is at $(b \\times 24, 26-23+5, d \\times 4, \\frac{a}{52})$, find $\\vec{AB}$ and $\\vec{BA}$.'
-      }
-    />
+    <MDX source="If point A is at $(x+24, y-52, z+62, \frac{a}{52})$ and point B is at $(b \times 24, 26-23+5, d \times 4, \frac{a}{52})$, find $\vec{AB}$ and $\vec{BA}$." />
   }
   choices={[
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62 \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62 \\rangle$'
-      }
-    />,
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle$'
-      }
-    />,
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{52} \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{52} \\rangle$'
-      }
-    />,
-    <MDX
-      source={
-        '$\\vec{AB} = \\langle 24b-x-24, -y+60, 4d-z-62, \\frac{a}{26} \\rangle$ and $\\vec{BA} = \\langle -24b+x+24, y-60, -4d+z+62, \\frac{a}{26} \\rangle$'
-      }
-    />,
+    <MDX source="$\vec{AB} = \langle 24b-x-24, -y+60, 4d-z-62 \rangle$ and $\vec{BA} = \langle -24b+x+24, y-60, -4d+z+62 \rangle$" />,
+    <MDX source="$\vec{AB} = \langle 24b-x-24, -y+60, 4d-z-62, 0 \rangle$ and $\vec{BA} = \langle -24b+x+24, y-60, -4d+z+62, 0 \rangle$" />,
+    <MDX source="$\vec{AB} = \langle 24b-x-24, -y+60, 4d-z-62, \frac{a}{52} \rangle$ and $\vec{BA} = \langle -24b+x+24, y-60, -4d+z+62, \frac{a}{52} \rangle$" />,
+    <MDX source="$\vec{AB} = \langle 24b-x-24, -y+60, 4d-z-62, \frac{a}{26} \rangle$ and $\vec{BA} = \langle -24b+x+24, y-60, -4d+z+62, \frac{a}{26} \rangle$" />,
   ]}
   correct={3}
-  solution={<MDX source={`
-$\\vec{AB} = \\left\\langle (b \\times 24)-(x+24), (26-23+5)-(y-52), (d \\times 4)-(z+62), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle 24b-x-24, -y+60, 4d-z-62, 0 \\rangle$
-
-$\\vec{BA} = \\left\\langle (x+24)-(b \\times 24), (y-52)-(26-23+5), (z+62)-(d \\times 4), \\frac{a}{52}-\\frac{a}{52} \\right\\rangle = \\langle -24b+x+24, y-60, -4d+z+62, 0 \\rangle$
-`} />}
+  solution={
+    <>
+      <MDX source="$\vec{AB} = \left\langle (b \times 24)-(x+24), (26-23+5)-(y-52), (d \times 4)-(z+62), \frac{a}{52}-\frac{a}{52} \right\rangle = \langle 24b-x-24, -y+60, 4d-z-62, 0 \rangle$" />
+      <MDX source="$\vec{BA} = \left\langle (x+24)-(b \times 24), (y-52)-(26-23+5), (z+62)-(d \times 4), \frac{a}{52}-\frac{a}{52} \right\rangle = \langle -24b+x+24, y-60, -4d+z+62, 0 \rangle$" />
+    </>
+  }
 />
 
 <Rule
-  statement={<Math math="\\vec{AB} = -\\vec{BA}" type="block" />}
+  statement={<Math math="\vec{AB} = -\vec{BA}" type="block" />}
   terms={[
     {
       term: '\\vec{AB}',
@@ -158,39 +120,28 @@ If $$ \vec{a} = \langle \sqrt{1}, 0, 2, 0 \rangle $$, then $$ \vec{a} $$ is not 
 
 <Rule
   statement={
-    <MDX
-      source={
-        'For any vector $\\vec{a}$, the unit vector which has the same direction as $\\vec{a}$ is $\\vec{u} = \\frac{\\vec{a}}{\\lVert \\vec{a} \\rVert}$.'
-      }
-    />
+    <MDX source="For any vector $\vec{a}$, the unit vector which has the same direction as $\vec{a}$ is $\vec{u} = \frac{\vec{a}}{\lVert \vec{a} \rVert}$." />
   }
 />
 
 <Problem
   question={
-    <MDX
-      source={
-        'Find the unit vector which points in the same direction as $\\vec{v} = \\langle 3, 4 \\rangle$.'
-      }
-    />
+    <MDX source="Find the unit vector which points in the same direction as $\vec{v} = \langle 3, 4 \rangle$." />
   }
   choices={[
     <Math
-      math="\\left\\langle \\frac{1}{5}, \\frac{2}{5} \\right\\rangle"
+      math="\left\langle \frac{1}{5}, \frac{2}{5} \right\rangle"
       type="inline"
     />,
     <Math
-      math="\\left\\langle \\frac{2}{5}, \\frac{3}{5} \\right\\rangle"
+      math="\left\langle \frac{2}{5}, \frac{3}{5} \right\rangle"
       type="inline"
     />,
     <Math
-      math="\\left\\langle \\frac{3}{5}, \\frac{4}{5} \\right\\rangle"
+      math="\left\langle \frac{3}{5}, \frac{4}{5} \right\rangle"
       type="inline"
     />,
-    <Math
-      math="\\left\\langle \\frac{4}{5}, 1 \\right\\rangle"
-      type="inline"
-    />,
+    <Math math="\left\langle \frac{4}{5}, 1 \right\rangle" type="inline" />,
   ]}
   correct={3}
   solution={
@@ -209,39 +160,23 @@ If $$ \vec{a} = \langle \sqrt{1}, 0, 2, 0 \rangle $$, then $$ \vec{a} $$ is not 
 
 <Problem
   question={
-    <MDX
-      source={
-        'If $\\vec{a} = \\langle 1, 0, 0, 0, 0 \\rangle$, determine if $\\vec{a}$ is a unit vector.'
-      }
-    />
+    <MDX source="If $\vec{a} = \langle 1, 0, 0, 0, 0 \rangle$, determine if $\vec{a}$ is a unit vector." />
   }
   choices={[<span>Yes</span>, <span>No</span>]}
   correct={1}
   solution={
-    <MDX
-      source={
-        'Since $\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(0)^2+(0)^2} = 1$, $\\vec{a}$ is a unit vector.'
-      }
-    />
+    <MDX source="Since $\lVert \vec{a} \rVert = \sqrt{(1)^2+(0)^2+(0)^2+(0)^2+(0)^2} = 1$, $\vec{a}$ is a unit vector." />
   }
 />
 
 <Problem
   question={
-    <MDX
-      source={
-        'If $\\vec{a} = \\langle 1, 0, 0, 1, 0 \\rangle$, determine if $\\vec{a}$ is a unit vector.'
-      }
-    />
+    <MDX source="If $\vec{a} = \langle 1, 0, 0, 1, 0 \rangle$, determine if $\vec{a}$ is a unit vector." />
   }
   choices={[<span>Yes</span>, <span>No</span>]}
   correct={2}
   solution={
-    <MDX
-      source={
-        'Since $\\lVert \\vec{a} \\rVert = \\sqrt{(1)^2+(0)^2+(0)^2+(1)^2+(0)^2} = \\sqrt{2} \\neq 1$, $\\vec{a}$ is not a unit vector.'
-      }
-    />
+    <MDX source="Since $\lVert \vec{a} \rVert = \sqrt{(1)^2+(0)^2+(0)^2+(1)^2+(0)^2} = \sqrt{2} \neq 1$, $\vec{a}$ is not a unit vector." />
   }
 />
 

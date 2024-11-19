@@ -1,7 +1,7 @@
 ---
 title: 'Dot Product'
 authors: ['Leo Duan']
-date-last-edited: '2024-07-05'
+date-last-edited: '2024-11-18'
 ---
 
 # Dot Product
@@ -9,9 +9,7 @@ date-last-edited: '2024-07-05'
 <Rule
   statement={
     <Math
-      math={
-        '\\vec{a} \\cdot \\vec{b} = \\sum_{i=1}^{n} a_i b_i = \\lVert \\vec{a} \\rVert \\lVert \\vec{b} \\rVert \\cos(\\theta)'
-      }
+      math="\vec{a} \cdot \vec{b} = \sum_{i=1}^n a_i b_i = \lVert \vec{a} \rVert \lVert \vec{b} \rVert \cos(\theta)"
       type="block"
     />
   }
@@ -37,7 +35,7 @@ date-last-edited: '2024-07-05'
       annotation: (
         <span>
           The <Math math="i" type="inline" />
-          th component of <Math math="\\vec{a}" type="inline" />
+          -th component of <Math math="\vec{a}" type="inline" />
         </span>
       ),
     },
@@ -46,7 +44,7 @@ date-last-edited: '2024-07-05'
       annotation: (
         <span>
           The <Math math="i" type="inline" />
-          th component of <Math math="\\vec{b}" type="inline" />
+          -th component of <Math math="\vec{b}" type="inline" />
         </span>
       ),
     },
@@ -54,8 +52,8 @@ date-last-edited: '2024-07-05'
       term: '\\theta',
       annotation: (
         <span>
-          Angle between <Math math="\\vec{a}" type="inline" /> and{' '}
-          <Math math="\\vec{b}" type="inline" />
+          Angle between <Math math="\vec{a}" type="inline" /> and{' '}
+          <Math math="\vec{b}" type="inline" />
         </span>
       ),
     },
@@ -64,9 +62,9 @@ date-last-edited: '2024-07-05'
     <ul>
       <p>The result of a dot product is a scalar.</p>
       <p>
-        If <Math math="\\vec{a} \\cdot \\vec{b} = 0" type="inline" />, then{' '}
-        <Math math="\\vec{a}" type="inline" /> and{' '}
-        <Math math="\\vec{b}" type="inline" /> are orthogonal to each other.
+        If <Math math="\vec{a} \cdot \vec{b} = 0" type="inline" />, then{' '}
+        <Math math="\vec{a}" type="inline" /> and{' '}
+        <Math math="\vec{b}" type="inline" /> are orthogonal to each other.
       </p>
     </ul>
   }
@@ -101,7 +99,7 @@ If $$ \lVert \vec{a} \rVert = 100 $$ and $$ \lVert \vec{b} \rVert = 100 $$, and 
 <Rule
   statement={
     <Math
-      math="(\\vec{a} \\cdot \\vec{b})^2 \\leq (\\vec{a})^2 (\\vec{b})^2"
+      math="(\vec{a} \cdot \vec{b})^2 \leq (\vec{a})^2 (\vec{b})^2"
       type="block"
     />
   }

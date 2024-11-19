@@ -6,6 +6,7 @@ import pages from '@/data/pages'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import NextTopLoader from 'nextjs-toploader'
+import { Fragment } from 'react'
 
 export const metadata: Metadata = {
   title: 'Lerna',
@@ -25,9 +26,11 @@ export default function RootLayout({
         <Navigation pages={pages} />
         <div className="flex h-full w-full flex-col">
           <Header />
-          <main className="space-y-2 overflow-y-auto p-4 lg:px-48">
-            {/* Page horizontal overflow not reachable (see matrix determinant page) */}
-            <Providers>{children}</Providers>
+          <main className="overflow-y-auto p-4 lg:px-48">
+            <Providers>
+              {/* Page horizontal overflow not reachable (see matrix determinant page) */}
+              {children}
+            </Providers>
           </main>
         </div>
         <Analytics />

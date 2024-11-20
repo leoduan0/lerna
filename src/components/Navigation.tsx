@@ -2,7 +2,7 @@
 
 import Head from './Head'
 import Pages from './Pages'
-import Ad from '@/components/Ad'
+// import Ad from '@/components/Ad'
 import useNavigationStatus from '@/hooks/useNavigationStatus'
 import TPage from '@/types/TPage'
 import { ScrollShadow } from '@nextui-org/react'
@@ -23,7 +23,7 @@ function Navigation({ pages }: NavigationProps) {
         <ScrollShadow className="h-full w-full">
           <Pages pages={pages} />
         </ScrollShadow>
-        <Ad /> {/* Fix so that it always shows at the very bottom */}
+        {/* <Ad /> Fix so that it always shows at the very bottom */}
       </nav>
       <div
         onClick={() => toggleNavigation()}

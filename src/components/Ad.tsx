@@ -27,7 +27,8 @@ function Ad() {
         strategy="afterInteractive"
       />
       <ins
-        className="adsbygoogle block h-44 max-h-44"
+        className="adsbygoogle"
+        style={{ display: 'block' }}
         data-ad-client={process.env.ADSENSE_ID}
         data-ad-slot="7654068621"
         data-ad-format="auto"

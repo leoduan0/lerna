@@ -17,8 +17,9 @@ function Ad() {
       console.error(err)
     }
   }, [])
+
   return (
-    <>
+    <div>
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5882787766829258"
@@ -26,14 +27,14 @@ function Ad() {
         strategy="afterInteractive"
       />
       <ins
-        className="adsbygoogle"
-        style={{ display: 'block' }}
+        className="adsbygoogle block max-h-44"
+        // style={{ display: 'block' }}
         data-ad-client={process.env.ADSENSE_ID}
         data-ad-slot="7654068621"
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
-    </>
+    </div>
   )
 }
 

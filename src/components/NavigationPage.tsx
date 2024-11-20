@@ -3,6 +3,8 @@
 import Link from '@/components/Link'
 import useNavigationStatus from '@/hooks/useNavigationStatus'
 import TPage from '@/types/TPage'
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -36,23 +38,19 @@ function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
           onClick={() => page.children && toggleExpand()} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
           className={`${page.children ? '' : 'invisible'} flex h-full items-center justify-center rounded-l-md p-2`}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="8px"
-            viewBox="0 0 384 512"
+          <FontAwesomeIcon
             className={`${
               expand ? 'rotate-90' : ''
             } fill-black dark:fill-white`}
-          >
-            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
-          </svg>
+            icon={faCaretRight}
+          />
         </button>
         <Link
           href={href}
           className={`${page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full w-full grow items-center space-x-2 pr-2`}
           onClick={() => toggleNavigation()}
         >
-          <div>{page.icon && page.icon}</div>
+          {page.icon && <div>{page.icon}</div>}
           <span className="text-theme truncate">{page.title}</span>
         </Link>
       </div>

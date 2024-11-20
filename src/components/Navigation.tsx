@@ -23,10 +23,7 @@ function Navigation({ pages }: NavigationProps) {
         <ScrollShadow className="h-full w-full">
           <Pages pages={pages} />
         </ScrollShadow>
-        <div className="max-h-44">
-          {/* Fix so that it always shows at the very bottom */}
-          <Ad />
-        </div>
+        <Ad /> {/* Fix so that it always shows at the very bottom */}
       </nav>
       <div
         onClick={() => toggleNavigation()}

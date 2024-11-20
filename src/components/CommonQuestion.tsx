@@ -17,7 +17,6 @@ function CommonQuestion({ qas }: CommonQuestionProps) {
         {qas.map((qa, index) => {
           return (
             <AccordionItem key={index} title={qa.question}>
-              {/* Add keys */}
               {qa.answer}
             </AccordionItem>
           )

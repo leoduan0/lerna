@@ -15,13 +15,13 @@ date-last-edited: '2024-07-05'
 - Lower
 - Trapezoidal
 
-For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $$ \\Delta x $$ bounded by lines $$ x=x_n $$.
+For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $$ \Delta x $$ bounded by lines $$ x=x_n $$.
 
 ## Left
 
 <Rule
   statement={
-    <Math math="L(n) = \\sum_{i=1}^{n} f(x_{i-1}) \\Delta x_i" type="block" />
+    <Math math="L(n) = \sum_{i=1}^{n} f(x_{i-1}) \Delta x_i" type="block" />
   }
 />
 
@@ -29,7 +29,7 @@ For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $
 
 <Rule
   statement={
-    <Math math="L(n) = \\sum_{i=1}^{n} f(x_i) \\Delta x_i" type="block" />
+    <Math math="L(n) = \sum_{i=1}^{n} f(x_i) \Delta x_i" type="block" />
   }
 />
 
@@ -38,9 +38,7 @@ For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $
 <Rule
   statement={
     <Math
-      math={
-        'L(n) = \\sum_{i=1}^{n} f\\left(\\frac{x_{i-1}+x_i}{2}\\right) \\Delta x_i'
-      }
+      math="L(n) = \sum_{i=1}^{n} f\left(\frac{x_{i-1}+x_i}{2}\right) \Delta x_i"
       type="block"
     />
   }
@@ -51,7 +49,7 @@ For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $
 <Rule
   statement={
     <Math
-      math="U(n) = \\sum_{i=1}^{n} (\\sup f([x_{i-1},x_i])) \\Delta x_i"
+      math="U(n) = \sum_{i=1}^n (\sup f([x_{i-1},x_i])) \Delta x_i"
       type="block"
     />
   }
@@ -62,7 +60,7 @@ For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $
 <Rule
   statement={
     <Math
-      math="L(n) = \\sum_{i=1}^{n} (\\inf f([x_{i-1},x_i])) \\Delta x_i"
+      math="L(n) = \sum_{i=1}^{n} (\inf f([x_{i-1},x_i])) \Delta x_i"
       type="block"
     />
   }
@@ -73,7 +71,7 @@ For each of the following sums, we divide $$ f(x) $$ into an $$ n $$ amount of $
 <Rule
   statement={
     <Math
-      math="L(n) = \\sum_{i=1}^{n} \\frac{f(x_{i-1})+f(x_i)}{2} \\Delta x_i"
+      math="L(n) = \sum_{i=1}^{n} \frac{f(x_{i-1})+f(x_i)}{2} \Delta x_i"
       type="block"
     />
   }

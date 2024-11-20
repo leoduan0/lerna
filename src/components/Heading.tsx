@@ -7,19 +7,18 @@ interface HeadingProps {
 }
 
 function Heading({ children, clickable, level }: HeadingProps) {
-  const text = children?.toString()
+  const text = children?.toString().toLowerCase()
   const link = clickable ? (
     <Link href={`#${text}`} noColor noHoverUnderline>
-      {text}
+      {children}
     </Link>
   ) : (
-    text
+    children
   )
 
-  const style =
-    clickable == false
-      ? 'text-theme font-bold'
-      : 'text-theme font-bold transition hover:text-blue-500'
+  const style = clickable
+    ? 'text-theme font-bold transition hover:text-blue-500'
+    : 'text-theme font-bold'
 
   switch (level) {
     case 1:

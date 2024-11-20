@@ -15,35 +15,23 @@ Given $$ \int_a^b f(x) \,dx $$, $$ a $$ is the lower bound and $$ b $$ is the up
 The fundamental theorem of calculus is as follows:
 
 <Rule
-  statement={
-    <Math math="\\int_a^b f(x) \\,dx = F(b) - F(a)" type="block" />
-  }
+  statement={<Math math="\\int_a^b f(x) \\,dx = F(b) - F(a)" type="block" />}
   terms={[
     {
-      term: 'a',
+      term: "a",
       annotation: <span>Lower bound</span>,
     },
     {
-      term: 'b',
+      term: "b",
       annotation: <span>Upper bound</span>,
     },
     {
-      term: 'F(b)',
-      annotation: (
-        <span>
-          <Math math="f(x)" type="inline" /> integrated at{' '}
-          <Math math="b" type="inline" />.
-        </span>
-      ),
+      term: "F(b)",
+      annotation: <MDX source="$f(x)$ integrated at $b$." />,
     },
     {
-      term: 'F(a)',
-      annotation: (
-        <span>
-          <Math math="f(x)" type="inline" /> integrated at{' '}
-          <Math math="a" type="inline" />.
-        </span>
-      ),
+      term: "F(a)",
+      annotation: <MDX source="$f(x)$ integrated at $a$." />,
     },
   ]}
 />

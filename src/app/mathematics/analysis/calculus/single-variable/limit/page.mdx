@@ -11,41 +11,25 @@ The value of a function $$ f(x) $$ when its input gets infinitely close to (but 
 <Rule
   statement={
     <Math
-      math={
-        '\\lim_{x \\to k} f(x) = \\lim_{x \\to k^+} f(x) = \\lim_{x \\to k^-} f(x)'
-      }
+      math="\lim_{x \to k} f(x) = \lim_{x \to k^+} f(x) = \lim_{x \to k^-} f(x)"
       type="block"
     />
   }
   terms={[
     {
-      term: '\\lim_{x \\to k} f(x)',
+      term: "\\lim_{x \\to k} f(x)",
+      annotation: <MDX source="Limit of $f(x)$ as $x$ approaches $k$" />,
+    },
+    {
+      term: "\\lim_{x \\to k^+} f(x)",
       annotation: (
-        <span>
-          Limit of <Math math="f(x)" type="inline" /> as{' '}
-          <Math math="x" type="inline" /> approaches{' '}
-          <Math math="k" type="inline" />
-        </span>
+        <MDX source="Limit of $f(x)$ as $x$ approaches $k$ from the right side" />
       ),
     },
     {
-      term: '\\lim_{x \\to k^+} f(x)',
+      term: "\\lim_{x \\to k^-} f(x)",
       annotation: (
-        <span>
-          Limit of <Math math="f(x)" type="inline" /> as{' '}
-          <Math math="x" type="inline" /> approaches{' '}
-          <Math math="k" type="inline" /> from the right side
-        </span>
-      ),
-    },
-    {
-      term: '\\lim_{x \\to k^-} f(x)',
-      annotation: (
-        <span>
-          Limit of <Math math="f(x)" type="inline" /> as{' '}
-          <Math math="x" type="inline" /> approaches{' '}
-          <Math math="k" type="inline" /> from the left side
-        </span>
+        <MDX source="Limit of $f(x)$ as $x$ approaches $k$ from the left side" />
       ),
     },
   ]}
@@ -107,28 +91,15 @@ Note that we are not saying the limit exists. $$ \lim_{x \to 0} f(x) = \infty $$
 It is also important to realize that the limit of a function at a given point is not the same as the value of the function for that given input (although in certain functions $$ \lim_{x \to k} f(x) = f(k) $$ would be true).
 
 <Rule
-  statement={
-    <Math math="\\lim_{x \\to k} f(x) \\nRightarrow f(k)" type="block" />
-  }
+  statement={<Math math="\lim_{x \to k} f(x) \nRightarrow f(k)" type="block" />}
   terms={[
     {
-      term: '\\lim_{x \\to k} f(x)',
-      annotation: (
-        <span>
-          Limit of <Math math="f(x)" type="inline" /> as{' '}
-          <Math math="x" type="inline" /> approaches{' '}
-          <Math math="k" type="inline" />
-        </span>
-      ),
+      term: "\\lim_{x \\to k} f(x)",
+      annotation: <MDX source="Limit of $f(x)$ as $x$ approaches $k$" />,
     },
     {
-      term: 'f(k)',
-      annotation: (
-        <span>
-          Value of <Math math="f(x)" type="inline" /> if{' '}
-          <Math math="x = k" type="inline" />
-        </span>
-      ),
+      term: "f(k)",
+      annotation: <MDX source="Value of $f(x)$ if $x=k$" />,
     },
   ]}
 />

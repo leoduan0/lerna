@@ -76,15 +76,7 @@ $$ \therefore \lim_{x \to 0} f(x) = 0 $$
 And this matches what we would get for $$ \lim_{x \to 0} f(x) $$ if we just performed direct substitution.
 
 <Problem
-  question={
-    <p>
-      What is{' '}
-      <Math
-        math="\\lim_{x \\to \\infty} \\frac{\\sin(x)}{x}"
-        type="inline"
-      />
-    </p>
-  }
+  question={<MDX source="What is $\lim_{x \to \infty} \frac{\sin(x)}{x}$" />}
   choices={[
     <Math math="0" type="inline" />,
     <Math math="1" type="inline" />,
@@ -94,23 +86,8 @@ And this matches what we would get for $$ \lim_{x \to 0} f(x) $$ if we just perf
   correct={1}
   solution={
     <>
-      <p>
-        Since <Math math="-1 \\leq \\sin(x) \\leq 1" type="inline" />, then{' '}
-        <Math
-          math="-\\frac{1}{x} \\leq \\frac{\\sin(x)}{x} \\leq \\frac{1}{x}"
-          type="inline"
-        />
-        .
-      </p>
-      <p>
-        And since <Math math="-\\frac{1}{x}" type="inline" /> and{' '}
-        <Math math="\\frac{1}{x}" type="inline" /> both approach 0 as x
-        approaches infinity, from the squeeze theorem we can infer that:
-      </p>
-      <Math
-        math="\\lim_{x \\to \\infty} \\frac{\\sin(x)}{x} = 0"
-        type="block"
-      />
+      <MDX source="Since $-1 \leq \sin(x) \leq 1$, then $-\frac{1}{x} \leq \frac{\sin(x)}{x} \leq \frac{1}{x}$." />
+      <MDX source="And since $\frac{1}{x}$ and $\frac{1}{x}$ both approach $0$ as $x$ approaches $\infty$, from the squeeze theorem we can infer that: $\lim_{x \to \infty} \frac{\sin(x)}{x}=0$." />
     </>
   }
 />

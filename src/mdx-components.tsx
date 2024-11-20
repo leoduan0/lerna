@@ -38,11 +38,31 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         </Code>
       )
     },
-    h1: (props) => <Heading level={1}>{props.children}</Heading>,
-    h2: (props) => <Heading level={2}>{props.children}</Heading>,
-    h3: (props) => <Heading level={3}>{props.children}</Heading>,
-    h4: (props) => <Heading level={4}>{props.children}</Heading>,
-    h5: (props) => <Heading level={5}>{props.children}</Heading>,
+    h1: (props) => (
+      <Heading clickable level={1}>
+        {props.children}
+      </Heading>
+    ),
+    h2: (props) => (
+      <Heading clickable level={2}>
+        {props.children}
+      </Heading>
+    ),
+    h3: (props) => (
+      <Heading clickable level={3}>
+        {props.children}
+      </Heading>
+    ),
+    h4: (props) => (
+      <Heading clickable level={4}>
+        {props.children}
+      </Heading>
+    ),
+    h5: (props) => (
+      <Heading clickable level={5}>
+        {props.children}
+      </Heading>
+    ),
     p: (props) => <p className="text-theme text-base">{props.children}</p>,
     Align: Align,
     Audio: Audio,

@@ -45,9 +45,6 @@
 }
 
 @layer utilities {
-  .navigation-SVG {
-    @apply fill-black dark:fill-white;
-  }
   .text-theme {
     @apply text-black dark:text-white;
   }

@@ -15,7 +15,7 @@ export default function useNavigationStatus() {
       window.removeEventListener('navigationStatusChange', updateLocalStatus)
   }, [])
 
-  function toggleNavigation(): void {
+  function toggleNavigation() {
     navigationStatus = !navigationStatus
     window.dispatchEvent(new Event('navigationStatusChange'))
   }

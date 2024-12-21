@@ -15,7 +15,7 @@ interface NavigationPageProps {
 }
 
 function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
-  const { navigationStatus, toggleNavigation } = useNavigationStatus()
+  const { toggleNavigation } = useNavigationStatus()
 
   const pathname = usePathname()
 

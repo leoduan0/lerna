@@ -1,3 +1,5 @@
+'use client'
+
 import Block from './Block'
 import { Accordion, AccordionItem } from '@nextui-org/react'
 

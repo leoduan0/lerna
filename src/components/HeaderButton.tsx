@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function HeaderButton() {
-  const { navigationStatus, toggleNavigation } = useNavigationStatus()
+  const { toggleNavigation } = useNavigationStatus()
 
   return (
     <button

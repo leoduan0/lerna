@@ -45,7 +45,7 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
-          {(onClose) => {
+          {() => {
             if (selected == correct - 1) {
               return (
                 <ModalHeader className="flex flex-col gap-1">

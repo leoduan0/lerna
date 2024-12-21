@@ -6,7 +6,6 @@ import pages from '@/data/pages'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import NextTopLoader from 'nextjs-toploader'
-import { Fragment } from 'react'
 
 export const metadata: Metadata = {
   title: 'Lerna',

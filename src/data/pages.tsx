@@ -3,8 +3,6 @@ import {
   faAtom,
   faCircleInfo,
   faHouse,
-  faLanguage,
-  faMusic,
   faSquareRootVariable,
   faVial,
 } from '@fortawesome/free-solid-svg-icons'

@@ -11,9 +11,8 @@ date-last-edited: '2024-07-05'
 <Rule
   statement={
     <Math
-      math={
-        'A + B = \\begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13} \\\\ a_{21} + b_{21} & a_{22} + b_{22} & a_{23} + b_{23} \\end{bmatrix}'
-      }
+      math='A + B = \begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13} \\ a_{21} + b_{21} & a_{22} + b_{22} & a_{23} + b_{23} \end{bmatrix}'
+
       type="block"
     />
   }
@@ -22,9 +21,8 @@ date-last-edited: '2024-07-05'
       term: 'A',
       annotation: (
         <Math
-          math={
-            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
-          }
+          math='\begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \end{bmatrix}'
+    
           type="inline"
         />
       ),
@@ -33,9 +31,8 @@ date-last-edited: '2024-07-05'
       term: 'B',
       annotation: (
         <Math
-          math={
-            '\\begin{bmatrix} b_{11} & b_{12} & b_{13} \\\\ b_{21} & b_{22} & b_{23} \\end{bmatrix}'
-          }
+          math='\begin{bmatrix} b_{11} & b_{12} & b_{13} \\ b_{21} & b_{22} & b_{23} \end{bmatrix}'
+    
           type="inline"
         />
       ),
@@ -51,9 +48,8 @@ date-last-edited: '2024-07-05'
 <Rule
   statement={
     <Math
-      math={
-        'A - B = \\begin{bmatrix} a_{11} - b_{11} & a_{12} - b_{12} & a_{13} - b_{13} \\\\ a_{21} - b_{21} & a_{22} - b_{22} & a_{23} - b_{23} \\end{bmatrix}'
-      }
+      math='A - B = \begin{bmatrix} a_{11} - b_{11} & a_{12} - b_{12} & a_{13} - b_{13} \\ a_{21} - b_{21} & a_{22} - b_{22} & a_{23} - b_{23} \end{bmatrix}'
+
       type="block"
     />
   }
@@ -62,9 +58,8 @@ date-last-edited: '2024-07-05'
       term: 'A',
       annotation: (
         <Math
-          math={
-            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\end{bmatrix}'
-          }
+          math='\begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \end{bmatrix}'
+    
           type="inline"
         />
       ),
@@ -73,9 +68,8 @@ date-last-edited: '2024-07-05'
       term: 'B',
       annotation: (
         <Math
-          math={
-            '\\begin{bmatrix} b_{11} & b_{12} & b_{13} \\\\ b_{21} & b_{22} & b_{23} \\end{bmatrix}'
-          }
+          math='\begin{bmatrix} b_{11} & b_{12} & b_{13} \\ b_{21} & b_{22} & b_{23} \end{bmatrix}'
+    
           type="inline"
         />
       ),
@@ -93,9 +87,8 @@ date-last-edited: '2024-07-05'
 <Rule
   statement={
     <Math
-      math={
-        'kA = \\begin{bmatrix} ka_{11} & ka_{12} & ka_{13} \\\\ ka_{21} & ka_{22} & ka_{23} \\\\ ka_{31} & ka_{32} & ka_{33} \\end{bmatrix}'
-      }
+      math='kA = \begin{bmatrix} ka_{11} & ka_{12} & ka_{13} \\ ka_{21} & ka_{22} & ka_{23} \\ ka_{31} & ka_{32} & ka_{33} \end{bmatrix}'
+
       type="block"
     />
   }
@@ -108,9 +101,8 @@ date-last-edited: '2024-07-05'
       term: 'A',
       annotation: (
         <Math
-          math={
-            '\\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{bmatrix}'
-          }
+          math='\begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix}'
+    
           type="inline"
         />
       ),
@@ -150,9 +142,8 @@ A matrix can be transformed by, for all rows of the matrix, making the n-th row 
 <Rule
   statement={
     <Math
-      math={
-        '\\begin{bmatrix} \\textcolor{#FF0000}{a_{11}} & \\textcolor{#FF0000}{a_{12}} & \\textcolor{#FF0000}{a_{13}} \\\\ \\textcolor{#F28500}{a_{21}} & \\textcolor{#F28500}{a_{22}} & \\textcolor{#F28500}{a_{23}} \\\\ \\textcolor{#007FFF}{a_{31}} & \\textcolor{#007FFF}{a_{32}} & \\textcolor{#007FFF}{a_{33}} \\end{bmatrix}^T = \\begin{bmatrix} \\textcolor{#FF0000}{a_{11}} & \\textcolor{#F28500}{a_{21}} & \\textcolor{#007FFF}{a_{31}} \\\\ \\textcolor{#FF0000}{a_{12}} & \\textcolor{#F28500}{a_{22}} & \\textcolor{#007FFF}{a_{32}} \\\\ \\textcolor{#FF0000}{a_{13}} & \\textcolor{#F28500}{a_{23}} & \\textcolor{#007FFF}{a_{33}} \\end{bmatrix}'
-      }
+      math='\begin{bmatrix} \textcolor{#FF0000}{a_{11}} & \textcolor{#FF0000}{a_{12}} & \textcolor{#FF0000}{a_{13}} \\ \textcolor{#F28500}{a_{21}} & \textcolor{#F28500}{a_{22}} & \textcolor{#F28500}{a_{23}} \\ \textcolor{#007FFF}{a_{31}} & \textcolor{#007FFF}{a_{32}} & \textcolor{#007FFF}{a_{33}} \end{bmatrix}^T = \begin{bmatrix} \textcolor{#FF0000}{a_{11}} & \textcolor{#F28500}{a_{21}} & \textcolor{#007FFF}{a_{31}} \\ \textcolor{#FF0000}{a_{12}} & \textcolor{#F28500}{a_{22}} & \textcolor{#007FFF}{a_{32}} \\ \textcolor{#FF0000}{a_{13}} & \textcolor{#F28500}{a_{23}} & \textcolor{#007FFF}{a_{33}} \end{bmatrix}'
+
       type="block"
     />
   }

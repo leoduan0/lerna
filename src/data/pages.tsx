@@ -41,7 +41,7 @@ const pages: TPage[] = [
             title: 'Map',
             children: [
               {
-                title: 'Function',
+                title: 'Functions',
                 children: [
                   {
                     title: 'Polynomial',

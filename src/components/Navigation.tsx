@@ -17,7 +17,7 @@ function Navigation({ pages }: NavigationProps) {
   return (
     <>
       <nav
-        className={`${navigationStatus ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 lg:opacity-100'} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-r border-neutral-300 bg-neutral-100 backdrop-blur-lg transition dark:border-neutral-700 dark:bg-neutral-900/50 md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:bg-neutral-100 lg:backdrop-blur-none lg:dark:bg-neutral-900`}
+        className={`${navigationStatus ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 lg:opacity-100'} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-r border-LAYOUT_BORDER-light bg-LAYOUT-light/50 backdrop-blur-lg transition dark:border-LAYOUT_BORDER-dark dark:bg-LAYOUT-dark/50 md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:bg-LAYOUT-light lg:backdrop-blur-none lg:dark:bg-LAYOUT-dark`}
       >
         <Head toggleFunction={toggleNavigation} />
         <ScrollShadow className="h-full w-full">

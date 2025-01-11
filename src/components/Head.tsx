@@ -8,7 +8,7 @@ interface HeadProps {
 
 function Head({ toggleFunction }: HeadProps) {
   return (
-    <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-neutral-300 dark:border-neutral-700">
+    <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-LAYOUT_BORDER-light dark:border-LAYOUT_BORDER-dark">
       <Image
         src="/lerna.png"
         height={32}
@@ -19,10 +19,11 @@ function Head({ toggleFunction }: HeadProps) {
       <span className="text-theme font-bold">Lerna</span>
       <button
         onClick={() => toggleFunction()}
-        className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 dark:hover:bg-neutral-700 lg:hidden"
+        className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:hidden"
       >
-        <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />
-      </button>
+        {' '}
+        <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />{' '}
+      </button>{' '}
     </div>
   )
 }

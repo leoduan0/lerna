@@ -17,7 +17,7 @@ function Heading({ children, clickable, level }: HeadingProps) {
   )
 
   const style = clickable
-    ? 'text-theme font-bold transition hover:text-blue-500'
+    ? 'text-theme font-bold transition hover:text-TEXT_LINK'
     : 'text-theme font-bold'
 
   switch (level) {

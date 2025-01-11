@@ -27,7 +27,7 @@ function ShareButton() {
   return (
     <button
       onClick={() => shareLink()}
-      className="rounded-md p-2 transition hover:bg-neutral-200 active:scale-95 dark:hover:bg-neutral-700"
+      className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark"
     >
       <FontAwesomeIcon icon={faShare} />
     </button>

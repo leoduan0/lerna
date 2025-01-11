@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="fixed flex h-full w-full bg-white dark:bg-black">
+      <body className="fixed flex h-full w-full bg-BACKGROUND-light dark:bg-BACKGROUND-dark">
         <NextTopLoader color="#0da15c" showSpinner={false} />
         {/* "fixed" makes the iOS Safari toolbar persistent */}
         <Navigation pages={pages} />

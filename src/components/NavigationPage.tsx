@@ -30,8 +30,8 @@ function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
       <div
         className={`${
           (pathname == '/' && href == '/home') || pathname == href
-            ? 'bg-neutral-200 dark:bg-neutral-700'
-            : 'hover:bg-neutral-200 dark:hover:bg-neutral-700'
+            ? 'bg-BUTTON-light dark:bg-BUTTON-dark'
+            : 'hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark'
         } flex h-8 w-full items-center truncate rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button

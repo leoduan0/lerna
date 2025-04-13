@@ -87,7 +87,7 @@ date-last-edited: '2024-07-04'
   ]}
 />
 
-## Doppler's Effect
+## Doppler Effect
 
 As the source of a wave moves towards an observer, the frequency of the wave appears higher to the observer.
 
@@ -96,7 +96,7 @@ As the source of a wave moves away an observer, the frequency of the wave appear
 <Rule
   statement={
     <Math
-      math="f_{observed} = f_{wave} \frac{v+v_{observer}}{v+v_{source}}"
+      math="f_{observed} = f_{wave} \frac{v \pm v_{observer}}{v \mp v_{source}}"
       type="block"
     />
   }
@@ -446,10 +446,11 @@ A **standing wave** is formed when two waves with the same wavelength, speed, an
   statement={
     <>
       <p>
-        A wave on a medium of length <Math math="L" type="inline" /> can only be
-        a standing wave if it satisfies the following condition:
+        A wave on a medium of length <Math math="L" type="inline" /> with two
+        open or two closed ends can only be a standing wave if it satisfies the
+        following condition:
       </p>
-      <Math math="\lambda = \frac{2L}{n} \{ n \in \Z \}" type="block" />
+      <Math math="\lambda = \frac{2L}{n}" type="block" />
     </>
   }
   terms={[
@@ -466,6 +467,35 @@ A **standing wave** is formed when two waves with the same wavelength, speed, an
       annotation: <span>Harmonic</span>,
     },
   ]}
+  annotation={<MDX source="$n$ can be any positive integer" />}
+/>
+
+<Rule
+  statement={
+    <>
+      <p>
+        A wave on a medium of length <Math math="L" type="inline" /> with two
+        open or two closed ends can only be a standing wave if it satisfies the
+        following condition:
+      </p>
+      <Math math="\lambda = \frac{4L}{n}" type="block" />
+    </>
+  }
+  terms={[
+    {
+      term: '\\lambda',
+      annotation: <span>Wavelength</span>,
+    },
+    {
+      term: 'L',
+      annotation: <span>Length of medium</span>,
+    },
+    {
+      term: 'n',
+      annotation: <span>Harmonic</span>,
+    },
+  ]}
+  annotation={<MDX source="$n$ can be any positive, odd integer" />}
 />
 
 $$ n $$ represents the **harmonics** of a standing wave. For example, if $$ n=1 $$ for a wave, then that wave is called the first harmonic; if $$ n=3 $$ for a wave, then that wave is called the third harmonic.

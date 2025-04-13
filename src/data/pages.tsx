@@ -99,70 +99,65 @@ const pages: TPage[] = [
         ],
       },
       {
-        title: 'Analysis',
+        title: 'Calculus',
         children: [
           {
-            title: 'Calculus',
+            title: 'Single Variable',
             children: [
               {
-                title: 'Single Variable',
-                children: [
-                  {
-                    title: 'Limit',
+                title: 'Limit',
 
-                    children: [
-                      { title: 'Rules' },
-                      { title: 'Substitution' },
-                      { title: 'Divergence' },
-                      { title: 'Convergence' },
-                      { title: 'Manipulation' },
-                    ],
-                  },
-                  {
-                    title: 'Differentiation',
-                    children: [
-                      { title: "L'Hopital's Rule" },
-                      { title: 'Implicit Differentiation' },
-                      { title: 'Mean Value Theorem' },
-                      { title: 'Critical Point' },
-                      { title: 'Tangent Line' },
-                      { title: 'Local Extremum' },
-                      { title: 'Inflection Point' },
-                      { title: 'Global Extremum' },
-                    ],
-                  },
-                  {
-                    title: 'Integration',
-                    children: [
-                      { title: 'U-Substitution' },
-                      { title: 'Partial Fraction' },
-                      { title: 'Parts' },
-                      { title: 'Definite Integration' },
-                      { title: 'Riemann Sum' },
-                    ],
-                  },
+                children: [
+                  { title: 'Rules' },
+                  { title: 'Substitution' },
+                  { title: 'Divergence' },
+                  { title: 'Convergence' },
+                  { title: 'Manipulation' },
                 ],
               },
               {
-                title: 'Multivariable',
+                title: 'Differentiation',
+                children: [
+                  { title: "L'Hopital's Rule" },
+                  { title: 'Implicit Differentiation' },
+                  { title: 'Mean Value Theorem' },
+                  { title: 'Critical Point' },
+                  { title: 'Tangent Line' },
+                  { title: 'Local Extremum' },
+                  { title: 'Inflection Point' },
+                  { title: 'Global Extremum' },
+                ],
+              },
+              {
+                title: 'Integration',
+                children: [
+                  { title: 'U-Substitution' },
+                  { title: 'Partial Fraction' },
+                  { title: 'Parts' },
+                  { title: 'Definite Integration' },
+                  { title: 'Riemann Sum' },
+                ],
+              },
+            ],
+          },
+          {
+            title: 'Multivariable',
+
+            children: [
+              { title: 'Limit' },
+              {
+                title: 'Partial Derivative',
 
                 children: [
-                  { title: 'Limit' },
-                  {
-                    title: 'Partial Derivative',
-
-                    children: [
-                      { title: 'Differential' },
-                      { title: 'Chain Rule' },
-                      { title: 'Del Operator' },
-                      { title: 'Directional Derivative' },
-                    ],
-                  },
-                  {
-                    title: 'Multiple Integral',
-                    // children: [{ title: 'Spherical Coordinate' }],
-                  },
+                  { title: 'Differential' },
+                  { title: 'Chain Rule' },
+                  { title: 'Del Operator' },
+                  { title: 'Directional Derivative' },
                 ],
+              },
+              {
+                title: 'Multiple Integral',
+                // children: [{ title: 'Spherical Coordinate' }],
               },
             ],
           },

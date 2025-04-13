@@ -61,7 +61,7 @@ Negative charges create electric fields pointing inwards in all directions.
 
 Any fluctuations within the electric field can have an effect on physical objects.
 
-The strength of an electric field is defined as the amount of force experienced by an object with a charge $$ q $$ that's approaching zero divided by its charge.
+The strength of an electric field is defined as the amount of force experienced by an object with a charge $q$ that's approaching zero divided by its charge.
 
 <Rule
   statement={<Math math="E = \lim_{q \to 0} \frac{F}{q}" type="block" />}
@@ -83,7 +83,7 @@ The strength of an electric field is defined as the amount of force experienced 
 
 The reason why the electric charge of the object has to be approaching zero (denoted by the limit) is that if the charge of our test object is not zero, then it would affect the electric field, distorting our results.
 
-In an empty electric field but two charges with charges $$ q_1 $$ and $$ q_2 $$ respectively, the amount of force they exert on each other is given by the following equation.
+In an empty electric field but two charges with charges $q_1$ and $q_2$ respectively, the amount of force they exert on each other is given by the following equation.
 
 <Rule
   statement={<Math math="F = k\frac{q_1q_2}{r^2}" type="block" />}
@@ -121,7 +121,7 @@ In an empty electric field but two charges with charges $$ q_1 $$ and $$ q_2 $$ 
   ]}
 />
 
-Suppose that $$ q_1 $$ and $$ q_2 $$ are both positive or both negative, we see that $$ F $$ is also positive. However, in the case that either one of them is negative, $$ F $$ becomes negative, thus becoming a force that pulls the two charges together. Thus, like charges repel, unlike charges attract.
+Suppose that $q_1$ and $q_2$ are both positive or both negative, we see that $F$ is also positive. However, in the case that either one of them is negative, $F$ becomes negative, thus becoming a force that pulls the two charges together. Thus, like charges repel, unlike charges attract.
 
 <Rule
   statement={
@@ -159,7 +159,7 @@ Suppose that $$ q_1 $$ and $$ q_2 $$ are both positive or both negative, we see 
   />
 </Showcase>
 
-From the two equations, we see that we can substitute the second equation into the first. Suppose our test charge is $$ q_1 $$. Then, $$ q_1 $$ (in the second equation) cancels out with $$ q $$ (in the first equation), giving us the following, which tells us the strength of the electric field created by the original charge in the field $$ q_2 $$, which we will now denote as just $$ q $$, experienced by some test charge a distance away.
+From the two equations, we see that we can substitute the second equation into the first. Suppose our test charge is $q_1$. Then, $q_1$ (in the second equation) cancels out with $q$ (in the first equation), giving us the following, which tells us the strength of the electric field created by the original charge in the field $q_2$, which we will now denote as just $q$, experienced by some test charge a distance away.
 
 <Rule
   statement={<Math math="E=k\frac{q}{r^2}" type="block" />}
@@ -176,8 +176,7 @@ From the two equations, we see that we can substitute the second equation into t
       term: 'r',
       annotation: (
         <span>
-          Distance between <Math math="q" type="inline" /> and some test
-          charge
+          Distance between <Math math="q" type="inline" /> and some test charge
         </span>
       ),
     },
@@ -246,7 +245,7 @@ We can relate the voltage with the electric field using the following:
 
 ## Electronvolt
 
-One **electronvolt** ($$ eV $$) is defined as the amount of work needed to take one electron charge across a potential difference of one volt, thus:
+One **electronvolt** ($eV$) is defined as the amount of work needed to take one electron charge across a potential difference of one volt, thus:
 
 <Rule
   statement={<Math math="eV = e" type="block" />}
@@ -288,12 +287,10 @@ Capacitors have an inherent property called **capacitance**, defined as the amou
 
 There are many types of capacitors. One common type is called the **parallel plate capacitor**.
 
-In a parallel plate capacitor, two conducting electrical plates of area $$ A $$ are placed parallel to each other at a distance $$ d $$ apart in an environment with permittivity $$ \epsilon $$. The capacitance of the capacitor is given by the following equation. If there is a dielectric material with a dielectric constant of $$ \kappa $$ inserted in between the plates, then multiply by $$ \kappa $$.
+In a parallel plate capacitor, two conducting electrical plates of area $A$ are placed parallel to each other at a distance $d$ apart in an environment with permittivity $\epsilon$. The capacitance of the capacitor is given by the following equation. If there is a dielectric material with a dielectric constant of $\kappa$ inserted in between the plates, then multiply by $\kappa$.
 
 <Rule
-  statement={
-    <Math math="C = \kappa \epsilon \frac{A}{d}" type="block" />
-  }
+  statement={<Math math="C = \kappa \epsilon \frac{A}{d}" type="block" />}
   terms={[
     {
       term: 'C',
@@ -346,18 +343,21 @@ In a parallel plate capacitor, two conducting electrical plates of area $$ A $$ 
     }
     number={6}
     text={
-      <span>A parallel plate capacitor with electric field lines is shown.</span>
+      <span>
+        A parallel plate capacitor with electric field lines is shown.
+      </span>
     }
   />
 </Showcase>
 
-Next, to find the amount of energy stored in a capacitor, we think about the amount of work that needs to be done to move all the charges from one of the plates to the other. Since $$ V=\frac{W}{q} $$, we need to add up all the work done by moving some charge through the electric potential; in other words, we need to integrate voltage with respect to charge. Suppose that the total charge of the capacitor is $$ Q $$:
+Next, to find the amount of energy stored in a capacitor, we think about the amount of work that needs to be done to move all the charges from one of the plates to the other. Since $V=\frac{W}{q}$, we need to add up all the work done by moving some charge through the electric potential; in other words, we need to integrate voltage with respect to charge. Suppose that the total charge of the capacitor is $Q$:
 
+{/* prettier-ignore */}
 | Procedure                              | Annotation                                                                                   |
 | -------------------------------------- | -------------------------------------------------------------------------------------------- |
-| $$ W=\int_{0}^{Q} V \,dq $$           | Integrating voltage with respect to charge along a capacitor with a total charge of $$ Q $$. |
-| $$ W=\int_{0}^{Q} \frac{q}{C} \,dq $$ | Replace $$ V $$ since $$ V=\frac{q}{C} $$.                                                   |
-| $$ W=\frac{Q^2}{2C} $$                 | Integrate and evaluate bounds.                                                               |
+| $W=\int_{0}^{Q} V \,dq$ | Integrating voltage with respect to charge along a capacitor with a total charge of $Q$. |
+| $W=\int_{0}^{Q} \frac{q}{C} \,dq$ | Replace $V$ since $V=\frac{q}{C}$. |
+| $W=\frac{Q^2}{2C}$ | Integrate and evaluate bounds. |
 
 Thus:
 
@@ -381,7 +381,7 @@ Thus:
 
 ## Magnetic Field
 
-The **magnetic field strength** $$ B $$ experienced from a current source with current $$ B $$ from $$ r $$ meters away is given by the following equation.
+The **magnetic field strength** $B$ experienced from a current source with current $B$ from $r$ meters away is given by the following equation.
 
 <Rule
   statement={<Math math="B=\frac{\mu_0 I}{2\pi r}" type="block" />}

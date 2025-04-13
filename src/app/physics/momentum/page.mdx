@@ -74,51 +74,69 @@ The **impulse** of an object is the change in that object's momentum that result
 
 ## Collisions
 
-Suppose there are two objects of mass and velocity of $$ m*1 $$, $$ v*{1,i} $$, and $$ m*2 $$, $$ v*{2,i} $$ respectively. There are three types main type of **collisons**.
+Suppose there are two objects of mass and velocity of $m_1$, $v_{1,i}$, and $m_2$, $v_{2,i}$ respectively. There are three types main type of **collisions**.
 
-- **Perfect elastic collision** refers to a collison where all the kinetic energy remains in the system (none gets lost by heat, sound, friction, etc). Both the conservation of momentum and conservation of energy can be applied to this type of collision.
+- **Perfect elastic collision** refers to a collision where all the kinetic energy remains in the system (none gets lost by heat, sound, friction, etc). Both the conservation of momentum and conservation of energy can be applied to this type of collision.
 
-$$ m*1v*{1,i} + m*2v*{2,i} = m*1v*{1,f} + m*2v*{2,f} $$
+<Align type="center">
 
-$$ \frac{1}{2}m*1v*{1,i}^2 + \frac{1}{2}m*2v*{2,i}^2 = \frac{1}{2}m*1v*{1,f}^2 + \frac{1}{2}m*2v*{2,f}^2 $$
+{/* prettier-ignore */}
+$$m_1v_{1,i} + m_2v_{2,i} = m_1v_{1,f} + m_2v_{2,f}$$
 
-- **Inelastic collision** refers to a collison where not all the kinetic energy remains in the system (some gets lost by heat, sound, friction, etc). Only the conservation of momentum (and not the conservation of energy) can be applied to this type of collision.
+{/* prettier-ignore */}
+$$\frac{1}{2}m_1v_{1,i}^2 + \frac{1}{2}m_2v_{2,i}^2 = \frac{1}{2}m_1v_{1,f}^2 + \frac{1}{2}m_2v_{2,f}^2$$
 
-$$ m*1v*{1,i} + m*2v*{2,i} = m*1v*{1,f} + m*2v*{2,f} $$
+</Align>
 
-$$ \frac{1}{2}m*1v*{1,i}^2 + \frac{1}{2}m*2v*{2,i}^2 = \frac{1}{2}m*1v*{1,f}^2 + \frac{1}{2}m*2v*{2,f}^2 + E\_{lost}$$
+- **Inelastic collision** refers to a collision where not all the kinetic energy remains in the system (some gets lost by heat, sound, friction, etc). Only the conservation of momentum (and not the conservation of energy) can be applied to this type of collision.
 
-- **Perfect inelastic collision** refers to a collison where the two objects stick to each other, and kinetic energy is lost in the process. Only the conservation of momentum (and not the conservation of energy) can be applied to this type of collision.
+<Align type="center">
 
-$$ m*1v*{1,i} + m*2v*{2,i} = (m*1 + m_2)v*{1~and~2,f} $$
+{/* prettier-ignore */}
+$$m_1v_{1,i} + m_2v_{2,i} = m_1v_{1,f} + m_2v_{2,f}$$
 
-$$ \frac{1}{2}m*1v*{1,i}^2 + \frac{1}{2}m*2v*{2,i}^2 = \frac{1}{2}(m*1+m_2)v*{1~and~2,f}^2 + E\_{lost}$$
+{/* prettier-ignore */}
+$$\frac{1}{2}m_1v_{1,i}^2 + \frac{1}{2}m_2v_{2,i}^2 = \frac{1}{2}m_1v_{1,f}^2 + \frac{1}{2}m_2v_{2,f}^2 + E_{lost}$$
 
-## Center of Mass
+</Align>
 
-The **center of mass** of a group of constituents is a position where one can assume that all the masses are concentrated at that point. This concept was derived for one to solve problems more easily.
+- **Perfect inelastic collision** refers to a collision where the two objects stick to each other, and kinetic energy is lost in the process. Only the conservation of momentum (and not the conservation of energy) can be applied to this type of collision.
 
-If a system is closed, then that system's center of mass remains the same.
+<Align type="center">
+
+{/* prettier-ignore */}
+$$m_1v_{1,i} + m_2v_{2,i} = (m_1 + m_2)v_{1~and~2,f}$$
+
+{/* prettier-ignore */}
+$$\frac{1}{2}m_1v_{1,i}^2 + \frac{1}{2}m_2v_{2,i}^2 = \frac{1}{2}(m_1+m_2)v_{1~and~2,f}^2 + E_{lost}$$
+
+</Align>
+
+## Centre of Mass
+
+The **centre of mass** of a group of constituents is a position where one can assume that all the masses are concentrated at that point. This concept was derived for one to solve problems more easily.
+
+If a system is closed, then that system's centre of mass remains the same.
 
 <Rule
   statement={
     <Math
-      math="x_{center~of~mass} = \frac{\sum_i m_i x_i}{\sum_i m_i}"
+      math="x_{centre~of~mass} = \frac{\sum_i m_i x_i}{\sum_i m_i}"
       type="block"
     />
   }
   terms={[
     {
-      term: 'x_{center~of~mass}',
-      annotation: <span>Center of mass</span>,
+      term: 'x_{centre~of~mass}',
+      annotation: <span>Centre of mass</span>,
     },
     {
       term: 'm_i',
-      annotation: <MDX source="Mass of the $i$-th constituent" />,
+      annotation: <span>Mass of the i-th constituent</span>,
     },
     {
       term: 'x_i',
-      annotation: <MDX source="Position of the $i$-th constituent" />,
+      annotation: <span>Position of the i-th constituent</span>,
     },
   ]}
 />

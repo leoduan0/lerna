@@ -1,3 +1,1 @@
 # Lerna
-
-Lerna website.

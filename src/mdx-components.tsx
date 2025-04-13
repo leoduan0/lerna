@@ -10,7 +10,6 @@ import Image from '@/components/Image'
 import Link from '@/components/Link'
 import MDX from '@/components/MDX'
 import Math from '@/components/Math'
-import MusicScore from '@/components/MusicScore'
 import Pagination from '@/components/Pagination'
 import Problem from '@/components/Problem'
 import Proofs from '@/components/Proofs'
@@ -73,7 +72,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Image: Image,
     Math: Math,
     MDX: MDX,
-    MusicScore: MusicScore,
     Pagination: Pagination,
     Problem: Problem,
     Proofs: Proofs,

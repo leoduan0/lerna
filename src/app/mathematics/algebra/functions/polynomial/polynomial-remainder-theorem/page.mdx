@@ -1,0 +1,48 @@
+---
+title: 'Polynomial Remainder Theorem'
+authors: ['Leo Duan']
+last-edited-date: '2025-04-13'
+---
+
+# Polynomial Remainder Theorem
+
+The **Polynomial Remainder Theorem** states that for some dividend $P(x)$ and divisor$D(x)$, suppose that$D(x)=0$when$x \in S$, then the remainder of$\frac{P(x)}{D(x)}$, $R(x)$ can be found by substituting $x \in S$ into the following expression:
+
+$$P(x)=D(x)Q(x)+R(x)$$
+
+$$\therefore R(x)=P(x)-D(x)Q(x)$$
+
+- $Q(x)$is the quotient.
+
+- $\deg{R(x)} < \deg{D(x)}$
+
+<Block text="Example">
+
+Suppose $P(x)=x^2+x-4$ and $D(x)=x-1$:
+
+| Procedure                                        | Annotation                                                        |
+| ------------------------------------------------ | ----------------------------------------------------------------- |
+| $D(x)=0$when$x=1$, so $S=\{1\}$                  | Find the zeroes of$D(x)$                                          |
+| $R(x)=P(x)-D(x)Q(x) \\ R(x)=(x^2+x-4)-(x-1)Q(x)$ | Substitute                                                        |
+| $R(1)=(1^2+1-4)-(1-1)Q(x)=-2$                    | Substitute elements of$S$(there is only one element in this case) |
+| $-2$is the remainder                             | Remainder found                                                   |
+
+</Block>
+
+A trick for when $\deg{P(x)}=2$: suppose $D(x)$ is in the form$x-a$, then $P(a)$ is the remainder (a constant).
+
+<Block text="Example">
+
+Suppose $P(x)=x^3+x-4$ and $D(x)=x^2-1$:
+
+| Procedure                                                                        | Annotation                                                                                               |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| $D(x)=0$when$x=-1,1$, so$S=\{-1,1\}$                                             | Find the zeroes of $D(x)$                                                                                |
+| $R(x)=P(x)-D(x)Q(x) \\ R(x)=(x^3+x-4)-(x^2-1)Q(x)$                               | Substitute                                                                                               |
+| $R(x)=(x^3+x-4)-(x^2-1)Q(x)=ax+b$                                                | Since $\deg{R(x)} < \deg{D(x)}$, $R(x)$ can be written in the form of $ax+b$. Additionally, $S=\{-1,1\}$ |
+| $R(1)=(1^3+1-4)-(1^2-1)Q(x)=-2=a+b \\ R(-1)=((-1)^3-1-4)-((-1)^2-1)Q(x)=-6=-a+b$ | Substitute both elements of$S$                                                                           |
+| $\begin{cases} -2=a+b \\ -6=-a+b \end{cases}$                                    | We are left with this system of equations                                                                |
+| $a=2$,$b=-4$                                                                     | Solve the system of equations                                                                            |
+| $R(x)=ax+b=2x-4$                                                                 | Remainder found                                                                                          |
+
+</Block>

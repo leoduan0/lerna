@@ -9,14 +9,7 @@ interface HeadProps {
 function Head({ toggleFunction }: HeadProps) {
   return (
     <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-LAYOUT_BORDER-light dark:border-LAYOUT_BORDER-dark">
-      <Image
-        src="/lerna.png"
-        height={32}
-        width={32}
-        className="rounded-lg"
-        alt=""
-      />
-      <span className="text-theme font-bold">Lerna</span>
+      <Image src="/lerna_logo.png" height={32} width={64} alt="logo" />
       <button
         onClick={() => toggleFunction()}
         className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:hidden"

@@ -1,0 +1,26 @@
+---
+title: 'Directional Derivative'
+authors: ['Leo Duan']
+last-edited-date: '2024-02-29'
+---
+
+# Directional Derivative
+
+**Directional derivatives** are derivatives found along a direction that is not parallel to an axis (like what we have done so far with partial derivatives). This direction would be defined by a unit vector $$ \vec{u} = \langle a, b \rangle $$ and the directional derivative of $$ f(x, y) $$ is:
+
+<Align type="center">
+  <Math math="D_{\vec{u}}f(x, y) = f_x(x, y)a + f_y(x, y)b" type="block" />
+</Align>
+
+And for $$ \vec{u} = \langle a, b, c \rangle $$ and $$ f(x, y, z) $$:
+
+<Align type="center">
+  <Math
+    math="D_{\vec{u}}f(x, y, z) = f_x(x, y, z)a + f_y(x, y, z)b + f_z(x, y, z)c"
+    type="block"
+  />
+</Align>
+
+And so on.
+
+Note that $$ D\_{\vec{u}}f = \nabla f \cdot \vec{u} $$.

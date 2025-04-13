@@ -1,10 +1,11 @@
-import { nextui } from '@nextui-org/theme'
 import type { Config } from 'tailwindcss'
+
+const { heroui } = require('@heroui/react')
 
 const config: Config = {
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -15,13 +16,13 @@ const config: Config = {
         BUTTON_SELECTED: { light: '#3b82f6', dark: '#2563eb' },
         LAYOUT: { light: '#f0f0f0', dark: '#232323' },
         LAYOUT_BORDER: { light: '#d2d2d2', dark: '#464646' },
-        TEXT_LINK: { DEFAULT: "#3b82f6" },
-        WIDGET: { light: "#f0f0f0", dark: "#232323" },
+        TEXT_LINK: { DEFAULT: '#3b82f6' },
+        WIDGET: { light: '#f0f0f0', dark: '#232323' },
         WIDGET_BORDER: { light: '#d2d2d2', dark: '#464646' },
       },
     },
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [heroui()],
 }
 export default config

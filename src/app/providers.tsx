@@ -1,17 +1,13 @@
 'use client'
 
-import { NextUIProvider } from '@nextui-org/react'
-import dynamic from 'next/dynamic'
-
-const NextThemesProvider = dynamic(
-  () => import('next-themes').then((e) => e.ThemeProvider),
-  { ssr: false },
-)
+import { HeroUIProvider } from '@heroui/react'
+import { ThemeProvider } from 'next-themes'
+import { Fragment } from 'react'
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <NextUIProvider className="space-y-2">
-      <NextThemesProvider attribute="class">{children}</NextThemesProvider>
-    </NextUIProvider>
+    <ThemeProvider attribute="class">
+      <HeroUIProvider className="space-y-2">{children}</HeroUIProvider>
+    </ThemeProvider>
   )
 }

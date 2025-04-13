@@ -1,7 +1,7 @@
 'use client'
 
 import Block from './Block'
-import { Accordion, AccordionItem } from '@nextui-org/react'
+import { Accordion, AccordionItem } from '@heroui/react'
 
 export type TQA = {
   question: React.ReactNode

@@ -4,7 +4,6 @@ import {
   faCircleInfo,
   faHouse,
   faSquareRootVariable,
-  faVial,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -14,42 +13,27 @@ const pages: TPage[] = [
     icon: <FontAwesomeIcon icon={faHouse} />,
   },
   {
-    title: 'About',
-    icon: <FontAwesomeIcon icon={faCircleInfo} />,
-  },
-  {
     title: 'Mathematics',
     icon: <FontAwesomeIcon icon={faSquareRootVariable} />,
     children: [
       {
         title: 'Algebra',
         children: [
-          { title: 'Number', children: [{ title: 'Imaginary Number' }] },
           {
             title: 'Operation',
             children: [
-              // { title: 'Addition' },
-              // { title: 'Multiplication' },
-              // { title: 'Subtraction' },
-              // { title: 'Division' },
               { title: 'Exponentiation' },
               { title: 'Logarithm' },
               { title: 'Factorial' },
             ],
           },
           {
-            title: 'Map',
+            title: 'Functions',
             children: [
               {
-                title: 'Functions',
-                children: [
-                  {
-                    title: 'Polynomial',
-                    children: [{ title: 'Polynomial Remainder Theorem' }],
-                  },
-                ],
+                title: 'Polynomial',
+                children: [{ title: 'Polynomial Remainder Theorem' }],
               },
-              // { title: 'Morphism' },
             ],
           },
           {
@@ -184,10 +168,6 @@ const pages: TPage[] = [
           },
         ],
       },
-      // { title: 'Number Theory' },
-      // { title: 'Discreet Mathematics' },
-      // { title: 'Set Theory' },
-      // { title: 'Logic' },
       {
         title: 'Statistics',
         children: [
@@ -203,42 +183,24 @@ const pages: TPage[] = [
     children: [
       { title: 'Properties' },
       { title: 'Measurements' },
-      {
-        title: 'Classical Mechanics',
-        children: [
-          { title: 'Kinematics' },
-          { title: 'Momentum' },
-          { title: 'Dynamics' },
-          { title: 'Energy' },
-          { title: 'Circular Motion' },
-          { title: 'Oscillatory Motion' },
-          { title: 'Wave' },
-          { title: 'Gravitation' },
-          { title: 'Fluid' },
-        ],
-      },
+      { title: 'Kinematics' },
+      { title: 'Momentum' },
+      { title: 'Dynamics' },
+      { title: 'Energy' },
+      { title: 'Circular Motion' },
+      { title: 'Oscillatory Motion' },
+      { title: 'Wave' },
+      { title: 'Gravitation' },
+      { title: 'Fluid' },
       { title: 'Electromagnetism', children: [{ title: 'Circuit' }] },
       { title: 'Thermodynamics' },
       // { title: 'Optics' },
     ],
   },
   {
-    title: 'Chemistry',
-    icon: <FontAwesomeIcon icon={faVial} />,
-    children: [
-      // { title: 'Stoichiometry' },
-      // { title: 'Nomenclature' },
-      { title: 'Lewis Structure' },
-      // { title: 'Equilibrium' },
-      { title: 'Oxidation and Reduction' },
-      // { title: 'Thermodynamics' },
-    ],
+    title: 'About',
+    icon: <FontAwesomeIcon icon={faCircleInfo} />,
   },
-  // {
-  //   title: 'Music',
-  //   icon: <FontAwesomeIcon icon={faMusic} />,
-  //   children: [{ title: 'Pitch and Duration' }, { title: 'Notes and Rests' }],
-  // },
 ]
 
 export default pages

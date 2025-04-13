@@ -1,0 +1,124 @@
+---
+title: 'Momentum'
+authors: ['Leo Duan']
+date-last-edited: '2024-11-08'
+---
+
+# Momentum
+
+The **momentum** of an object is its mass multiplied by its velocity.
+
+<Rule
+  statement={<Math math="p=mv" type="block" />}
+  terms={[
+    {
+      term: 'p',
+      annotation: <span>Momentum</span>,
+    },
+    {
+      term: 'm',
+      annotation: <span>Mass</span>,
+    },
+    {
+      term: 'v',
+      annotation: <span>Velocity</span>,
+    },
+  ]}
+/>
+
+## Conservation of Momentum
+
+The **conservation of momentum** states that momentum is always **conserved** in an isolated system.
+
+This means that, within an isolated system, momentum can never spontaneously appear or disappear.
+
+<Rule
+  statement={<Math math="p_{total~i} = p_{total~f}" type="block" />}
+  terms={[
+    {
+      term: 'p_{total~i}',
+      annotation: <span>Total initial momentum of a closed system</span>,
+    },
+    {
+      term: 'p_{total~f}',
+      annotation: (
+        <span>
+          Total final momentum of a closed system after any amount of time
+        </span>
+      ),
+    },
+  ]}
+/>
+
+## Impulse
+
+The **impulse** of an object is the change in that object's momentum that resulted from a force being applied to it for some amount of time.
+
+<Rule
+  statement={<Math math="\Delta p=Ft" type="block" />}
+  terms={[
+    {
+      term: '\\Delta p',
+      annotation: <span>Impulse</span>,
+    },
+    {
+      term: 'F',
+      annotation: <span>Force</span>,
+    },
+    {
+      term: 't',
+      annotation: <span>time</span>,
+    },
+  ]}
+/>
+
+## Collisions
+
+Suppose there are two objects of mass and velocity of $$ m*1 $$, $$ v*{1,i} $$, and $$ m*2 $$, $$ v*{2,i} $$ respectively. There are three types main type of **collisons**.
+
+- **Perfect elastic collision** refers to a collison where all the kinetic energy remains in the system (none gets lost by heat, sound, friction, etc). Both the conservation of momentum and conservation of energy can be applied to this type of collision.
+
+$$ m*1v*{1,i} + m*2v*{2,i} = m*1v*{1,f} + m*2v*{2,f} $$
+
+$$ \frac{1}{2}m*1v*{1,i}^2 + \frac{1}{2}m*2v*{2,i}^2 = \frac{1}{2}m*1v*{1,f}^2 + \frac{1}{2}m*2v*{2,f}^2 $$
+
+- **Inelastic collision** refers to a collison where not all the kinetic energy remains in the system (some gets lost by heat, sound, friction, etc). Only the conservation of momentum (and not the conservation of energy) can be applied to this type of collision.
+
+$$ m*1v*{1,i} + m*2v*{2,i} = m*1v*{1,f} + m*2v*{2,f} $$
+
+$$ \frac{1}{2}m*1v*{1,i}^2 + \frac{1}{2}m*2v*{2,i}^2 = \frac{1}{2}m*1v*{1,f}^2 + \frac{1}{2}m*2v*{2,f}^2 + E\_{lost}$$
+
+- **Perfect inelastic collision** refers to a collison where the two objects stick to each other, and kinetic energy is lost in the process. Only the conservation of momentum (and not the conservation of energy) can be applied to this type of collision.
+
+$$ m*1v*{1,i} + m*2v*{2,i} = (m*1 + m_2)v*{1~and~2,f} $$
+
+$$ \frac{1}{2}m*1v*{1,i}^2 + \frac{1}{2}m*2v*{2,i}^2 = \frac{1}{2}(m*1+m_2)v*{1~and~2,f}^2 + E\_{lost}$$
+
+## Center of Mass
+
+The **center of mass** of a group of constituents is a position where one can assume that all the masses are concentrated at that point. This concept was derived for one to solve problems more easily.
+
+If a system is closed, then that system's center of mass remains the same.
+
+<Rule
+  statement={
+    <Math
+      math="x_{center~of~mass} = \frac{\sum_i m_i x_i}{\sum_i m_i}"
+      type="block"
+    />
+  }
+  terms={[
+    {
+      term: 'x_{center~of~mass}',
+      annotation: <span>Center of mass</span>,
+    },
+    {
+      term: 'm_i',
+      annotation: <MDX source="Mass of the $i$-th constituent" />,
+    },
+    {
+      term: 'x_i',
+      annotation: <MDX source="Position of the $i$-th constituent" />,
+    },
+  ]}
+/>

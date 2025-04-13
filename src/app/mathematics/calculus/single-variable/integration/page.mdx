@@ -1,0 +1,53 @@
+---
+title: 'Integration'
+authors: ['Leo Duan']
+date-last-edited: '2024-07-05'
+---
+
+# Integration
+
+In essence, an integral aims to find the total area beneath a given function. The definition of an integral is as follows:
+
+<Align type="center">
+  <Math math="\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i)\Delta x" type="block" />
+</Align>
+
+Integration is also referred to as antidifferentiation, since if the integration of $$ f(x) $$ is $$ F(x) $$, then the first derivative of $$ F(x) $$ is $$ f(x) $$.
+
+## Rules
+
+- $$ \int (f(x) \pm g(x)) \,dx = \int f(x) \,dx \pm \int g(x) \,dx $$
+- $$ \int kf(x) \,dx = k\int f(x) \,dx $$
+- $$ \int\_{a}^{a} f(x) \,dx = 0 $$
+- $$ \int*{a}^{b} f(x) \,dx = -\int*{b}^{a} f(x) \,dx $$
+- $$ \int*{a}^{b} f(x) \,dx = \int*{a}^{c} f(x) \,dx + \int\_{c}^{b} f(x) \,dx $$
+
+## Identities
+
+- $$ \int k f(x) \,dx = k\int\_{}^{} f(x) \,dx $$
+- $$ \int (f(x) \pm g(x)) \,dx = \int*{}^{} f(x) \,dx \pm \int*{}^{} g(x) \,dx $$
+- $$ \int x^k \,dx = \frac{x^{k+1}}{k+1}+c, k \ne -1 $$
+- $$ \int \frac{1}{x} \,dx = \ln|x|+c $$
+- $$ \int \sin(x) \,dx = -\cos(x)+c $$
+- $$ \int \cos(x) \,dx = \sin(x)+c $$
+- $$ \int \tan(x) \,dx = \ln|\sec(x)|+c = -\ln|\cos(x)|+c $$
+- $$ \int \csc(x) \,dx = -\ln|\csc(x)|+\cot(x)|+c $$
+- $$ \int \sec(x) \,dx = \ln|\sec(x)+\tan(x)|+c $$
+- $$ \int \cot(x) \,dx = \ln|\sin(x)|+c = -\ln|\csc(x)|+c $$
+- $$ \int \csc^2(x) \,dx = -\cot(x)+c $$
+- $$ \int \sec^2(x) \,dx = \tan(x)+c $$
+- $$ \int \cot^2(x) \,dx = -\cot(x)-x+c $$
+- $$ \int \sec(x) \tan(x) \,dx = \sec(x)+c $$
+- $$ \int \csc(x) \tan(x) \,dx = -\csc(x)+c $$
+- $$ \int \frac{c}{ax+b} \,dx = \frac{c}{a} \ln|ax+b|+c $$
+- $$ \int \ln(x) \,dx = x\ln(x)-x+c $$
+- $$ \int \frac{1}{k^2+x^2} \,dx = \frac{1}{k}\tan^{-1}\left(\frac{x}{a}\right)+c $$
+- $$ \int \frac{1}{\sqrt{k^2-x^2}} \,dx = \sin^{-1}\left(\frac{x}{a}\right)+c $$
+- $$ \int k^x \,dx = \frac{k^x}{\ln(k)}+c $$
+- $$ \int \frac{1}{x\sqrt{x^2-1}} \,dx = \sec^{-1}|x|+c $$
+- $$ \int e^x \,dx = e^x+c $$
+- $$ \int \ln(x) \,dx = x\ln(x)-x+c $$
+
+## Particular and General Solutions
+
+From the rules above we find that the derivative of any constant is 0. Thus, it is not possible to always integrate $$ f(x) $$ back into the original $$ F(x) $$. Therefore, we say that an integration which this is true is a **general solution**, where as an integration of $$ f(x) $$, using various techniques, yields the original $$ F(x) $$, is a **particular solution**.

@@ -1,7 +1,7 @@
 'use client'
 
 import Align from './Align'
-import { Tabs, Tab } from '@nextui-org/react'
+import { Tabs, Tab } from '@heroui/react'
 
 interface PaginationProps {
   pages: { name: string; content: React.ReactNode }[]

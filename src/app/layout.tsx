@@ -5,7 +5,12 @@ import Navigation from '@/components/Navigation'
 import pages from '@/data/pages'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
+import { Nunito } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
+
+const nunito = Nunito({
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Lerna',
@@ -18,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html className={nunito.className} lang="en">
       <body className="fixed flex h-full w-full bg-BACKGROUND-light dark:bg-BACKGROUND-dark">
-        <NextTopLoader color="#0da15c" showSpinner={false} />
         {/* "fixed" makes the iOS Safari toolbar persistent */}
+        <NextTopLoader />
         <Navigation pages={pages} />
         <div className="flex h-full w-full flex-col">
           <Header />

@@ -12,9 +12,11 @@ declare global {
 function Ad() {
   useEffect(() => {
     try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (err) {
-      console.error(err)
+      if (typeof window !== 'undefined') {
+        ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      }
+    } catch (e) {
+      console.error(e)
     }
   }, [])
 
@@ -22,7 +24,7 @@ function Ad() {
     <div>
       <Script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5882787766829258"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
         crossOrigin="anonymous"
         strategy="afterInteractive"
       />
@@ -30,7 +32,7 @@ function Ad() {
         className="adsbygoogle"
         style={{ display: 'block' }}
         data-ad-client={process.env.ADSENSE_ID}
-        data-ad-slot="7654068621"
+        data-ad-slot={process.env.ADSENSE_AD_ID}
         data-ad-format="auto"
         data-full-width-responsive="true"
       />

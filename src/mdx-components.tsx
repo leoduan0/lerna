@@ -9,8 +9,8 @@ import Graph from "@/components/Graph"
 import Heading from "@/components/Heading"
 import Image from "@/components/Image"
 import Link from "@/components/Link"
-import Math from "@/components/Math"
 import MDX from "@/components/MDX"
+import { MathExpression } from "@/components/math-expression"
 import Pagination from "@/components/Pagination"
 import Problem from "@/components/Problem"
 import Proofs from "@/components/Proofs"
@@ -70,7 +70,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Figure: Figure,
     Graph: Graph,
     Image: Image,
-    Math: Math,
+    MathExpression: MathExpression,
     MDX: MDX,
     Pagination: Pagination,
     Problem: Problem,

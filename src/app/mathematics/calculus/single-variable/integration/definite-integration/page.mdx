@@ -15,7 +15,7 @@ Given $$ \int_a^b f(x) \,dx $$, $$ a $$ is the lower bound and $$ b $$ is the up
 The fundamental theorem of calculus is as follows:
 
 <Rule
-  statement={<Math math="\int_a^b f(x) \,dx = F(b) - F(a)" type="block" />}
+  statement={<MathExpression math="\int_a^b f(x) \,dx = F(b) - F(a)" type="block" />}
   terms={[
     {
       term: 'a',
@@ -48,11 +48,11 @@ The fundamental theorem of calculus is as follows:
 
 ## Derivative of Definite Integrals
 
-Given a function $$ f(x) = \int\_{a(x)}^{b(x)} g(x) \,dx $$, its derivative is given by the following.
+Given a function $$ f(x) = \int_{a(x)}^{b(x)} g(x) \,dx $$, its derivative is given by the following.
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="f^{\prime}(x) = \frac{d}{dx} \int_{a(x)}^{b(x)} g(x) \,dx = g(b(x)) \cdot b^{\prime}(x) - g(a(x)) \cdot a^{\prime}(x)"
       type="block"
     />

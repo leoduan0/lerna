@@ -1,7 +1,6 @@
 "use client"
 
-import { faShare } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Share2 } from "lucide-react"
 import { usePathname } from "next/navigation"
 import { APP_URL } from "@/lib/constants"
 
@@ -31,7 +30,7 @@ function ShareButton() {
       className="rounded-md p-2 transition hover:bg-button hover:cursor-pointer active:scale-95"
       type="button"
     >
-      <FontAwesomeIcon icon={faShare} />
+      <Share2 strokeWidth={1} />
     </button>
   )
 }

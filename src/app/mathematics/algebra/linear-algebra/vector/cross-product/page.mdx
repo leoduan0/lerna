@@ -8,7 +8,7 @@ date-last-edited: '2024-07-05'
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\\vec{a} \times \vec{b} = \det{\begin{bmatrix} \vec{i} & \vec{j} & \vec{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{bmatrix}} = \lVert \vec{a} \rVert \lVert \vec{b} \rVert \sin(\theta)"
       type="block"
     />
@@ -19,7 +19,7 @@ date-last-edited: '2024-07-05'
       annotation: (
         <span>
           A vector. Equals{' '}
-          <Math math="\langle a_1, a_2, a_3 \rangle" type="inline" />.
+          <MathExpression math="\langle a_1, a_2, a_3 \rangle" type="inline" />.
         </span>
       ),
     },
@@ -28,7 +28,7 @@ date-last-edited: '2024-07-05'
       annotation: (
         <span>
           A vector. Equals{' '}
-          <Math math="\langle b_1, b_2, b_3 \rangle" type="inline" />.
+          <MathExpression math="\langle b_1, b_2, b_3 \rangle" type="inline" />.
         </span>
       ),
     },
@@ -36,8 +36,8 @@ date-last-edited: '2024-07-05'
       term: '\\theta',
       annotation: (
         <span>
-          Angle between <Math math="\vec{a}" type="inline" /> and{' '}
-          <Math math="\vec{b}" type="inline" />
+          Angle between <MathExpression math="\vec{a}" type="inline" /> and{' '}
+          <MathExpression math="\vec{b}" type="inline" />
         </span>
       ),
     },
@@ -45,19 +45,19 @@ date-last-edited: '2024-07-05'
   annotation={
     <ul>
       <p>
-        If <Math math="\vec{a} \times \vec{b} = \vec{u}" type="inline" />
-        , then <Math math="\vec{u}" type="inline" /> is a vector that is
-        orthogonal to both <Math math="\vec{a}" type="inline" /> and{' '}
-        <Math math="\vec{b}" type="inline" />.
+        If <MathExpression math="\vec{a} \times \vec{b} = \vec{u}" type="inline" />
+        , then <MathExpression math="\vec{u}" type="inline" /> is a vector that is
+        orthogonal to both <MathExpression math="\vec{a}" type="inline" /> and{' '}
+        <MathExpression math="\vec{b}" type="inline" />.
       </p>
       <p>
-        If <Math math="\vec{a} \times \vec{b} = 0" type="inline" />
-        , then <Math math="\vec{a}" type="inline" /> and{' '}
-        <Math math="\vec{b}" type="inline" /> are parallel to each other.
+        If <MathExpression math="\vec{a} \times \vec{b} = 0" type="inline" />
+        , then <MathExpression math="\vec{a}" type="inline" /> and{' '}
+        <MathExpression math="\vec{b}" type="inline" /> are parallel to each other.
       </p>
       <p>
-        Cross products only exist in <Math math="\R^3" type="inline" /> and{' '}
-        <Math math="\R^7" type="inline" />.
+        Cross products only exist in <MathExpression math="\R^3" type="inline" /> and{' '}
+        <MathExpression math="\R^7" type="inline" />.
       </p>
     </ul>
   }

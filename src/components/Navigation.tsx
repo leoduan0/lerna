@@ -1,11 +1,10 @@
 "use client"
 
-import { faXmark } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { ScrollShadow } from "@heroui/react"
+import { X } from "lucide-react"
 import Ad from "@/components/Ad"
-import useNavigationStatus from "@/hooks/useNavigationStatus"
-import type TPage from "@/types/TPage"
+import useNavigationStatus from "@/hooks/use-navigation-status"
+import type { TPage } from "@/lib/pages"
 import Pages from "./Pages"
 
 interface NavigationProps {
@@ -18,7 +17,7 @@ function Navigation({ pages }: NavigationProps) {
   return (
     <>
       <nav
-        className={`${navigationStatus ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0 lg:opacity-100"} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-layout-border border-r backdrop-blur-lg transition md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:backdrop-blur-none dark:bg-layout/50 lg:dark:bg-layout/50`}
+        className={`${navigationStatus ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0 lg:opacity-100"} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-layout-border border-r backdrop-blur-lg transition md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:backdrop-blur-none bg-layout/50`}
       >
         <div className="flex h-12 w-full items-center justify-center space-x-2 border-layout-border border-b">
           <svg
@@ -30,12 +29,11 @@ function Navigation({ pages }: NavigationProps) {
           </svg>
           <button
             onClick={() => toggleNavigation()}
-            className="rounded-md p-2 transition hover:bg-button active:scale-95 lg:hidden"
+            className="rounded-md p-2 transition hover:bg-button active:scale-95 lg:hidden hover:cursor-pointer"
             type="button"
           >
-            {" "}
-            <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />{" "}
-          </button>{" "}
+            <X strokeWidth={1} size={20} />
+          </button>
         </div>
         <ScrollShadow className="h-full w-full">
           <Pages pages={pages} />

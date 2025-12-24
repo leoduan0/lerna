@@ -20,7 +20,7 @@ date-last-edited: '2023-12-12'
         <strong>normal line</strong>, a line normal to the surface) is equal to
         the angle of reflection.
       </p>
-      <Math math="\\theta_i=\\theta_r" type="block" />
+      <MathExpression math="\\theta_i=\\theta_r" type="block" />
     </>
   }
   terms={[
@@ -56,7 +56,7 @@ For example, it's commonly observed that the actual location of an object submer
   text={
     <span>
       Refraction of light in water.{' '}
-      <Math math="\\theta_1 \\neq \\theta_2" type="inline" />.
+      <MathExpression math="\\theta_1 \\neq \\theta_2" type="inline" />.
     </span>
   }
 />
@@ -70,7 +70,7 @@ The observed velocity of light is not the same in all materials.
 The ratio of the velocity of light in a vacuum to the velocity in a certain material is called the **refractive index** of that material.
 
 <Rule
-  statement={<Math math="n=\\frac{v_{vacuum}}{v_{material}}" type="block" />}
+  statement={<MathExpression math="n=\\frac{v_{vacuum}}{v_{material}}" type="block" />}
   terms={[
     {
       term: 'n',
@@ -93,7 +93,7 @@ Aspects of refraction is governed by **Snell's Law**.
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\\frac{n_1}{n_2}=\\frac{\\sin(\\theta_2)}{\\sin(\\theta_1)}=\\frac{v_2}{v_1}"
       type="block"
     />

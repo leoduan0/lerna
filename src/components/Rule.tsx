@@ -1,6 +1,6 @@
 import Block from "./Block"
 import Heading from "./Heading"
-import Math from "./Math"
+import { MathExpression } from "./math-expression"
 
 interface RuleProps {
   annotation?: React.ReactNode
@@ -23,7 +23,8 @@ function Rule({ annotation, statement, terms }: RuleProps) {
           {terms.map((term) => (
             <div key={term.term}>
               <span>
-                <Math math={`${term.term}=`} type="inline" /> {term.annotation}
+                <MathExpression math={`${term.term}=`} type="inline" />{" "}
+                {term.annotation}
               </span>
             </div>
           ))}

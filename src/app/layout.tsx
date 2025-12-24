@@ -5,7 +5,7 @@ import NextTopLoader from "nextjs-toploader"
 import Header from "@/components/Header"
 import Navigation from "@/components/Navigation"
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants"
-import pages from "@/lib/pages"
+import { pages } from "@/lib/pages"
 import { Providers } from "./providers"
 
 const nunito = Nunito({

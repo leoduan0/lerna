@@ -1,5 +1,5 @@
-import type TPage from "@/types/TPage"
-import Href from "@/utils/Href"
+import { formatHref } from "@/lib/format-href"
+import type { TPage } from "@/lib/pages"
 import NavigationPage from "./NavigationPage"
 
 function renderPages(pages: TPage[], href: string) {
@@ -9,7 +9,9 @@ function renderPages(pages: TPage[], href: string) {
         <NavigationPage
           page={page}
           href={
-            page.title === "Home" ? `${href}/` : `${href}/${Href(page.title)}`
+            page.title === "Home"
+              ? `${href}/`
+              : `${href}/${formatHref(page.title)}`
           }
           renderFunction={renderPages}
         />

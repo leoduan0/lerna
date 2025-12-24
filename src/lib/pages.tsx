@@ -1,20 +1,19 @@
-import {
-  faAtom,
-  faCircleInfo,
-  faHouse,
-  faSquareRootVariable,
-} from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import type TPage from "@/types/TPage"
+import { Atom, House, Info, SquareRadical } from "lucide-react"
 
-const pages: TPage[] = [
+export type TPage = {
+  title: string
+  icon?: React.ReactNode
+  children?: TPage[]
+}
+
+export const pages: TPage[] = [
   {
     title: "Home",
-    icon: <FontAwesomeIcon icon={faHouse} />,
+    icon: <House size={20} />,
   },
   {
     title: "Mathematics",
-    icon: <FontAwesomeIcon icon={faSquareRootVariable} />,
+    icon: <SquareRadical size={20} />,
     children: [
       {
         title: "Algebra",
@@ -174,7 +173,7 @@ const pages: TPage[] = [
   },
   {
     title: "Physics",
-    icon: <FontAwesomeIcon icon={faAtom} />,
+    icon: <Atom size={20} />,
     children: [
       { title: "Properties" },
       { title: "Measurements" },
@@ -194,8 +193,6 @@ const pages: TPage[] = [
   },
   {
     title: "About",
-    icon: <FontAwesomeIcon icon={faCircleInfo} />,
+    icon: <Info size={20} />,
   },
 ]
-
-export default pages

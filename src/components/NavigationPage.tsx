@@ -1,12 +1,11 @@
 "use client"
 
-import { faCaretRight } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { ChevronRight } from "lucide-react"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import Link from "@/components/Link"
-import useNavigationStatus from "@/hooks/useNavigationStatus"
-import type TPage from "@/types/TPage"
+import useNavigationStatus from "@/hooks/use-navigation-status"
+import type { TPage } from "@/lib/pages"
 
 interface NavigationPageProps {
   href: string
@@ -39,12 +38,7 @@ function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
           className={`${page.children ? "" : "invisible"} flex h-full items-center justify-center rounded-l-md p-2`}
           type="button"
         >
-          <FontAwesomeIcon
-            className={`${
-              expand ? "rotate-90" : ""
-            } fill-black dark:fill-white`}
-            icon={faCaretRight}
-          />
+          <ChevronRight className={expand ? "rotate-90" : ""} size={16} />
         </button>
         <Link
           href={href}

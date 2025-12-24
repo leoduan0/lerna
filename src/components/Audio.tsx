@@ -7,6 +7,7 @@ function Audio({ source, type }: AudioProps) {
   return (
     <audio controls>
       <source src={source} type={`audio/${type}`} />
+      <track kind="captions" />
       Your browser does not support the audio element.
     </audio>
   )

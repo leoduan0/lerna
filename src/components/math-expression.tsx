@@ -17,7 +17,7 @@ interface MathProps {
   type: "block" | "inline"
 }
 
-function Math({ math, type }: MathProps) {
+export function MathExpression({ math, type }: MathProps) {
   switch (type) {
     case "block":
       return (
@@ -35,5 +35,3 @@ function Math({ math, type }: MathProps) {
       )
   }
 }
-
-export default Math

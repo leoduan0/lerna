@@ -1,7 +1,6 @@
 "use client"
 
-import { faCaretRight } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { ChevronRight } from "lucide-react"
 import { useState } from "react"
 import Block from "./Block"
 import Heading from "./Heading"
@@ -38,12 +37,7 @@ function Problem({ choices, correct, question, solution }: ProblemProps) {
             onClick={() => toggleExpand()}
             className="flex h-8 w-full items-center space-x-2 rounded-md text-sm transition hover:cursor-pointer"
           >
-            <FontAwesomeIcon
-              className={`${
-                expand ? "rotate-90" : ""
-              } fill-black dark:fill-white`}
-              icon={faCaretRight}
-            />
+            <ChevronRight className={expand ? "rotate-90" : ""} />
             <Heading level={5}>Solution</Heading>
           </div>
           {expand && solution}

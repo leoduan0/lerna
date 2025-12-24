@@ -19,16 +19,16 @@
       "!src/app/mathematics/algebra/linear-algebra/vector/projection/page.mdx",
       "!src/app/mathematics/algebra/map/function/polynomial/page.mdx",
       "!src/app/mathematics/algebra/operation/logarithm/page.mdx",
-      "!src/app/mathematics/analysis/calculus/multivariable/limit/page.mdx",
-      "!src/app/mathematics/analysis/calculus/multivariable/partial-derivative/directional-derivative/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/integration/definite-integration/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/integration/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/limit/convergence/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/limit/divergence/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/limit/manipulation/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/limit/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/limit/rules/page.mdx",
-      "!src/app/mathematics/analysis/calculus/single-variable/limit/substitution/page.mdx"
+      "!src/app/mathematics/calculus/multivariable/limit/page.mdx",
+      "!src/app/mathematics/calculus/multivariable/partial-derivative/directional-derivative/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/integration/definite-integration/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/integration/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/limit/convergence/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/limit/divergence/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/limit/manipulation/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/limit/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/limit/rules/page.mdx",
+      "!src/app/mathematics/calculus/single-variable/limit/substitution/page.mdx"
     ]
   },
   "linter": {

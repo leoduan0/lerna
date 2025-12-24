@@ -12,7 +12,7 @@ last-edited-date: '2024-07-12'
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="A_{polygon} = \frac{n}{4}\cot\left(\frac{180\degree}{n}\right)l^2"
       type="block"
     />
@@ -22,7 +22,7 @@ last-edited-date: '2024-07-12'
       term: 'A_{polygon}',
       annotation: (
         <span>
-          Area of an <Math math="n" type="inline" />
+          Area of an <MathExpression math="n" type="inline" />
           -sided polygon
         </span>
       ),
@@ -41,7 +41,7 @@ last-edited-date: '2024-07-12'
 This includes triangles and squares, but since the coefficient is 1 for a square:
 
 <Rule
-  statement={<Math math="A_{square} = l^2" type="block" />}
+  statement={<MathExpression math="A_{square} = l^2" type="block" />}
   terms={[
     {
       term: 'A_{square}',
@@ -57,7 +57,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Triangle
 
 <Rule
-  statement={<Math math="A_{triangle} = \frac{bh}{2}" type="block" />}
+  statement={<MathExpression math="A_{triangle} = \frac{bh}{2}" type="block" />}
   terms={[
     {
       term: 'A_{triangle}',
@@ -77,7 +77,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Rectangle
 
 <Rule
-  statement={<Math math="A_{rectangle} = wh" type="block" />}
+  statement={<MathExpression math="A_{rectangle} = wh" type="block" />}
   terms={[
     {
       term: 'A_{rectangle}',
@@ -97,7 +97,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Circle
 
 <Rule
-  statement={<Math math="A_{circle} = \pi r^2" type="block" />}
+  statement={<MathExpression math="A_{circle} = \pi r^2" type="block" />}
   terms={[
     {
       term: 'A_{circle}',
@@ -113,7 +113,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Trapezoid
 
 <Rule
-  statement={<Math math="A_{trapezoid} = h\frac{b_1+b_2}{2}" type="block" />}
+  statement={<MathExpression math="A_{trapezoid} = h\frac{b_1+b_2}{2}" type="block" />}
   terms={[
     {
       term: 'A_{trapezoid}',
@@ -137,7 +137,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Ellipse
 
 <Rule
-  statement={<Math math="A_{ellipse} = \pi r_1r_2" type="block" />}
+  statement={<MathExpression math="A_{ellipse} = \pi r_1r_2" type="block" />}
   terms={[
     {
       term: 'A_{ellipse}',
@@ -157,7 +157,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Parallelogram
 
 <Rule
-  statement={<Math math="A_{parallelogram} = bh" type="block" />}
+  statement={<MathExpression math="A_{parallelogram} = bh" type="block" />}
   terms={[
     {
       term: 'A_{parallelogram}',
@@ -177,7 +177,7 @@ This includes triangles and squares, but since the coefficient is 1 for a square
 ## Rhombus
 
 <Rule
-  statement={<Math math="A_{rhombus} = \frac{d_1d_2}{2}" type="block" />}
+  statement={<MathExpression math="A_{rhombus} = \frac{d_1d_2}{2}" type="block" />}
   terms={[
     {
       term: 'A_{rhombus}',

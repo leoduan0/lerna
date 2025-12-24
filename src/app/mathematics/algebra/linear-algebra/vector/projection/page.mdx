@@ -8,7 +8,7 @@ date-last-edited: '2024-07-05'
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{{\lVert \vec{b} \rVert}^2}\vec{b}"
       type="block"
     />
@@ -18,8 +18,8 @@ date-last-edited: '2024-07-05'
       term: "\\operatorname{proj}_{\\vec{b}}\\vec{a}",
       annotation: (
         <span>
-          Projection of <Math math="\vec{a}" type="inline" /> on{" "}
-          <Math math="\vec{b}" type="inline" />
+          Projection of <MathExpression math="\vec{a}" type="inline" /> on{" "}
+          <MathExpression math="\vec{b}" type="inline" />
         </span>
       ),
     },

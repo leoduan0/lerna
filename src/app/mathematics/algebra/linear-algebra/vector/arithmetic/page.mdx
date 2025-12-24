@@ -10,7 +10,7 @@ date-last-edited: '2024-07-05'
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\vec{a} + \vec{b} = \langle a_1+b_1, a_2+b_2, a_3+b_3 \rangle"
       type="block"
     />
@@ -18,11 +18,11 @@ date-last-edited: '2024-07-05'
   terms={[
     {
       term: '\\vec{a}',
-      annotation: <Math math="\langle a_1, a_2, a_3 \rangle" type="inline" />,
+      annotation: <MathExpression math="\langle a_1, a_2, a_3 \rangle" type="inline" />,
     },
     {
       term: '\\vec{b}',
-      annotation: <Math math="\langle b_1, b_2, b_3 \rangle" type="inline" />,
+      annotation: <MathExpression math="\langle b_1, b_2, b_3 \rangle" type="inline" />,
     },
   ]}
 />
@@ -31,7 +31,7 @@ date-last-edited: '2024-07-05'
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\vec{a} - \vec{b} = \langle a_1-b_1, a_2-b_2, a_3-b_3 \rangle"
       type="block"
     />
@@ -39,11 +39,11 @@ date-last-edited: '2024-07-05'
   terms={[
     {
       term: '\\vec{a}',
-      annotation: <Math math="\langle a_1, a_2, a_3 \rangle" type="inline" />,
+      annotation: <MathExpression math="\langle a_1, a_2, a_3 \rangle" type="inline" />,
     },
     {
       term: '\\vec{b}',
-      annotation: <Math math="\langle b_1, b_2, b_3 \rangle" type="inline" />,
+      annotation: <MathExpression math="\langle b_1, b_2, b_3 \rangle" type="inline" />,
     },
   ]}
 />
@@ -52,7 +52,7 @@ date-last-edited: '2024-07-05'
 
 <Rule
   statement={
-    <Math math="k\vec{a} = \langle ka_1, ka_2, ka_3 \rangle" type="block" />
+    <MathExpression math="k\vec{a} = \langle ka_1, ka_2, ka_3 \rangle" type="block" />
   }
   terms={[
     {
@@ -61,7 +61,7 @@ date-last-edited: '2024-07-05'
     },
     {
       term: '\\vec{a}',
-      annotation: <Math math="\langle a_1, a_2, a_3 \rangle" type="inline" />,
+      annotation: <MathExpression math="\langle a_1, a_2, a_3 \rangle" type="inline" />,
     },
   ]}
 />
@@ -71,9 +71,9 @@ date-last-edited: '2024-07-05'
 <Rule
   statement={
     <p>
-      <Math math="\vec{a}" type="inline" /> and{' '}
-      <Math math="\vec{b}" type="inline" /> are parallel if{' '}
-      <Math math="\vec{a} = k\vec{b}" type="inline" />.
+      <MathExpression math="\vec{a}" type="inline" /> and{' '}
+      <MathExpression math="\vec{b}" type="inline" /> are parallel if{' '}
+      <MathExpression math="\vec{a} = k\vec{b}" type="inline" />.
     </p>
   }
   terms={[

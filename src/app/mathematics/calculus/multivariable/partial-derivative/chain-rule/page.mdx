@@ -15,26 +15,26 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
 <Problem
   question={
     <p>
-      For <Math math="f(x, y)" type="inline" />,{' '}
-      <Math math="x=r\cos(\theta)" type="inline" />,{' '}
-      <Math math="y=r\sin(\theta)" type="inline" />, find{' '}
-      <Math math="\frac{\partial^2f}{\partial\theta^2}" type="inline" />.
+      For <MathExpression math="f(x, y)" type="inline" />,{' '}
+      <MathExpression math="x=r\cos(\theta)" type="inline" />,{' '}
+      <MathExpression math="y=r\sin(\theta)" type="inline" />, find{' '}
+      <MathExpression math="\frac{\partial^2f}{\partial\theta^2}" type="inline" />.
     </p>
   }
   choices={[
-    <Math
+    <MathExpression
       math="-r\cos(\theta)\frac{\partial f}{\partial x}+\frac{r\cos(\theta)}{r\sin(\theta)\frac{\partial^2f}{\partial x^2}+r\cos(\theta)\frac{\partial^2f}{\partial y \partial x}}-r\sin(\theta)\frac{\partial f}{\partial y}+r\sin(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x \partial y}+r\sin(\theta)\frac{\partial^2f}{\partial y^2}\right)"
       type="inline"
     />,
-    <Math
+    <MathExpression
       math="-r\cos(\theta)\frac{\partial f}{\partial x}-r\tan(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x^2}+r\cos(\theta)\frac{\partial^2f}{\partial y \partial x}\right)-r\sin(\theta)\frac{\partial f}{\partial y}+r\cos(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x \partial y}+r\sin(\theta)\frac{\partial^2f}{\partial y^2}\right)"
       type="inline"
     />,
-    <Math
+    <MathExpression
       math="-r\cos(\theta)\frac{\partial f}{\partial x}-r\sin(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x^2}+r\cos(\theta)\frac{\partial^2f}{\partial y \partial x}\right)-r\sin(\theta)\frac{\partial f}{\partial y}+r\cos(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x \partial y}+r\cos(\theta)\frac{\partial^2f}{\partial y^2}\right)"
       type="inline"
     />,
-    <Math
+    <MathExpression
       math="-r\cos(\theta)\frac{\partial f}{\partial x}+r\sin(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x^2}+r\cos(\theta)\frac{\partial^2f}{\partial y \partial x}\right)-r\sin(\theta)\frac{\partial f}{\partial y}+r\cos(\theta)\left(-r\sin(\theta)\frac{\partial^2f}{\partial x \partial y}+r\cos(\theta)\frac{\partial^2f}{\partial y^2}\right)"
       type="inline"
     />,
@@ -52,7 +52,7 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
       </tr>
       <tr>
         <td>
-          <Math math="\frac{\partial^2f}{\partial\theta^2}" type="inline" />
+          <MathExpression math="\frac{\partial^2f}{\partial\theta^2}" type="inline" />
         </td>
         <td>
           <></>
@@ -60,7 +60,7 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
       </tr>
       <tr>
         <td>
-          <Math
+          <MathExpression
             math="\frac{\partial}{\partial\theta} \left(\frac{\partial f}{\partial\theta} \right)"
             type="inline"
           />
@@ -71,7 +71,7 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
       </tr>
       <tr>
         <td>
-          <Math
+          <MathExpression
             math="\frac{\partial}{\partial\theta} \left(\frac{\partial f}{\partial x} \frac{\partial x}{\partial\theta} + \frac{\partial f}{\partial y} \frac{\partial y}{\partial\theta}\right)"
             type="inline"
           />
@@ -82,7 +82,7 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
       </tr>
       <tr>
         <td>
-          <Math
+          <MathExpression
             math="\frac{\partial}{\partial\theta} \left(-r\sin(\theta)\frac{\partial f}{\partial x} + r\cos(\theta) \frac{\partial f}{\partial y} \right)"
             type="inline"
           />
@@ -93,7 +93,7 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
       </tr>
       <tr>
         <td>
-          <Math
+          <MathExpression
             math="-r\cos(\theta) \frac{\partial f}{\partial x} - r\sin(\theta) \frac{\partial^2 f}{\partial \theta \partial x} - r\sin(\theta) \frac{\partial f}{\partial y} + r\cos(\theta) \frac{\partial^2 f}{\partial \theta \partial y}"
             type="inline"
           />
@@ -104,7 +104,7 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
       </tr>
       <tr>
         <td>
-          <Math
+          <MathExpression
             math="-r\cos(\theta) \frac{\partial f}{\partial x} - r\sin(\theta) \left( -r\sin(\theta) \frac{\partial^2 f}{\partial x^2} + r\cos(\theta) \frac{\partial^2 f}{\partial y \partial x} \right) - r\sin(\theta) \frac{\partial f}{\partial y} + r\cos(\theta) \left( -r\sin(\theta) \frac{\partial^2 f}{\partial x \partial y} + r\cos(\theta) \frac{\partial^2 f}{\partial y^2} \right)"
             type="inline"
           />
@@ -112,16 +112,16 @@ If $$ z=f(x, y), x=g(t, u), y=h(t, u) $$, then $$ \frac{\partial z}{\partial t}=
         <td>
           <>
             <p>From step 3 we find that:</p>
-            <Math
+            <MathExpression
               math="\frac{\partial f}{\partial\theta} = -r\sin(\theta)\frac{\partial f}{\partial x} + r\cos(\theta) \frac{\partial f}{\partial y}"
               type="block"
             />
             <p>From so, using the product rule, we find that:</p>
-            <Math
+            <MathExpression
               math="\frac{\partial^2 f}{\partial \theta \partial x} = -r\sin(\theta) \frac{\partial^2 f}{\partial x^2} + r\cos(\theta) \frac{\partial^2 f}{\partial y \partial x}"
               type="block"
             />
-            <Math
+            <MathExpression
               math="\frac{\partial^2 f}{\partial \theta \partial y} = -r\sin(\theta) \frac{\partial^2 f}{\partial x \partial y} + r\cos(\theta) \frac{\partial^2 f}{\partial y^2}"
               type="block"
             />

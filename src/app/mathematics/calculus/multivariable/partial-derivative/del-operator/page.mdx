@@ -8,7 +8,7 @@ last-edited-date: '2024-02-29'
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\nabla = \vec{x}\frac{\partial}{\partial x} + \vec{y}\frac{\partial}{\partial y} + \vec{z}\frac{\partial}{\partial z}"
       type="block"
     />
@@ -31,7 +31,7 @@ Given a function $$ f $$, its **gradient** is:
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{grad}(f) = \nabla f = \vec{x}\frac{\partial f}{\partial x} + \vec{y}\frac{\partial f}{\partial y} + \vec{z}\frac{\partial f}{\partial z}"
       type="block"
     />
@@ -41,7 +41,7 @@ Given a function $$ f $$, its **gradient** is:
       term: '\\operatorname{grad}(f)',
       annotation: (
         <span>
-          <strong>Gradient</strong> of <Math math="f" type="inline" />
+          <strong>Gradient</strong> of <MathExpression math="f" type="inline" />
         </span>
       ),
     },
@@ -54,7 +54,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its $$ divergence 
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{div}(\vec{v}) = \nabla \cdot \vec{v} = \vec{x}\frac{\partial v_1}{\partial x} + \vec{y}\frac{\partial v_2}{\partial y} + \vec{z}\frac{\partial v_3}{\partial z}"
       type="block"
     />
@@ -73,7 +73,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **curl** is:
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{curl}(\vec{v}) = \nabla \times \vec{v} = \det{\begin{bmatrix} \vec{x} & \vec{y} & \vec{z} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ v_1 & v_2 & v_3 \end{bmatrix}}"
       type="block"
     />
@@ -92,7 +92,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{div}(\operatorname{grad}(\vec{v})) = \nabla \cdot \nabla \vec{v} = \nabla^2 \vec{v} = \vec{x}\frac{\partial^2 v_1}{{\partial x}^2} + \vec{y}\frac{\partial^2 v_2}{{\partial y}^2} + \vec{z}\frac{\partial^2 v_3}{{\partial z}^2}"
       type="block"
     />
@@ -107,7 +107,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{div}(\operatorname{curl}(\vec{v})) = 0"
       type="block"
     />
@@ -122,7 +122,7 @@ Given a vector $$ \vec{v} = \langle v_1, v_2, v_3 \rangle $$, its **Laplacian** 
 
 <Rule
   statement={
-    <Math
+    <MathExpression
       math="\operatorname{curl}(\operatorname{grad}(\vec{v})) = 0"
       type="block"
     />

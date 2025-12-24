@@ -6,7 +6,7 @@
   p,
   span,
   table {
-    @apply text-theme;
+    @apply text-black dark:text-white;
   }
   table {
     @apply border-separate border-spacing-0;
@@ -37,10 +37,10 @@
     @apply border-b border-r border-t border-neutral-300 bg-neutral-200 p-1 dark:border-neutral-600 dark:bg-neutral-700;
   }
   ol {
-    @apply text-theme list-decimal space-y-2 pl-6;
+    @apply text-black dark:text-white list-decimal space-y-2 pl-6;
   }
   ul {
-    @apply text-theme list-disc space-y-2 pl-6;
+    @apply text-black dark:text-white list-disc space-y-2 pl-6;
   }
 }
 

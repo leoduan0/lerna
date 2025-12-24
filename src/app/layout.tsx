@@ -1,20 +1,20 @@
-import './globals.css'
-import { Providers } from './providers'
-import Header from '@/components/Header'
-import Navigation from '@/components/Navigation'
-import pages from '@/data/pages'
-import { Analytics } from '@vercel/analytics/react'
-import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
-import NextTopLoader from 'nextjs-toploader'
+import "./globals.css"
+import type { Metadata } from "next"
+import { Nunito } from "next/font/google"
+import NextTopLoader from "nextjs-toploader"
+import Header from "@/components/Header"
+import Navigation from "@/components/Navigation"
+import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants"
+import pages from "@/lib/pages"
+import { Providers } from "./providers"
 
 const nunito = Nunito({
-  subsets: ['latin'],
+  subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
-  title: 'Lerna',
-  description: 'A learning platform.',
+  title: APP_NAME,
+  description: APP_DESCRIPTION,
 }
 
 export default function RootLayout({
@@ -37,7 +37,6 @@ export default function RootLayout({
             </Providers>
           </main>
         </div>
-        <Analytics />
       </body>
     </html>
   )

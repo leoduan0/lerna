@@ -1,6 +1,6 @@
 function Href(text: string) {
   return encodeURIComponent(
-    text.replace(/ /g, '-').replace(/'/g, ''),
+    text.replace(/ /g, "-").replace(/'/g, ""),
   ).toLowerCase()
 }
 

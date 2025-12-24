@@ -1,5 +1,5 @@
-import { Prism } from 'react-syntax-highlighter'
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { Prism } from "react-syntax-highlighter"
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 interface CodeProps {
   language: string
@@ -9,7 +9,7 @@ interface CodeProps {
 function Code({ children, language }: CodeProps) {
   return (
     <Prism language={language} style={vscDarkPlus} className="rounded-xl">
-      {String(children).replace(/\n$/, '')}
+      {String(children).replace(/\n$/, "")}
     </Prism>
   )
 }

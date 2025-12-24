@@ -1,13 +1,13 @@
-'use client'
+"use client"
 
 import {
+  Button,
   Modal,
   ModalContent,
   ModalHeader,
-  Button,
   useDisclosure,
-} from '@heroui/react'
-import { useState } from 'react'
+} from "@heroui/react"
+import { useState } from "react"
 
 interface ProblemsChoicesProps {
   choices: React.ReactNode[]
@@ -19,7 +19,7 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   function handleChoiceSelection(index: number) {
-    if (selected == index) {
+    if (selected === index) {
       setSelected(-1)
     } else {
       setSelected(index)
@@ -30,23 +30,24 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
     <div className="space-y-2">
       <ol className="w-full">
         {choices.map((choice, index) => (
-          <li key={index}>
+          <li key={choice?.toString()}>
             <button
-              className={`${selected == index ? 'bg-BUTTON_SELECTED-light dark:bg-BUTTON_SELECTED-dark' : 'hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark'} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
+              className={`${selected === index ? "bg-BUTTON_SELECTED-light dark:bg-BUTTON_SELECTED-dark" : "hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark"} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
               onClick={() => handleChoiceSelection(index)}
+              type="button"
             >
               <span>{choice}</span>
             </button>
           </li>
         ))}
       </ol>
-      <Button isDisabled={selected == -1} onPress={onOpen}>
+      <Button isDisabled={selected === -1} onPress={onOpen}>
         Check
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {() => {
-            if (selected == correct - 1) {
+            if (selected === correct - 1) {
               return (
                 <ModalHeader className="flex flex-col gap-1">
                   ✅ Correct

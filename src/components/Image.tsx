@@ -1,4 +1,4 @@
-import NextImage from 'next/image'
+import NextImage from "next/image"
 
 interface ImageProps extends React.ComponentProps<typeof NextImage> {
   src: string

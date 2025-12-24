@@ -1,28 +1,28 @@
-import Align from '@/components/Align'
-import Audio from '@/components/Audio'
-import Block from '@/components/Block'
-import Code from '@/components/Code'
-import CommonQuestion from '@/components/CommonQuestion'
-import Figure from '@/components/Figure'
-import Graph from '@/components/Graph'
-import Heading from '@/components/Heading'
-import Image from '@/components/Image'
-import Link from '@/components/Link'
-import MDX from '@/components/MDX'
-import Math from '@/components/Math'
-import Pagination from '@/components/Pagination'
-import Problem from '@/components/Problem'
-import Proofs from '@/components/Proofs'
-import Rule from '@/components/Rule'
-import Showcase from '@/components/Showcase'
-import UnderConstruction from '@/components/UnderConstruction'
-import type { MDXComponents } from 'mdx/types'
+import type { MDXComponents } from "mdx/types"
+import Align from "@/components/Align"
+import Audio from "@/components/Audio"
+import Block from "@/components/Block"
+import Code from "@/components/Code"
+import CommonQuestion from "@/components/CommonQuestion"
+import Figure from "@/components/Figure"
+import Graph from "@/components/Graph"
+import Heading from "@/components/Heading"
+import Image from "@/components/Image"
+import Link from "@/components/Link"
+import Math from "@/components/Math"
+import MDX from "@/components/MDX"
+import Pagination from "@/components/Pagination"
+import Problem from "@/components/Problem"
+import Proofs from "@/components/Proofs"
+import Rule from "@/components/Rule"
+import Showcase from "@/components/Showcase"
+import UnderConstruction from "@/components/UnderConstruction"
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     a: (props) => (
       <Link
-        href={props.href ? props.href : ''}
+        href={props.href ? props.href : ""}
         className="text-blue-500 hover:underline"
         newTab
       >
@@ -30,10 +30,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </Link>
     ),
     code: (props) => {
-      const match = /language-(\w+)/.exec(props.className || '')
+      const match = /language-(\w+)/.exec(props.className || "")
       return (
-        <Code language={match ? match[1] : ''}>
-          {String(props.children).replace(/\n$/, '')}
+        <Code language={match ? match[1] : ""}>
+          {String(props.children).replace(/\n$/, "")}
         </Code>
       )
     },

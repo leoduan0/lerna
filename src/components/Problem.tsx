@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import Block from './Block'
-import Heading from './Heading'
-import ProblemChoices from './ProblemChoices'
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react'
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useState } from "react"
+import Block from "./Block"
+import Heading from "./Heading"
+import ProblemChoices from "./ProblemChoices"
 
 interface ProblemProps {
   choices?: React.ReactNode[]
@@ -40,7 +40,7 @@ function Problem({ choices, correct, question, solution }: ProblemProps) {
           >
             <FontAwesomeIcon
               className={`${
-                expand ? 'rotate-90' : ''
+                expand ? "rotate-90" : ""
               } fill-black dark:fill-white`}
               icon={faCaretRight}
             />

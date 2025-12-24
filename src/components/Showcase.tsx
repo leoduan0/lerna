@@ -1,4 +1,4 @@
-import Align from './Align'
+import Align from "./Align"
 
 interface ShowcaseProps {
   children: React.ReactNode

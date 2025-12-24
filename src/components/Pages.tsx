@@ -1,6 +1,6 @@
-import NavigationPage from './NavigationPage'
-import TPage from '@/types/TPage'
-import Href from '@/utils/Href'
+import type TPage from "@/types/TPage"
+import Href from "@/utils/Href"
+import NavigationPage from "./NavigationPage"
 
 function renderPages(pages: TPage[], href: string) {
   return pages.map((page) => {
@@ -9,7 +9,7 @@ function renderPages(pages: TPage[], href: string) {
         <NavigationPage
           page={page}
           href={
-            page.title == 'Home' ? href + '/' : href + '/' + Href(page.title)
+            page.title === "Home" ? href + "/" : href + "/" + Href(page.title)
           }
           renderFunction={renderPages}
         />
@@ -25,7 +25,7 @@ interface PagesProps {
 function Pages({ pages }: PagesProps) {
   return (
     <ul className="w-full list-none space-y-1 p-2 lg:space-y-0.5">
-      {renderPages(pages, '')}
+      {renderPages(pages, "")}
     </ul>
   )
 }

@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import useNavigationStatus from '@/hooks/useNavigationStatus'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import useNavigationStatus from "@/hooks/useNavigationStatus"
 
 function HeaderButton() {
   const { toggleNavigation } = useNavigationStatus()
@@ -11,6 +11,7 @@ function HeaderButton() {
     <button
       onClick={toggleNavigation}
       className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:invisible"
+      type="button"
     >
       <FontAwesomeIcon icon={faBars} />
     </button>

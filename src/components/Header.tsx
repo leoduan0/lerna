@@ -1,6 +1,6 @@
-import HeaderButton from './HeaderButton'
-import Path from './Path'
-import ShareButton from './ShareButton'
+import HeaderButton from "./HeaderButton"
+import Path from "./Path"
+import ShareButton from "./ShareButton"
 
 function Header() {
   return (

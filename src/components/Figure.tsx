@@ -1,5 +1,5 @@
-import Align from './Align'
-import Block from './Block'
+import Align from "./Align"
+import Block from "./Block"
 
 interface FigureProps {
   image: React.ReactNode

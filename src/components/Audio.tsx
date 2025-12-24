@@ -1,6 +1,6 @@
 interface AudioProps {
   source: string
-  type: 'mp3' | 'wav' | 'ogg'
+  type: "mp3" | "wav" | "ogg"
 }
 
 function Audio({ source, type }: AudioProps) {

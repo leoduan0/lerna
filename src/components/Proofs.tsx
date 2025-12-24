@@ -1,6 +1,6 @@
-import Block from './Block'
-import Heading from './Heading'
-import Pagination from './Pagination'
+import Block from "./Block"
+import Heading from "./Heading"
+import Pagination from "./Pagination"
 
 interface ProofsProps {
   proofs: {
@@ -11,7 +11,7 @@ interface ProofsProps {
 function Proofs({ proofs }: ProofsProps) {
   return (
     <Block>
-      <Heading level={5}>{proofs.length == 1 ? 'Proof' : 'Proofs'}</Heading>
+      <Heading level={5}>{proofs.length === 1 ? "Proof" : "Proofs"}</Heading>
       <Pagination pages={proofs} />
     </Block>
   )

@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import Pages from './Pages'
-import Ad from '@/components/Ad'
-import useNavigationStatus from '@/hooks/useNavigationStatus'
-import TPage from '@/types/TPage'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { ScrollShadow } from '@heroui/react'
+import { faXmark } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { ScrollShadow } from "@heroui/react"
+import Ad from "@/components/Ad"
+import useNavigationStatus from "@/hooks/useNavigationStatus"
+import type TPage from "@/types/TPage"
+import Pages from "./Pages"
 
 interface NavigationProps {
   pages: TPage[]
@@ -18,7 +18,7 @@ function Navigation({ pages }: NavigationProps) {
   return (
     <>
       <nav
-        className={`${navigationStatus ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 lg:opacity-100'} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-r border-LAYOUT_BORDER-light bg-LAYOUT-light/50 backdrop-blur-lg transition dark:border-LAYOUT_BORDER-dark dark:bg-LAYOUT-dark/50 md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:bg-LAYOUT-light lg:backdrop-blur-none lg:dark:bg-LAYOUT-dark`}
+        className={`${navigationStatus ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0 lg:opacity-100"} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-r border-LAYOUT_BORDER-light bg-LAYOUT-light/50 backdrop-blur-lg transition dark:border-LAYOUT_BORDER-dark dark:bg-LAYOUT-dark/50 md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:bg-LAYOUT-light lg:backdrop-blur-none lg:dark:bg-LAYOUT-dark`}
       >
         <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-LAYOUT_BORDER-light dark:border-LAYOUT_BORDER-dark">
           <svg
@@ -31,10 +31,11 @@ function Navigation({ pages }: NavigationProps) {
           <button
             onClick={() => toggleNavigation()}
             className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:hidden"
+            type="button"
           >
-            {' '}
-            <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />{' '}
-          </button>{' '}
+            {" "}
+            <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />{" "}
+          </button>{" "}
         </div>
         <ScrollShadow className="h-full w-full">
           <Pages pages={pages} />
@@ -45,8 +46,8 @@ function Navigation({ pages }: NavigationProps) {
         onClick={() => toggleNavigation()}
         className={`${
           navigationStatus
-            ? 'z-10 translate-x-0 opacity-50 lg:hidden'
-            : 'translate-x-full opacity-0'
+            ? "z-10 translate-x-0 opacity-50 lg:hidden"
+            : "translate-x-full opacity-0"
         } absolute left-2/3 right-0 h-full bg-black transition md:left-1/3`}
       />
     </>

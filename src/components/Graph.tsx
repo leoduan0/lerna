@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import { Coordinates, LaTeX, Mafs, Plot, Point } from 'mafs'
-import 'mafs/core.css'
-import { Fragment } from 'react'
+import { Coordinates, LaTeX, Mafs, Plot, Point } from "mafs"
+import "mafs/core.css"
+import { Fragment } from "react"
 
 interface GraphProps {
   annotations?: { text: string; position: [x: number, y: number] }[]
   expressions: { math: string; color: string }[]
   points?: { x: number; y: number; color: string }[]
   subdivisions: number
-  type: 'cartesian' | 'polar'
+  type: "cartesian" | "polar"
   viewBox: {
     x: [x: number, y: number]
     y: [x: number, y: number]
@@ -26,24 +26,24 @@ function Graph({
 }: GraphProps) {
   return (
     <Mafs viewBox={viewBox}>
-      {type == 'cartesian' ? (
+      {type === "cartesian" ? (
         <Coordinates.Cartesian subdivisions={subdivisions} />
       ) : (
         <Coordinates.Polar subdivisions={subdivisions} />
       )}
-      {expressions.map((expression, index) => (
-        <Fragment key={index}>
+      {expressions.map((expression) => (
+        <Fragment key={expression.math}>
           <Plot.OfX y={eval(expression.math)} color={expression.color} />
         </Fragment>
       ))}
-      {annotations?.map((annotation, index) => (
-        <Fragment key={index}>
-          <LaTeX key={index} at={annotation.position} tex={annotation.text} />
+      {annotations?.map((annotation) => (
+        <Fragment key={annotation.text}>
+          <LaTeX at={annotation.position} tex={annotation.text} />
         </Fragment>
       ))}
-      {points?.map((point, index) => (
-        <Fragment key={index}>
-          <Point key={index} x={point.x} y={point.y} color={point.color} />
+      {points?.map((point) => (
+        <Fragment key={point.x + point.y + point.color}>
+          <Point x={point.x} y={point.y} color={point.color} />
         </Fragment>
       ))}
     </Mafs>

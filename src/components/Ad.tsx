@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import Script from 'next/script'
-import { useEffect } from 'react'
+import Script from "next/script"
+import { useEffect } from "react"
 
 declare global {
   interface Window {
@@ -12,7 +12,7 @@ declare global {
 function Ad() {
   useEffect(() => {
     try {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         ;(window.adsbygoogle = window.adsbygoogle || []).push({})
       }
     } catch (e) {
@@ -30,7 +30,7 @@ function Ad() {
       />
       <ins
         className="adsbygoogle"
-        style={{ display: 'block' }}
+        style={{ display: "block" }}
         data-ad-client={process.env.ADSENSE_ID}
         data-ad-slot={process.env.ADSENSE_AD_ID}
         data-ad-format="auto"

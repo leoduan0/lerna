@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from "react"
 
 let navigationStatus = true
 
@@ -9,15 +9,15 @@ export default function useNavigationStatus() {
 
   useEffect(() => {
     const updateLocalStatus = () => setLocalStatus(navigationStatus)
-    window.addEventListener('navigationStatusChange', updateLocalStatus)
+    window.addEventListener("navigationStatusChange", updateLocalStatus)
 
     return () =>
-      window.removeEventListener('navigationStatusChange', updateLocalStatus)
+      window.removeEventListener("navigationStatusChange", updateLocalStatus)
   }, [])
 
   function toggleNavigation() {
     navigationStatus = !navigationStatus
-    window.dispatchEvent(new Event('navigationStatusChange'))
+    window.dispatchEvent(new Event("navigationStatusChange"))
   }
 
   return { navigationStatus: localStatus, toggleNavigation }

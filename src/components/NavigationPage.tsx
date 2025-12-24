@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import Link from '@/components/Link'
-import useNavigationStatus from '@/hooks/useNavigationStatus'
-import TPage from '@/types/TPage'
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { usePathname } from "next/navigation"
+import { useState } from "react"
+import Link from "@/components/Link"
+import useNavigationStatus from "@/hooks/useNavigationStatus"
+import type TPage from "@/types/TPage"
 
 interface NavigationPageProps {
   href: string
@@ -29,25 +29,26 @@ function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
     <>
       <div
         className={`${
-          (pathname == '/' && href == '/home') || pathname == href
-            ? 'bg-BUTTON-light dark:bg-BUTTON-dark'
-            : 'hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark'
+          (pathname === "/" && href === "/home") || pathname === href
+            ? "bg-BUTTON-light dark:bg-BUTTON-dark"
+            : "hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark"
         } flex h-8 w-full items-center truncate rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button
           onClick={() => page.children && toggleExpand()} // This toggles the navigation regardless of screen size. Could be problematic if the user minds the navigation status "spontaneously" changing
-          className={`${page.children ? '' : 'invisible'} flex h-full items-center justify-center rounded-l-md p-2`}
+          className={`${page.children ? "" : "invisible"} flex h-full items-center justify-center rounded-l-md p-2`}
+          type="button"
         >
           <FontAwesomeIcon
             className={`${
-              expand ? 'rotate-90' : ''
+              expand ? "rotate-90" : ""
             } fill-black dark:fill-white`}
             icon={faCaretRight}
           />
         </button>
         <Link
           href={href}
-          className={`${page.children ? 'rounded-r-md' : 'rounded-md'} flex h-full w-full grow items-center space-x-2 pr-2`}
+          className={`${page.children ? "rounded-r-md" : "rounded-md"} flex h-full w-full grow items-center space-x-2 pr-2`}
           onClick={() => toggleNavigation()}
         >
           {page.icon && <div>{page.icon}</div>}

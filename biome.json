@@ -1,0 +1,59 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "includes": [
+      "**",
+      "!src/app/mathematics/algebra/linear-algebra/matrix/arithmetic/page.mdx",
+      "!src/app/mathematics/algebra/linear-algebra/matrix/determinant/page.mdx",
+      "!src/app/mathematics/algebra/linear-algebra/matrix/page.mdx",
+      "!src/app/mathematics/algebra/linear-algebra/norm/page.mdx",
+      "!src/app/mathematics/algebra/linear-algebra/vector/projection/page.mdx",
+      "!src/app/mathematics/algebra/map/function/polynomial/page.mdx",
+      "!src/app/mathematics/algebra/operation/logarithm/page.mdx",
+      "!src/app/mathematics/analysis/calculus/multivariable/limit/page.mdx",
+      "!src/app/mathematics/analysis/calculus/multivariable/partial-derivative/directional-derivative/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/integration/definite-integration/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/integration/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/limit/convergence/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/limit/divergence/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/limit/manipulation/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/limit/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/limit/rules/page.mdx",
+      "!src/app/mathematics/analysis/calculus/single-variable/limit/substitution/page.mdx"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noUnknownAtRules": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": { "organizeImports": "on" }
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  }
+}

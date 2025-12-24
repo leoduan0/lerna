@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import Block from './Block'
-import { Accordion, AccordionItem } from '@heroui/react'
+import { Accordion, AccordionItem } from "@heroui/react"
+import Block from "./Block"
 
 export type TQA = {
   question: React.ReactNode
@@ -14,11 +14,11 @@ interface CommonQuestionProps {
 
 function CommonQuestion({ qas }: CommonQuestionProps) {
   return (
-    <Block text={qas.length == 1 ? 'Common Question' : 'Common Questions'}>
+    <Block text={qas.length === 1 ? "Common Question" : "Common Questions"}>
       <Accordion>
-        {qas.map((qa, index) => {
+        {qas.map((qa) => {
           return (
-            <AccordionItem key={index} title={qa.question}>
+            <AccordionItem key={qa.question?.toString()} title={qa.question}>
               {qa.answer}
             </AccordionItem>
           )

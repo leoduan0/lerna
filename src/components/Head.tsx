@@ -1,6 +1,6 @@
-import Image from './Image'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Image from "./Image"
 
 interface HeadProps {
   toggleFunction: () => void
@@ -13,10 +13,11 @@ function Head({ toggleFunction }: HeadProps) {
       <button
         onClick={() => toggleFunction()}
         className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:hidden"
+        type="button"
       >
-        {' '}
-        <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />{' '}
-      </button>{' '}
+        {" "}
+        <FontAwesomeIcon className="h-4 w-4" icon={faXmark} />{" "}
+      </button>{" "}
     </div>
   )
 }

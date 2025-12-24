@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={nunito.className} lang="en">
-      <body className="fixed flex h-full w-full bg-BACKGROUND-light dark:bg-BACKGROUND-dark">
+      <body className="fixed flex h-full w-full bg-white dark:bg-neutral-950">
         {/* "fixed" makes the iOS Safari toolbar persistent */}
         <NextTopLoader color="" showSpinner={false} />
         <Navigation pages={pages} />

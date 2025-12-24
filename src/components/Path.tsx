@@ -6,7 +6,7 @@ function Path() {
   const pathname = usePathname()
 
   return (
-    <div className="text-theme overflow-x-auto whitespace-nowrap font-bold">
+    <div className="overflow-x-auto whitespace-nowrap font-bold text-theme">
       {pathname === "/"
         ? "Home"
         : decodeURIComponent(pathname)

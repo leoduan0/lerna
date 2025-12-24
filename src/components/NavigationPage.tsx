@@ -30,8 +30,8 @@ function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
       <div
         className={`${
           (pathname === "/" && href === "/home") || pathname === href
-            ? "bg-BUTTON-light dark:bg-BUTTON-dark"
-            : "hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark"
+            ? "bg-button"
+            : "hover:bg-button"
         } flex h-8 w-full items-center truncate rounded-md text-sm transition hover:cursor-pointer active:scale-[0.98]`}
       >
         <button
@@ -52,7 +52,7 @@ function NavigationPage({ href, page, renderFunction }: NavigationPageProps) {
           onClick={() => toggleNavigation()}
         >
           {page.icon && <div>{page.icon}</div>}
-          <span className="text-theme truncate">{page.title}</span>
+          <span className="truncate text-theme">{page.title}</span>
         </Link>
       </div>
       {page.children && expand && (

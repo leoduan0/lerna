@@ -9,7 +9,7 @@ function renderPages(pages: TPage[], href: string) {
         <NavigationPage
           page={page}
           href={
-            page.title === "Home" ? href + "/" : href + "/" + Href(page.title)
+            page.title === "Home" ? `${href}/` : `${href}/${Href(page.title)}`
           }
           renderFunction={renderPages}
         />

@@ -7,7 +7,7 @@ interface BlockProps {
 
 function Block({ children, text }: BlockProps) {
   return (
-    <div className="w-full space-y-2 rounded-xl border border-WIDGET_BORDER-light bg-WIDGET-light p-4 dark:border-WIDGET_BORDER-dark dark:bg-WIDGET-dark">
+    <div className="w-full space-y-2 rounded-xl border border-widget-border bg-widget p-4">
       {text && <Heading level={5}>{text}</Heading>}
       {children}
     </div>

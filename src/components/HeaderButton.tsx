@@ -10,7 +10,7 @@ function HeaderButton() {
   return (
     <button
       onClick={toggleNavigation}
-      className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:invisible"
+      className="rounded-md p-2 transition hover:bg-button active:scale-95 lg:invisible"
       type="button"
     >
       <FontAwesomeIcon icon={faBars} />

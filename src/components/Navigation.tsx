@@ -18,9 +18,9 @@ function Navigation({ pages }: NavigationProps) {
   return (
     <>
       <nav
-        className={`${navigationStatus ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0 lg:opacity-100"} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-r border-LAYOUT_BORDER-light bg-LAYOUT-light/50 backdrop-blur-lg transition dark:border-LAYOUT_BORDER-dark dark:bg-LAYOUT-dark/50 md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:bg-LAYOUT-light lg:backdrop-blur-none lg:dark:bg-LAYOUT-dark`}
+        className={`${navigationStatus ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0 lg:opacity-100"} absolute z-20 flex h-full w-2/3 flex-col overflow-y-auto rounded-r-md border-layout-border border-r backdrop-blur-lg transition md:w-1/3 lg:static lg:w-96 lg:translate-x-0 lg:rounded-none lg:backdrop-blur-none dark:bg-layout/50 lg:dark:bg-layout/50`}
       >
-        <div className="flex h-12 w-full items-center justify-center space-x-2 border-b border-LAYOUT_BORDER-light dark:border-LAYOUT_BORDER-dark">
+        <div className="flex h-12 w-full items-center justify-center space-x-2 border-layout-border border-b">
           <svg
             className="dark:fill-white"
             viewBox="0 0 361.24445 112.88889"
@@ -30,7 +30,7 @@ function Navigation({ pages }: NavigationProps) {
           </svg>
           <button
             onClick={() => toggleNavigation()}
-            className="rounded-md p-2 transition hover:bg-BUTTON-light active:scale-95 dark:hover:bg-BUTTON-dark lg:hidden"
+            className="rounded-md p-2 transition hover:bg-button active:scale-95 lg:hidden"
             type="button"
           >
             {" "}
@@ -48,7 +48,7 @@ function Navigation({ pages }: NavigationProps) {
           navigationStatus
             ? "z-10 translate-x-0 opacity-50 lg:hidden"
             : "translate-x-full opacity-0"
-        } absolute left-2/3 right-0 h-full bg-black transition md:left-1/3`}
+        } absolute right-0 left-2/3 h-full bg-black transition md:left-1/3`}
       />
     </>
   )

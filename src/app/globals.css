@@ -1,5 +1,58 @@
 @import "tailwindcss";
 
+:root {
+  --color-button-light: #d2d2d2;
+  --color-button-dark: #3a3a3a;
+
+  --color-button-disabled-light: #e1e1e1;
+  --color-button-disabled-dark: #2d2d2d;
+
+  --color-button-selected-light: #3b82f6;
+  --color-button-selected-dark: #2563eb;
+
+  --color-layout-light: #f0f0f0;
+  --color-layout-dark: #232323;
+
+  --color-layout-border-light: #d2d2d2;
+  --color-layout-border-dark: #464646;
+
+  --color-link: #3b82f6;
+
+  --color-widget-light: #f0f0f0;
+  --color-widget-dark: #232323;
+
+  --color-widget-border-light: #d2d2d2;
+  --color-widget-border-dark: #464646;
+}
+
+@theme {
+  --color-button: var(--color-button-light);
+  --color-button-disabled: var(--color-button-disabled-light);
+  --color-button-selected: var(--color-button-selected-light);
+
+  --color-layout: var(--color-layout-light);
+  --color-layout-border: var(--color-layout-border-light);
+
+  --color-link: var(--color-link);
+
+  --color-widget: var(--color-widget-light);
+  --color-widget-border: var(--color-widget-border-light);
+}
+
+.dark {
+  @theme {
+    --color-button: var(--color-button-dark);
+    --color-button-disabled: var(--color-button-disabled-dark);
+    --color-button-selected: var(--color-button-selected-dark);
+
+    --color-layout: var(--color-layout-dark);
+    --color-layout-border: var(--color-layout-border-dark);
+
+    --color-widget: var(--color-widget-dark);
+    --color-widget-border: var(--color-widget-border-dark);
+  }
+}
+
 @layer components {
   p,
   span,

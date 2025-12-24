@@ -22,7 +22,7 @@ function Math({ math, type }: MathProps) {
     case "block":
       return (
         <div className="w-full overflow-x-auto">
-          <div className="text-theme w-fit">
+          <div className="w-fit text-theme">
             <BlockMath math={math} />
           </div>
         </div>

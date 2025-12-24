@@ -62,7 +62,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {props.children}
       </Heading>
     ),
-    p: (props) => <p className="text-theme text-base">{props.children}</p>,
+    p: (props) => <p className="text-base text-theme">{props.children}</p>,
     Align: Align,
     Audio: Audio,
     Block: Block,

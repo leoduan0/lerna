@@ -4,7 +4,7 @@ import ShareButton from "./ShareButton"
 
 function Header() {
   return (
-    <header className="flex h-12 w-full items-center justify-between space-x-2 border-b border-LAYOUT_BORDER-light bg-LAYOUT-light p-2 dark:border-LAYOUT_BORDER-dark dark:bg-LAYOUT-dark">
+    <header className="flex h-12 w-full items-center justify-between space-x-2 border-layout-border border-b p-2 dark:bg-layout">
       <HeaderButton />
       <Path />
       <ShareButton />

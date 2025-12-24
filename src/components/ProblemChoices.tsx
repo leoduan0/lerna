@@ -32,7 +32,7 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
         {choices.map((choice, index) => (
           <li key={choice?.toString()}>
             <button
-              className={`${selected === index ? "bg-BUTTON_SELECTED-light dark:bg-BUTTON_SELECTED-dark" : "hover:bg-BUTTON-light dark:hover:bg-BUTTON-dark"} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
+              className={`${selected === index ? "bg-button-selected" : "hover:bg-button"} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
               onClick={() => handleChoiceSelection(index)}
               type="button"
             >

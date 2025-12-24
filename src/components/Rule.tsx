@@ -23,7 +23,7 @@ function Rule({ annotation, statement, terms }: RuleProps) {
           {terms.map((term) => (
             <div key={term.term}>
               <span>
-                <Math math={term.term + "="} type="inline" /> {term.annotation}
+                <Math math={`${term.term}=`} type="inline" /> {term.annotation}
               </span>
             </div>
           ))}

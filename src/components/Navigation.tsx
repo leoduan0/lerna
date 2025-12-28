@@ -2,7 +2,7 @@
 
 import { X } from "lucide-react"
 import NextImage from "next/image"
-import { Ad } from "@/components/Ad"
+import { Ad } from "@/components/ad"
 import useNavigationStatus from "@/hooks/use-navigation-status"
 import type { TPage } from "@/lib/pages"
 import Pages from "./Pages"

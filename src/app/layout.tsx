@@ -16,10 +16,6 @@ export const metadata: Metadata = {
   title: APP_NAME,
   description: APP_DESCRIPTION,
   keywords: ["mathematics", "physics", "notes"],
-  other: {
-    // biome-ignore lint: force non-null assertion
-    "google-adsense-account": process.env.ADSENSE_PUBLISHER_ID!,
-  },
 }
 
 export default function RootLayout({

@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   description: APP_DESCRIPTION,
   keywords: ["mathematics", "physics", "notes"],
   other: {
-    "google-adsense-account": process.env.ADSENSE_PUBLISHER_ID,
+    // biome-ignore lint: force non-null assertion
+    "google-adsense-account": process.env.ADSENSE_PUBLISHER_ID!,
   },
 }
 

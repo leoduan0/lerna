@@ -29,19 +29,19 @@ export default function RootLayout({
 }>) {
   return (
     <html className={nunito.className} lang="en">
-      <body className="fixed flex h-full w-full bg-white dark:bg-neutral-950">
-        <Providers>
-          {/* "fixed" makes the iOS Safari toolbar persistent */}
-          <NextTopLoader color="" showSpinner={false} />
-          <Navigation pages={pages} />
-          <div className="flex h-full w-full flex-col overflow-auto">
-            <Header />
-            <main className="p-4 lg:px-48 space-y-2">
+      <body className="fixed flex h-screen w-screen bg-white dark:bg-neutral-950">
+        {/* "fixed" makes the iOS Safari toolbar persistent */}
+        <NextTopLoader color="" showSpinner={false} />
+        <Navigation pages={pages} />
+        <div className="h-full w-full overflow-auto">
+          <Header />
+          <main className="p-4 lg:px-48 space-y-2">
+            <Providers>
               {/* Page horizontal overflow not reachable (see matrix determinant page) */}
               {children}
-            </main>
-          </div>
-        </Providers>
+            </Providers>
+          </main>
+        </div>
       </body>
     </html>
   )

@@ -11,6 +11,7 @@
     "check": "biome check --write"
   },
   "dependencies": {
+    "@heroui/modal": "^2.2.26",
     "@heroui/react": "^2.8.7",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",

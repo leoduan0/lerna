@@ -33,13 +33,14 @@ function Problem({ choices, correct, question, solution }: ProblemProps) {
       )}
       {solution && (
         <>
-          <div
+          <button
             onClick={() => toggleExpand()}
             className="flex h-8 w-full items-center space-x-2 rounded-md text-sm transition hover:cursor-pointer"
+            type="button"
           >
             <ChevronRight className={expand ? "rotate-90" : ""} />
             <Heading level={5}>Solution</Heading>
-          </div>
+          </button>
           {expand && solution}
         </>
       )}

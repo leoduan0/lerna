@@ -3,7 +3,9 @@
 import {
   Button,
   Modal,
+  ModalBody,
   ModalContent,
+  ModalFooter,
   ModalHeader,
   useDisclosure,
 } from "@heroui/react"
@@ -15,25 +17,17 @@ interface ProblemsChoicesProps {
 }
 
 function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
-  const [selected, setSelected] = useState<number>(-1)
+  const [selected, setSelected] = useState(-1)
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
-
-  function handleChoiceSelection(index: number) {
-    if (selected === index) {
-      setSelected(-1)
-    } else {
-      setSelected(index)
-    }
-  }
 
   return (
     <div className="space-y-2">
       <ol className="w-full">
         {choices.map((choice, index) => (
-          <li key={choice?.toString()}>
+          <li key={index}>
             <button
               className={`${selected === index ? "bg-button-selected" : "hover:bg-button"} w-full cursor-pointer rounded-lg border border-black p-2 text-left transition active:scale-[0.99] dark:border-white`}
-              onClick={() => handleChoiceSelection(index)}
+              onClick={() => setSelected(selected === index ? -1 : index)}
               type="button"
             >
               <span>{choice}</span>
@@ -46,21 +40,22 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
-          {() => {
-            if (selected === correct - 1) {
-              return (
-                <ModalHeader className="flex flex-col gap-1">
-                  ✅ Correct
-                </ModalHeader>
-              )
-            } else {
-              return (
-                <ModalHeader className="flex flex-col gap-1">
-                  ❌ Incorrect
-                </ModalHeader>
-              )
-            }
-          }}
+          {(onClose) => (
+            <>
+              <ModalHeader>
+                {selected === correct - 1 ? "✅ Correct" : "❌ Incorrect"}
+              </ModalHeader>
+              <ModalBody>
+                Your answer was{" "}
+                {selected === correct - 1 ? "correct" : "incorrect"}!
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" onPress={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </>
+          )}
         </ModalContent>
       </Modal>
     </div>

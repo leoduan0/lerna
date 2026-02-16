@@ -19,6 +19,8 @@ interface ProblemsChoicesProps {
 function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
   const [selected, setSelected] = useState(-1)
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
+  const correctIndex = correct >= 1 ? correct - 1 : correct
+  const isCorrect = selected === correctIndex
 
   return (
     <div className="space-y-2">
@@ -38,16 +40,24 @@ function ProblemsChoices({ choices, correct }: ProblemsChoicesProps) {
       <Button isDisabled={selected === -1} onPress={onOpen}>
         Check
       </Button>
+      {selected !== -1 && (
+        <div
+          className={`text-sm ${isCorrect ? "text-green-600" : "text-red-600"}`}
+          aria-live="polite"
+        >
+          {isCorrect ? "✅ Correct" : "❌ Incorrect"}
+        </div>
+      )}
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader>
-                {selected === correct - 1 ? "✅ Correct" : "❌ Incorrect"}
+                {isCorrect ? "✅ Correct" : "❌ Incorrect"}
               </ModalHeader>
               <ModalBody>
                 Your answer was{" "}
-                {selected === correct - 1 ? "correct" : "incorrect"}!
+                {isCorrect ? "correct" : "incorrect"}!
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" onPress={onClose}>

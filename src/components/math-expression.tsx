@@ -22,14 +22,14 @@ export function MathExpression({ math, type }: MathProps) {
     case "block":
       return (
         <div className="w-full overflow-x-auto">
-          <div className="w-fit text-theme">
+          <div className="w-fit text-foreground">
             <BlockMath math={math} />
           </div>
         </div>
       )
     case "inline":
       return (
-        <span className="text-theme">
+        <span className="text-foreground">
           <InlineMath math={math} />
         </span>
       )

@@ -1,4 +1,4 @@
-import { Atom, House, Info, SquareRadical } from "lucide-react"
+import { Atom, HatGlasses, House, Info, SquareRadical } from "lucide-react"
 
 export type TPage = {
   title: string
@@ -190,6 +190,10 @@ export const pages: TPage[] = [
       { title: "Thermodynamics" },
       // { title: 'Optics' },
     ],
+  },
+  {
+    title: "Privacy Policy",
+    icon: <HatGlasses size={20} />,
   },
   {
     title: "About",
